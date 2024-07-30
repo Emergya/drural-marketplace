@@ -1,0 +1,58 @@
+@import "../../../globalStyles/scss/variables-drural.scss";
+
+.menu-dropdown {
+  position: relative;
+  & > div {
+    cursor: pointer;
+  }
+  @media (max-width: $small-screen) {
+    position: static;
+  }
+
+  .avatar-clicked {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    @media (min-width: $medium-small-screen) {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  &__body {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 130%;
+    box-shadow: $message-shadow;
+    background-color: $white;
+    padding: 0;
+    width: 360px;
+    @media (max-width: $small-screen) {
+      visibility: hidden;
+      transition: left 0.5s ease-in-out, visibility 0.5s ease-in-out;
+      display: block;
+      top: 0;
+      left: 100%;
+      width: 80vw;
+    }
+
+    &__rightdown {
+      right: 0rem !important;
+      left: 1rem !important;
+    }
+
+    &--visible {
+      display: block;
+      z-index: 2;
+
+      @media (max-width: $small-screen) {
+        left: 0;
+        visibility: visible;
+      }
+    }
+  }
+}

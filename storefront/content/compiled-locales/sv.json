@@ -1,0 +1,2722 @@
+{
+  "+Q1sXM": [
+    {
+      "type": 0,
+      "value": "Det här är dina kassauppgifter, se till att granska dem innan du bekräftar kassan."
+    }
+  ],
+  "+ckxNx": [
+    {
+      "type": 0,
+      "value": "Är du säker på att du vill ta bort tjänsten "
+    },
+    {
+      "type": 1,
+      "value": "serviceName"
+    },
+    {
+      "type": 0,
+      "value": " från önskelistan "
+    },
+    {
+      "type": 1,
+      "value": "listName"
+    },
+    {
+      "type": 0,
+      "value": "?"
+    }
+  ],
+  "+d/I+9": [
+    {
+      "type": 0,
+      "value": "Ange som standard leveransadress"
+    }
+  ],
+  "+kMQfn": [
+    {
+      "type": 0,
+      "value": "Prisklass"
+    }
+  ],
+  "/+HyHJ": [
+    {
+      "type": 0,
+      "value": "Lämna en recension"
+    }
+  ],
+  "/+uCYW": [
+    {
+      "type": 0,
+      "value": "Relaterade tjänster"
+    }
+  ],
+  "/7OBeN": [
+    {
+      "type": 0,
+      "value": "Det gick inte att rapportera produkten"
+    }
+  ],
+  "/C/h4C": [
+    {
+      "type": 0,
+      "value": "Är du säker på att du vill ta bort din recension?"
+    }
+  ],
+  "/DVYB1": [
+    {
+      "type": 0,
+      "value": "Format som stöds: jpeg, gif, png."
+    }
+  ],
+  "/FBJmw": [
+    {
+      "type": 0,
+      "value": "Hur mycket vill du spendera?"
+    }
+  ],
+  "/NZV5a": [
+    {
+      "type": 0,
+      "value": "Du är nu utloggad"
+    }
+  ],
+  "/X8Mjx": [
+    {
+      "type": 0,
+      "value": "Spela med "
+    },
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": "GraphQL API"
+        }
+      ],
+      "type": 8,
+      "value": "emphasis"
+    }
+  ],
+  "00LcfG": [
+    {
+      "type": 0,
+      "value": "Ladda mer"
+    }
+  ],
+  "0f45G+": [
+    {
+      "type": 0,
+      "value": "OFF-LINE :("
+    }
+  ],
+  "0fxBj6": [
+    {
+      "type": 0,
+      "value": "Ny i"
+    }
+  ],
+  "0g/1TG": [
+    {
+      "type": 0,
+      "value": "Fortsätt till Betalning"
+    }
+  ],
+  "0vL5u1": [
+    {
+      "type": 0,
+      "value": "Skapa ett konto"
+    }
+  ],
+  "0zNair": [
+    {
+      "type": 0,
+      "value": "Om dRural"
+    }
+  ],
+  "12/Dpd": [
+    {
+      "type": 0,
+      "value": "Â¿Är du säker på att du vill ta bort ditt konto?"
+    }
+  ],
+  "1851Kr": [
+    {
+      "type": 0,
+      "value": "Ordernummer: #"
+    },
+    {
+      "type": 1,
+      "value": "orderNum"
+    }
+  ],
+  "1KGwKk": [
+    {
+      "type": 0,
+      "value": "Ange leveransadress."
+    }
+  ],
+  "1RO7fs": [
+    {
+      "type": 0,
+      "value": "Tillbaka till tjänsten"
+    }
+  ],
+  "1jbPX/": [
+    {
+      "type": 0,
+      "value": "Välj timme"
+    }
+  ],
+  "1oz7Jc": [
+    {
+      "type": 0,
+      "value": "Chatta med säljaren"
+    }
+  ],
+  "1w9HXE": [
+    {
+      "type": 0,
+      "value": "Miljontals shoppare väntar på att du ska gå med"
+    }
+  ],
+  "2/2yg+": [
+    {
+      "type": 0,
+      "value": "Lägg till"
+    }
+  ],
+  "29Ei25": [
+    {
+      "type": 0,
+      "value": "Postnummer"
+    }
+  ],
+  "2XRzbc": [
+    {
+      "type": 0,
+      "value": "Länk 3"
+    }
+  ],
+  "2bGejb": [
+    {
+      "type": 0,
+      "value": "Mitt konto"
+    }
+  ],
+  "2xjjlC": [
+    {
+      "type": 0,
+      "value": "Lågt lager"
+    }
+  ],
+  "3SfdR4": [
+    {
+      "type": 0,
+      "value": "Återgå till tjänst"
+    }
+  ],
+  "3mBt9u": [
+    {
+      "type": 0,
+      "value": "Ge inte upp – kontrollera stavningen, tänk på något mindre specifikt och använd sedan sökfältet ovan."
+    }
+  ],
+  "4/1XCq": [
+    {
+      "type": 0,
+      "value": "Meddelande skickat!"
+    }
+  ],
+  "45425G": [
+    {
+      "type": 0,
+      "value": "Skapa lista"
+    }
+  ],
+  "47FYwb": [
+    {
+      "type": 0,
+      "value": "Avbryt"
+    }
+  ],
+  "4RD+CZ": [
+    {
+      "type": 0,
+      "value": "Frakt metod"
+    }
+  ],
+  "4WE+R8": [
+    {
+      "type": 0,
+      "value": "Servicedetaljer"
+    }
+  ],
+  "4WcB2q": [
+    {
+      "type": 0,
+      "value": "BESKRIVNING"
+    }
+  ],
+  "515QcK": [
+    {
+      "type": 0,
+      "value": "Lämna oss din telefon*"
+    }
+  ],
+  "54Ou53": [
+    {
+      "type": 0,
+      "value": "Max. filstorlek 2 MB"
+    }
+  ],
+  "54VA/h": [
+    {
+      "type": 1,
+      "value": "value"
+    },
+    {
+      "type": 0,
+      "value": " %"
+    }
+  ],
+  "5bOFRX": [
+    {
+      "type": 0,
+      "value": "Ta bort från listan"
+    }
+  ],
+  "5qDwFV": [
+    {
+      "type": 0,
+      "value": "Ny version är tillgänglig!"
+    }
+  ],
+  "5sc/mV": [
+    {
+      "type": 0,
+      "value": "Utforska "
+    },
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": "Stores instrumentpanel"
+        }
+      ],
+      "type": 8,
+      "value": "emphasis"
+    }
+  ],
+  "5sg7KC": [
+    {
+      "type": 0,
+      "value": "Lösenord"
+    }
+  ],
+  "5zZZ90": [
+    {
+      "type": 0,
+      "value": "Adressbok"
+    }
+  ],
+  "66HUnz": [
+    {
+      "type": 0,
+      "value": "Inställningar för kategorier"
+    }
+  ],
+  "6Hdj1s": [
+    {
+      "type": 0,
+      "value": "Vald resurs"
+    }
+  ],
+  "6I+DHW": [
+    {
+      "type": 0,
+      "value": "Välj prisklass"
+    }
+  ],
+  "6Iqx81": [
+    {
+      "type": 0,
+      "value": "Tjänsten har betygsatts"
+    }
+  ],
+  "6SY/Lj": [
+    {
+      "type": 0,
+      "value": "Namnlista"
+    }
+  ],
+  "6XQAoN": [
+    {
+      "type": 0,
+      "value": "tjänster hittades"
+    }
+  ],
+  "6orx1c": [
+    {
+      "type": 0,
+      "value": "Fakturaadress"
+    }
+  ],
+  "748LIQ": [
+    {
+      "type": 0,
+      "value": "Fortsätt som gäst"
+    }
+  ],
+  "79lKyO": [
+    {
+      "type": 0,
+      "value": "Sökresultat"
+    }
+  ],
+  "7EENi3": [
+    {
+      "type": 0,
+      "value": "1 stjärnor"
+    }
+  ],
+  "7NFfmz": [
+    {
+      "type": 0,
+      "value": "Produkter"
+    }
+  ],
+  "7NJAYu": [
+    {
+      "type": 0,
+      "value": "Fråga till säljaren"
+    }
+  ],
+  "7OW8BT": [
+    {
+      "type": 0,
+      "value": "Konfiguration"
+    }
+  ],
+  "7UOvbT": [
+    {
+      "type": 0,
+      "value": "Off-line"
+    }
+  ],
+  "7uioo9": [
+    {
+      "type": 0,
+      "value": "Ingen lista vald eller inga tjänster har lagts till i listan ännu"
+    }
+  ],
+  "7wZ61D": [
+    {
+      "type": 0,
+      "value": "Återställning av lösenord"
+    }
+  ],
+  "8FpaMK": [
+    {
+      "type": 0,
+      "value": "Stat/provins"
+    }
+  ],
+  "8RtoNZ": [
+    {
+      "type": 0,
+      "value": "Om vi u200bu200bbehöver kontakta dig för ytterligare information"
+    }
+  ],
+  "8WtyrD": [
+    {
+      "type": 0,
+      "value": "spanska"
+    }
+  ],
+  "8YHEGD": [
+    {
+      "type": 0,
+      "value": "Rapporteringstjänst"
+    }
+  ],
+  "8cv9D4": [
+    {
+      "type": 0,
+      "value": "Nästa steg"
+    }
+  ],
+  "8sXhNb": [
+    {
+      "type": 0,
+      "value": "Se lista"
+    }
+  ],
+  "8uddA3": [
+    {
+      "type": 0,
+      "value": "Ogiltig betalningsinlämning."
+    }
+  ],
+  "9AgXoz": [
+    {
+      "type": 0,
+      "value": "Sälja"
+    }
+  ],
+  "9FjY/U": [
+    {
+      "type": 1,
+      "value": "serviceName"
+    },
+    {
+      "type": 0,
+      "value": " har lagts till i "
+    },
+    {
+      "type": 1,
+      "value": "listName"
+    },
+    {
+      "type": 0,
+      "value": "?"
+    }
+  ],
+  "9T40iW": [
+    {
+      "type": 0,
+      "value": "Den här tjänsten har inga associerade resurser"
+    }
+  ],
+  "9WRlF4": [
+    {
+      "type": 0,
+      "value": "Skicka"
+    }
+  ],
+  "9k5qQl": [
+    {
+      "type": 0,
+      "value": "Betalningsmetoder"
+    }
+  ],
+  "9pv+ed": [
+    {
+      "type": 0,
+      "value": "Du måste ange en anledning till varför du anser att den här tjänsten måste rapporteras (t.ex. den här tjänsten finns inte längre, den här tjänsteleverantören har stängt, den här tjänsten är olämplig, etc.). Du kan lägga till bilder för att illustrera dina kommentarer."
+    }
+  ],
+  "9qnRSj": [
+    {
+      "type": 0,
+      "value": "Visa +"
+    }
+  ],
+  "9yjrxH": [
+    {
+      "type": 0,
+      "value": "ATTRIBUT"
+    }
+  ],
+  "A1T/GS": [
+    {
+      "type": 0,
+      "value": "Sök i butiken"
+    }
+  ],
+  "AEzWZu": [
+    {
+      "type": 0,
+      "value": "Personliga detaljer"
+    }
+  ],
+  "AJRRLW": [
+    {
+      "type": 0,
+      "value": "Avbryt beställning"
+    }
+  ],
+  "AMbsOQ": [
+    {
+      "type": 0,
+      "value": "Börja sälja nu"
+    }
+  ],
+  "Ak/e7n": [
+    {
+      "type": 0,
+      "value": "Tyvärr, men vi kunde inte matcha några sökresultat för: "
+    },
+    {
+      "type": 1,
+      "value": "search"
+    }
+  ],
+  "B52Em/": [
+    {
+      "type": 0,
+      "value": "Adressrad 1"
+    }
+  ],
+  "BE6zwi": [
+    {
+      "type": 0,
+      "value": "Sökterm:"
+    }
+  ],
+  "BJ2TKX": [
+    {
+      "type": 0,
+      "value": "Kolla upp"
+    }
+  ],
+  "BQuFrc": [
+    {
+      "type": 1,
+      "value": "duration"
+    },
+    {
+      "type": 0,
+      "value": " minuter"
+    }
+  ],
+  "BS3FlI": [
+    {
+      "type": 0,
+      "value": "Fortsätt till recension"
+    }
+  ],
+  "BdjtYv": [
+    {
+      "type": 0,
+      "value": "Dela denna tjänst"
+    }
+  ],
+  "Bdy3TR": [
+    {
+      "type": 0,
+      "value": "Hur nära?"
+    }
+  ],
+  "Bg8a3A": [
+    {
+      "type": 0,
+      "value": "Du kan ställa in dina inställningar när som helst på din användarprofilsida. Gå till konfiguration för att välja dina föredragna kategorier och platsinställningar."
+    }
+  ],
+  "C6lhFD": [
+    {
+      "type": 0,
+      "value": "Du är bara ett steg från att aktivera ditt konto på dRural Marketplace."
+    }
+  ],
+  "CTSLLJ": [
+    {
+      "type": 0,
+      "value": "Min vagn"
+    }
+  ],
+  "Cft/3d": [
+    {
+      "type": 0,
+      "value": "Jag vill få information från dRural"
+    }
+  ],
+  "ChDAaD": [
+    {
+      "type": 0,
+      "value": "Delvis laddad"
+    }
+  ],
+  "CiCBq1": [
+    {
+      "type": 1,
+      "value": "totalReviews"
+    },
+    {
+      "type": 0,
+      "value": " recensioner"
+    }
+  ],
+  "CilfB2": [
+    {
+      "type": 0,
+      "value": "Se alla recensioner"
+    }
+  ],
+  "CtoGPj": [
+    {
+      "type": 0,
+      "value": "Din beställning har lagts, den måste bekräftas av personalen, vi skickar ett mail till dig när den är klar."
+    }
+  ],
+  "D+bY29": [
+    {
+      "type": 0,
+      "value": "Frakt metod"
+    }
+  ],
+  "DClFoP": [
+    {
+      "type": 0,
+      "value": "För att uppdatera applikationen till den senaste versionen, vänligen uppdatera sidan!"
+    }
+  ],
+  "DP5VOH": [
+    {
+      "type": 0,
+      "value": "leveransadress"
+    }
+  ],
+  "Dfjc65": [
+    {
+      "type": 0,
+      "value": "Bäst recenserad"
+    }
+  ],
+  "Dmb0KB": [
+    {
+      "type": 0,
+      "value": "Betalning behöver bekräftelse men data som krävs för bekräftelse har inte mottagits från servern."
+    }
+  ],
+  "E4wn7I": [
+    {
+      "type": 0,
+      "value": "Inga data hittades"
+    }
+  ],
+  "EGHx3D": [
+    {
+      "type": 1,
+      "value": "rating"
+    },
+    {
+      "type": 0,
+      "value": " av 5"
+    }
+  ],
+  "EWw/tK": [
+    {
+      "type": 0,
+      "value": "Tillämpa"
+    }
+  ],
+  "EeMv7L": [
+    {
+      "type": 0,
+      "value": "Ta bort lista"
+    }
+  ],
+  "EiEAKD": [
+    {
+      "type": 0,
+      "value": "holländska"
+    }
+  ],
+  "EnCOBJ": [
+    {
+      "type": 0,
+      "value": "köpa"
+    }
+  ],
+  "Ev6SEF": [
+    {
+      "type": 0,
+      "value": "nytt lösenord"
+    }
+  ],
+  "ExS48t": [
+    {
+      "type": 0,
+      "value": "Standardfaktureringsadress"
+    }
+  ],
+  "F6NI+0": [
+    {
+      "type": 0,
+      "value": "Hur planerar du att använda dRural?"
+    }
+  ],
+  "FGJNIh": [
+    {
+      "type": 0,
+      "value": "RENGÖRA FILTER"
+    }
+  ],
+  "FyUqOJ": [
+    {
+      "type": 0,
+      "value": "Fullbokat"
+    }
+  ],
+  "G+l9fC": [
+    {
+      "type": 0,
+      "value": "Alla recensioner"
+    }
+  ],
+  "GJoRL/": [
+    {
+      "type": 0,
+      "value": "Sälj dina tjänster i dRural"
+    }
+  ],
+  "GXJC43": [
+    {
+      "type": 0,
+      "value": "Skapa ny önskelista"
+    }
+  ],
+  "GfYXu2": [
+    {
+      "type": 0,
+      "value": "Tillbaka till mina önskelistor"
+    }
+  ],
+  "GytZH5": [
+    {
+      "type": 0,
+      "value": "Söktjänster"
+    }
+  ],
+  "H0JBH6": [
+    {
+      "type": 0,
+      "value": "Logga ut"
+    }
+  ],
+  "HgSye9": [
+    {
+      "type": 0,
+      "value": "dRural © 2022"
+    }
+  ],
+  "I5NMJ8": [
+    {
+      "type": 0,
+      "value": "Mer"
+    }
+  ],
+  "IY2TiN": [
+    {
+      "type": 0,
+      "value": "Redigera önskelistans namn"
+    }
+  ],
+  "IeNMka": [
+    {
+      "type": 0,
+      "value": "Gå till min varukorg"
+    }
+  ],
+  "InWqys": [
+    {
+      "type": 0,
+      "value": "Frivillig"
+    }
+  ],
+  "IwxuZY": [
+    {
+      "type": 0,
+      "value": "dRural vill komma åt din plats för att kunna erbjuda en bättre service och visa dig tjänsterna närmast dig."
+    }
+  ],
+  "J+buBa": [
+    {
+      "type": 0,
+      "value": "Gammalt lösenord"
+    }
+  ],
+  "J6Eyds": [
+    {
+      "type": 0,
+      "value": "Inköp"
+    }
+  ],
+  "JE4+x5": [
+    {
+      "type": 0,
+      "value": "Ta bort tjänsten från önskelistan"
+    }
+  ],
+  "JItzoH": [
+    {
+      "type": 0,
+      "value": "Beställa"
+    }
+  ],
+  "JN6MSK": [
+    {
+      "type": 0,
+      "value": "Ange nytt lösenord"
+    }
+  ],
+  "JRlv3P": [
+    {
+      "type": 0,
+      "value": "Uppmärksamhet! detta kommer att ta bort dina kontodata permanent, om du vill fortsätta processen klickar du på bekräfta-knappen nedan."
+    }
+  ],
+  "JSooiR": [
+    {
+      "type": 0,
+      "value": "Företagsnamn (ej obligatorisk)"
+    }
+  ],
+  "JXdbo8": [
+    {
+      "type": 0,
+      "value": "Gjort"
+    }
+  ],
+  "JqiqNj": [
+    {
+      "type": 0,
+      "value": "Något gick fel"
+    }
+  ],
+  "Jrw8G7": [
+    {
+      "type": 0,
+      "value": "Ändra"
+    }
+  ],
+  "KGERmF": [
+    {
+      "type": 0,
+      "value": "Bokningsreferensnummer"
+    }
+  ],
+  "KSlktl": [
+    {
+      "type": 0,
+      "value": "Kolla din e-post, du borde ha fått en massage med en länk för att bekräfta borttagningen av ditt konto."
+    }
+  ],
+  "KUBgP9": [
+    {
+      "type": 0,
+      "value": "Information om kassan"
+    }
+  ],
+  "KmgRL+": [
+    {
+      "type": 0,
+      "value": "Något gick fel med kartansökan"
+    }
+  ],
+  "KorORN": [
+    {
+      "type": 0,
+      "value": "Finns inte att köpa"
+    }
+  ],
+  "L8seEc": [
+    {
+      "type": 0,
+      "value": "Delsumma"
+    }
+  ],
+  "LABC/Y": [
+    {
+      "type": 0,
+      "value": "Mer +"
+    }
+  ],
+  "LFcS5g": [
+    {
+      "type": 0,
+      "value": "Betala i butik"
+    }
+  ],
+  "LMdzKV": [
+    {
+      "type": 0,
+      "value": "Du kanske gillar"
+    }
+  ],
+  "LkCowx": [
+    {
+      "type": 0,
+      "value": "Vänligen välj betalningsmetod."
+    }
+  ],
+  "LmAYuU": [
+    {
+      "type": 0,
+      "value": "km"
+    }
+  ],
+  "Lv0zJu": [
+    {
+      "type": 0,
+      "value": "Detaljer"
+    }
+  ],
+  "MJ2jZQ": [
+    {
+      "type": 0,
+      "value": "Total"
+    }
+  ],
+  "MVlVYL": [
+    {
+      "type": 0,
+      "value": "din vagn är tom"
+    }
+  ],
+  "MYiZl4": [
+    {
+      "type": 0,
+      "value": "Service recensioner"
+    }
+  ],
+  "MjOjxw": [
+    {
+      "type": 0,
+      "value": "Beställning annullerad"
+    }
+  ],
+  "Mnkq4K": [
+    {
+      "type": 0,
+      "value": "Berätta varför du anmäler den här tjänsten"
+    }
+  ],
+  "N1KsBC": [
+    {
+      "type": 0,
+      "value": "Bokningsdetaljer"
+    }
+  ],
+  "N2S5pk": [
+    {
+      "type": 0,
+      "value": "ser tomt ut"
+    }
+  ],
+  "NAidKb": [
+    {
+      "type": 0,
+      "value": "Aviseringar"
+    }
+  ],
+  "NT+3fY": [
+    {
+      "type": 0,
+      "value": "Vägrade"
+    }
+  ],
+  "NdFB/s": [
+    {
+      "type": 0,
+      "value": "Alla tjänster"
+    }
+  ],
+  "NfwDx2": [
+    {
+      "type": 0,
+      "value": "Orderdetaljer"
+    }
+  ],
+  "NmK6zy": [
+    {
+      "type": 0,
+      "value": "Betalning"
+    }
+  ],
+  "O95R3Z": [
+    {
+      "type": 0,
+      "value": "Telefon"
+    }
+  ],
+  "OK5+Fh": [
+    {
+      "type": 0,
+      "value": "Variant"
+    }
+  ],
+  "OKGZwS": [
+    {
+      "type": 0,
+      "value": "Tjänsten har lagts till på önskelistan"
+    }
+  ],
+  "OV7mgg": [
+    {
+      "type": 0,
+      "value": "Ladda ner faktura"
+    }
+  ],
+  "Oa/XSP": [
+    {
+      "type": 0,
+      "value": "adress"
+    }
+  ],
+  "OtMych": [
+    {
+      "type": 0,
+      "value": "Ta bort recension"
+    }
+  ],
+  "P+JT42": [
+    {
+      "type": 0,
+      "value": "Mina adresser"
+    }
+  ],
+  "P7PLVj": [
+    {
+      "type": 0,
+      "value": "Datum"
+    }
+  ],
+  "PFtMy9": [
+    {
+      "type": 0,
+      "value": "Inställt"
+    }
+  ],
+  "PR2F1h": [
+    {
+      "type": 1,
+      "value": "message"
+    }
+  ],
+  "PRlD0A": [
+    {
+      "type": 0,
+      "value": "Frakt"
+    }
+  ],
+  "PRzft5": [
+    {
+      "type": 0,
+      "value": "Bästsäljare"
+    }
+  ],
+  "PgJGHT": [
+    {
+      "type": 0,
+      "value": "Tillgängligt"
+    }
+  ],
+  "PjRbR1": [
+    {
+      "type": 0,
+      "value": "Länk 2"
+    }
+  ],
+  "PlBReU": [
+    {
+      "type": 0,
+      "value": "Logga ut"
+    }
+  ],
+  "PspJ6Q": [
+    {
+      "type": 0,
+      "value": "Välj resurs"
+    }
+  ],
+  "Q62mJ9": [
+    {
+      "type": 0,
+      "value": "Välkommen, "
+    },
+    {
+      "type": 1,
+      "value": "username"
+    },
+    {
+      "type": 0,
+      "value": "!"
+    }
+  ],
+  "Q6wcZ5": [
+    {
+      "type": 0,
+      "value": "Förnamn"
+    }
+  ],
+  "Q8Qw5B": [
+    {
+      "type": 0,
+      "value": "Beskrivning"
+    }
+  ],
+  "QH5kv3": [
+    {
+      "type": 0,
+      "value": "Närmast mig"
+    }
+  ],
+  "QRsC1D": [
+    {
+      "type": 0,
+      "value": "Din plats"
+    }
+  ],
+  "R+J5ox": [
+    {
+      "type": 0,
+      "value": "Recension"
+    }
+  ],
+  "RDuVyt": [
+    {
+      "type": 0,
+      "value": "Tillåt dRural att spåra din plats så att vi kan visa dig de mest fantastiska tjänsterna nära dig."
+    }
+  ],
+  "RMAVgz": [
+    {
+      "type": 0,
+      "value": "Länk 4"
+    }
+  ],
+  "RQ44K7": [
+    {
+      "type": 0,
+      "value": "Föredragna kategorier"
+    }
+  ],
+  "RqOE8H": [
+    {
+      "type": 0,
+      "value": "Standard adress"
+    }
+  ],
+  "RtKR9V": [
+    {
+      "type": 0,
+      "value": "Geolokalisering"
+    }
+  ],
+  "RzsKm8": [
+    {
+      "type": 0,
+      "value": "Fraktmetoder"
+    }
+  ],
+  "SENRqu": [
+    {
+      "type": 0,
+      "value": "Hjälp"
+    }
+  ],
+  "SGdcJD": [
+    {
+      "type": 0,
+      "value": "Ange kod"
+    }
+  ],
+  "SQJto2": [
+    {
+      "type": 0,
+      "value": "Logga in"
+    }
+  ],
+  "Seanpx": [
+    {
+      "type": 0,
+      "value": "Nödvändig"
+    }
+  ],
+  "SuBsH3": [
+    {
+      "type": 0,
+      "value": "Betalningen kunde inte bekräftas."
+    }
+  ],
+  "TE4fIS": [
+    {
+      "type": 0,
+      "value": "Stad"
+    }
+  ],
+  "TSP1Mj": [
+    {
+      "type": 0,
+      "value": "Tillbaka till tjänsten"
+    }
+  ],
+  "TwyMau": [
+    {
+      "type": 0,
+      "value": "konto"
+    }
+  ],
+  "U2el92": [
+    {
+      "type": 0,
+      "value": "Betalningen avbröts."
+    }
+  ],
+  "UHXgba": [
+    {
+      "type": 0,
+      "value": "Tillgänglig dag"
+    }
+  ],
+  "USfLuS": [
+    {
+      "type": 0,
+      "value": "Ange ett nytt lösenord"
+    }
+  ],
+  "Ut7ZVi": [
+    {
+      "type": 0,
+      "value": "Betygsätt din upplevelse"
+    }
+  ],
+  "V6P9GB": [
+    {
+      "type": 0,
+      "value": "Du har inte lagt till något i din väska. Vi är säkra på att du kommer att hitta något i vår butik"
+    }
+  ],
+  "VKb1MS": [
+    {
+      "type": 0,
+      "value": "Kategorier"
+    }
+  ],
+  "VcQV4Z": [
+    {
+      "type": 0,
+      "value": "Fullt återbetald"
+    }
+  ],
+  "Vf57Ie": [
+    {
+      "type": 0,
+      "value": "Delvis uppfyllt"
+    }
+  ],
+  "VhcCOO": [
+    {
+      "type": 0,
+      "value": "Ny önskelista"
+    }
+  ],
+  "W6nwjo": [
+    {
+      "type": 0,
+      "value": "Förslag"
+    }
+  ],
+  "WCcbn6": [
+    {
+      "type": 0,
+      "value": "Senast uppdaterad Stigande"
+    }
+  ],
+  "WGCGLH": [
+    {
+      "type": 0,
+      "value": "Ja, jag vill ta bort mitt konto i dRural."
+    }
+  ],
+  "WHgdsk": [
+    {
+      "type": 0,
+      "value": "Slut i lager"
+    }
+  ],
+  "WKXLYM": [
+    {
+      "type": 0,
+      "value": "dRural, den digitala marknadsplatsen som förbinder användare med lokala tjänsteleverantörer i närheten"
+    }
+  ],
+  "Wai7xX": [
+    {
+      "type": 0,
+      "value": "Det verkar som om token för lösenordsåterställning inte längre är giltig."
+    }
+  ],
+  "Wfj7wS": [
+    {
+      "type": 0,
+      "value": "Vi har skickat ett e-postmeddelande till dig med instruktioner om hur du ändrar ditt lösenord."
+    }
+  ],
+  "WghPED": [
+    {
+      "type": 0,
+      "value": "Tillbaka till login"
+    }
+  ],
+  "WkrNSk": [
+    {
+      "type": 0,
+      "value": "engelsk"
+    }
+  ],
+  "WmzATS": [
+    {
+      "type": 0,
+      "value": "Telefonnummer: "
+    },
+    {
+      "type": 1,
+      "value": "phone"
+    }
+  ],
+  "WxEpVL": [
+    {
+      "type": 0,
+      "value": "Lägg till ny "
+    },
+    {
+      "type": 1,
+      "value": "type"
+    }
+  ],
+  "XS0QmX": [
+    {
+      "type": 0,
+      "value": "Rabatt: "
+    },
+    {
+      "type": 1,
+      "value": "discountName"
+    }
+  ],
+  "XSr1Wg": [
+    {
+      "type": 0,
+      "value": "Fel vid betalningsinlämning. Stripe gateway returnerade ingen betalningsmetod i nyttolasten."
+    }
+  ],
+  "XkwMjW": [
+    {
+      "type": 0,
+      "value": "Maximal kvantitet är "
+    },
+    {
+      "type": 1,
+      "value": "maxQuantity"
+    }
+  ],
+  "Xo3t9z": [
+    {
+      "type": 0,
+      "value": "Spara till önskelistan"
+    }
+  ],
+  "XvZCaw": [
+    {
+      "type": 0,
+      "value": "Återbetalas delvis"
+    }
+  ],
+  "YKXkbB": [
+    {
+      "type": 0,
+      "value": "Hallå,"
+    }
+  ],
+  "YM709/": [
+    {
+      "type": 0,
+      "value": "Ange e-postadress."
+    }
+  ],
+  "YQVUHR": [
+    {
+      "type": 0,
+      "value": "VISA ALLA ALTERNATIV"
+    }
+  ],
+  "YfYlZP": [
+    {
+      "type": 0,
+      "value": "Du har inga kategorier valda. Klicka på redigera-knappen för att börja välja."
+    }
+  ],
+  "Ynjq+C": [
+    {
+      "type": 0,
+      "value": "Fulladdad"
+    }
+  ],
+  "YqRDRu": [
+    {
+      "type": 0,
+      "value": "4 stjärnor"
+    }
+  ],
+  "Yx6py4": [
+    {
+      "type": 0,
+      "value": "Betalningsstatus"
+    }
+  ],
+  "Yy/yDL": [
+    {
+      "type": 0,
+      "value": "Återställ lösenord"
+    }
+  ],
+  "Yywm0p": [
+    {
+      "type": 0,
+      "value": "Fortsätt handla"
+    }
+  ],
+  "ZBUdiz": [
+    {
+      "type": 0,
+      "value": "Total kostnad"
+    }
+  ],
+  "ZIYTq9": [
+    {
+      "type": 0,
+      "value": "Ansluter dig till de tjänster du behöver"
+    }
+  ],
+  "ZMCsQ+": [
+    {
+      "type": 0,
+      "value": "Söktjänster nära mig"
+    }
+  ],
+  "a/4SMm": [
+    {
+      "type": 0,
+      "value": "obligatoriskt fält"
+    }
+  ],
+  "a8gxsN": [
+    {
+      "type": 0,
+      "value": "Betalningen nekades. Försök att betala igen med en annan betalningsmetod eller ett annat kort."
+    }
+  ],
+  "aIRWQB": [
+    {
+      "type": 0,
+      "value": "Tillbaka till hemmet"
+    }
+  ],
+  "aWoA8g": [
+    {
+      "type": 0,
+      "value": "Personlig information"
+    }
+  ],
+  "aei+HO": [
+    {
+      "type": 0,
+      "value": "Välkommen till dRural!"
+    }
+  ],
+  "aheQdn": [
+    {
+      "type": 0,
+      "value": "Efternamn"
+    }
+  ],
+  "ast9q1": [
+    {
+      "type": 0,
+      "value": "Orderstatus"
+    }
+  ],
+  "ataTev": [
+    {
+      "type": 0,
+      "value": "Ouppfylld"
+    }
+  ],
+  "b11WUZ": [
+    {
+      "type": 0,
+      "value": "Timme"
+    }
+  ],
+  "b1zuN9": [
+    {
+      "type": 0,
+      "value": "Pris"
+    }
+  ],
+  "b8sVDI": [
+    {
+      "type": 0,
+      "value": "Sekretessmeddelande"
+    }
+  ],
+  "baOQrt": [
+    {
+      "type": 0,
+      "value": "Tack för att du lämnade din feedback. Din rapport kommer att granskas av en dRural-administratör."
+    }
+  ],
+  "bsM94i": [
+    {
+      "type": 0,
+      "value": "Fortsätt till frakt"
+    }
+  ],
+  "bzEaXJ": [
+    {
+      "type": 0,
+      "value": "Vad letar du efter?"
+    }
+  ],
+  "c7/79+": [
+    {
+      "type": 0,
+      "value": "Fakturaadress"
+    }
+  ],
+  "c8W0mH": [
+    {
+      "type": 0,
+      "value": "Har du presentkort eller rabattkod?"
+    }
+  ],
+  "cQiUt4": [
+    {
+      "type": 0,
+      "value": "Lägg till ny adress"
+    }
+  ],
+  "cZyhkN": [
+    {
+      "type": 0,
+      "value": "Ladda upp foton (valfritt)"
+    }
+  ],
+  "ccXLVi": [
+    {
+      "type": 0,
+      "value": "Kategori"
+    }
+  ],
+  "ceaFSA": [
+    {
+      "type": 0,
+      "value": "Standard leveransadress"
+    }
+  ],
+  "clY0ZY": [
+    {
+      "type": 0,
+      "value": "jag vill sälja"
+    }
+  ],
+  "cpCJUk": [
+    {
+      "type": 0,
+      "value": "Registrerad användare"
+    }
+  ],
+  "cyR7Kh": [
+    {
+      "type": 0,
+      "value": "Tillbaka"
+    }
+  ],
+  "d3jSMU": [
+    {
+      "type": 0,
+      "value": "Du kan ladda upp upp till 5 foton."
+    }
+  ],
+  "d3lWas": [
+    {
+      "type": 0,
+      "value": "skapa ett konto"
+    }
+  ],
+  "dABWQd": [
+    {
+      "type": 0,
+      "value": "Inga tjänster hittades"
+    }
+  ],
+  "dC3u7Z": [
+    {
+      "type": 0,
+      "value": "Mest populär"
+    }
+  ],
+  "dUxyza": [
+    {
+      "type": 0,
+      "value": "Recensioner"
+    }
+  ],
+  "deEeEI": [
+    {
+      "type": 0,
+      "value": "Registrera"
+    }
+  ],
+  "dlXyEz": [
+    {
+      "type": 1,
+      "value": "error"
+    }
+  ],
+  "e6Ph5+": [
+    {
+      "type": 0,
+      "value": "Adress"
+    }
+  ],
+  "eKEL/g": [
+    {
+      "type": 0,
+      "value": "I väntan på"
+    }
+  ],
+  "eh90Dc": [
+    {
+      "type": 1,
+      "value": "reviewsCount"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "type": 1,
+      "value": "reviews"
+    }
+  ],
+  "ejEGdx": [
+    {
+      "type": 0,
+      "value": "Hem"
+    }
+  ],
+  "erE1I9": [
+    {
+      "type": 0,
+      "value": "Måste vara en giltig e-postadress"
+    }
+  ],
+  "ev8nQc": [
+    {
+      "type": 0,
+      "value": "Pris valt: "
+    },
+    {
+      "type": 1,
+      "value": "pge"
+    },
+    {
+      "type": 0,
+      "value": " - "
+    },
+    {
+      "type": 1,
+      "value": "ple"
+    },
+    {
+      "type": 0,
+      "value": " €"
+    }
+  ],
+  "ex+q9+": [
+    {
+      "type": 0,
+      "value": "Redigera adress"
+    }
+  ],
+  "ezoYNP": [
+    {
+      "type": 0,
+      "value": "Stripe betalningsgateway kunde inte visas. Randelement tillhandahölls inte."
+    }
+  ],
+  "f/jyk+": [
+    {
+      "type": 0,
+      "value": "Kroatisk"
+    }
+  ],
+  "f1bdYj": [
+    {
+      "type": 0,
+      "value": "Telefonnumret måste innehålla 15 eller färre siffror"
+    }
+  ],
+  "fE3ujL": [
+    {
+      "type": 0,
+      "value": "Orderdetaljer"
+    }
+  ],
+  "fVvfyb": [
+    {
+      "type": 0,
+      "value": "Redigera listnamn"
+    }
+  ],
+  "fq86MK": [
+    {
+      "type": 0,
+      "value": "Senaste"
+    }
+  ],
+  "gDxz/O": [
+    {
+      "type": 0,
+      "value": "Boktjänst"
+    }
+  ],
+  "gF7/Mv": [
+    {
+      "type": 0,
+      "value": "5 stjärnor"
+    }
+  ],
+  "gVph2B": [
+    {
+      "type": 0,
+      "value": "Betalning behöver bekräftelse men data som krävs för bekräftelse som tas emot från servern är felaktig."
+    }
+  ],
+  "gjwFsT": [
+    {
+      "type": 0,
+      "value": "Välj datum"
+    }
+  ],
+  "h4IxgY": [
+    {
+      "type": 0,
+      "value": "E-post bekräftad"
+    }
+  ],
+  "hDI+JM": [
+    {
+      "type": 0,
+      "value": "Sortera efter"
+    }
+  ],
+  "hMzcSq": [
+    {
+      "type": 0,
+      "value": "Meddelanden"
+    }
+  ],
+  "hNu2St": [
+    {
+      "type": 0,
+      "value": "Betala i butiken"
+    }
+  ],
+  "hX1ca3": [
+    {
+      "type": 0,
+      "value": "Gå tillbaka till Orderhistorik"
+    }
+  ],
+  "hXa/U/": [
+    {
+      "type": 0,
+      "value": "Eller kan du"
+    }
+  ],
+  "hcXlt0": [
+    {
+      "type": 0,
+      "value": "Länk 1"
+    }
+  ],
+  "hefnRL": [
+    {
+      "type": 0,
+      "value": "Ställ in som standardfaktureringsadress"
+    }
+  ],
+  "hqK0Mk": [
+    {
+      "type": 0,
+      "value": "Oj!... 404"
+    }
+  ],
+  "hr8Rxf": [
+    {
+      "type": 0,
+      "value": "Gå tillbaka till startsidan"
+    }
+  ],
+  "hvDAdI": [
+    {
+      "type": 0,
+      "value": "Lämna min recension"
+    }
+  ],
+  "hzSNj4": [
+    {
+      "type": 0,
+      "value": "instrumentbräda"
+    }
+  ],
+  "iFsDVR": [
+    {
+      "type": 0,
+      "value": "Läser in"
+    }
+  ],
+  "iWbl/h": [
+    {
+      "type": 0,
+      "value": "Delvis tillbaka"
+    }
+  ],
+  "iZ3kzM": [
+    {
+      "type": 0,
+      "value": "Jag har glömt mitt lösenord"
+    }
+  ],
+  "ijJ3es": [
+    {
+      "type": 1,
+      "value": "star"
+    },
+    {
+      "type": 0,
+      "value": " stjärnor"
+    }
+  ],
+  "ipg5B3": [
+    {
+      "type": 0,
+      "value": "Ett fel uppstod när betalningen skulle behandlas."
+    }
+  ],
+  "ipwTkh": [
+    {
+      "type": 0,
+      "value": "Samma som leveransadressen"
+    }
+  ],
+  "j5EA6m": [
+    {
+      "type": 0,
+      "value": "FORTSÄTT TILL UTCHECKNINGEN"
+    }
+  ],
+  "jAHnYU": [
+    {
+      "type": 0,
+      "value": "Tjänster nära dig"
+    }
+  ],
+  "jHKLNU": [
+    {
+      "type": 0,
+      "value": "Ange faktureringsadress."
+    }
+  ],
+  "jMQMBz": [
+    {
+      "type": 0,
+      "value": "Ta bort önskelista"
+    }
+  ],
+  "jNHZSz": [
+    {
+      "type": 0,
+      "value": "Det gick inte att annullera beställningen"
+    }
+  ],
+  "jY+f2f": [
+    {
+      "type": 0,
+      "value": "Uppfyllt"
+    }
+  ],
+  "jbbK0Z": [
+    {
+      "type": 0,
+      "value": "Ta bort recension?"
+    }
+  ],
+  "jnTBr4": [
+    {
+      "type": 0,
+      "value": "Visa alla resultat"
+    }
+  ],
+  "jrEpw7": [
+    {
+      "type": 0,
+      "value": "Du är nu inloggad"
+    }
+  ],
+  "jruD6p": [
+    {
+      "type": 0,
+      "value": "Bekräfta att ta bort konto"
+    }
+  ],
+  "jvgIPx": [
+    {
+      "type": 0,
+      "value": "Kommer att bli tillgänglig för köp på "
+    },
+    {
+      "type": 1,
+      "value": "date"
+    },
+    {
+      "type": 0,
+      "value": " på "
+    },
+    {
+      "type": 1,
+      "value": "time"
+    }
+  ],
+  "jvo0vs": [
+    {
+      "type": 0,
+      "value": "Spara"
+    }
+  ],
+  "jwiL7B": [
+    {
+      "type": 0,
+      "value": "Service rapporterad"
+    }
+  ],
+  "jy71nZ": [
+    {
+      "type": 0,
+      "value": "Mina önskelistor"
+    }
+  ],
+  "k+RUwL": [
+    {
+      "type": 0,
+      "value": "Välj dina favoritkategorier så att vi först kan visa dig de tjänster du är mer intresserad av. Du kan välja så många du vill."
+    }
+  ],
+  "k4brJy": [
+    {
+      "type": 0,
+      "value": "SKU"
+    }
+  ],
+  "kIdQvC": [
+    {
+      "type": 0,
+      "value": "SORTERA EFTER"
+    }
+  ],
+  "kVzyDt": [
+    {
+      "type": 0,
+      "value": "Tack för din beställning!"
+    }
+  ],
+  "kXMpVK": [
+    {
+      "type": 0,
+      "value": "Skriv lösenordet igen"
+    }
+  ],
+  "kjhGGf": [
+    {
+      "type": 0,
+      "value": "Kolla din inkorg"
+    }
+  ],
+  "ko8L67": [
+    {
+      "type": 0,
+      "value": "Kanske har du inte gjort dina val ännu"
+    }
+  ],
+  "kvOMtB": [
+    {
+      "type": 0,
+      "value": "Kreditkort"
+    }
+  ],
+  "lUSk94": [
+    {
+      "type": 0,
+      "value": "Ditt konto har inaktiverats och borttagningsprocessen har påbörjats."
+    }
+  ],
+  "ls6X+z": [
+    {
+      "type": 0,
+      "value": "Inga alternativ"
+    }
+  ],
+  "mBBSyK": [
+    {
+      "type": 0,
+      "value": "Mina kreditkort"
+    }
+  ],
+  "mHIlV5": [
+    {
+      "type": 0,
+      "value": "Butiksföreståndare"
+    }
+  ],
+  "mLwkSx": [
+    {
+      "type": 0,
+      "value": "Inställningar sparade!"
+    }
+  ],
+  "mOPLCp": [
+    {
+      "type": 0,
+      "value": "Avstånd valt: "
+    },
+    {
+      "type": 1,
+      "value": "distanceSelected"
+    },
+    {
+      "type": 0,
+      "value": " km"
+    }
+  ],
+  "mah+Bl": [
+    {
+      "type": 0,
+      "value": "Totalbelopp"
+    }
+  ],
+  "msgy7n": [
+    {
+      "type": 0,
+      "value": "Välkommen tillbaka till dRural!"
+    }
+  ],
+  "mtIIl7": [
+    {
+      "type": 0,
+      "value": "banköverföring"
+    }
+  ],
+  "n6M10I": [
+    {
+      "type": 0,
+      "value": "Pris Hög-Låg"
+    }
+  ],
+  "n74igO": [
+    {
+      "type": 0,
+      "value": "Inte laddad"
+    }
+  ],
+  "n7yYXG": [
+    {
+      "type": 0,
+      "value": "Service"
+    }
+  ],
+  "n82YXC": [
+    {
+      "type": 0,
+      "value": "Mina listor"
+    }
+  ],
+  "n8Z9ys": [
+    {
+      "type": 0,
+      "value": "Namnökning"
+    }
+  ],
+  "nFQbxh": [
+    {
+      "type": 0,
+      "value": "Betalningsmetod"
+    }
+  ],
+  "nJCVT0": [
+    {
+      "type": 0,
+      "value": "Inga artiklar tillgängliga"
+    }
+  ],
+  "nJPv4b": [
+    {
+      "type": 0,
+      "value": "Betalningsmetod har inte skapats."
+    }
+  ],
+  "niQNPE": [
+    {
+      "type": 0,
+      "value": "Bokningsnummer"
+    }
+  ],
+  "o+nfLw": [
+    {
+      "type": 1,
+      "value": "name"
+    }
+  ],
+  "o3XhL3": [
+    {
+      "type": 0,
+      "value": "Avstånd från min plats:"
+    }
+  ],
+  "o4p2Q6": [
+    {
+      "type": 0,
+      "value": "Användarvillkor"
+    }
+  ],
+  "oQY0a2": [
+    {
+      "type": 0,
+      "value": "Adress Linje 2"
+    }
+  ],
+  "oVktm9": [
+    {
+      "type": 0,
+      "value": "Utvalda tjänster"
+    }
+  ],
+  "oYUboz": [
+    {
+      "type": 0,
+      "value": "Ange din e-postadress så skickar vi instruktioner för att återställa ditt lösenord."
+    }
+  ],
+  "ovr4vj": [
+    {
+      "type": 0,
+      "value": "svenska"
+    }
+  ],
+  "p+kmJg": [
+    {
+      "type": 0,
+      "value": "Återställ ditt lösenord"
+    }
+  ],
+  "pEJQZZ": [
+    {
+      "type": 0,
+      "value": "Du kan ändra dina inställningar när som helst på din användarprofilsida. Gå till konfiguration för att välja dina föredragna kategorier och platsinställningar."
+    }
+  ],
+  "pFqKoB": [
+    {
+      "type": 0,
+      "value": "Det kan ta upp till 24 timmar att helt ta bort all data som är kopplad till ditt konto."
+    }
+  ],
+  "pGDBLH": [
+    {
+      "type": 0,
+      "value": "Om du inte vill registrera ett konto, oroa dig inte. Du kan gå till kassan som gäst. Vi bryr oss om dig lika mycket som alla registrerade användare."
+    }
+  ],
+  "pH1N57": [
+    {
+      "type": 0,
+      "value": "3 stjärnor"
+    }
+  ],
+  "pgOl4C": [
+    {
+      "type": 0,
+      "value": "Klicka på redigera-knappen om du vill ta bort ditt konto."
+    }
+  ],
+  "qHtK5E": [
+    {
+      "type": 0,
+      "value": "Din e-post har bekräftats. Gå tillbaka till inloggning för att komma in i dRural."
+    }
+  ],
+  "qIzA6S": [
+    {
+      "type": 0,
+      "value": "Vi kan inte hitta en sida du letar efter! Du kan ha skrivit fel adress eller så kan sidan ha flyttats. Vi beklagar felet och hoppas att du får en bra dag."
+    }
+  ],
+  "qRAN5x": [
+    {
+      "type": 0,
+      "value": "FILTRERA EFTER"
+    }
+  ],
+  "qVGRIE": [
+    {
+      "type": 0,
+      "value": "Kvantitet"
+    }
+  ],
+  "qr8m+g": [
+    {
+      "type": 0,
+      "value": "Ditt ordernummer är"
+    }
+  ],
+  "qyQ7t4": [
+    {
+      "type": 0,
+      "value": "Sök"
+    }
+  ],
+  "r2Jjms": [
+    {
+      "type": 0,
+      "value": "Logga in"
+    }
+  ],
+  "rELDbB": [
+    {
+      "type": 0,
+      "value": "Uppdatera"
+    }
+  ],
+  "rI+UPp": [
+    {
+      "type": 0,
+      "value": "Det gick inte att generera hmac-token"
+    }
+  ],
+  "rSx7QN": [
+    {
+      "type": 0,
+      "value": "Ange min plats manuellt"
+    }
+  ],
+  "reMHa9": [
+    {
+      "type": 0,
+      "value": "Stripe gateway felkonfigurerad. API-nyckel tillhandahålls inte."
+    }
+  ],
+  "rhKM1Z": [
+    {
+      "type": 0,
+      "value": "Service tillhandahålls av"
+    }
+  ],
+  "rmp2xg": [
+    {
+      "type": 0,
+      "value": "Mitt lösenord"
+    }
+  ],
+  "rvirM2": [
+    {
+      "type": 0,
+      "value": "Plats"
+    }
+  ],
+  "s/8bAh": [
+    {
+      "type": 0,
+      "value": "Ta bort foto"
+    }
+  ],
+  "s3X0AG": [
+    {
+      "type": 0,
+      "value": "Ordning #"
+    }
+  ],
+  "sPkeAp": [
+    {
+      "type": 0,
+      "value": "Måste innehålla 7 tecken och minst en versal, en gemen, en siffra och ett specialfall."
+    }
+  ],
+  "sgroIS": [
+    {
+      "type": 0,
+      "value": "2 stjärnor"
+    }
+  ],
+  "shwVin": [
+    {
+      "type": 0,
+      "value": "Vi ser att du är upptagen nu"
+    }
+  ],
+  "sk7Ets": [
+    {
+      "type": 0,
+      "value": "Lösenordet måste matcha!"
+    }
+  ],
+  "sy+pv5": [
+    {
+      "type": 0,
+      "value": "E-post"
+    }
+  ],
+  "t2ZOTV": [
+    {
+      "type": 0,
+      "value": "Är du säker på att du vill ta bort önskelistan "
+    },
+    {
+      "type": 1,
+      "value": "listName"
+    },
+    {
+      "type": 0,
+      "value": "?"
+    }
+  ],
+  "t38Hon": [
+    {
+      "type": 0,
+      "value": "Ett okänt betalningsfel uppstod."
+    }
+  ],
+  "tLca6A": [
+    {
+      "type": 0,
+      "value": "Telefonnumret är inte giltigt. Ange landskod följt av nummer utan mellanslag."
+    }
+  ],
+  "tWmr3d": [
+    {
+      "type": 0,
+      "value": "Bokningstjänst"
+    }
+  ],
+  "ts5w+M": [
+    {
+      "type": 0,
+      "value": "Obekräftad"
+    }
+  ],
+  "tzMNF3": [
+    {
+      "type": 0,
+      "value": "Status"
+    }
+  ],
+  "u3lkk5": [
+    {
+      "type": 0,
+      "value": "Denna dag har inga lediga timmar kvar."
+    }
+  ],
+  "uBT5kf": [
+    {
+      "type": 0,
+      "value": "Vi har mailat dig en orderbekräftelse där du kan kontrollera de beställda tjänsterna."
+    }
+  ],
+  "uPNlBw": [
+    {
+      "type": 0,
+      "value": "E-post: "
+    },
+    {
+      "type": 1,
+      "value": "email"
+    }
+  ],
+  "uTagzw": [
+    {
+      "type": 0,
+      "value": "Visar "
+    },
+    {
+      "type": 1,
+      "value": "userCategoriesCount"
+    },
+    {
+      "type": 0,
+      "value": " av "
+    },
+    {
+      "type": 1,
+      "value": "userCategoriesTotalCount"
+    }
+  ],
+  "uVkBuo": [
+    {
+      "type": 0,
+      "value": "Välj "
+    },
+    {
+      "type": 1,
+      "value": "selectLabel"
+    }
+  ],
+  "ugX5fl": [
+    {
+      "type": 0,
+      "value": "Rapporttjänst"
+    }
+  ],
+  "ulh3kf": [
+    {
+      "type": 0,
+      "value": "Samlingar"
+    }
+  ],
+  "vONi+O": [
+    {
+      "type": 0,
+      "value": "Land"
+    }
+  ],
+  "vQt5XU": [
+    {
+      "type": 0,
+      "value": "Beställningshistorik"
+    }
+  ],
+  "vUEawW": [
+    {
+      "type": 0,
+      "value": "Tack för att du lämnade din feedback"
+    }
+  ],
+  "vfG+nh": [
+    {
+      "type": 0,
+      "value": "Bekräfta lösenord"
+    }
+  ],
+  "voftCr": [
+    {
+      "type": 0,
+      "value": "Bekräfta bokningen"
+    }
+  ],
+  "vxYWzb": [
+    {
+      "type": 0,
+      "value": "Betygsätt tjänsten"
+    }
+  ],
+  "w1ks9x": [
+    {
+      "type": 0,
+      "value": "Boka denna tjänst"
+    }
+  ],
+  "w9OoUW": [
+    {
+      "type": 0,
+      "value": "Spara till ny lista"
+    }
+  ],
+  "wIWVus": [
+    {
+      "type": 0,
+      "value": "Fortsätt till utcheckningen"
+    }
+  ],
+  "wTo1un": [
+    {
+      "type": 0,
+      "value": "Använd filter"
+    }
+  ],
+  "wTrlQS": [
+    {
+      "type": 0,
+      "value": "Tillbaka till servicesidan"
+    }
+  ],
+  "wm96Jx": [
+    {
+      "type": 0,
+      "value": "Returnerad"
+    }
+  ],
+  "wmyg6t": [
+    {
+      "type": 0,
+      "value": "Resurs"
+    }
+  ],
+  "wyxJrL": [
+    {
+      "type": 0,
+      "value": "Radera konto"
+    }
+  ],
+  "x/OgEF": [
+    {
+      "type": 0,
+      "value": "Senast uppdaterad Fallande"
+    }
+  ],
+  "x2/i6X": [
+    {
+      "type": 0,
+      "value": "Pris låg-hög"
+    }
+  ],
+  "xCzQG8": [
+    {
+      "type": 0,
+      "value": "Klar..."
+    }
+  ],
+  "xLs7Jb": [
+    {
+      "type": 0,
+      "value": "Förändring Foto"
+    }
+  ],
+  "xMnH8F": [
+    {
+      "type": 0,
+      "value": "Ladda mer"
+    }
+  ],
+  "xNXi4O": [
+    {
+      "type": 0,
+      "value": "En bekräftelselänk har skickats till din e-post. Kontrollera din inkorg och klicka på länken för att slutföra registreringsprocessen."
+    }
+  ],
+  "xvfNSm": [
+    {
+      "type": 1,
+      "value": "productCount"
+    },
+    {
+      "type": 0,
+      "value": "-tjänster publicerade"
+    }
+  ],
+  "xwEc8K": [
+    {
+      "type": 0,
+      "value": "API"
+    }
+  ],
+  "xxQxLE": [
+    {
+      "type": 0,
+      "value": "E-postadress"
+    }
+  ],
+  "xxhML8": [
+    {
+      "type": 0,
+      "value": "betalningsinformation"
+    }
+  ],
+  "xyNMpb": [
+    {
+      "type": 0,
+      "value": "Betalningsgateway gav inte betalningsbekräftelsehanterare."
+    }
+  ],
+  "yLAlyl": [
+    {
+      "type": 0,
+      "value": "Alla stjärnor"
+    }
+  ],
+  "yLRtkC": [
+    {
+      "type": 0,
+      "value": "Namn minskar"
+    }
+  ],
+  "yU8L4Y": [
+    {
+      "type": 0,
+      "value": "Max. filuppladdningen är 5"
+    }
+  ],
+  "yzwEMI": [
+    {
+      "type": 0,
+      "value": "Visa tjänster detta avstånd nära mig"
+    }
+  ],
+  "z+Mzjn": [
+    {
+      "type": 0,
+      "value": "Borttagning av konto pågår"
+    }
+  ],
+  "zAGI4/": [
+    {
+      "type": 0,
+      "value": "Ingen status hittades"
+    }
+  ],
+  "zEhfKQ": [
+    {
+      "type": 0,
+      "value": "Fortsätt handla"
+    }
+  ],
+  "zF4S3v": [
+    {
+      "type": 0,
+      "value": "Populära tjänster"
+    }
+  ],
+  "zSOvI0": [
+    {
+      "type": 0,
+      "value": "Filter"
+    }
+  ],
+  "zSuhDL": [
+    {
+      "type": 0,
+      "value": "jag vill köpa"
+    }
+  ],
+  "zdLDux": [
+    {
+      "type": 0,
+      "value": "Bekräfta radering"
+    }
+  ],
+  "zeP3UD": [
+    {
+      "type": 0,
+      "value": "Leverans kostnad"
+    }
+  ],
+  "zpDqqG": [
+    {
+      "type": 0,
+      "value": "Ta bort tjänsten"
+    }
+  ],
+  "zwNDxG": [
+    {
+      "type": 0,
+      "value": "Din vagn"
+    }
+  ],
+  "zx7CKB": [
+    {
+      "type": 0,
+      "value": "Kolla din mail"
+    }
+  ]
+}

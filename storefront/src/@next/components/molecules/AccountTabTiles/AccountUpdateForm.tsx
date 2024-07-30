@@ -1,0 +1,87 @@
+import { Formik } from "formik";
+import React from "react";
+import { FormattedMessage, useIntl } from "react-intl";
+
+import { Button } from "@components/atoms";
+import { commonMessages } from "@temp/intl";
+
+import { TextField } from "../TextField";
+import * as S from "./styles";
+
+export const AccountUpdateForm: React.FC<{
+  handleSubmit: (data: any) => void;
+  hide: () => void;
+  initialValues: {
+    firstName: string;
+    lastName: string;
+  };
+}> = ({ handleSubmit, hide, initialValues }) => {
+  const intl = useIntl();
+  return (
+    <>
+      <Formik
+        initialValues={initialValues}
+        onSubmit={(values, { setSubmitting }) => {
+          handleSubmit({
+            firstName: values.firstName,
+            lastName: values.lastName,
+          });
+          setSubmitting(false);
+        }}
+      >
+        {({
+          handleChange,
+          handleSubmit,
+          handleBlur,
+          values,
+          isSubmitting,
+          isValid,
+        }) => {
+          return (
+            <S.Form onSubmit={handleSubmit} data-test="accountUpdateForm">
+              <S.ContentEditOneLine>
+                <S.ContentExtendInput>
+                  <TextField
+                    name="firstName"
+                    label={intl.formatMessage(commonMessages.firstName)}
+                    type="text"
+                    value={values.firstName}
+                    onBlur={handleBlur}
+                    onChange={handleChange}
+                  />
+                </S.ContentExtendInput>
+                <S.ContentExtendInput>
+                  <TextField
+                    name="lastName"
+                    label={intl.formatMessage(commonMessages.lastName)}
+                    type="text"
+                    value={values.lastName}
+                    onBlur={handleBlur}
+                    onChange={handleChange}
+                  />
+                </S.ContentExtendInput>
+              </S.ContentEditOneLine>
+              <S.FormButtons>
+                <Button
+                  testingContext="cancelButton"
+                  type="button"
+                  color="labelOnly"
+                  onClick={hide}
+                >
+                  <FormattedMessage {...commonMessages.cancel} />
+                </Button>
+                <Button
+                  testingContext="submit"
+                  type="submit"
+                  disabled={isSubmitting || !isValid}
+                >
+                  <FormattedMessage {...commonMessages.save} />
+                </Button>
+              </S.FormButtons>
+            </S.Form>
+          );
+        }}
+      </Formik>
+    </>
+  );
+};

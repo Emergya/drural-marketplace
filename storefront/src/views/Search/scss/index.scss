@@ -1,0 +1,71 @@
+@import "../../../globalStyles/scss/variables-drural.scss";
+
+.search-page {
+
+  &__dRuralHeader {
+    background-color: transparent;
+    margin-top: 130px !important ;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    @media (max-width: $medium-screen) {
+      margin-top: 0px !important ;
+    }
+    .title-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      h2 {
+        @media (max-width: $medium-screen) {
+          padding-left: 12px;
+          margin-top: 90px;
+        }
+        @media (max-width: $small-screen) {
+          margin-top: 90px;
+        }
+      }
+      h3 {
+        margin-top: 15px;
+        font-size: $lightTitleFontSize;
+        font-weight: $lightFontWeight;
+        @media (max-width: $medium-screen) {
+          padding-left: 12px;
+        }
+        @media (max-width: $small-screen) {
+          font-size: $h2FontSizeMobile;
+          font-weight: $lightFontWeight;
+        }
+      }
+      p {
+        margin-top: 8px;
+        @media (max-width: $medium-screen) {
+          padding-left: 12px;
+          font-size: $h4FontSizeMobile;
+        }
+      }
+    }
+  }
+}
+
+.search-container {
+  width: $container-width;
+  max-width: 100vw;
+  margin: 10px auto 0;
+  padding: 0 $spacer;
+
+  @media (max-width: $medium-screen) {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.service-map {
+  width: 100vw;
+  > div {
+    width: 100% !important;
+    height: 780px !important;
+    @media (max-width: $small-screen) {
+      height: 316px !important;
+    }
+  }
+}

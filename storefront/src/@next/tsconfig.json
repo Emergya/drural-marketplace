@@ -1,0 +1,7 @@
+{
+  "extends": "../../tsconfig",
+  "compilerOptions": {
+    "strict": true
+  },
+  "include": ["../../webpack.d.ts", "../../editorjs.d.ts", "**/*","../@types/react-unicons/index.d.ts","../@types/geocoder/index.d.ts"]
+}

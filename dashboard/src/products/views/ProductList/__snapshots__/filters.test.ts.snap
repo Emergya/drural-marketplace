@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filtering URL params should not be empty if active filters are present 1`] = `
+Object {
+  "categories": Array [
+    "878752",
+  ],
+  "collections": Array [
+    "Q29sbGVjdGlvbjoc",
+  ],
+  "createdFrom": "2021-10-23T15:59:23.346243+00:00",
+  "createdTo": "2021-10-23T15:59:23.192891+00:00",
+  "modifiedFrom": "2021-10-23T15:59:23.346243+00:00",
+  "modifiedTo": "2021-10-23T15:59:23.192891+00:00",
+  "status": "ACTIVE",
+}
+`;
+
+exports[`Filtering URL params should not be empty if active filters are present 2`] = `"status=ACTIVE&createdFrom=2021-10-23T15%3A59%3A23.346243%2B00%3A00&createdTo=2021-10-23T15%3A59%3A23.192891%2B00%3A00&modifiedFrom=2021-10-23T15%3A59%3A23.346243%2B00%3A00&modifiedTo=2021-10-23T15%3A59%3A23.192891%2B00%3A00&categories%5B%5D=878752&collections%5B%5D=Q29sbGVjdGlvbjoc"`;

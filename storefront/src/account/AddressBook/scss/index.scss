@@ -1,0 +1,11 @@
+@import "../../../globalStyles/scss/variables.scss";
+
+.address-book-container {
+  width: 100%;
+
+  & > div {
+    align-items: stretch;
+    display: flex;
+    min-height: 286px;
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "baseUrl": "http://localhost:3000",
+  "env": {
+    "USER_NAME": "admin@example.com",
+    "USER_PASSWORD": "admin",
+    "API_URI": "http://localhost:8000/graphql/"
+  },
+  "defaultCommandTimeout": 15000,
+  "requestTimeout": 15000,
+  "viewportWidth": 1400,
+  "viewportHeight": 660,
+  "projectId": "ftxg4w",
+  "watchForFileChanges": false
+}

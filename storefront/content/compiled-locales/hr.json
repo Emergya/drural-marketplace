@@ -1,0 +1,2726 @@
+{
+  "+Q1sXM": [
+    {
+      "type": 0,
+      "value": "Ovo su vaši podaci o naplati, svakako ih pregledajte prije potvrde naplate."
+    }
+  ],
+  "+ckxNx": [
+    {
+      "type": 0,
+      "value": "Jeste li sigurni da želite izbrisati uslugu "
+    },
+    {
+      "type": 1,
+      "value": "serviceName"
+    },
+    {
+      "type": 0,
+      "value": " s liste želja "
+    },
+    {
+      "type": 1,
+      "value": "listName"
+    },
+    {
+      "type": 0,
+      "value": "?"
+    }
+  ],
+  "+d/I+9": [
+    {
+      "type": 0,
+      "value": "Postavi kao zadanu adresu za dostavu"
+    }
+  ],
+  "+kMQfn": [
+    {
+      "type": 0,
+      "value": "Raspon cijena"
+    }
+  ],
+  "/+HyHJ": [
+    {
+      "type": 0,
+      "value": "Ostavite recenziju"
+    }
+  ],
+  "/+uCYW": [
+    {
+      "type": 0,
+      "value": "Povezane usluge"
+    }
+  ],
+  "/7OBeN": [
+    {
+      "type": 0,
+      "value": "Nije moguće prijaviti proizvod"
+    }
+  ],
+  "/C/h4C": [
+    {
+      "type": 0,
+      "value": "Jeste li sigurni da želite izbrisati svoju recenziju?"
+    }
+  ],
+  "/DVYB1": [
+    {
+      "type": 0,
+      "value": "Podržani formati: jpeg, gif, png."
+    }
+  ],
+  "/FBJmw": [
+    {
+      "type": 0,
+      "value": "Koliko želite potrošiti?"
+    }
+  ],
+  "/NZV5a": [
+    {
+      "type": 0,
+      "value": "Sada ste odjavljeni"
+    }
+  ],
+  "/X8Mjx": [
+    {
+      "type": 0,
+      "value": "Igrajte se s "
+    },
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": "GraphQL API"
+        }
+      ],
+      "type": 8,
+      "value": "emphasis"
+    }
+  ],
+  "00LcfG": [
+    {
+      "type": 0,
+      "value": "Učitaj više"
+    }
+  ],
+  "0f45G+": [
+    {
+      "type": 0,
+      "value": "OFFLINE :("
+    }
+  ],
+  "0fxBj6": [
+    {
+      "type": 0,
+      "value": "Novo u"
+    }
+  ],
+  "0g/1TG": [
+    {
+      "type": 0,
+      "value": "Nastavite do plaćanja"
+    }
+  ],
+  "0vL5u1": [
+    {
+      "type": 0,
+      "value": "Stvorite račun"
+    }
+  ],
+  "0zNair": [
+    {
+      "type": 0,
+      "value": "O dRuralu"
+    }
+  ],
+  "12/Dpd": [
+    {
+      "type": 0,
+      "value": "Â¿Jeste li sigurni da želite izbrisati svoj račun?"
+    }
+  ],
+  "1851Kr": [
+    {
+      "type": 0,
+      "value": "Broj narudžbe: #"
+    },
+    {
+      "type": 1,
+      "value": "orderNum"
+    }
+  ],
+  "1KGwKk": [
+    {
+      "type": 0,
+      "value": "Navedite adresu za dostavu."
+    }
+  ],
+  "1RO7fs": [
+    {
+      "type": 0,
+      "value": "Povratak na uslugu"
+    }
+  ],
+  "1jbPX/": [
+    {
+      "type": 0,
+      "value": "Odaberite sat"
+    }
+  ],
+  "1oz7Jc": [
+    {
+      "type": 0,
+      "value": "Razgovarajte s prodavačem"
+    }
+  ],
+  "1w9HXE": [
+    {
+      "type": 0,
+      "value": "Milijuni kupaca čekaju da im se pridružite"
+    }
+  ],
+  "2/2yg+": [
+    {
+      "type": 0,
+      "value": "Dodati"
+    }
+  ],
+  "29Ei25": [
+    {
+      "type": 0,
+      "value": "Poštanski broj"
+    }
+  ],
+  "2XRzbc": [
+    {
+      "type": 0,
+      "value": "Veza 3"
+    }
+  ],
+  "2bGejb": [
+    {
+      "type": 0,
+      "value": "Moj račun"
+    }
+  ],
+  "2xjjlC": [
+    {
+      "type": 0,
+      "value": "Niska zaliha"
+    }
+  ],
+  "3SfdR4": [
+    {
+      "type": 0,
+      "value": "Povratak na uslugu"
+    }
+  ],
+  "3mBt9u": [
+    {
+      "type": 0,
+      "value": "Nemojte odustati - provjerite pravopis, smislite nešto manje specifično i zatim upotrijebite traku za pretraživanje iznad."
+    }
+  ],
+  "4/1XCq": [
+    {
+      "type": 0,
+      "value": "Poruka je poslana!"
+    }
+  ],
+  "45425G": [
+    {
+      "type": 0,
+      "value": "Napravi popis"
+    }
+  ],
+  "47FYwb": [
+    {
+      "type": 0,
+      "value": "Otkazati"
+    }
+  ],
+  "4RD+CZ": [
+    {
+      "type": 0,
+      "value": "Metoda slanja"
+    }
+  ],
+  "4WE+R8": [
+    {
+      "type": 0,
+      "value": "Detalji usluge"
+    }
+  ],
+  "4WcB2q": [
+    {
+      "type": 0,
+      "value": "OPIS"
+    }
+  ],
+  "515QcK": [
+    {
+      "type": 0,
+      "value": "Ostavite nam svoj telefon*"
+    }
+  ],
+  "54Ou53": [
+    {
+      "type": 0,
+      "value": "Maks. veličina datoteke 2 MB"
+    }
+  ],
+  "54VA/h": [
+    {
+      "type": 1,
+      "value": "value"
+    },
+    {
+      "type": 0,
+      "value": " %"
+    }
+  ],
+  "5bOFRX": [
+    {
+      "type": 0,
+      "value": "Ukloni s popisa"
+    }
+  ],
+  "5qDwFV": [
+    {
+      "type": 0,
+      "value": "Nova verzija je dostupna!"
+    }
+  ],
+  "5sc/mV": [
+    {
+      "type": 0,
+      "value": "Istražite "
+    },
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": "nadzornu ploču trgovine"
+        }
+      ],
+      "type": 8,
+      "value": "emphasis"
+    }
+  ],
+  "5sg7KC": [
+    {
+      "type": 0,
+      "value": "Zaporka"
+    }
+  ],
+  "5zZZ90": [
+    {
+      "type": 0,
+      "value": "Adresar"
+    }
+  ],
+  "66HUnz": [
+    {
+      "type": 0,
+      "value": "Postavke kategorija"
+    }
+  ],
+  "6Hdj1s": [
+    {
+      "type": 0,
+      "value": "Odabrani resurs"
+    }
+  ],
+  "6I+DHW": [
+    {
+      "type": 0,
+      "value": "Odaberite raspon cijena"
+    }
+  ],
+  "6Iqx81": [
+    {
+      "type": 0,
+      "value": "Usluga je ocijenjena"
+    }
+  ],
+  "6SY/Lj": [
+    {
+      "type": 0,
+      "value": "Lista imena"
+    }
+  ],
+  "6XQAoN": [
+    {
+      "type": 0,
+      "value": "pronađenih usluga"
+    }
+  ],
+  "6orx1c": [
+    {
+      "type": 0,
+      "value": "Adresa za naplatu"
+    }
+  ],
+  "748LIQ": [
+    {
+      "type": 0,
+      "value": "Nastavite kao gost"
+    }
+  ],
+  "79lKyO": [
+    {
+      "type": 0,
+      "value": "Rezultati pretraživanja"
+    }
+  ],
+  "7EENi3": [
+    {
+      "type": 0,
+      "value": "1 zvjezdica"
+    }
+  ],
+  "7NFfmz": [
+    {
+      "type": 0,
+      "value": "Proizvodi"
+    }
+  ],
+  "7NJAYu": [
+    {
+      "type": 0,
+      "value": "Pitajte prodavača"
+    }
+  ],
+  "7OW8BT": [
+    {
+      "type": 0,
+      "value": "Konfiguracija"
+    }
+  ],
+  "7UOvbT": [
+    {
+      "type": 0,
+      "value": "Izvan mreže"
+    }
+  ],
+  "7uioo9": [
+    {
+      "type": 0,
+      "value": "Nijedan popis nije odabran ili još nijedna usluga nije dodana na popis"
+    }
+  ],
+  "7wZ61D": [
+    {
+      "type": 0,
+      "value": "Oporavak lozinke"
+    }
+  ],
+  "8FpaMK": [
+    {
+      "type": 0,
+      "value": "Država/pokrajina"
+    }
+  ],
+  "8RtoNZ": [
+    {
+      "type": 0,
+      "value": "U slučaju da Vas trebamo kontaktirati za dodatne informacije"
+    }
+  ],
+  "8WtyrD": [
+    {
+      "type": 0,
+      "value": "španjolski"
+    }
+  ],
+  "8YHEGD": [
+    {
+      "type": 0,
+      "value": "Usluga izvješćivanja"
+    }
+  ],
+  "8cv9D4": [
+    {
+      "type": 0,
+      "value": "Sljedeći korak"
+    }
+  ],
+  "8sXhNb": [
+    {
+      "type": 0,
+      "value": "Vidi popis"
+    }
+  ],
+  "8uddA3": [
+    {
+      "type": 0,
+      "value": "Nevažeći podnesak plaćanja."
+    }
+  ],
+  "9AgXoz": [
+    {
+      "type": 0,
+      "value": "Prodavati"
+    }
+  ],
+  "9FjY/U": [
+    {
+      "type": 1,
+      "value": "serviceName"
+    },
+    {
+      "type": 0,
+      "value": " je dodan u "
+    },
+    {
+      "type": 1,
+      "value": "listName"
+    },
+    {
+      "type": 0,
+      "value": "?"
+    }
+  ],
+  "9T40iW": [
+    {
+      "type": 0,
+      "value": "Ova usluga nema pridruženih resursa"
+    }
+  ],
+  "9WRlF4": [
+    {
+      "type": 0,
+      "value": "Poslati"
+    }
+  ],
+  "9k5qQl": [
+    {
+      "type": 0,
+      "value": "Metode Plačanja"
+    }
+  ],
+  "9pv+ed": [
+    {
+      "type": 0,
+      "value": "Morate navesti razlog zašto mislite da ovu uslugu treba prijaviti (npr. ova usluga više ne postoji, ovaj pružatelj usluge je zatvoren, ova usluga je neprikladna itd.). Možete dodati slike za ilustraciju svojih komentara."
+    }
+  ],
+  "9qnRSj": [
+    {
+      "type": 0,
+      "value": "Prikaži +"
+    }
+  ],
+  "9yjrxH": [
+    {
+      "type": 0,
+      "value": "ATRIBUTI"
+    }
+  ],
+  "A1T/GS": [
+    {
+      "type": 0,
+      "value": "Potražite u trgovini"
+    }
+  ],
+  "AEzWZu": [
+    {
+      "type": 0,
+      "value": "Osobni podatci"
+    }
+  ],
+  "AJRRLW": [
+    {
+      "type": 0,
+      "value": "Otkazati narudžbu"
+    }
+  ],
+  "AMbsOQ": [
+    {
+      "type": 0,
+      "value": "Počnite prodavati sada"
+    }
+  ],
+  "Ak/e7n": [
+    {
+      "type": 0,
+      "value": "Žao nam je, ali ne možemo pronaći nijedan rezultat pretraživanja za: "
+    },
+    {
+      "type": 1,
+      "value": "search"
+    }
+  ],
+  "B52Em/": [
+    {
+      "type": 0,
+      "value": "1. red adrese"
+    }
+  ],
+  "BE6zwi": [
+    {
+      "type": 0,
+      "value": "Pojam za pretraživanje:"
+    }
+  ],
+  "BJ2TKX": [
+    {
+      "type": 0,
+      "value": "Provjeri"
+    }
+  ],
+  "BQuFrc": [
+    {
+      "type": 1,
+      "value": "duration"
+    },
+    {
+      "type": 0,
+      "value": " minuta"
+    }
+  ],
+  "BS3FlI": [
+    {
+      "type": 0,
+      "value": "Nastavite na pregled"
+    }
+  ],
+  "BdjtYv": [
+    {
+      "type": 0,
+      "value": "Podijelite ovu uslugu"
+    }
+  ],
+  "Bdy3TR": [
+    {
+      "type": 0,
+      "value": "Koliko blizu?"
+    }
+  ],
+  "Bg8a3A": [
+    {
+      "type": 0,
+      "value": "Svoje postavke možete podesiti u bilo kojem trenutku na stranici svog korisničkog profila. Idite na konfiguraciju kako biste odabrali željene kategorije i postavke lokacije."
+    }
+  ],
+  "C6lhFD": [
+    {
+      "type": 0,
+      "value": "Samo ste jedan korak od aktivacije svog računa na dRural marketplaceu."
+    }
+  ],
+  "CTSLLJ": [
+    {
+      "type": 0,
+      "value": "Moja kolica"
+    }
+  ],
+  "Cft/3d": [
+    {
+      "type": 0,
+      "value": "Želim primati informacije od dRurala"
+    }
+  ],
+  "ChDAaD": [
+    {
+      "type": 0,
+      "value": "Djelomično napunjeno"
+    }
+  ],
+  "CiCBq1": [
+    {
+      "type": 1,
+      "value": "totalReviews"
+    },
+    {
+      "type": 0,
+      "value": " recenzije"
+    }
+  ],
+  "CilfB2": [
+    {
+      "type": 0,
+      "value": "Pogledajte sve recenzije"
+    }
+  ],
+  "CtoGPj": [
+    {
+      "type": 0,
+      "value": "Vaša je narudžba poslana, potrebno ju je potvrditi osoblje, poslat ćemo vam e-poštu kada bude gotova."
+    }
+  ],
+  "D+bY29": [
+    {
+      "type": 0,
+      "value": "Metoda slanja"
+    }
+  ],
+  "DClFoP": [
+    {
+      "type": 0,
+      "value": "Za ažuriranje aplikacije na najnoviju verziju, osvježite stranicu!"
+    }
+  ],
+  "DP5VOH": [
+    {
+      "type": 0,
+      "value": "dostavna adresa"
+    }
+  ],
+  "Dfjc65": [
+    {
+      "type": 0,
+      "value": "Najbolja recenzija"
+    }
+  ],
+  "Dmb0KB": [
+    {
+      "type": 0,
+      "value": "Za plaćanje je potrebna potvrda, ali podaci potrebni za potvrdu nisu primljeni od poslužitelja."
+    }
+  ],
+  "E4wn7I": [
+    {
+      "type": 0,
+      "value": "Podaci nisu pronađeni"
+    }
+  ],
+  "EGHx3D": [
+    {
+      "type": 1,
+      "value": "rating"
+    },
+    {
+      "type": 0,
+      "value": " od 5"
+    }
+  ],
+  "EWw/tK": [
+    {
+      "type": 0,
+      "value": "primijeniti"
+    }
+  ],
+  "EeMv7L": [
+    {
+      "type": 0,
+      "value": "Izbriši popis"
+    }
+  ],
+  "EiEAKD": [
+    {
+      "type": 0,
+      "value": "nizozemski"
+    }
+  ],
+  "EnCOBJ": [
+    {
+      "type": 0,
+      "value": "Kupiti"
+    }
+  ],
+  "Ev6SEF": [
+    {
+      "type": 0,
+      "value": "Nova lozinka"
+    }
+  ],
+  "ExS48t": [
+    {
+      "type": 0,
+      "value": "Zadana adresa za naplatu"
+    }
+  ],
+  "F6NI+0": [
+    {
+      "type": 0,
+      "value": "Kako planirate koristiti dRural?"
+    }
+  ],
+  "FGJNIh": [
+    {
+      "type": 0,
+      "value": "OČISTI FILTERE"
+    }
+  ],
+  "FyUqOJ": [
+    {
+      "type": 0,
+      "value": "Popunjeni"
+    }
+  ],
+  "G+l9fC": [
+    {
+      "type": 0,
+      "value": "Sve recenzije"
+    }
+  ],
+  "GJoRL/": [
+    {
+      "type": 0,
+      "value": "Prodajte svoje usluge u dRuralu"
+    }
+  ],
+  "GXJC43": [
+    {
+      "type": 0,
+      "value": "Napravite novu listu želja"
+    }
+  ],
+  "GfYXu2": [
+    {
+      "type": 0,
+      "value": "Povratak na moje liste želja"
+    }
+  ],
+  "GytZH5": [
+    {
+      "type": 0,
+      "value": "Usluge pretraživanja"
+    }
+  ],
+  "H0JBH6": [
+    {
+      "type": 0,
+      "value": "Odjavite se"
+    }
+  ],
+  "HgSye9": [
+    {
+      "type": 0,
+      "value": "dRural © 2022"
+    }
+  ],
+  "I5NMJ8": [
+    {
+      "type": 0,
+      "value": "Više"
+    }
+  ],
+  "IY2TiN": [
+    {
+      "type": 0,
+      "value": "Uredi naziv liste želja"
+    }
+  ],
+  "IeNMka": [
+    {
+      "type": 0,
+      "value": "Idi u moju košaricu"
+    }
+  ],
+  "InWqys": [
+    {
+      "type": 0,
+      "value": "Neobavezno"
+    }
+  ],
+  "IwxuZY": [
+    {
+      "type": 0,
+      "value": "dRural želi pristupiti vašoj lokaciji kako bi ponudio bolju uslugu i pokazao vam usluge koje su vam najbliže."
+    }
+  ],
+  "J+buBa": [
+    {
+      "type": 0,
+      "value": "stara lozinka"
+    }
+  ],
+  "J6Eyds": [
+    {
+      "type": 0,
+      "value": "Kupiti"
+    }
+  ],
+  "JE4+x5": [
+    {
+      "type": 0,
+      "value": "Brisanje usluge s liste želja"
+    }
+  ],
+  "JItzoH": [
+    {
+      "type": 0,
+      "value": "Naručiti"
+    }
+  ],
+  "JN6MSK": [
+    {
+      "type": 0,
+      "value": "Postavite novu lozinku"
+    }
+  ],
+  "JRlv3P": [
+    {
+      "type": 0,
+      "value": "Pažnja! ovo će trajno ukloniti vaše podatke o računu, ako želite nastaviti s postupkom kliknite na gumb za potvrdu ispod."
+    }
+  ],
+  "JSooiR": [
+    {
+      "type": 0,
+      "value": "Naziv tvrtke (neobavezno)"
+    }
+  ],
+  "JXdbo8": [
+    {
+      "type": 0,
+      "value": "Gotovo"
+    }
+  ],
+  "JqiqNj": [
+    {
+      "type": 0,
+      "value": "Nešto je pošlo po zlu"
+    }
+  ],
+  "Jrw8G7": [
+    {
+      "type": 0,
+      "value": "Izmijeniti"
+    }
+  ],
+  "KGERmF": [
+    {
+      "type": 0,
+      "value": "Referentni broj rezervacije"
+    }
+  ],
+  "KSlktl": [
+    {
+      "type": 0,
+      "value": "Provjerite svoju e-poštu, trebali ste primiti poruku s vezom za potvrdu brisanja vašeg računa."
+    }
+  ],
+  "KUBgP9": [
+    {
+      "type": 0,
+      "value": "Detalji naplate"
+    }
+  ],
+  "KmgRL+": [
+    {
+      "type": 0,
+      "value": "Nešto nije u redu s aplikacijom karte"
+    }
+  ],
+  "KorORN": [
+    {
+      "type": 0,
+      "value": "Nije dostupno za kupnju"
+    }
+  ],
+  "L8seEc": [
+    {
+      "type": 0,
+      "value": "Međuzbroj"
+    }
+  ],
+  "LABC/Y": [
+    {
+      "type": 0,
+      "value": "Više +"
+    }
+  ],
+  "LFcS5g": [
+    {
+      "type": 0,
+      "value": "Plaćanje u trgovini"
+    }
+  ],
+  "LMdzKV": [
+    {
+      "type": 0,
+      "value": "Možda ti se svidi"
+    }
+  ],
+  "LkCowx": [
+    {
+      "type": 0,
+      "value": "Odaberite način plaćanja."
+    }
+  ],
+  "LmAYuU": [
+    {
+      "type": 0,
+      "value": "km"
+    }
+  ],
+  "Lv0zJu": [
+    {
+      "type": 0,
+      "value": "pojedinosti"
+    }
+  ],
+  "MJ2jZQ": [
+    {
+      "type": 0,
+      "value": "Ukupno"
+    }
+  ],
+  "MVlVYL": [
+    {
+      "type": 0,
+      "value": "Vaša košarica je prazna"
+    }
+  ],
+  "MYiZl4": [
+    {
+      "type": 0,
+      "value": "Recenzije usluga"
+    }
+  ],
+  "MjOjxw": [
+    {
+      "type": 0,
+      "value": "Narudžba otkazana"
+    }
+  ],
+  "Mnkq4K": [
+    {
+      "type": 0,
+      "value": "Recite nam zašto prijavljujete ovu uslugu"
+    }
+  ],
+  "N1KsBC": [
+    {
+      "type": 0,
+      "value": "Detalji rezervacije"
+    }
+  ],
+  "N2S5pk": [
+    {
+      "type": 0,
+      "value": "izgleda prazno"
+    }
+  ],
+  "NAidKb": [
+    {
+      "type": 0,
+      "value": "Obavijesti"
+    }
+  ],
+  "NT+3fY": [
+    {
+      "type": 0,
+      "value": "Odbio"
+    }
+  ],
+  "NdFB/s": [
+    {
+      "type": 0,
+      "value": "Sve usluge"
+    }
+  ],
+  "NfwDx2": [
+    {
+      "type": 0,
+      "value": "Detalji narudžbe"
+    }
+  ],
+  "NmK6zy": [
+    {
+      "type": 0,
+      "value": "Plaćanje"
+    }
+  ],
+  "O95R3Z": [
+    {
+      "type": 0,
+      "value": "Telefon"
+    }
+  ],
+  "OK5+Fh": [
+    {
+      "type": 0,
+      "value": "Varijanta"
+    }
+  ],
+  "OKGZwS": [
+    {
+      "type": 0,
+      "value": "Usluga dodana na listu želja"
+    }
+  ],
+  "OV7mgg": [
+    {
+      "type": 0,
+      "value": "Preuzmite fakturu"
+    }
+  ],
+  "Oa/XSP": [
+    {
+      "type": 0,
+      "value": "adresa"
+    }
+  ],
+  "OtMych": [
+    {
+      "type": 0,
+      "value": "Izbriši recenziju"
+    }
+  ],
+  "P+JT42": [
+    {
+      "type": 0,
+      "value": "Moje adrese"
+    }
+  ],
+  "P7PLVj": [
+    {
+      "type": 0,
+      "value": "Datum"
+    }
+  ],
+  "PFtMy9": [
+    {
+      "type": 0,
+      "value": "Otkazano"
+    }
+  ],
+  "PR2F1h": [
+    {
+      "type": 1,
+      "value": "message"
+    }
+  ],
+  "PRlD0A": [
+    {
+      "type": 0,
+      "value": "dostava"
+    }
+  ],
+  "PRzft5": [
+    {
+      "type": 0,
+      "value": "Najprodavanije"
+    }
+  ],
+  "PgJGHT": [
+    {
+      "type": 0,
+      "value": "Dostupno"
+    }
+  ],
+  "PjRbR1": [
+    {
+      "type": 0,
+      "value": "Veza 2"
+    }
+  ],
+  "PlBReU": [
+    {
+      "type": 0,
+      "value": "Odjavite se"
+    }
+  ],
+  "PspJ6Q": [
+    {
+      "type": 0,
+      "value": "Odaberite resurs"
+    }
+  ],
+  "Q62mJ9": [
+    {
+      "type": 0,
+      "value": "Dobro došla, "
+    },
+    {
+      "type": 1,
+      "value": "username"
+    },
+    {
+      "type": 0,
+      "value": "!"
+    }
+  ],
+  "Q6wcZ5": [
+    {
+      "type": 0,
+      "value": "Ime"
+    }
+  ],
+  "Q8Qw5B": [
+    {
+      "type": 0,
+      "value": "Opis"
+    }
+  ],
+  "QH5kv3": [
+    {
+      "type": 0,
+      "value": "Najbliži mi"
+    }
+  ],
+  "QRsC1D": [
+    {
+      "type": 0,
+      "value": "Tvoja lokacija"
+    }
+  ],
+  "R+J5ox": [
+    {
+      "type": 0,
+      "value": "Pregled"
+    }
+  ],
+  "RDuVyt": [
+    {
+      "type": 0,
+      "value": "Dopustite dRuralu da prati vašu lokaciju kako bismo vam mogli pokazati najnevjerojatnije usluge u vašoj blizini."
+    }
+  ],
+  "RMAVgz": [
+    {
+      "type": 0,
+      "value": "Link 4"
+    }
+  ],
+  "RQ44K7": [
+    {
+      "type": 0,
+      "value": "Preferirane kategorije"
+    }
+  ],
+  "RqOE8H": [
+    {
+      "type": 0,
+      "value": "Zadana adresa"
+    }
+  ],
+  "RtKR9V": [
+    {
+      "type": 0,
+      "value": "GeoLokalizacija"
+    }
+  ],
+  "RzsKm8": [
+    {
+      "type": 0,
+      "value": "Načini dostave"
+    }
+  ],
+  "SENRqu": [
+    {
+      "type": 0,
+      "value": "Pomozite"
+    }
+  ],
+  "SGdcJD": [
+    {
+      "type": 0,
+      "value": "Unesite kod"
+    }
+  ],
+  "SQJto2": [
+    {
+      "type": 0,
+      "value": "Prijaviti se"
+    }
+  ],
+  "Seanpx": [
+    {
+      "type": 0,
+      "value": "Potreban"
+    }
+  ],
+  "SuBsH3": [
+    {
+      "type": 0,
+      "value": "Plaćanje nije bilo moguće potvrditi."
+    }
+  ],
+  "TE4fIS": [
+    {
+      "type": 0,
+      "value": "Grad"
+    }
+  ],
+  "TSP1Mj": [
+    {
+      "type": 0,
+      "value": "Povratak na uslugu"
+    }
+  ],
+  "TwyMau": [
+    {
+      "type": 0,
+      "value": "Račun"
+    }
+  ],
+  "U2el92": [
+    {
+      "type": 0,
+      "value": "Plaćanje je otkazano."
+    }
+  ],
+  "UHXgba": [
+    {
+      "type": 0,
+      "value": "Dostupan dan"
+    }
+  ],
+  "USfLuS": [
+    {
+      "type": 0,
+      "value": "Unesite novu lozinku"
+    }
+  ],
+  "Ut7ZVi": [
+    {
+      "type": 0,
+      "value": "Ocijenite svoje iskustvo"
+    }
+  ],
+  "V6P9GB": [
+    {
+      "type": 0,
+      "value": "Niste ništa dodali u torbu. Sigurni smo da ćete pronaći nešto u našoj trgovini"
+    }
+  ],
+  "VKb1MS": [
+    {
+      "type": 0,
+      "value": "Kategorije"
+    }
+  ],
+  "VcQV4Z": [
+    {
+      "type": 0,
+      "value": "Potpuni povrat novca"
+    }
+  ],
+  "Vf57Ie": [
+    {
+      "type": 0,
+      "value": "Djelomično ispunjeno"
+    }
+  ],
+  "VhcCOO": [
+    {
+      "type": 0,
+      "value": "Nova lista želja"
+    }
+  ],
+  "W6nwjo": [
+    {
+      "type": 0,
+      "value": "Nacrt"
+    }
+  ],
+  "WCcbn6": [
+    {
+      "type": 0,
+      "value": "Zadnje ažurirano Uzlazno"
+    }
+  ],
+  "WGCGLH": [
+    {
+      "type": 0,
+      "value": "Da, želim izbrisati svoj račun u dRuralu."
+    }
+  ],
+  "WHgdsk": [
+    {
+      "type": 0,
+      "value": "Nema na skladištu"
+    }
+  ],
+  "WKXLYM": [
+    {
+      "type": 0,
+      "value": "dRural, digitalno tržište koje povezuje korisnike s lokalnim pružateljima usluga u blizini"
+    }
+  ],
+  "Wai7xX": [
+    {
+      "type": 0,
+      "value": "Čini se da token za ponovno postavljanje lozinke više nije valjan."
+    }
+  ],
+  "Wfj7wS": [
+    {
+      "type": 0,
+      "value": "Poslali smo vam e-poruku s uputama kako promijeniti lozinku."
+    }
+  ],
+  "WghPED": [
+    {
+      "type": 0,
+      "value": "Natrag na prijavu"
+    }
+  ],
+  "WkrNSk": [
+    {
+      "type": 0,
+      "value": "Engleski"
+    }
+  ],
+  "WmzATS": [
+    {
+      "type": 0,
+      "value": "Broj telefona: "
+    },
+    {
+      "type": 1,
+      "value": "phone"
+    }
+  ],
+  "WxEpVL": [
+    {
+      "type": 0,
+      "value": "Dodajte novi "
+    },
+    {
+      "type": 1,
+      "value": "type"
+    }
+  ],
+  "XS0QmX": [
+    {
+      "type": 0,
+      "value": "Popust: "
+    },
+    {
+      "type": 1,
+      "value": "discountName"
+    }
+  ],
+  "XSr1Wg": [
+    {
+      "type": 0,
+      "value": "Pogreška pri podnošenju plaćanja. Stripe gateway nije vratio način plaćanja u sadržaju."
+    }
+  ],
+  "XkwMjW": [
+    {
+      "type": 0,
+      "value": "Maksimalna količina je "
+    },
+    {
+      "type": 1,
+      "value": "maxQuantity"
+    }
+  ],
+  "Xo3t9z": [
+    {
+      "type": 0,
+      "value": "Spremi na listu želja"
+    }
+  ],
+  "XvZCaw": [
+    {
+      "type": 0,
+      "value": "Djelomično vraćeno"
+    }
+  ],
+  "YKXkbB": [
+    {
+      "type": 0,
+      "value": "Zdravo,"
+    }
+  ],
+  "YM709/": [
+    {
+      "type": 0,
+      "value": "Molimo navedite adresu e-pošte."
+    }
+  ],
+  "YQVUHR": [
+    {
+      "type": 0,
+      "value": "POGLEDAJTE SVE OPCIJE"
+    }
+  ],
+  "YfYlZP": [
+    {
+      "type": 0,
+      "value": "Nemate odabranih kategorija. Kliknite gumb za uređivanje da biste započeli odabir."
+    }
+  ],
+  "Ynjq+C": [
+    {
+      "type": 0,
+      "value": "Potpuno napunjen"
+    }
+  ],
+  "YqRDRu": [
+    {
+      "type": 0,
+      "value": "4 zvjezdice"
+    }
+  ],
+  "Yx6py4": [
+    {
+      "type": 0,
+      "value": "Status plaćanja"
+    }
+  ],
+  "Yy/yDL": [
+    {
+      "type": 0,
+      "value": "Resetiranje lozinke"
+    }
+  ],
+  "Yywm0p": [
+    {
+      "type": 0,
+      "value": "Nastaviti s kupovinom"
+    }
+  ],
+  "ZBUdiz": [
+    {
+      "type": 0,
+      "value": "Ukupni trošak"
+    }
+  ],
+  "ZIYTq9": [
+    {
+      "type": 0,
+      "value": "Povezivanje s uslugama koje trebate"
+    }
+  ],
+  "ZMCsQ+": [
+    {
+      "type": 0,
+      "value": "Usluge traženja u mojoj blizini"
+    }
+  ],
+  "a/4SMm": [
+    {
+      "type": 0,
+      "value": "Obavezno polje"
+    }
+  ],
+  "a8gxsN": [
+    {
+      "type": 0,
+      "value": "Isplata je odbijena. Pokušajte ponovno platiti drugim načinom plaćanja ili karticom."
+    }
+  ],
+  "aIRWQB": [
+    {
+      "type": 0,
+      "value": "Povratak kući"
+    }
+  ],
+  "aWoA8g": [
+    {
+      "type": 0,
+      "value": "Osobni podaci"
+    }
+  ],
+  "aei+HO": [
+    {
+      "type": 0,
+      "value": "Dobrodošli u dRural!"
+    }
+  ],
+  "aheQdn": [
+    {
+      "type": 0,
+      "value": "Prezime"
+    }
+  ],
+  "ast9q1": [
+    {
+      "type": 0,
+      "value": "Stanje narudžbe"
+    }
+  ],
+  "ataTev": [
+    {
+      "type": 0,
+      "value": "Neispunjeno"
+    }
+  ],
+  "b11WUZ": [
+    {
+      "type": 0,
+      "value": "Sat"
+    }
+  ],
+  "b1zuN9": [
+    {
+      "type": 0,
+      "value": "Cijena"
+    }
+  ],
+  "b8sVDI": [
+    {
+      "type": 0,
+      "value": "Obavijest o privatnosti"
+    }
+  ],
+  "baOQrt": [
+    {
+      "type": 0,
+      "value": "Hvala što ste ostavili svoje povratne informacije. Vaše će izvješće pregledati dRural administrator."
+    }
+  ],
+  "bsM94i": [
+    {
+      "type": 0,
+      "value": "Nastavite do otpreme"
+    }
+  ],
+  "bzEaXJ": [
+    {
+      "type": 0,
+      "value": "Što tražiš?"
+    }
+  ],
+  "c7/79+": [
+    {
+      "type": 0,
+      "value": "Adresa za naplatu"
+    }
+  ],
+  "c8W0mH": [
+    {
+      "type": 0,
+      "value": "Imate li vaučer za poklon karticu ili kod za popust?"
+    }
+  ],
+  "cQiUt4": [
+    {
+      "type": 0,
+      "value": "Dodajte novu adresu"
+    }
+  ],
+  "cZyhkN": [
+    {
+      "type": 0,
+      "value": "Prenesi fotografije (nije obavezno)"
+    }
+  ],
+  "ccXLVi": [
+    {
+      "type": 0,
+      "value": "Kategorija"
+    }
+  ],
+  "ceaFSA": [
+    {
+      "type": 0,
+      "value": "Zadana adresa za dostavu"
+    }
+  ],
+  "clY0ZY": [
+    {
+      "type": 0,
+      "value": "Želim prodati"
+    }
+  ],
+  "cpCJUk": [
+    {
+      "type": 0,
+      "value": "Registrirani korisnik"
+    }
+  ],
+  "cyR7Kh": [
+    {
+      "type": 0,
+      "value": "leđa"
+    }
+  ],
+  "d3jSMU": [
+    {
+      "type": 0,
+      "value": "Možete učitati do 5 fotografija."
+    }
+  ],
+  "d3lWas": [
+    {
+      "type": 0,
+      "value": "stvorite račun"
+    }
+  ],
+  "dABWQd": [
+    {
+      "type": 0,
+      "value": "Nema pronađenih usluga"
+    }
+  ],
+  "dC3u7Z": [
+    {
+      "type": 0,
+      "value": "Najpopularniji"
+    }
+  ],
+  "dUxyza": [
+    {
+      "type": 0,
+      "value": "Recenzije"
+    }
+  ],
+  "deEeEI": [
+    {
+      "type": 0,
+      "value": "Registar"
+    }
+  ],
+  "dlXyEz": [
+    {
+      "type": 1,
+      "value": "error"
+    }
+  ],
+  "e6Ph5+": [
+    {
+      "type": 0,
+      "value": "Adresa"
+    }
+  ],
+  "eKEL/g": [
+    {
+      "type": 0,
+      "value": "U tijeku"
+    }
+  ],
+  "eh90Dc": [
+    {
+      "type": 1,
+      "value": "reviewsCount"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "type": 1,
+      "value": "reviews"
+    }
+  ],
+  "ejEGdx": [
+    {
+      "type": 0,
+      "value": "Dom"
+    }
+  ],
+  "erE1I9": [
+    {
+      "type": 0,
+      "value": "Mora biti važeća adresa e-pošte"
+    }
+  ],
+  "ev8nQc": [
+    {
+      "type": 0,
+      "value": "Cijena odabrana: "
+    },
+    {
+      "type": 1,
+      "value": "pge"
+    },
+    {
+      "type": 0,
+      "value": " - "
+    },
+    {
+      "type": 1,
+      "value": "ple"
+    },
+    {
+      "type": 0,
+      "value": " €"
+    }
+  ],
+  "ex+q9+": [
+    {
+      "type": 0,
+      "value": "Uredi adresu"
+    }
+  ],
+  "ezoYNP": [
+    {
+      "type": 0,
+      "value": "Stripe pristupnik plaćanja nije se mogao prikazati. Trakasti elementi nisu bili predviđeni."
+    }
+  ],
+  "f/jyk+": [
+    {
+      "type": 0,
+      "value": "Hrvatski"
+    }
+  ],
+  "f1bdYj": [
+    {
+      "type": 0,
+      "value": "Telefonski broj mora sadržavati 15 ili manje znamenki"
+    }
+  ],
+  "fE3ujL": [
+    {
+      "type": 0,
+      "value": "Detalji narudžbe"
+    }
+  ],
+  "fVvfyb": [
+    {
+      "type": 0,
+      "value": "Uredi naziv popisa"
+    }
+  ],
+  "fq86MK": [
+    {
+      "type": 0,
+      "value": "Najnoviji"
+    }
+  ],
+  "gDxz/O": [
+    {
+      "type": 0,
+      "value": "Servis knjiga"
+    }
+  ],
+  "gF7/Mv": [
+    {
+      "type": 0,
+      "value": "5 zvjezdica"
+    }
+  ],
+  "gVph2B": [
+    {
+      "type": 0,
+      "value": "Za plaćanje je potrebna potvrda, ali podaci potrebni za potvrdu primljeni od poslužitelja su neispravni."
+    }
+  ],
+  "gjwFsT": [
+    {
+      "type": 0,
+      "value": "Odaberite datum"
+    }
+  ],
+  "h4IxgY": [
+    {
+      "type": 0,
+      "value": "E-pošta potvrđena"
+    }
+  ],
+  "hDI+JM": [
+    {
+      "type": 0,
+      "value": "Poredaj po"
+    }
+  ],
+  "hMzcSq": [
+    {
+      "type": 0,
+      "value": "Poruke"
+    }
+  ],
+  "hNu2St": [
+    {
+      "type": 0,
+      "value": "Platite u trgovini"
+    }
+  ],
+  "hX1ca3": [
+    {
+      "type": 0,
+      "value": "Vratite se na povijest narudžbi"
+    }
+  ],
+  "hXa/U/": [
+    {
+      "type": 0,
+      "value": "ili možete"
+    }
+  ],
+  "hcXlt0": [
+    {
+      "type": 0,
+      "value": "Link 1"
+    }
+  ],
+  "hefnRL": [
+    {
+      "type": 0,
+      "value": "Postavi kao zadanu adresu za naplatu"
+    }
+  ],
+  "hqK0Mk": [
+    {
+      "type": 0,
+      "value": "Ups!... 404"
+    }
+  ],
+  "hr8Rxf": [
+    {
+      "type": 0,
+      "value": "Vratite se na početnu stranicu"
+    }
+  ],
+  "hvDAdI": [
+    {
+      "type": 0,
+      "value": "Ostavite moju recenziju"
+    }
+  ],
+  "hzSNj4": [
+    {
+      "type": 0,
+      "value": "Nadzorna ploča"
+    }
+  ],
+  "iFsDVR": [
+    {
+      "type": 0,
+      "value": "Učitavam"
+    }
+  ],
+  "iWbl/h": [
+    {
+      "type": 0,
+      "value": "Djelomično vraćeno"
+    }
+  ],
+  "iZ3kzM": [
+    {
+      "type": 0,
+      "value": "Zaboravio sam lozinku"
+    }
+  ],
+  "ijJ3es": [
+    {
+      "type": 1,
+      "value": "star"
+    },
+    {
+      "type": 0,
+      "value": " zvijezde"
+    }
+  ],
+  "ipg5B3": [
+    {
+      "type": 0,
+      "value": "Došlo je do pogreške pri obradi plaćanja."
+    }
+  ],
+  "ipwTkh": [
+    {
+      "type": 0,
+      "value": "isto kao adresa dostave"
+    }
+  ],
+  "j5EA6m": [
+    {
+      "type": 0,
+      "value": "NASTAVITE NA BLAGAJNU"
+    }
+  ],
+  "jAHnYU": [
+    {
+      "type": 0,
+      "value": "Usluge u vašoj blizini"
+    }
+  ],
+  "jHKLNU": [
+    {
+      "type": 0,
+      "value": "Navedite adresu za naplatu."
+    }
+  ],
+  "jMQMBz": [
+    {
+      "type": 0,
+      "value": "Izbriši popis želja"
+    }
+  ],
+  "jNHZSz": [
+    {
+      "type": 0,
+      "value": "Nije moguće otkazati narudžbu"
+    }
+  ],
+  "jY+f2f": [
+    {
+      "type": 0,
+      "value": "Ispunjeno"
+    }
+  ],
+  "jbbK0Z": [
+    {
+      "type": 0,
+      "value": "Izbrisati recenziju?"
+    }
+  ],
+  "jnTBr4": [
+    {
+      "type": 0,
+      "value": "Prikaži sve rezultate"
+    }
+  ],
+  "jrEpw7": [
+    {
+      "type": 0,
+      "value": "Sada ste prijavljeni"
+    }
+  ],
+  "jruD6p": [
+    {
+      "type": 0,
+      "value": "Potvrdite brisanje računa"
+    }
+  ],
+  "jvgIPx": [
+    {
+      "type": 0,
+      "value": "Postat će dostupan za kupnju na "
+    },
+    {
+      "type": 1,
+      "value": "date"
+    },
+    {
+      "type": 0,
+      "value": " na "
+    },
+    {
+      "type": 1,
+      "value": "time"
+    }
+  ],
+  "jvo0vs": [
+    {
+      "type": 0,
+      "value": "Uštedjeti"
+    }
+  ],
+  "jwiL7B": [
+    {
+      "type": 0,
+      "value": "Usluga prijavljena"
+    }
+  ],
+  "jy71nZ": [
+    {
+      "type": 0,
+      "value": "Moje liste želja"
+    }
+  ],
+  "k+RUwL": [
+    {
+      "type": 0,
+      "value": "Odaberite željene kategorije kako bismo vam prvo mogli pokazati usluge koje vas više zanimaju. Možete odabrati koliko god želite."
+    }
+  ],
+  "k4brJy": [
+    {
+      "type": 0,
+      "value": "SKU"
+    }
+  ],
+  "kIdQvC": [
+    {
+      "type": 0,
+      "value": "NARUČI PO"
+    }
+  ],
+  "kVzyDt": [
+    {
+      "type": 0,
+      "value": "Hvala na Vašoj Narudžbi!"
+    }
+  ],
+  "kXMpVK": [
+    {
+      "type": 0,
+      "value": "Ponovno upišite lozinku"
+    }
+  ],
+  "kjhGGf": [
+    {
+      "type": 0,
+      "value": "Provjerite svoj inbox"
+    }
+  ],
+  "ko8L67": [
+    {
+      "type": 0,
+      "value": "Možda još niste donijeli svoje odluke"
+    }
+  ],
+  "kvOMtB": [
+    {
+      "type": 0,
+      "value": "Kreditna kartica"
+    }
+  ],
+  "lUSk94": [
+    {
+      "type": 0,
+      "value": "Vaš račun je deaktiviran i pokrenut je postupak brisanja."
+    }
+  ],
+  "ls6X+z": [
+    {
+      "type": 0,
+      "value": "Nema opcija"
+    }
+  ],
+  "mBBSyK": [
+    {
+      "type": 0,
+      "value": "Moje kreditne kartice"
+    }
+  ],
+  "mHIlV5": [
+    {
+      "type": 0,
+      "value": "Voditelj trgovine"
+    }
+  ],
+  "mLwkSx": [
+    {
+      "type": 0,
+      "value": "Postavke spremljene!"
+    }
+  ],
+  "mOPLCp": [
+    {
+      "type": 0,
+      "value": "Odabrana udaljenost: "
+    },
+    {
+      "type": 1,
+      "value": "distanceSelected"
+    },
+    {
+      "type": 0,
+      "value": " km"
+    }
+  ],
+  "mah+Bl": [
+    {
+      "type": 0,
+      "value": "Ukupna cijena"
+    }
+  ],
+  "msgy7n": [
+    {
+      "type": 0,
+      "value": "Dobrodošli natrag u dRural!"
+    }
+  ],
+  "mtIIl7": [
+    {
+      "type": 0,
+      "value": "Bankovni transfer"
+    }
+  ],
+  "n6M10I": [
+    {
+      "type": 0,
+      "value": "Cijena visoka-niska"
+    }
+  ],
+  "n74igO": [
+    {
+      "type": 0,
+      "value": "Ne naplaćuje se"
+    }
+  ],
+  "n7yYXG": [
+    {
+      "type": 0,
+      "value": "Servis"
+    }
+  ],
+  "n82YXC": [
+    {
+      "type": 0,
+      "value": "Moje liste"
+    }
+  ],
+  "n8Z9ys": [
+    {
+      "type": 0,
+      "value": "Naziv Povećanje"
+    }
+  ],
+  "nFQbxh": [
+    {
+      "type": 0,
+      "value": "Način plaćanja"
+    }
+  ],
+  "nJCVT0": [
+    {
+      "type": 0,
+      "value": "Nema dostupnih stavki"
+    }
+  ],
+  "nJPv4b": [
+    {
+      "type": 0,
+      "value": "Način plaćanja nije kreiran."
+    }
+  ],
+  "niQNPE": [
+    {
+      "type": 0,
+      "value": "Referenca rezervacije"
+    }
+  ],
+  "o+nfLw": [
+    {
+      "type": 1,
+      "value": "name"
+    }
+  ],
+  "o3XhL3": [
+    {
+      "type": 0,
+      "value": "Udaljenost od moje lokacije:"
+    }
+  ],
+  "o4p2Q6": [
+    {
+      "type": 0,
+      "value": "Uvjeti korištenja"
+    }
+  ],
+  "oQY0a2": [
+    {
+      "type": 0,
+      "value": "Redak adrese 2"
+    }
+  ],
+  "oVktm9": [
+    {
+      "type": 0,
+      "value": "Istaknute usluge"
+    }
+  ],
+  "oYUboz": [
+    {
+      "type": 0,
+      "value": "Unesite svoju e-poštu, poslat ćemo vam upute za resetiranje lozinke."
+    }
+  ],
+  "ovr4vj": [
+    {
+      "type": 0,
+      "value": "švedski"
+    }
+  ],
+  "p+kmJg": [
+    {
+      "type": 0,
+      "value": "Vraćanje izvorne lozinke"
+    }
+  ],
+  "pEJQZZ": [
+    {
+      "type": 0,
+      "value": "Svoje postavke možete promijeniti u bilo kojem trenutku na stranici svog korisničkog profila. Idite na konfiguraciju kako biste odabrali željene kategorije i postavke lokacije."
+    }
+  ],
+  "pFqKoB": [
+    {
+      "type": 0,
+      "value": "Može potrajati do 24 sata da se potpuno uklone svi podaci povezani s vašim računom."
+    }
+  ],
+  "pGDBLH": [
+    {
+      "type": 0,
+      "value": "Ako ne želite registrirati račun, ne brinite. Možete se odjaviti kao gost. Stalo nam je do vas jednako kao i do svakog registriranog korisnika."
+    }
+  ],
+  "pH1N57": [
+    {
+      "type": 0,
+      "value": "3 zvjezdice"
+    }
+  ],
+  "pgOl4C": [
+    {
+      "type": 0,
+      "value": "Pritisnite gumb za uređivanje ako želite izbrisati svoj račun."
+    }
+  ],
+  "qHtK5E": [
+    {
+      "type": 0,
+      "value": "Vaš email je uspješno potvrđen. Vratite se na prijavu da biste unijeli dRural."
+    }
+  ],
+  "qIzA6S": [
+    {
+      "type": 0,
+      "value": "Čini se da ne možemo pronaći stranicu koju tražite! Možda ste pogrešno upisali adresu ili se stranica pomaknula. Ispričavamo se zbog pogreške i nadamo se da ćete imati dobar dan."
+    }
+  ],
+  "qRAN5x": [
+    {
+      "type": 0,
+      "value": "FILTRIRATI PO"
+    }
+  ],
+  "qVGRIE": [
+    {
+      "type": 0,
+      "value": "Količina"
+    }
+  ],
+  "qr8m+g": [
+    {
+      "type": 0,
+      "value": "Vaš broj narudžbe je"
+    }
+  ],
+  "qyQ7t4": [
+    {
+      "type": 0,
+      "value": "traži"
+    }
+  ],
+  "r2Jjms": [
+    {
+      "type": 0,
+      "value": "Prijaviti se"
+    }
+  ],
+  "rELDbB": [
+    {
+      "type": 0,
+      "value": "Osvježiti"
+    }
+  ],
+  "rI+UPp": [
+    {
+      "type": 0,
+      "value": "Nije moguće generirati hmac token"
+    }
+  ],
+  "rSx7QN": [
+    {
+      "type": 0,
+      "value": "Unesite moju lokaciju ručno"
+    }
+  ],
+  "reMHa9": [
+    {
+      "type": 0,
+      "value": "Stripe pristupnik pogrešno konfiguriran. API ključ nije dostavljen."
+    }
+  ],
+  "rhKM1Z": [
+    {
+      "type": 0,
+      "value": "Uslugu pruža"
+    }
+  ],
+  "rmp2xg": [
+    {
+      "type": 0,
+      "value": "Moja lozinka"
+    }
+  ],
+  "rvirM2": [
+    {
+      "type": 0,
+      "value": "Mjesto"
+    }
+  ],
+  "s/8bAh": [
+    {
+      "type": 0,
+      "value": "Izbriši fotografiju"
+    }
+  ],
+  "s3X0AG": [
+    {
+      "type": 0,
+      "value": "Narudžba #"
+    }
+  ],
+  "sPkeAp": [
+    {
+      "type": 0,
+      "value": "Mora sadržavati 7 znakova i najmanje jedno veliko, malo slovo, broj i posebno slovo."
+    }
+  ],
+  "sgroIS": [
+    {
+      "type": 0,
+      "value": "2 zvjezdice"
+    }
+  ],
+  "shwVin": [
+    {
+      "type": 0,
+      "value": "Vidimo da ste sada zauzeti"
+    }
+  ],
+  "sk7Ets": [
+    {
+      "type": 0,
+      "value": "Lozinka mora odgovarati!"
+    }
+  ],
+  "sy+pv5": [
+    {
+      "type": 0,
+      "value": "E-mail"
+    }
+  ],
+  "t2ZOTV": [
+    {
+      "type": 0,
+      "value": "Jeste li sigurni da želite izbrisati popis želja "
+    },
+    {
+      "type": 1,
+      "value": "listName"
+    },
+    {
+      "type": 0,
+      "value": "?"
+    }
+  ],
+  "t38Hon": [
+    {
+      "type": 0,
+      "value": "Došlo je do nepoznate pogreške pri slanju plaćanja."
+    }
+  ],
+  "tLca6A": [
+    {
+      "type": 0,
+      "value": "Telefonski broj nije valjan. Unesite kod zemlje nakon kojeg slijedi broj bez razmaka."
+    }
+  ],
+  "tWmr3d": [
+    {
+      "type": 0,
+      "value": "Usluga rezervacije"
+    }
+  ],
+  "ts5w+M": [
+    {
+      "type": 0,
+      "value": "Nepotvrđeno"
+    }
+  ],
+  "tzMNF3": [
+    {
+      "type": 0,
+      "value": "Status"
+    }
+  ],
+  "u3lkk5": [
+    {
+      "type": 0,
+      "value": "Ovaj dan nema više slobodnih sati."
+    }
+  ],
+  "uBT5kf": [
+    {
+      "type": 0,
+      "value": "E-poštom smo vam poslali potvrdu narudžbe u kojoj možete provjeriti naručene usluge."
+    }
+  ],
+  "uPNlBw": [
+    {
+      "type": 0,
+      "value": "E-mail: "
+    },
+    {
+      "type": 1,
+      "value": "email"
+    }
+  ],
+  "uTagzw": [
+    {
+      "type": 0,
+      "value": "Prikazuje se "
+    },
+    {
+      "type": 1,
+      "value": "userCategoriesCount"
+    },
+    {
+      "type": 0,
+      "value": " od "
+    },
+    {
+      "type": 1,
+      "value": "userCategoriesTotalCount"
+    }
+  ],
+  "uVkBuo": [
+    {
+      "type": 0,
+      "value": "Odaberite "
+    },
+    {
+      "type": 1,
+      "value": "selectLabel"
+    }
+  ],
+  "ugX5fl": [
+    {
+      "type": 0,
+      "value": "Prijavi uslugu"
+    }
+  ],
+  "ulh3kf": [
+    {
+      "type": 0,
+      "value": "Zbirke"
+    }
+  ],
+  "vONi+O": [
+    {
+      "type": 0,
+      "value": "Zemlja"
+    }
+  ],
+  "vQt5XU": [
+    {
+      "type": 0,
+      "value": "Povijest Reda"
+    }
+  ],
+  "vUEawW": [
+    {
+      "type": 0,
+      "value": "Hvala što ste ostavili svoje povratne informacije"
+    }
+  ],
+  "vfG+nh": [
+    {
+      "type": 0,
+      "value": "Potvrdi lozinku"
+    }
+  ],
+  "voftCr": [
+    {
+      "type": 0,
+      "value": "Potvrdite rezervaciju"
+    }
+  ],
+  "vxYWzb": [
+    {
+      "type": 0,
+      "value": "Ocijenite uslugu"
+    }
+  ],
+  "w1ks9x": [
+    {
+      "type": 0,
+      "value": "Rezervirajte ovu uslugu"
+    }
+  ],
+  "w9OoUW": [
+    {
+      "type": 0,
+      "value": "Spremi na novi popis"
+    }
+  ],
+  "wIWVus": [
+    {
+      "type": 0,
+      "value": "Nastavite na blagajnu"
+    }
+  ],
+  "wTo1un": [
+    {
+      "type": 0,
+      "value": "Primijeni filtre"
+    }
+  ],
+  "wTrlQS": [
+    {
+      "type": 0,
+      "value": "Povratak na servisnu stranicu"
+    }
+  ],
+  "wm96Jx": [
+    {
+      "type": 0,
+      "value": "Vratio se"
+    }
+  ],
+  "wmyg6t": [
+    {
+      "type": 0,
+      "value": "Resurs"
+    }
+  ],
+  "wyxJrL": [
+    {
+      "type": 0,
+      "value": "Izbriši račun"
+    }
+  ],
+  "x/OgEF": [
+    {
+      "type": 0,
+      "value": "Zadnje ažurirano Silazno"
+    }
+  ],
+  "x2/i6X": [
+    {
+      "type": 0,
+      "value": "Cijena Niska-Visoka"
+    }
+  ],
+  "xCzQG8": [
+    {
+      "type": 0,
+      "value": "Čisto..."
+    }
+  ],
+  "xLs7Jb": [
+    {
+      "type": 0,
+      "value": "Promijeni sliku"
+    }
+  ],
+  "xMnH8F": [
+    {
+      "type": 0,
+      "value": "Učitaj više"
+    }
+  ],
+  "xNXi4O": [
+    {
+      "type": 0,
+      "value": "Poveznica za potvrdu poslana je na vašu e-poštu. Provjerite svoju pristiglu poštu i kliknite na poveznicu kako biste dovršili postupak registracije."
+    }
+  ],
+  "xvfNSm": [
+    {
+      "type": 0,
+      "value": "usluge "
+    },
+    {
+      "type": 1,
+      "value": "productCount"
+    },
+    {
+      "type": 0,
+      "value": " objavljene"
+    }
+  ],
+  "xwEc8K": [
+    {
+      "type": 0,
+      "value": "API"
+    }
+  ],
+  "xxQxLE": [
+    {
+      "type": 0,
+      "value": "Email adresa"
+    }
+  ],
+  "xxhML8": [
+    {
+      "type": 0,
+      "value": "Pojedinosti o plaćanju"
+    }
+  ],
+  "xyNMpb": [
+    {
+      "type": 0,
+      "value": "Pristupnik plaćanja nije pružio rukovatelja potvrdom plaćanja."
+    }
+  ],
+  "yLAlyl": [
+    {
+      "type": 0,
+      "value": "Sve zvijezde"
+    }
+  ],
+  "yLRtkC": [
+    {
+      "type": 0,
+      "value": "Ime se smanjuje"
+    }
+  ],
+  "yU8L4Y": [
+    {
+      "type": 0,
+      "value": "Maks. učitavanje datoteke je 5"
+    }
+  ],
+  "yzwEMI": [
+    {
+      "type": 0,
+      "value": "Prikaži usluge na ovoj udaljenosti blizu mene"
+    }
+  ],
+  "z+Mzjn": [
+    {
+      "type": 0,
+      "value": "Brisanje računa u tijeku"
+    }
+  ],
+  "zAGI4/": [
+    {
+      "type": 0,
+      "value": "Status nije pronađen"
+    }
+  ],
+  "zEhfKQ": [
+    {
+      "type": 0,
+      "value": "Nastaviti s kupovinom"
+    }
+  ],
+  "zF4S3v": [
+    {
+      "type": 0,
+      "value": "Popularne usluge"
+    }
+  ],
+  "zSOvI0": [
+    {
+      "type": 0,
+      "value": "Filteri"
+    }
+  ],
+  "zSuhDL": [
+    {
+      "type": 0,
+      "value": "Želim kupiti"
+    }
+  ],
+  "zdLDux": [
+    {
+      "type": 0,
+      "value": "Potvrdite brisanje"
+    }
+  ],
+  "zeP3UD": [
+    {
+      "type": 0,
+      "value": "Cijena dostave"
+    }
+  ],
+  "zpDqqG": [
+    {
+      "type": 0,
+      "value": "Izbriši uslugu"
+    }
+  ],
+  "zwNDxG": [
+    {
+      "type": 0,
+      "value": "Vaša košarica"
+    }
+  ],
+  "zx7CKB": [
+    {
+      "type": 0,
+      "value": "Provjerite e-poštu"
+    }
+  ]
+}

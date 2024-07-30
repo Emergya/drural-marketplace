@@ -1,0 +1,123 @@
+@import "../../../../globalStyles/scss/variables-drural.scss";
+
+.login {
+  width: 25rem;
+  max-width: 100vw;
+  max-height: 100vh;
+  @media (min-width: $small-screen) {
+    width: 494px;
+    padding: 2 * $spacer;
+  }
+
+  @media (max-width: $small-screen) {
+    padding: (1.5 * $spacer) 0;
+  }
+
+  .overlay__header{
+    border-bottom: 0;
+    height: fit-content
+  }
+
+  .overlay__header-text {
+    margin-bottom: 1.5rem;
+  }
+
+  &__content {
+    padding-left: $spacer;
+    padding-right: $spacer;
+    padding-top: (4 * $spacer);
+
+    form {
+      > div {
+        margin-bottom: 2.5rem;
+      } 
+      > button {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .input {
+      margin-bottom: $spacer;
+    }
+
+    &__password-reminder {
+      font-size: $smallTextFontSize;
+      margin-top: 0.5vh;
+      margin-bottom: 2vh;
+      text-align: center;
+      > a {
+        font-weight: $boldFontWeight;
+      }
+    }
+  }
+}
+
+.login-container {
+  display: flex;
+}
+.login-image {
+  background-image: url("../../../../images/dRuralImages/login_img.svg");
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-color: #fef7ec;
+  display: none;
+
+  @media (min-width: $medium-screen) {
+    width: 500px;
+    display: block;
+  }
+  @media (min-width: $xlarge-screen) {
+    width: 800px;
+  }
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  &:before,
+  &:after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #000;
+  }
+  &:not(:empty)::before {
+    margin-right: 0.25em;
+  }
+  &:not(:empty)::after {
+    margin-left: 0.25em;
+  }
+}
+#check-info {
+  font-size: $smallTextFontSize;
+  @media (min-width: $small-screen) {
+    font-size: $p16FontSize;
+  }
+}
+form {
+  display: flex;
+  flex-direction: column;
+
+  #name-inputs {
+    display: flex;
+    flex-direction: column;
+    @media (max-width: $small-screen) {
+      > div:first-child {
+        margin-bottom: 2vh;
+      }
+      > div:last-child {
+        margin-top: 2vh;
+      }
+    }
+    @media (min-width: $small-screen) {
+      flex-direction: row;
+      > div:first-child {
+        margin-right: 6px;
+      }
+      > div:last-child {
+        margin-left: 6px;
+      }
+    }
+  }
+}

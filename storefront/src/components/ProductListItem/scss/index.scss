@@ -1,0 +1,73 @@
+@import "../../../globalStyles/scss/variables-drural.scss";
+
+.product-list-item {
+  text-align: center;
+  font-family: $baseFontFamily;
+
+  &__title {
+    font-weight: $semiBoldFontWeight;
+    font-size: $baseFontSize;
+    margin-top: $spacer;
+    text-align: left;
+    @media (max-width: $small-screen) {
+      font-size: $p14FontSize;
+    }
+  }
+
+  &__undiscounted_price {
+    text-decoration: line-through;
+    color: $druralGray_300;
+    font-size: $p20FontSize;
+    font-weight: regular;
+    @media (max-width: $small-screen) {
+      font-size: $p16FontSize;
+    }
+  }
+
+  &__category {
+    color: $product-item-category-color;
+    text-align: left;
+  }
+
+  &__price {
+    font-weight: $boldFontWeight;
+    font-size: $p20FontSize;
+    margin-top: 2px;
+    text-align: left;
+    @media (max-width: $small-screen) {
+      font-size: $p16FontSize;
+    }
+  }
+
+  &__image {
+    background-color: $druralGray_50;
+    width: Min(20vw, 270px);
+    height: 200px;
+
+    img {
+      width: Min(20vw, 270px);
+      height: 200px;
+      object-fit: cover;
+      @media (max-width: $medium-screen) {
+        width: Min(40vw, 270px);
+      }
+      @media (max-width: $small-screen) {
+        width: 184px;
+        height: 184px;
+      }
+    }
+
+    @media (max-width: $medium-screen) {
+      width: Min(40vw, 270px);
+    }
+
+    @media (max-width: $small-screen) {
+      width: 184px;
+      height: 184px;
+    }
+  }
+
+  &__rating {
+    text-align: left;
+  }
+}

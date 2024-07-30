@@ -1,0 +1,5 @@
+.*
+node_modules
+cypress
+build-docker.sh
+Dokerfile*

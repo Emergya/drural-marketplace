@@ -1,0 +1,24 @@
+@import "../../../globalStyles/scss/variables.scss";
+.title-account {
+  margin-bottom: 30px;
+}
+
+.account {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+
+  @media screen and (max-width: $medium-screen) {
+    flex-direction: column;
+  }
+
+  &__menu {
+    width: 360px;
+    margin-right: 2rem;
+  }
+
+  &__content {
+    width: 100%;
+  }
+}

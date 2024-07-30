@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "declaration": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "lib": ["es2017", "dom", "esnext"],
+    "module": "commonjs",
+    "noUnusedLocals": true,
+    "outDir": "lib",
+    // Well, path aliasing doesn't work
+    // ref https://github.com/microsoft/TypeScript/issues/10866
+    "paths": {},
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "es6",
+    "types": ["jest", "@types/webappsec-credential-management"]
+  },
+  "exclude": ["node_modules", "**/*.test.ts", "**/*.test.tsx"],
+  "include": ["src/**/*"]
+}

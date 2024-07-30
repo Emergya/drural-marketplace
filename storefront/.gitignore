@@ -1,0 +1,29 @@
+.*
+!.dockerignore
+!.storybook
+!.circle
+!.eslintrc
+!.gitignore
+!.github
+!.babelrc
+!.plop
+!.jest
+!.linguirc
+!.prettierrc
+!.prettierignore
+!.tx
+!.env.example
+# !.env.development
+# !.env.production
+!.nvmrc
+schema.graphql
+local-schema.graphql
+
+
+dist
+node_modules
+src/locales/_build
+
+cypress/videos
+cypress/screenshots
+cypress/fixtures/example.json

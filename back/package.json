@@ -1,0 +1,30 @@
+{
+  "name": "saleor",
+  "version": "1.1.1",
+  "engines": {
+    "node": ">=14 <15",
+    "npm": ">=6.11.0 <7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mirumee/saleor.git"
+  },
+  "author": "Mirumee Software",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/mirumee/saleor/issues"
+  },
+  "homepage": "http://saleor.io/",
+  "dependencies": {},
+  "devDependencies": {
+    "@release-it/bumper": "^2.0.0",
+    "release-it": "^14.5.0"
+  },
+  "scripts": {
+    "build-schema": "python manage.py get_graphql_schema > saleor/graphql/schema.graphql",
+    "release": "release-it",
+    "release-ci:path": "release-it path --ci",
+    "release-ci:minor": "release-it minor --ci",
+    "release-ci:major": "release-it major --ci"
+  }
+}

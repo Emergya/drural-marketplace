@@ -1,0 +1,66 @@
+@import "../../../globalStyles/scss/variables.scss";
+
+.category {
+  &__header {
+    text-align: center;
+    padding-top: $spacer * 4.5;
+    padding-bottom: $spacer * 4.5;
+    background-size: cover;
+    background-color: $blue-overlay;
+    background-blend-mode: multiply;
+
+    &__title {
+      background-color: $white;
+      display: inline-block;
+      transform: skew(-45deg);
+      padding: 1.5vw 9vw;
+
+      h1 {
+        display: inline-block;
+        transform: skew(45deg);
+        font-weight: $bold-font-weight;
+        text-transform: uppercase;
+        color: $blue;
+        font-size: 8vw;
+        font-weight: 900;
+
+        @media (min-width: $small-screen) {
+          font-size: 4vw;
+        }
+      }
+    }
+  }
+}
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  .map-switch-container {
+    display: flex;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    .map-switch {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 48px;
+      width: 48px;
+      background-color: $white;
+    }
+    .map-switch-active {
+      background-color: #23c290;
+      svg {
+        color: $white;
+      }
+    }
+  }
+}
+.service-map {
+  width: 100vw;
+  > div {
+    width: 100% !important;
+    height: 780px !important;
+    @media (max-width: $small-screen) {
+      height: 316px !important;
+    }
+  }
+}

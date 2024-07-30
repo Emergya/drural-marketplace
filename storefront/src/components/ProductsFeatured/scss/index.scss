@@ -1,0 +1,44 @@
+@import "../../../globalStyles/scss/variables-drural.scss";
+
+.products-featured {
+  h2 {
+    margin-bottom: $spacer * 3.375;
+    text-align: center;
+    @media (max-width: $small-screen) {
+      margin-bottom: $spacer;
+    }
+  }
+
+  a {
+    color: $black;
+    display: inline-block;
+
+    text-decoration: none;
+    justify-self: center;
+  }
+}
+.products-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 1.875rem;
+  row-gap: 2.687rem;
+  @media (max-width: $medium-screen) {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1.125rem;
+    column-gap: 0.875rem;
+  }
+  @media (max-width: $extra-small-screen) {
+    grid-template-columns: 1fr;
+  }
+}
+#more-products-container {
+  margin-top: $spacer * 2;
+  @media (max-width: $medium-screen) {
+    margin-top: $spacer * 1.25;
+  }
+}
+#more-products {
+  width: 270px;
+  text-decoration: underline;
+  font-weight: $extraBoldFontWeight;
+}

@@ -1,0 +1,40 @@
+@import "../../../globalStyles/scss/variables-drural.scss";
+
+.breadcrumbs {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: 2rem 0 0.75rem;
+
+  li {
+    &:not(:first-child) {
+      font-size: $p14FontSize;
+    }
+
+    a {
+      text-decoration: none;
+      vertical-align: middle;
+      transition: 0.3s;
+
+    }
+  }
+
+  &__active {
+    a {
+
+      font-weight: $boldFontWeight;
+    }
+  }
+
+  @media (max-width: $medium-small-screen) {
+    margin: 1.5rem 0 0.625rem;
+  }
+}
+
+.breadcrumb-mobile {
+  align-items: center;
+  display: inline-flex;
+  font-size: $p14FontSize;
+  font-weight: $boldFontWeight;
+  text-decoration: underline;
+
+}

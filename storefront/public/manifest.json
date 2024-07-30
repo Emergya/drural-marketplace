@@ -1,0 +1,41 @@
+{
+  "name": "dRural",
+  "short_name": "dRural",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "256x256"
+    },
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "36x36"
+    }
+  ],
+  "background_color": "#ddd",
+  "description": "Storefront for the dRural marketplace platform",
+  "display": "standalone",
+  "start_url": "/",
+  "theme_color": "#3CDCAA"
+}

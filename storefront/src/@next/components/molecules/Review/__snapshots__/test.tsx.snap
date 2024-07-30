@@ -1,0 +1,340 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProductInfo /> renders correctly 1`] = `
+.c4 {
+  padding-right: 5px;
+}
+
+.c6 {
+  color: #23C290;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 21px;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c6:hover {
+  color: #3CDCAA;
+}
+
+.c0 {
+  padding-bottom: 46px;
+}
+
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 0.5rem;
+}
+
+.c5 {
+  padding-top: 0.5rem;
+}
+
+.c2 {
+  display: inline;
+  margin-right: 8px;
+}
+
+.c3 {
+  color: #676173;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+}
+
+@media (max-width:540px) {
+  .c0 {
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width:540px) {
+  .c1 {
+    padding-bottom: 0.25rem;
+  }
+}
+
+@media (max-width:540px) {
+  .c5 {
+    padding-top: 0;
+  }
+}
+
+@media (max-width:540px) {
+  .c2 {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <p
+      className="c2"
+    >
+      Pepito
+    </p>
+    <p
+      className="c3"
+    >
+      12/10/1999
+    </p>
+  </div>
+  <span
+    style={
+      Object {
+        "direction": "ltr",
+        "display": "inline-block",
+      }
+    }
+  >
+    <span
+      onClick={[Function]}
+      onMouseMove={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      style={
+        Object {
+          "cursor": "inherit",
+          "display": "inline-block",
+          "position": "relative",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
+      >
+        <img
+          alt="star-empty"
+          className="c4"
+          src={[Function]}
+        />
+      </span>
+      <span
+        style={
+          Object {
+            "display": "inline-block",
+            "left": 0,
+            "overflow": "hidden",
+            "position": "absolute",
+            "top": 0,
+            "width": "100%",
+          }
+        }
+      >
+        <img
+          alt="star-full"
+          className="c4"
+          src={[Function]}
+        />
+      </span>
+    </span>
+    <span
+      onClick={[Function]}
+      onMouseMove={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      style={
+        Object {
+          "cursor": "inherit",
+          "display": "inline-block",
+          "position": "relative",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
+      >
+        <img
+          alt="star-empty"
+          className="c4"
+          src={[Function]}
+        />
+      </span>
+      <span
+        style={
+          Object {
+            "display": "inline-block",
+            "left": 0,
+            "overflow": "hidden",
+            "position": "absolute",
+            "top": 0,
+            "width": "100%",
+          }
+        }
+      >
+        <img
+          alt="star-full"
+          className="c4"
+          src={[Function]}
+        />
+      </span>
+    </span>
+    <span
+      onClick={[Function]}
+      onMouseMove={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      style={
+        Object {
+          "cursor": "inherit",
+          "display": "inline-block",
+          "position": "relative",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
+      >
+        <img
+          alt="star-empty"
+          className="c4"
+          src={[Function]}
+        />
+      </span>
+      <span
+        style={
+          Object {
+            "display": "inline-block",
+            "left": 0,
+            "overflow": "hidden",
+            "position": "absolute",
+            "top": 0,
+            "width": "100%",
+          }
+        }
+      >
+        <img
+          alt="star-full"
+          className="c4"
+          src={[Function]}
+        />
+      </span>
+    </span>
+    <span
+      onClick={[Function]}
+      onMouseMove={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      style={
+        Object {
+          "cursor": "inherit",
+          "display": "inline-block",
+          "position": "relative",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "visibility": "hidden",
+          }
+        }
+      >
+        <img
+          alt="star-empty"
+          className="c4"
+          src={[Function]}
+        />
+      </span>
+      <span
+        style={
+          Object {
+            "display": "inline-block",
+            "left": 0,
+            "overflow": "hidden",
+            "position": "absolute",
+            "top": 0,
+            "width": "100%",
+          }
+        }
+      >
+        <img
+          alt="star-full"
+          className="c4"
+          src={[Function]}
+        />
+      </span>
+    </span>
+    <span
+      onClick={[Function]}
+      onMouseMove={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      style={
+        Object {
+          "cursor": "inherit",
+          "display": "inline-block",
+          "position": "relative",
+        }
+      }
+    >
+      <span
+        style={Object {}}
+      >
+        <img
+          alt="star-empty"
+          className="c4"
+          src={[Function]}
+        />
+      </span>
+      <span
+        style={
+          Object {
+            "display": "inline-block",
+            "left": 0,
+            "overflow": "hidden",
+            "position": "absolute",
+            "top": 0,
+            "width": "0%",
+          }
+        }
+      >
+        <img
+          alt="star-full"
+          className="c4"
+          src={[Function]}
+        />
+      </span>
+    </span>
+  </span>
+  <div
+    className="c5"
+  >
+    <p
+      className="c2"
+    >
+      
+    </p>
+    <button
+      className="c6"
+      onClick={[Function]}
+    >
+      More
+    </button>
+  </div>
+</div>
+`;

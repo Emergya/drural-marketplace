@@ -1,0 +1,317 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProductInfo /> renders correctly 1`] = `
+.c6 {
+  padding-right: 5px;
+}
+
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c3 {
+  padding-left: 12px;
+}
+
+.c2 {
+  background-color: #C1BEC8;
+  border-radius: 100px;
+  height: 112px;
+  width: 112px;
+}
+
+.c0 {
+  margin-bottom: 22px;
+}
+
+.c4 {
+  margin-bottom: 1rem;
+}
+
+.c5 {
+  font-size: 0.8125rem;
+  line-height: 21px;
+  margin-bottom: 12px;
+}
+
+@media (max-width:540px) {
+  .c0 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width:540px) {
+  .c4 {
+    font-size: 18px;
+    line-height: 1.5rem;
+    margin-bottom: 6px;
+  }
+}
+
+<div
+  className=""
+>
+  <h4
+    className="c0"
+  >
+    Service provided by
+  </h4>
+  <div
+    className="c1"
+  >
+    <img
+      className="c2"
+      src="/media/companies/dRural_-_Marketp_11.png"
+    />
+    <div
+      className="c3"
+    >
+      <h4
+        className="c4"
+      >
+        Comany 01
+      </h4>
+      <p
+        className="c5"
+      >
+        3 services published
+      </p>
+      <span
+        style={
+          Object {
+            "direction": "ltr",
+            "display": "inline-block",
+          }
+        }
+      >
+        <span
+          onClick={[Function]}
+          onMouseMove={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          style={
+            Object {
+              "cursor": "inherit",
+              "display": "inline-block",
+              "position": "relative",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "visibility": "hidden",
+              }
+            }
+          >
+            <img
+              alt="star-empty"
+              className="c6"
+              src={[Function]}
+            />
+          </span>
+          <span
+            style={
+              Object {
+                "display": "inline-block",
+                "left": 0,
+                "overflow": "hidden",
+                "position": "absolute",
+                "top": 0,
+                "width": "100%",
+              }
+            }
+          >
+            <img
+              alt="star-full"
+              className="c6"
+              src={[Function]}
+            />
+          </span>
+        </span>
+        <span
+          onClick={[Function]}
+          onMouseMove={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          style={
+            Object {
+              "cursor": "inherit",
+              "display": "inline-block",
+              "position": "relative",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "visibility": "hidden",
+              }
+            }
+          >
+            <img
+              alt="star-empty"
+              className="c6"
+              src={[Function]}
+            />
+          </span>
+          <span
+            style={
+              Object {
+                "display": "inline-block",
+                "left": 0,
+                "overflow": "hidden",
+                "position": "absolute",
+                "top": 0,
+                "width": "100%",
+              }
+            }
+          >
+            <img
+              alt="star-full"
+              className="c6"
+              src={[Function]}
+            />
+          </span>
+        </span>
+        <span
+          onClick={[Function]}
+          onMouseMove={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          style={
+            Object {
+              "cursor": "inherit",
+              "display": "inline-block",
+              "position": "relative",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "visibility": "hidden",
+              }
+            }
+          >
+            <img
+              alt="star-empty"
+              className="c6"
+              src={[Function]}
+            />
+          </span>
+          <span
+            style={
+              Object {
+                "display": "inline-block",
+                "left": 0,
+                "overflow": "hidden",
+                "position": "absolute",
+                "top": 0,
+                "width": "100%",
+              }
+            }
+          >
+            <img
+              alt="star-full"
+              className="c6"
+              src={[Function]}
+            />
+          </span>
+        </span>
+        <span
+          onClick={[Function]}
+          onMouseMove={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          style={
+            Object {
+              "cursor": "inherit",
+              "display": "inline-block",
+              "position": "relative",
+            }
+          }
+        >
+          <span
+            style={Object {}}
+          >
+            <img
+              alt="star-empty"
+              className="c6"
+              src={[Function]}
+            />
+          </span>
+          <span
+            style={
+              Object {
+                "display": "inline-block",
+                "left": 0,
+                "overflow": "hidden",
+                "position": "absolute",
+                "top": 0,
+                "width": "0%",
+              }
+            }
+          >
+            <img
+              alt="star-full"
+              className="c6"
+              src={[Function]}
+            />
+          </span>
+        </span>
+        <span
+          onClick={[Function]}
+          onMouseMove={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          style={
+            Object {
+              "cursor": "inherit",
+              "display": "inline-block",
+              "position": "relative",
+            }
+          }
+        >
+          <span
+            style={Object {}}
+          >
+            <img
+              alt="star-empty"
+              className="c6"
+              src={[Function]}
+            />
+          </span>
+          <span
+            style={
+              Object {
+                "display": "inline-block",
+                "left": 0,
+                "overflow": "hidden",
+                "position": "absolute",
+                "top": 0,
+                "width": "0%",
+              }
+            }
+          >
+            <img
+              alt="star-full"
+              className="c6"
+              src={[Function]}
+            />
+          </span>
+        </span>
+      </span>
+    </div>
+  </div>
+</div>
+`;

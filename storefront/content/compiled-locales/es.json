@@ -1,0 +1,2924 @@
+{
+  "+Q1sXM": [
+    {
+      "type": 0,
+      "value": "Estos son sus datos de pedido, por favor asegúrese de revisarlos antes de confirmar el pedido."
+    }
+  ],
+  "+ckxNx": [
+    {
+      "type": 0,
+      "value": "¿Está seguro de que desea eliminar el servicio "
+    },
+    {
+      "type": 1,
+      "value": "serviceName"
+    },
+    {
+      "type": 0,
+      "value": " de la lista de deseos "
+    },
+    {
+      "type": 1,
+      "value": "listName"
+    },
+    {
+      "type": 0,
+      "value": "?"
+    }
+  ],
+  "+d/I+9": [
+    {
+      "type": 0,
+      "value": "Establecer como dirección de envío por defecto"
+    }
+  ],
+  "+kMQfn": [
+    {
+      "type": 0,
+      "value": "Rango de precios"
+    }
+  ],
+  "+qoOl7": [
+    {
+      "type": 0,
+      "value": "Puede que hayas escrito mal la dirección o que la página se haya movido."
+    }
+  ],
+  "/+HyHJ": [
+    {
+      "type": 0,
+      "value": "Deja una valoración"
+    }
+  ],
+  "/+uCYW": [
+    {
+      "type": 0,
+      "value": "Servicios relacionados"
+    }
+  ],
+  "/7OBeN": [
+    {
+      "type": 0,
+      "value": "No se ha podido reportar el producto"
+    }
+  ],
+  "/C/h4C": [
+    {
+      "type": 0,
+      "value": "¿Estás seguro de que quieres borrar tu valoración?"
+    }
+  ],
+  "/DVYB1": [
+    {
+      "type": 0,
+      "value": "Formatos admitidos: jpeg, gif, png."
+    }
+  ],
+  "/FBJmw": [
+    {
+      "type": 0,
+      "value": "¿Cuánto quieres gastar?"
+    }
+  ],
+  "/NZV5a": [
+    {
+      "type": 0,
+      "value": "Ya estás desconectado"
+    }
+  ],
+  "/X8Mjx": [
+    {
+      "type": 0,
+      "value": "Juega con "
+    },
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": "GraphQL API"
+        }
+      ],
+      "type": 8,
+      "value": "emphasis"
+    }
+  ],
+  "/zFP1/": [
+    {
+      "type": 0,
+      "value": "Hora de inicio"
+    }
+  ],
+  "00LcfG": [
+    {
+      "type": 0,
+      "value": "Cargar más"
+    }
+  ],
+  "0Yj2S1": [
+    {
+      "type": 0,
+      "value": "Desactivar todas"
+    }
+  ],
+  "0f45G+": [
+    {
+      "type": 0,
+      "value": "OFFLINE :("
+    }
+  ],
+  "0fxBj6": [
+    {
+      "type": 0,
+      "value": "Novedades"
+    }
+  ],
+  "0g/1TG": [
+    {
+      "type": 0,
+      "value": "Continuar con el pago"
+    }
+  ],
+  "0vL5u1": [
+    {
+      "type": 0,
+      "value": "Crear una cuenta"
+    }
+  ],
+  "0zNair": [
+    {
+      "type": 0,
+      "value": "Sobre dRural"
+    }
+  ],
+  "12/Dpd": [
+    {
+      "type": 0,
+      "value": "¿Seguro que quieres eliminar tu cuenta?"
+    }
+  ],
+  "1851Kr": [
+    {
+      "type": 0,
+      "value": "Número de pedido: #"
+    },
+    {
+      "type": 1,
+      "value": "orderNum"
+    }
+  ],
+  "1KGwKk": [
+    {
+      "type": 0,
+      "value": "Please provide shipping address."
+    }
+  ],
+  "1RO7fs": [
+    {
+      "type": 0,
+      "value": "Volver al servicio"
+    }
+  ],
+  "1jbPX/": [
+    {
+      "type": 0,
+      "value": "Seleccione la hora"
+    }
+  ],
+  "1oz7Jc": [
+    {
+      "type": 0,
+      "value": "Hable con el vendedor"
+    }
+  ],
+  "1w9HXE": [
+    {
+      "type": 0,
+      "value": "Millones de compradores están esperando a que te unas"
+    }
+  ],
+  "2/2yg+": [
+    {
+      "type": 0,
+      "value": "Añadir"
+    }
+  ],
+  "29Ei25": [
+    {
+      "type": 0,
+      "value": "Código Postal"
+    }
+  ],
+  "2XRzbc": [
+    {
+      "type": 0,
+      "value": "Link 3"
+    }
+  ],
+  "2bGejb": [
+    {
+      "type": 0,
+      "value": "Mi Cuenta"
+    }
+  ],
+  "2xjjlC": [
+    {
+      "type": 0,
+      "value": "Pocas existencias"
+    }
+  ],
+  "3Gr7nP": [
+    {
+      "type": 0,
+      "value": "Hola, "
+    },
+    {
+      "type": 1,
+      "value": "name"
+    }
+  ],
+  "3SfdR4": [
+    {
+      "type": 0,
+      "value": "Volver al servicio"
+    }
+  ],
+  "3mBt9u": [
+    {
+      "type": 0,
+      "value": "No te rindas: revisa la ortografía, piensa en algo menos específico y luego utiliza la barra de búsqueda de arriba."
+    }
+  ],
+  "4/1XCq": [
+    {
+      "type": 0,
+      "value": "¡Mensaje enviado!"
+    }
+  ],
+  "45425G": [
+    {
+      "type": 0,
+      "value": "Crear lista"
+    }
+  ],
+  "47FYwb": [
+    {
+      "type": 0,
+      "value": "Cancelar"
+    }
+  ],
+  "4RD+CZ": [
+    {
+      "type": 0,
+      "value": "Método de envío"
+    }
+  ],
+  "4WE+R8": [
+    {
+      "type": 0,
+      "value": "Detalles del servicio"
+    }
+  ],
+  "4WcB2q": [
+    {
+      "type": 0,
+      "value": "DESCRIPCIÓN"
+    }
+  ],
+  "515QcK": [
+    {
+      "type": 0,
+      "value": "Déjanos tu teléfono*"
+    }
+  ],
+  "54Ou53": [
+    {
+      "type": 0,
+      "value": "Tamaño máx. archivo 2 MB"
+    }
+  ],
+  "54VA/h": [
+    {
+      "type": 1,
+      "value": "value"
+    },
+    {
+      "type": 0,
+      "value": " %"
+    }
+  ],
+  "5bOFRX": [
+    {
+      "type": 0,
+      "value": "Eliminar de la lista"
+    }
+  ],
+  "5qDwFV": [
+    {
+      "type": 0,
+      "value": "¡Nueva versión disponible!"
+    }
+  ],
+  "5sc/mV": [
+    {
+      "type": 0,
+      "value": "Explora "
+    },
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": "el Dashboard"
+        }
+      ],
+      "type": 8,
+      "value": "emphasis"
+    }
+  ],
+  "5sg7KC": [
+    {
+      "type": 0,
+      "value": "Contraseña"
+    }
+  ],
+  "5wk80E": [
+    {
+      "type": 0,
+      "value": "Lamentamos el error y esperamos que tenga un buen día."
+    }
+  ],
+  "5zZZ90": [
+    {
+      "type": 0,
+      "value": "Agenda de direcciones"
+    }
+  ],
+  "66HUnz": [
+    {
+      "type": 0,
+      "value": "Categorías favoritas"
+    }
+  ],
+  "6Hdj1s": [
+    {
+      "type": 0,
+      "value": "Seleccionar recurso"
+    }
+  ],
+  "6I+DHW": [
+    {
+      "type": 0,
+      "value": "Seleccionar rango de precios"
+    }
+  ],
+  "6Iqx81": [
+    {
+      "type": 0,
+      "value": "El servicio ha sido valorado"
+    }
+  ],
+  "6SY/Lj": [
+    {
+      "type": 0,
+      "value": "Nombre de la lista"
+    }
+  ],
+  "6XQAoN": [
+    {
+      "type": 0,
+      "value": "servicios encontrados"
+    }
+  ],
+  "6orx1c": [
+    {
+      "type": 0,
+      "value": "Dirección de facturación"
+    }
+  ],
+  "726LOz": [
+    {
+      "type": 0,
+      "value": "Tu privacidad"
+    }
+  ],
+  "748LIQ": [
+    {
+      "type": 0,
+      "value": "Continuar como invitado"
+    }
+  ],
+  "79ZCzp": [
+    {
+      "type": 0,
+      "value": "dRural"
+    }
+  ],
+  "79lKyO": [
+    {
+      "type": 0,
+      "value": "Resultados de búsqueda"
+    }
+  ],
+  "7EENi3": [
+    {
+      "type": 0,
+      "value": "1 estrella"
+    }
+  ],
+  "7NFfmz": [
+    {
+      "type": 0,
+      "value": "Productos"
+    }
+  ],
+  "7NJAYu": [
+    {
+      "type": 0,
+      "value": "Preguntar al vendedor"
+    }
+  ],
+  "7OW8BT": [
+    {
+      "type": 0,
+      "value": "Configuración"
+    }
+  ],
+  "7UOvbT": [
+    {
+      "type": 0,
+      "value": "Offline"
+    }
+  ],
+  "7kLTQX": [
+    {
+      "type": 0,
+      "value": "Cookies estrictamente necesarias"
+    }
+  ],
+  "7uioo9": [
+    {
+      "type": 0,
+      "value": "No se ha seleccionado ninguna lista o aún no se ha añadido ningún servicio a la lista"
+    }
+  ],
+  "7wZ61D": [
+    {
+      "type": 0,
+      "value": "Recuperar contraseña"
+    }
+  ],
+  "80+HSs": [
+    {
+      "type": 0,
+      "value": "Chatwoot"
+    }
+  ],
+  "8FpaMK": [
+    {
+      "type": 0,
+      "value": "Estado/provincia"
+    }
+  ],
+  "8RtoNZ": [
+    {
+      "type": 0,
+      "value": "En caso de que necesitemos contactarlo para obtener más información."
+    }
+  ],
+  "8WtyrD": [
+    {
+      "type": 0,
+      "value": "Español"
+    }
+  ],
+  "8YHEGD": [
+    {
+      "type": 0,
+      "value": "Reportando servicio"
+    }
+  ],
+  "8cv9D4": [
+    {
+      "type": 0,
+      "value": "Siguiente paso"
+    }
+  ],
+  "8sXhNb": [
+    {
+      "type": 0,
+      "value": "Ver lista"
+    }
+  ],
+  "8uddA3": [
+    {
+      "type": 0,
+      "value": "Solicitud de pago no válida."
+    }
+  ],
+  "9AgXoz": [
+    {
+      "type": 0,
+      "value": "Vender"
+    }
+  ],
+  "9FjY/U": [
+    {
+      "type": 1,
+      "value": "serviceName"
+    },
+    {
+      "type": 0,
+      "value": " ha sido añadido a "
+    },
+    {
+      "type": 1,
+      "value": "listName"
+    },
+    {
+      "type": 0,
+      "value": "?"
+    }
+  ],
+  "9T40iW": [
+    {
+      "type": 0,
+      "value": "Este servicio no tiene recursos asociados"
+    }
+  ],
+  "9WRlF4": [
+    {
+      "type": 0,
+      "value": "Enviar"
+    }
+  ],
+  "9k5qQl": [
+    {
+      "type": 0,
+      "value": "Métodos de pago"
+    }
+  ],
+  "9pv+ed": [
+    {
+      "type": 0,
+      "value": "Debe indicar la razón por la que cree que el servicio debe ser reportado (por ejemplo, este servicio ya no existe, este proveedor de servicios ha cerrado, este servicio es inapropiado, etc.). Puede añadir imágenes para ilustrar sus comentarios."
+    }
+  ],
+  "9qnRSj": [
+    {
+      "type": 0,
+      "value": "Mostrar +"
+    }
+  ],
+  "9yjrxH": [
+    {
+      "type": 0,
+      "value": "ATRIBUTOS"
+    }
+  ],
+  "A1T/GS": [
+    {
+      "type": 0,
+      "value": "Buscar en la tienda"
+    }
+  ],
+  "A8OWpi": [
+    {
+      "type": 0,
+      "value": "¡No podemos encontrar la página que busca!"
+    }
+  ],
+  "AEzWZu": [
+    {
+      "type": 0,
+      "value": "Detalles personales"
+    }
+  ],
+  "AJRRLW": [
+    {
+      "type": 0,
+      "value": "Cancelar pedido"
+    }
+  ],
+  "AMbsOQ": [
+    {
+      "type": 0,
+      "value": "Empezar a vender ahora"
+    }
+  ],
+  "AjXses": [
+    {
+      "type": 0,
+      "value": "Su número de pedido: "
+    },
+    {
+      "type": 1,
+      "value": "orderNum"
+    }
+  ],
+  "Ak/e7n": [
+    {
+      "type": 0,
+      "value": "Lo sentimos, pero no pudimos encontrar ningún resultado de búsqueda para:  "
+    },
+    {
+      "type": 1,
+      "value": "search"
+    }
+  ],
+  "B52Em/": [
+    {
+      "type": 0,
+      "value": "Dirección línea 1"
+    }
+  ],
+  "BE6zwi": [
+    {
+      "type": 0,
+      "value": "Término de búsqueda:"
+    }
+  ],
+  "BJ2TKX": [
+    {
+      "type": 0,
+      "value": "Pedido"
+    }
+  ],
+  "BQuFrc": [
+    {
+      "type": 1,
+      "value": "duration"
+    },
+    {
+      "type": 0,
+      "value": " minutos"
+    }
+  ],
+  "BS3FlI": [
+    {
+      "type": 0,
+      "value": "Continuar con la revisión"
+    }
+  ],
+  "BdjtYv": [
+    {
+      "type": 0,
+      "value": "Compartir este servicio"
+    }
+  ],
+  "Bdy3TR": [
+    {
+      "type": 0,
+      "value": "¿Cómo de cerca?"
+    }
+  ],
+  "Bg8a3A": [
+    {
+      "type": 0,
+      "value": "Puedes configurar tus preferencias en cualquier momento en tu página de perfil de usuario. Vaya a configuración para seleccionar sus categorías preferidas y las preferencias de ubicación."
+    }
+  ],
+  "C6lhFD": [
+    {
+      "type": 0,
+      "value": "Está a un paso de activar su cuenta en el mercado dRural."
+    }
+  ],
+  "CTSLLJ": [
+    {
+      "type": 0,
+      "value": "Mi carrito"
+    }
+  ],
+  "Cft/3d": [
+    {
+      "type": 0,
+      "value": "Quiero recibir información de dRural"
+    }
+  ],
+  "ChDAaD": [
+    {
+      "type": 0,
+      "value": "Parcialmente cobrado"
+    }
+  ],
+  "CiCBq1": [
+    {
+      "type": 1,
+      "value": "totalReviews"
+    },
+    {
+      "type": 0,
+      "value": " valoraciones"
+    }
+  ],
+  "CilfB2": [
+    {
+      "type": 0,
+      "value": "Ver todas las valoraciones"
+    }
+  ],
+  "CtoGPj": [
+    {
+      "type": 0,
+      "value": "Su pedido ha sido realizado, necesita ser confirmado por el personal. Le enviaremos un correo electrónico cuando esté hecho."
+    }
+  ],
+  "D+bY29": [
+    {
+      "type": 0,
+      "value": "Método de envío"
+    }
+  ],
+  "DClFoP": [
+    {
+      "type": 0,
+      "value": "Para actualizar la aplicación a la última versión, actualice la página"
+    }
+  ],
+  "DOtajr": [
+    {
+      "type": 0,
+      "value": "Cualquier sitio web que visite puede almacenar o recuperar información en su navegador, principalmente a través de cookies. Esta información puede ser sobre usted, sus preferencias o su dispositivo y se usa principalmente para hacer que el sitio funcione como usted espera. La información no suele identificarle directamente, pero puede ofrecerle una experiencia web más personalizada. Respetamos su derecho a la privacidad, por lo que puede negarse a aceptar ciertos tipos de cookies. A continuación aparecen los diferentes grupos de cookies, haga clic sobre ellos para activarlas/desactivarlas. Sin embargo, el bloqueo de algunos tipos de cookies puede afectar su experiencia con el sitio y los servicios que podemos ofrecerle."
+    }
+  ],
+  "DP5VOH": [
+    {
+      "type": 0,
+      "value": "Dirección de envío"
+    }
+  ],
+  "DRXWXB": [
+    {
+      "type": 0,
+      "value": "404"
+    }
+  ],
+  "Dfjc65": [
+    {
+      "type": 0,
+      "value": "Mejor valorados"
+    }
+  ],
+  "Dmb0KB": [
+    {
+      "type": 0,
+      "value": "El pago necesita confirmación pero los datos requeridos para la confirmación no se han recibido del servidor."
+    }
+  ],
+  "E4wn7I": [
+    {
+      "type": 0,
+      "value": "No se encontraron datos"
+    }
+  ],
+  "EGHx3D": [
+    {
+      "type": 1,
+      "value": "rating"
+    },
+    {
+      "type": 0,
+      "value": " de 5"
+    }
+  ],
+  "EWw/tK": [
+    {
+      "type": 0,
+      "value": "Solicitar"
+    }
+  ],
+  "EeMv7L": [
+    {
+      "type": 0,
+      "value": "Eliminar lista"
+    }
+  ],
+  "EiEAKD": [
+    {
+      "type": 0,
+      "value": "Holandés"
+    }
+  ],
+  "EnCOBJ": [
+    {
+      "type": 0,
+      "value": "Comprar"
+    }
+  ],
+  "Ev6SEF": [
+    {
+      "type": 0,
+      "value": "Nueva Contraseña"
+    }
+  ],
+  "ExS48t": [
+    {
+      "type": 0,
+      "value": "Dirección de facturación por defecto"
+    }
+  ],
+  "F6NI+0": [
+    {
+      "type": 0,
+      "value": "¿Cómo piensas utilizar dRural?"
+    }
+  ],
+  "FGJNIh": [
+    {
+      "type": 0,
+      "value": "ELIMINAR FILTROS"
+    }
+  ],
+  "FyUqOJ": [
+    {
+      "type": 0,
+      "value": "Completamente reservado"
+    }
+  ],
+  "G+l9fC": [
+    {
+      "type": 0,
+      "value": "Todas las valoraciones"
+    }
+  ],
+  "GJoRL/": [
+    {
+      "type": 0,
+      "value": "Vende tus servicios en dRural"
+    }
+  ],
+  "GXJC43": [
+    {
+      "type": 0,
+      "value": "Crea una lista de deseos"
+    }
+  ],
+  "GfYXu2": [
+    {
+      "type": 0,
+      "value": "Volver a mis listas de deseos"
+    }
+  ],
+  "GytZH5": [
+    {
+      "type": 0,
+      "value": "Buscar servicios"
+    }
+  ],
+  "H0JBH6": [
+    {
+      "type": 0,
+      "value": "Cerrar sesión"
+    }
+  ],
+  "HgSye9": [
+    {
+      "type": 0,
+      "value": "dRural © 2022"
+    }
+  ],
+  "I5NMJ8": [
+    {
+      "type": 0,
+      "value": "Más"
+    }
+  ],
+  "IWbkAR": [
+    {
+      "type": 0,
+      "value": "Término de búsqueda: "
+    },
+    {
+      "type": 1,
+      "value": "search"
+    }
+  ],
+  "IY2TiN": [
+    {
+      "type": 0,
+      "value": "Editar nombre lista de deseos"
+    }
+  ],
+  "IeNMka": [
+    {
+      "type": 0,
+      "value": "Ir a mi carrito"
+    }
+  ],
+  "InWqys": [
+    {
+      "type": 0,
+      "value": "Opcional"
+    }
+  ],
+  "IwxuZY": [
+    {
+      "type": 0,
+      "value": "dRural quiere acceder a tu ubicación para ofrecerte un mejor servicio y mostrarte los servicios más cercanos a ti."
+    }
+  ],
+  "J+buBa": [
+    {
+      "type": 0,
+      "value": "Antigua Contraseña"
+    }
+  ],
+  "J6Eyds": [
+    {
+      "type": 0,
+      "value": "Comprar"
+    }
+  ],
+  "JE4+x5": [
+    {
+      "type": 0,
+      "value": "Eliminar servicio de la lista de deseos"
+    }
+  ],
+  "JItzoH": [
+    {
+      "type": 0,
+      "value": "Hacer el pedido"
+    }
+  ],
+  "JN6MSK": [
+    {
+      "type": 0,
+      "value": "Establecer nueva contraseña"
+    }
+  ],
+  "JRlv3P": [
+    {
+      "type": 0,
+      "value": "Atención: esto eliminará los datos de su cuenta de forma permanente, si desea continuar con el proceso, haga clic en el botón de confirmación."
+    }
+  ],
+  "JSooiR": [
+    {
+      "type": 0,
+      "value": "Nombre de la empresa (opcional)"
+    }
+  ],
+  "JXdbo8": [
+    {
+      "type": 0,
+      "value": "Hecho"
+    }
+  ],
+  "JqiqNj": [
+    {
+      "type": 0,
+      "value": "Algo ha ido mal"
+    }
+  ],
+  "Jrw8G7": [
+    {
+      "type": 0,
+      "value": "Modificar"
+    }
+  ],
+  "KGERmF": [
+    {
+      "type": 0,
+      "value": "Número de referencia de la reserva"
+    }
+  ],
+  "KOcBRL": [
+    {
+      "type": 0,
+      "value": "Google Analytics"
+    }
+  ],
+  "KSlktl": [
+    {
+      "type": 0,
+      "value": "Revise su correo electrónico, debería haber recibido un mensaje con un enlace para confirmar la eliminación de su cuenta."
+    }
+  ],
+  "KUBgP9": [
+    {
+      "type": 0,
+      "value": "Detalles pedido"
+    }
+  ],
+  "KmgRL+": [
+    {
+      "type": 0,
+      "value": "Algo ha ido mal con la aplicación que genera el mapa"
+    }
+  ],
+  "KorORN": [
+    {
+      "type": 0,
+      "value": "No disponible para la compra"
+    }
+  ],
+  "L8seEc": [
+    {
+      "type": 0,
+      "value": "Subtotal"
+    }
+  ],
+  "LABC/Y": [
+    {
+      "type": 0,
+      "value": "Más +"
+    }
+  ],
+  "LFcS5g": [
+    {
+      "type": 0,
+      "value": "Pagar en la tienda"
+    }
+  ],
+  "LMdzKV": [
+    {
+      "type": 0,
+      "value": "Puede que te guste"
+    }
+  ],
+  "LaW2j0": [
+    {
+      "type": 0,
+      "value": "Nuestros socios publicitarios instalan estas cookies a través de nuestro sitio web. Estas empresas pueden utilizarlos para perfilar sus intereses y mostrarle anuncios relevantes en otros sitios web. Funcionan asignando un identificador único a su navegador y dispositivo. Si no permite estas cookies, no verá nuestra publicidad dirigida a usted en otros sitios web como resultado de estas cookies."
+    }
+  ],
+  "LkCowx": [
+    {
+      "type": 0,
+      "value": "Por favor, elige la forma de pago."
+    }
+  ],
+  "LmAYuU": [
+    {
+      "type": 0,
+      "value": "km"
+    }
+  ],
+  "Lv0zJu": [
+    {
+      "type": 0,
+      "value": "Detalles"
+    }
+  ],
+  "MJ2jZQ": [
+    {
+      "type": 0,
+      "value": "Total"
+    }
+  ],
+  "MVlVYL": [
+    {
+      "type": 0,
+      "value": "Tu carrito está vacío"
+    }
+  ],
+  "MYiZl4": [
+    {
+      "type": 0,
+      "value": "Valoraciones del servicio"
+    }
+  ],
+  "MjOjxw": [
+    {
+      "type": 0,
+      "value": "Pedido cancelado"
+    }
+  ],
+  "Mnkq4K": [
+    {
+      "type": 0,
+      "value": "Díganos por qué reporta este servicio"
+    }
+  ],
+  "N1KsBC": [
+    {
+      "type": 0,
+      "value": "Detalles de la reserva"
+    }
+  ],
+  "N2S5pk": [
+    {
+      "type": 0,
+      "value": "parece vacío"
+    }
+  ],
+  "NAidKb": [
+    {
+      "type": 0,
+      "value": "Notificaciones"
+    }
+  ],
+  "NT+3fY": [
+    {
+      "type": 0,
+      "value": "Rechazado"
+    }
+  ],
+  "NdFB/s": [
+    {
+      "type": 0,
+      "value": "Todos los servicios"
+    }
+  ],
+  "NfwDx2": [
+    {
+      "type": 0,
+      "value": "Detalles pedido"
+    }
+  ],
+  "NmK6zy": [
+    {
+      "type": 0,
+      "value": "Pago"
+    }
+  ],
+  "O95R3Z": [
+    {
+      "type": 0,
+      "value": "Teléfono"
+    }
+  ],
+  "OK5+Fh": [
+    {
+      "type": 0,
+      "value": "Variante"
+    }
+  ],
+  "OKGZwS": [
+    {
+      "type": 0,
+      "value": "Servicio añadido a la lista de desoes"
+    }
+  ],
+  "OV7mgg": [
+    {
+      "type": 0,
+      "value": "Descargar factura"
+    }
+  ],
+  "Oa/XSP": [
+    {
+      "type": 0,
+      "value": "dirección"
+    }
+  ],
+  "OtMych": [
+    {
+      "type": 0,
+      "value": "Eliminar valoración"
+    }
+  ],
+  "P+JT42": [
+    {
+      "type": 0,
+      "value": "Mis direcciones"
+    }
+  ],
+  "P7PLVj": [
+    {
+      "type": 0,
+      "value": "Fecha"
+    }
+  ],
+  "PFtMy9": [
+    {
+      "type": 0,
+      "value": "Cancelado"
+    }
+  ],
+  "PR2F1h": [
+    {
+      "type": 1,
+      "value": "message"
+    }
+  ],
+  "PRlD0A": [
+    {
+      "type": 0,
+      "value": "Envío"
+    }
+  ],
+  "PRzft5": [
+    {
+      "type": 0,
+      "value": "Mas vendidos"
+    }
+  ],
+  "PgJGHT": [
+    {
+      "type": 0,
+      "value": "Disponible"
+    }
+  ],
+  "PjRbR1": [
+    {
+      "type": 0,
+      "value": "Link 2"
+    }
+  ],
+  "PlBReU": [
+    {
+      "type": 0,
+      "value": "Cerrar sesión"
+    }
+  ],
+  "PspJ6Q": [
+    {
+      "type": 0,
+      "value": "Elegir recurso"
+    }
+  ],
+  "Q62mJ9": [
+    {
+      "type": 0,
+      "value": "Bienvenido, "
+    },
+    {
+      "type": 1,
+      "value": "username"
+    },
+    {
+      "type": 0,
+      "value": "!"
+    }
+  ],
+  "Q6wcZ5": [
+    {
+      "type": 0,
+      "value": "Nombre"
+    }
+  ],
+  "Q8Qw5B": [
+    {
+      "type": 0,
+      "value": "Descripción"
+    }
+  ],
+  "QH5kv3": [
+    {
+      "type": 0,
+      "value": "Más cercanos a mi"
+    }
+  ],
+  "QRsC1D": [
+    {
+      "type": 0,
+      "value": "Su localización"
+    }
+  ],
+  "R+J5ox": [
+    {
+      "type": 0,
+      "value": "Valoración"
+    }
+  ],
+  "R3E9ay": [
+    {
+      "type": 0,
+      "value": "Preferencias de cookies"
+    }
+  ],
+  "R5+RlZ": [
+    {
+      "type": 1,
+      "value": "totalCount"
+    },
+    {
+      "type": 0,
+      "value": " servicios encontrados"
+    }
+  ],
+  "RDuVyt": [
+    {
+      "type": 0,
+      "value": "Permite que dRural rastree tu ubicación para que podamos mostrarte los servicios más increíbles cerca de ti."
+    }
+  ],
+  "RMAVgz": [
+    {
+      "type": 0,
+      "value": "Link 4"
+    }
+  ],
+  "RQ44K7": [
+    {
+      "type": 0,
+      "value": "Categorías preferidas"
+    }
+  ],
+  "RqOE8H": [
+    {
+      "type": 0,
+      "value": "Dirección por defecto"
+    }
+  ],
+  "RtKR9V": [
+    {
+      "type": 0,
+      "value": "GeoLocalización"
+    }
+  ],
+  "RzsKm8": [
+    {
+      "type": 0,
+      "value": "Métodos de envío"
+    }
+  ],
+  "SENRqu": [
+    {
+      "type": 0,
+      "value": "Ayuda"
+    }
+  ],
+  "SGdcJD": [
+    {
+      "type": 0,
+      "value": "Introduzca el código"
+    }
+  ],
+  "SQJto2": [
+    {
+      "type": 0,
+      "value": "Acceder"
+    }
+  ],
+  "Seanpx": [
+    {
+      "type": 0,
+      "value": "Requerido"
+    }
+  ],
+  "SuBsH3": [
+    {
+      "type": 0,
+      "value": "No se ha podido confirmar el pago."
+    }
+  ],
+  "TE4fIS": [
+    {
+      "type": 0,
+      "value": "Ciudad"
+    }
+  ],
+  "TSP1Mj": [
+    {
+      "type": 0,
+      "value": "Volver al servicio"
+    }
+  ],
+  "TwyMau": [
+    {
+      "type": 0,
+      "value": "Cuenta"
+    }
+  ],
+  "Tz4nxM": [
+    {
+      "type": 0,
+      "value": "Usamos cookies y tecnologías similares para personalizar el contenido, adaptar los anuncios y medir su efectividad, y para brindar una mejor experiencia. Al hacer clic en aceptar, acepta las disposiciones de nuestra Política de cookies. Para cambiar sus preferencias, actualice sus Preferencias de cookies."
+    }
+  ],
+  "U2el92": [
+    {
+      "type": 0,
+      "value": "El pago fue cancelado."
+    }
+  ],
+  "UHXgba": [
+    {
+      "type": 0,
+      "value": "Día disponible"
+    }
+  ],
+  "USfLuS": [
+    {
+      "type": 0,
+      "value": "Por favor, proporciona una nueva contraseña"
+    }
+  ],
+  "Ut7ZVi": [
+    {
+      "type": 0,
+      "value": "Valora tu experiencia"
+    }
+  ],
+  "V6P9GB": [
+    {
+      "type": 0,
+      "value": "No has añadido nada al carrito. Estamos seguros de que encontrarás algo en nuestro marketplace"
+    }
+  ],
+  "VKb1MS": [
+    {
+      "type": 0,
+      "value": "Categorías"
+    }
+  ],
+  "VcQV4Z": [
+    {
+      "type": 0,
+      "value": "Reembolsado totalmente"
+    }
+  ],
+  "Vf57Ie": [
+    {
+      "type": 0,
+      "value": "Completado parcialmente"
+    }
+  ],
+  "VhcCOO": [
+    {
+      "type": 0,
+      "value": "Nueva lista"
+    }
+  ],
+  "W6nwjo": [
+    {
+      "type": 0,
+      "value": "Borrador"
+    }
+  ],
+  "WCcbn6": [
+    {
+      "type": 0,
+      "value": "Último actualizado Ascendente"
+    }
+  ],
+  "WGCGLH": [
+    {
+      "type": 0,
+      "value": "Sí, quiero eliminar mi cuenta en dRural."
+    }
+  ],
+  "WHgdsk": [
+    {
+      "type": 0,
+      "value": "Agotado"
+    }
+  ],
+  "WKXLYM": [
+    {
+      "type": 0,
+      "value": "dRural, el mercado digital que conecta a los usuarios con los proveedores de servicios locales cercanos"
+    }
+  ],
+  "Wai7xX": [
+    {
+      "type": 0,
+      "value": "Parece que el token para restablecer la contraseña ya no es válido."
+    }
+  ],
+  "Wfj7wS": [
+    {
+      "type": 0,
+      "value": "Le hemos enviado un correo electrónico con instrucciones para cambiar su contraseña."
+    }
+  ],
+  "WghPED": [
+    {
+      "type": 0,
+      "value": "Volver al inicio de sesión"
+    }
+  ],
+  "WkrNSk": [
+    {
+      "type": 0,
+      "value": "Inglés"
+    }
+  ],
+  "WmzATS": [
+    {
+      "type": 0,
+      "value": "Número de teléfono: "
+    },
+    {
+      "type": 1,
+      "value": "phone"
+    }
+  ],
+  "WxEpVL": [
+    {
+      "type": 0,
+      "value": "Añadir nuevo "
+    },
+    {
+      "type": 1,
+      "value": "type"
+    }
+  ],
+  "XO+nU9": [
+    {
+      "type": 0,
+      "value": "Estas cookies son necesarias para que el sitio web funcione y no se pueden desactivar. Por lo general, solo se activan en respuesta a las acciones que ha realizado que dan como resultado una solicitud de servicios, como configurar sus preferencias de privacidad, iniciar sesión o completar formularios. Puede configurar su navegador para que bloquee o muestre avisos sobre estas cookies, pero es posible que algunas partes de nuestro sitio web no funcionen si lo hace."
+    }
+  ],
+  "XS0QmX": [
+    {
+      "type": 0,
+      "value": "Descuento: "
+    },
+    {
+      "type": 1,
+      "value": "discountName"
+    }
+  ],
+  "XSr1Wg": [
+    {
+      "type": 0,
+      "value": "Error en el envío del pago. La pasarela de Stripe no ha devuelto ningún método de pago en la respuesta."
+    }
+  ],
+  "XkwMjW": [
+    {
+      "type": 0,
+      "value": "La cantidad máxima es "
+    },
+    {
+      "type": 1,
+      "value": "maxQuantity"
+    }
+  ],
+  "Xo3t9z": [
+    {
+      "type": 0,
+      "value": "Guardar en la lista"
+    }
+  ],
+  "XvZCaw": [
+    {
+      "type": 0,
+      "value": "Reembolsado parcialmente"
+    }
+  ],
+  "Y8GJZW": [
+    {
+      "type": 0,
+      "value": "Le hemos enviado una confirmación de pedido por correo electrónico y le notificaremos cuando el pedido haya sido enviado."
+    }
+  ],
+  "YKXkbB": [
+    {
+      "type": 0,
+      "value": "Hola, "
+    }
+  ],
+  "YM709/": [
+    {
+      "type": 0,
+      "value": "Indique la dirección de correo electrónico."
+    }
+  ],
+  "YQVUHR": [
+    {
+      "type": 0,
+      "value": "VER TODAS LAS OPCIONES"
+    }
+  ],
+  "YfYlZP": [
+    {
+      "type": 0,
+      "value": "No tiene ninguna categoría seleccionada. Por favor, haga clic en el botón de edición para empezar a seleccionar."
+    }
+  ],
+  "Ynjq+C": [
+    {
+      "type": 0,
+      "value": "Totalmente cobrado"
+    }
+  ],
+  "YqRDRu": [
+    {
+      "type": 0,
+      "value": "4 estrellas"
+    }
+  ],
+  "Yx6py4": [
+    {
+      "type": 0,
+      "value": "Estado de pago"
+    }
+  ],
+  "Yy/yDL": [
+    {
+      "type": 0,
+      "value": "Restablecer contraseña"
+    }
+  ],
+  "Yywm0p": [
+    {
+      "type": 0,
+      "value": "Seguir comprando"
+    }
+  ],
+  "ZBUdiz": [
+    {
+      "type": 0,
+      "value": "Coste total"
+    }
+  ],
+  "ZIYTq9": [
+    {
+      "type": 0,
+      "value": "Le conectamos con los servicios que necesita"
+    }
+  ],
+  "ZMCsQ+": [
+    {
+      "type": 0,
+      "value": "Buscar servicios cerca de mí"
+    }
+  ],
+  "ZnxB65": [
+    {
+      "type": 0,
+      "value": "Selector de idioma"
+    }
+  ],
+  "a/4SMm": [
+    {
+      "type": 0,
+      "value": "Campo obligatorio"
+    }
+  ],
+  "a8gxsN": [
+    {
+      "type": 0,
+      "value": "El pago ha sido rechazado. Vuelve a intentar el pago con otro método de pago o tarjeta."
+    }
+  ],
+  "aGN62y": [
+    {
+      "type": 0,
+      "value": "Este proyecto ha recibido financiación del programa de investigación e innovación Horizonte 2020 de la Unión Europea en virtud del acuerdo de subvención n.º 101017304."
+    }
+  ],
+  "aIRWQB": [
+    {
+      "type": 0,
+      "value": "Volver a la página de inicio"
+    }
+  ],
+  "aWoA8g": [
+    {
+      "type": 0,
+      "value": "Datos personales"
+    }
+  ],
+  "aei+HO": [
+    {
+      "type": 0,
+      "value": "¡Bienvenido a dRural!"
+    }
+  ],
+  "aheQdn": [
+    {
+      "type": 0,
+      "value": "Apellidos"
+    }
+  ],
+  "ast9q1": [
+    {
+      "type": 0,
+      "value": "Estado del pedido"
+    }
+  ],
+  "ataTev": [
+    {
+      "type": 0,
+      "value": "Incompleto"
+    }
+  ],
+  "b11WUZ": [
+    {
+      "type": 0,
+      "value": "Hora"
+    }
+  ],
+  "b1zuN9": [
+    {
+      "type": 0,
+      "value": "Precio"
+    }
+  ],
+  "b8sVDI": [
+    {
+      "type": 0,
+      "value": "Aviso de privacidad"
+    }
+  ],
+  "baOQrt": [
+    {
+      "type": 0,
+      "value": "Gracias por dejar su opinión. Su informe será revisado por un administrador de dRural."
+    }
+  ],
+  "bsM94i": [
+    {
+      "type": 0,
+      "value": "Continuar con el envío"
+    }
+  ],
+  "bzEaXJ": [
+    {
+      "type": 0,
+      "value": "¿Qué estás buscando?"
+    }
+  ],
+  "c7/79+": [
+    {
+      "type": 0,
+      "value": "Dirección de facturación"
+    }
+  ],
+  "c8W0mH": [
+    {
+      "type": 0,
+      "value": "¿Tiene un cupón de tarjeta de regalo o un código de descuento?"
+    }
+  ],
+  "cQiUt4": [
+    {
+      "type": 0,
+      "value": "Añadir una nueva dirección"
+    }
+  ],
+  "cZyhkN": [
+    {
+      "type": 0,
+      "value": "Subir fotos (opcional)"
+    }
+  ],
+  "ccXLVi": [
+    {
+      "type": 0,
+      "value": "Categoría"
+    }
+  ],
+  "ceaFSA": [
+    {
+      "type": 0,
+      "value": "Dirección de envío por defecto"
+    }
+  ],
+  "clY0ZY": [
+    {
+      "type": 0,
+      "value": "Quiero vender"
+    }
+  ],
+  "cpCJUk": [
+    {
+      "type": 0,
+      "value": "Usuario registrado"
+    }
+  ],
+  "cwTQku": [
+    {
+      "type": 0,
+      "value": "Referencia de reserva"
+    }
+  ],
+  "cyR7Kh": [
+    {
+      "type": 0,
+      "value": "Volver"
+    }
+  ],
+  "d3jSMU": [
+    {
+      "type": 0,
+      "value": "Puedes subir hasta 5 fotos."
+    }
+  ],
+  "d3lWas": [
+    {
+      "type": 0,
+      "value": "crear una cuenta"
+    }
+  ],
+  "dABWQd": [
+    {
+      "type": 0,
+      "value": "No se encontraron servicios"
+    }
+  ],
+  "dC3u7Z": [
+    {
+      "type": 0,
+      "value": "Más populares"
+    }
+  ],
+  "dUxyza": [
+    {
+      "type": 0,
+      "value": "Valoraciones"
+    }
+  ],
+  "deEeEI": [
+    {
+      "type": 0,
+      "value": "Registrarse"
+    }
+  ],
+  "dlXyEz": [
+    {
+      "type": 1,
+      "value": "error"
+    }
+  ],
+  "e6Ph5+": [
+    {
+      "type": 0,
+      "value": "Dirección"
+    }
+  ],
+  "eGPQwN": [
+    {
+      "type": 0,
+      "value": "Necesitamos tu teléfono en caso de que necesitemos ponernos en contacto contigo para obtener más información"
+    }
+  ],
+  "eKEL/g": [
+    {
+      "type": 0,
+      "value": "Pendiente"
+    }
+  ],
+  "eh90Dc": [
+    {
+      "type": 1,
+      "value": "reviewsCount"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "type": 1,
+      "value": "reviews"
+    }
+  ],
+  "ejEGdx": [
+    {
+      "type": 0,
+      "value": "Inicio"
+    }
+  ],
+  "erE1I9": [
+    {
+      "type": 0,
+      "value": "Debe ser un correo electrónico válido"
+    }
+  ],
+  "ev8nQc": [
+    {
+      "type": 0,
+      "value": "Precio seleccionado: "
+    },
+    {
+      "type": 1,
+      "value": "pge"
+    },
+    {
+      "type": 0,
+      "value": " - "
+    },
+    {
+      "type": 1,
+      "value": "ple"
+    },
+    {
+      "type": 0,
+      "value": " €"
+    }
+  ],
+  "ex+q9+": [
+    {
+      "type": 0,
+      "value": "Editar dirección"
+    }
+  ],
+  "ezoYNP": [
+    {
+      "type": 0,
+      "value": "No se ha podido mostrar la pasarela de pago de Stripe. No se proporcionaron los elementos de Stripe."
+    }
+  ],
+  "f/jyk+": [
+    {
+      "type": 0,
+      "value": "Croata"
+    }
+  ],
+  "f1bdYj": [
+    {
+      "type": 0,
+      "value": "El número de teléfono debe contener 15 o menos dígitos"
+    }
+  ],
+  "fE3ujL": [
+    {
+      "type": 0,
+      "value": "Detalles del pedido"
+    }
+  ],
+  "fVvfyb": [
+    {
+      "type": 0,
+      "value": "Editar el nombre de la lista"
+    }
+  ],
+  "fq86MK": [
+    {
+      "type": 0,
+      "value": "Más recientes"
+    }
+  ],
+  "gDxz/O": [
+    {
+      "type": 0,
+      "value": "Reservar servicio"
+    }
+  ],
+  "gF7/Mv": [
+    {
+      "type": 0,
+      "value": "5 estrellas"
+    }
+  ],
+  "gVph2B": [
+    {
+      "type": 0,
+      "value": "El pago necesita confirmación, pero los datos necesarios para la confirmación recibidos del servidor son incorrectos."
+    }
+  ],
+  "gjwFsT": [
+    {
+      "type": 0,
+      "value": "Selecciona la fecha"
+    }
+  ],
+  "h4IxgY": [
+    {
+      "type": 0,
+      "value": "Email confirmado"
+    }
+  ],
+  "hDI+JM": [
+    {
+      "type": 0,
+      "value": "Ordenar por"
+    }
+  ],
+  "hMzcSq": [
+    {
+      "type": 0,
+      "value": "Mensajes"
+    }
+  ],
+  "hNu2St": [
+    {
+      "type": 0,
+      "value": "Pagar en la tienda"
+    }
+  ],
+  "hX1ca3": [
+    {
+      "type": 0,
+      "value": "Volver al historial de pedidos"
+    }
+  ],
+  "hXa/U/": [
+    {
+      "type": 0,
+      "value": "o bien puedes"
+    }
+  ],
+  "hcXlt0": [
+    {
+      "type": 0,
+      "value": "Link 1"
+    }
+  ],
+  "hefnRL": [
+    {
+      "type": 0,
+      "value": "Establecer como dirección de facturación por defecto"
+    }
+  ],
+  "hqK0Mk": [
+    {
+      "type": 0,
+      "value": "Uuups!... 404"
+    }
+  ],
+  "hr8Rxf": [
+    {
+      "type": 0,
+      "value": "Volver a la página de inicio"
+    }
+  ],
+  "hvDAdI": [
+    {
+      "type": 0,
+      "value": "Dejar mi valoración"
+    }
+  ],
+  "hzSNj4": [
+    {
+      "type": 0,
+      "value": "Dashboard"
+    }
+  ],
+  "iBmKeP": [
+    {
+      "type": 0,
+      "value": "Stripe"
+    }
+  ],
+  "iFsDVR": [
+    {
+      "type": 0,
+      "value": "Cargando"
+    }
+  ],
+  "iWbl/h": [
+    {
+      "type": 0,
+      "value": "Parcialmente devuelto"
+    }
+  ],
+  "iYqYa/": [
+    {
+      "type": 0,
+      "value": "Comprueba tu correo electrónico, deberías haber recibido un mensaje con un enlace para confirmar la eliminación de tu cuenta."
+    }
+  ],
+  "iZ3kzM": [
+    {
+      "type": 0,
+      "value": "He olvidado mi contraseña"
+    }
+  ],
+  "ijJ3es": [
+    {
+      "type": 1,
+      "value": "star"
+    },
+    {
+      "type": 0,
+      "value": " estrellas"
+    }
+  ],
+  "ipg5B3": [
+    {
+      "type": 0,
+      "value": "Se ha producido un error al procesar el pago."
+    }
+  ],
+  "ipwTkh": [
+    {
+      "type": 0,
+      "value": "Igual que la dirección de envío"
+    }
+  ],
+  "j5EA6m": [
+    {
+      "type": 0,
+      "value": "PROCEDER CON EL PEDIDO"
+    }
+  ],
+  "jAHnYU": [
+    {
+      "type": 0,
+      "value": "Servicios cercanos a ti"
+    }
+  ],
+  "jHKLNU": [
+    {
+      "type": 0,
+      "value": "Indique la dirección de facturación."
+    }
+  ],
+  "jMQMBz": [
+    {
+      "type": 0,
+      "value": "Eliminar la lista de deseos"
+    }
+  ],
+  "jNHZSz": [
+    {
+      "type": 0,
+      "value": "No se pudo cancelar el pedido"
+    }
+  ],
+  "jY+f2f": [
+    {
+      "type": 0,
+      "value": "Incompleto"
+    }
+  ],
+  "jbbK0Z": [
+    {
+      "type": 0,
+      "value": "¿Eliminar valoración?"
+    }
+  ],
+  "jnTBr4": [
+    {
+      "type": 0,
+      "value": "Mostrar todos los resultados"
+    }
+  ],
+  "jrEpw7": [
+    {
+      "type": 0,
+      "value": "Ya has iniciado sesión"
+    }
+  ],
+  "jruD6p": [
+    {
+      "type": 0,
+      "value": "Confirmar la eliminación de la cuenta"
+    }
+  ],
+  "jvgIPx": [
+    {
+      "type": 0,
+      "value": "Estará disponible para su compra el "
+    },
+    {
+      "type": 1,
+      "value": "date"
+    },
+    {
+      "type": 0,
+      "value": " a las "
+    },
+    {
+      "type": 1,
+      "value": "time"
+    }
+  ],
+  "jvo0vs": [
+    {
+      "type": 0,
+      "value": "Guardar"
+    }
+  ],
+  "jwiL7B": [
+    {
+      "type": 0,
+      "value": "Servicio reportado"
+    }
+  ],
+  "jy71nZ": [
+    {
+      "type": 0,
+      "value": "Mis listas de deseos"
+    }
+  ],
+  "k+RUwL": [
+    {
+      "type": 0,
+      "value": "Selecciona tus categorías preferidas, para que podamos mostrarte primero los servicios que más te interesan. Puedes seleccionar todas las que quieras."
+    }
+  ],
+  "k00bpe": [
+    {
+      "type": 0,
+      "value": "Cookies de segmentación"
+    }
+  ],
+  "k4brJy": [
+    {
+      "type": 0,
+      "value": "SKU"
+    }
+  ],
+  "kIdQvC": [
+    {
+      "type": 0,
+      "value": "ORDERAR POR"
+    }
+  ],
+  "kVzyDt": [
+    {
+      "type": 0,
+      "value": "¡Gracias por tu pedido!"
+    }
+  ],
+  "kXMpVK": [
+    {
+      "type": 0,
+      "value": "Repita la contraseña"
+    }
+  ],
+  "kjhGGf": [
+    {
+      "type": 0,
+      "value": "Revisa tu bandeja de entrada"
+    }
+  ],
+  "ko8L67": [
+    {
+      "type": 0,
+      "value": "Tal vez aún no hayas elegido."
+    }
+  ],
+  "kvOMtB": [
+    {
+      "type": 0,
+      "value": "Tarjeta de crédito"
+    }
+  ],
+  "lUSk94": [
+    {
+      "type": 0,
+      "value": "Su cuenta ha sido desactivada y se ha iniciado el proceso de eliminación."
+    }
+  ],
+  "ls6X+z": [
+    {
+      "type": 0,
+      "value": "Ninguna Opción"
+    }
+  ],
+  "mBBSyK": [
+    {
+      "type": 0,
+      "value": "Mis tarjetas de crédito"
+    }
+  ],
+  "mHIlV5": [
+    {
+      "type": 0,
+      "value": "Gestor de tiendas"
+    }
+  ],
+  "mLwkSx": [
+    {
+      "type": 0,
+      "value": "¡Preferencias guardadas!"
+    }
+  ],
+  "mOPLCp": [
+    {
+      "type": 0,
+      "value": "Distancia seleccionada: "
+    },
+    {
+      "type": 1,
+      "value": "distanceSelected"
+    },
+    {
+      "type": 0,
+      "value": " km"
+    }
+  ],
+  "mah+Bl": [
+    {
+      "type": 0,
+      "value": "Precio total"
+    }
+  ],
+  "msgy7n": [
+    {
+      "type": 0,
+      "value": "¡Bienvenido de nuevo a dRural!"
+    }
+  ],
+  "mtIIl7": [
+    {
+      "type": 0,
+      "value": "Transferencia bancaria"
+    }
+  ],
+  "n6M10I": [
+    {
+      "type": 0,
+      "value": "Precio Alto-Bajo"
+    }
+  ],
+  "n74igO": [
+    {
+      "type": 0,
+      "value": "No cobrado"
+    }
+  ],
+  "n7yYXG": [
+    {
+      "type": 0,
+      "value": "Servicio"
+    }
+  ],
+  "n82YXC": [
+    {
+      "type": 0,
+      "value": "Mis listas"
+    }
+  ],
+  "n8Z9ys": [
+    {
+      "type": 0,
+      "value": "Nombre Ascendiente"
+    }
+  ],
+  "nFQbxh": [
+    {
+      "type": 0,
+      "value": "Método de pago"
+    }
+  ],
+  "nJCVT0": [
+    {
+      "type": 0,
+      "value": "No hay artículos disponibles"
+    }
+  ],
+  "nJPv4b": [
+    {
+      "type": 0,
+      "value": "El método de pago no ha sido creado."
+    }
+  ],
+  "niQNPE": [
+    {
+      "type": 0,
+      "value": "Referencia de reserva"
+    }
+  ],
+  "nxvU5T": [
+    {
+      "type": 0,
+      "value": "ESTABLECER NUEVA CONTRASEÑA"
+    }
+  ],
+  "o+nfLw": [
+    {
+      "type": 1,
+      "value": "name"
+    }
+  ],
+  "o3XhL3": [
+    {
+      "type": 0,
+      "value": "Distancia desde mi ubicación:"
+    }
+  ],
+  "o4p2Q6": [
+    {
+      "type": 0,
+      "value": "Condiciones de uso"
+    }
+  ],
+  "oQY0a2": [
+    {
+      "type": 0,
+      "value": "Diracción línea 2"
+    }
+  ],
+  "oVktm9": [
+    {
+      "type": 0,
+      "value": "Servicios destacados"
+    }
+  ],
+  "oYUboz": [
+    {
+      "type": 0,
+      "value": "Introduce tu correo electrónico, te enviaremos las instrucciones para restablecer tu contraseña."
+    }
+  ],
+  "opd0V0": [
+    {
+      "type": 0,
+      "value": "Activar todas"
+    }
+  ],
+  "ovr4vj": [
+    {
+      "type": 0,
+      "value": "Sueco"
+    }
+  ],
+  "p+kmJg": [
+    {
+      "type": 0,
+      "value": "Resetea tu contraseña"
+    }
+  ],
+  "pEJQZZ": [
+    {
+      "type": 0,
+      "value": "Puedes cambiar tus preferencias en cualquier momento en tu página de perfil de usuario. Ve a configuración para seleccionar tus categorías preferidas y las preferencias de ubicación."
+    }
+  ],
+  "pFqKoB": [
+    {
+      "type": 0,
+      "value": "La eliminación completa de todos los datos asociados a tu cuenta puede tardar hasta 24 horas."
+    }
+  ],
+  "pGDBLH": [
+    {
+      "type": 0,
+      "value": "Si no deseas registrar una cuenta, no te preocupes. Puedes comprar como invitado. Nos preocupamos por ti tanto como por cualquier usuario registrado."
+    }
+  ],
+  "pH1N57": [
+    {
+      "type": 0,
+      "value": "3 estrellas"
+    }
+  ],
+  "pgOl4C": [
+    {
+      "type": 0,
+      "value": "Haga clic en el botón de edición si desea eliminar su cuenta."
+    }
+  ],
+  "qHtK5E": [
+    {
+      "type": 0,
+      "value": "Tu email ha sido confirmado con éxito. Vuelva a iniciar sesión para entrar en dRural."
+    }
+  ],
+  "qIzA6S": [
+    {
+      "type": 0,
+      "value": "Parece que no podemos encontrar la página que está buscando. Es posible que haya escrito mal la dirección o que la página se haya movido. Lamentamos el error y esperamos que tenga un buen día."
+    }
+  ],
+  "qRAN5x": [
+    {
+      "type": 0,
+      "value": "FILTRAR POR"
+    }
+  ],
+  "qVGRIE": [
+    {
+      "type": 0,
+      "value": "Cantidad"
+    }
+  ],
+  "qr8m+g": [
+    {
+      "type": 0,
+      "value": "Tu número de pedido es"
+    }
+  ],
+  "qyQ7t4": [
+    {
+      "type": 0,
+      "value": "buscar"
+    }
+  ],
+  "r2Jjms": [
+    {
+      "type": 0,
+      "value": "Iniciar sesión"
+    }
+  ],
+  "rELDbB": [
+    {
+      "type": 0,
+      "value": "Refrescar"
+    }
+  ],
+  "rI+UPp": [
+    {
+      "type": 0,
+      "value": "No se pudo generar el token hmac"
+    }
+  ],
+  "rSx7QN": [
+    {
+      "type": 0,
+      "value": "Introducir mi ubicación manualmente"
+    }
+  ],
+  "reMHa9": [
+    {
+      "type": 0,
+      "value": "La pasarela de Stripe está mal configurada. No se ha proporcionado la clave de la Api."
+    }
+  ],
+  "rhKM1Z": [
+    {
+      "type": 0,
+      "value": "Servicio proporcionado por"
+    }
+  ],
+  "rmp2xg": [
+    {
+      "type": 0,
+      "value": "Mi contraseña"
+    }
+  ],
+  "rvirM2": [
+    {
+      "type": 0,
+      "value": "Localización"
+    }
+  ],
+  "s/8bAh": [
+    {
+      "type": 0,
+      "value": "Eliminar foto"
+    }
+  ],
+  "s3X0AG": [
+    {
+      "type": 0,
+      "value": "Pedido #"
+    }
+  ],
+  "sPkeAp": [
+    {
+      "type": 0,
+      "value": "Debe contener 7 caracteres y al menos una mayúscula, una minúscula, un número y un carácter especial."
+    }
+  ],
+  "sgroIS": [
+    {
+      "type": 0,
+      "value": "2 estrellas"
+    }
+  ],
+  "shwVin": [
+    {
+      "type": 0,
+      "value": "Vemos que ahora estás ocupado"
+    }
+  ],
+  "sjzLbX": [
+    {
+      "type": 0,
+      "value": "Aceptar"
+    }
+  ],
+  "sk7Ets": [
+    {
+      "type": 0,
+      "value": "¡La contraseña debe coincidir!"
+    }
+  ],
+  "sy+pv5": [
+    {
+      "type": 0,
+      "value": "Email"
+    }
+  ],
+  "t2ZOTV": [
+    {
+      "type": 0,
+      "value": "¿Estás seguro de que quieres borrar la lista de deseos "
+    },
+    {
+      "type": 1,
+      "value": "listName"
+    },
+    {
+      "type": 0,
+      "value": "?"
+    }
+  ],
+  "t38Hon": [
+    {
+      "type": 0,
+      "value": "Se ha producido un error de envío del pago desconocido."
+    }
+  ],
+  "tLca6A": [
+    {
+      "type": 0,
+      "value": "El número de teléfono no es válido. Por favor, indique el código de país seguido del número sin espacios."
+    }
+  ],
+  "tWmr3d": [
+    {
+      "type": 0,
+      "value": "Reservar servicio"
+    }
+  ],
+  "ts5w+M": [
+    {
+      "type": 0,
+      "value": "Sin confirmar"
+    }
+  ],
+  "tzMNF3": [
+    {
+      "type": 0,
+      "value": "Estado"
+    }
+  ],
+  "u3lkk5": [
+    {
+      "type": 0,
+      "value": "Este día no tiene horas disponibles."
+    }
+  ],
+  "uBT5kf": [
+    {
+      "type": 0,
+      "value": "Le hemos enviado por correo electrónico una confirmación de pedido donde puede consultar los servicios solicitados."
+    }
+  ],
+  "uPNlBw": [
+    {
+      "type": 0,
+      "value": "Email: "
+    },
+    {
+      "type": 1,
+      "value": "email"
+    }
+  ],
+  "uTagzw": [
+    {
+      "type": 0,
+      "value": "Mostrando "
+    },
+    {
+      "type": 1,
+      "value": "userCategoriesCount"
+    },
+    {
+      "type": 0,
+      "value": " de "
+    },
+    {
+      "type": 1,
+      "value": "userCategoriesTotalCount"
+    }
+  ],
+  "uVkBuo": [
+    {
+      "type": 0,
+      "value": "Por favor selecciona "
+    },
+    {
+      "type": 1,
+      "value": "selectLabel"
+    }
+  ],
+  "ugX5fl": [
+    {
+      "type": 0,
+      "value": "Reportar servicio"
+    }
+  ],
+  "ulh3kf": [
+    {
+      "type": 0,
+      "value": "Colecciones"
+    }
+  ],
+  "vONi+O": [
+    {
+      "type": 0,
+      "value": "País"
+    }
+  ],
+  "vQt5XU": [
+    {
+      "type": 0,
+      "value": "Historial de pedidos"
+    }
+  ],
+  "vUEawW": [
+    {
+      "type": 0,
+      "value": "Gracias por dejar tu opinión"
+    }
+  ],
+  "vfG+nh": [
+    {
+      "type": 0,
+      "value": "Confirmar contraseña"
+    }
+  ],
+  "voftCr": [
+    {
+      "type": 0,
+      "value": "Confirmar reserva"
+    }
+  ],
+  "vxYWzb": [
+    {
+      "type": 0,
+      "value": "Valorar el servicio"
+    }
+  ],
+  "w1ks9x": [
+    {
+      "type": 0,
+      "value": "Reservar este servicio"
+    }
+  ],
+  "w9OoUW": [
+    {
+      "type": 0,
+      "value": "Guardar en una nueva lista"
+    }
+  ],
+  "wIWVus": [
+    {
+      "type": 0,
+      "value": "Proceder a la compra"
+    }
+  ],
+  "wTo1un": [
+    {
+      "type": 0,
+      "value": "Aplicar filtros"
+    }
+  ],
+  "wTrlQS": [
+    {
+      "type": 0,
+      "value": "Volver a la página del servicio"
+    }
+  ],
+  "wm96Jx": [
+    {
+      "type": 0,
+      "value": "Devuelto"
+    }
+  ],
+  "wmyg6t": [
+    {
+      "type": 0,
+      "value": "Recurso"
+    }
+  ],
+  "wyxJrL": [
+    {
+      "type": 0,
+      "value": "Eliminar cuenta"
+    }
+  ],
+  "x/OgEF": [
+    {
+      "type": 0,
+      "value": "Último actualizado Descendente"
+    }
+  ],
+  "x2/i6X": [
+    {
+      "type": 0,
+      "value": "Precio Bajo-Alto"
+    }
+  ],
+  "xCzQG8": [
+    {
+      "type": 0,
+      "value": "Borrar..."
+    }
+  ],
+  "xLs7Jb": [
+    {
+      "type": 0,
+      "value": "Cambiar foto"
+    }
+  ],
+  "xMnH8F": [
+    {
+      "type": 0,
+      "value": "Cargar Más"
+    }
+  ],
+  "xNXi4O": [
+    {
+      "type": 0,
+      "value": "Se ha enviado un enlace de confirmación a tu correo electrónico. Por favor, compruebe la bandeja de entrada y haz clic en el enlace para completar el proceso de registro."
+    }
+  ],
+  "xvfNSm": [
+    {
+      "type": 1,
+      "value": "productCount"
+    },
+    {
+      "type": 0,
+      "value": " servicios publicados"
+    }
+  ],
+  "xwEc8K": [
+    {
+      "type": 0,
+      "value": "API"
+    }
+  ],
+  "xxQxLE": [
+    {
+      "type": 0,
+      "value": "Dirección de correo electrónico"
+    }
+  ],
+  "xxhML8": [
+    {
+      "type": 0,
+      "value": "Detalles del pago"
+    }
+  ],
+  "xyNMpb": [
+    {
+      "type": 0,
+      "value": "La pasarela de pago no ha proporcionado un manejador de confirmación de pago."
+    }
+  ],
+  "yLAlyl": [
+    {
+      "type": 0,
+      "value": "Todas las estrellas"
+    }
+  ],
+  "yLRtkC": [
+    {
+      "type": 0,
+      "value": "Nombre Decreciente"
+    }
+  ],
+  "yU8L4Y": [
+    {
+      "type": 0,
+      "value": "Máx. número de archivos es 5"
+    }
+  ],
+  "yzwEMI": [
+    {
+      "type": 0,
+      "value": "Mostrar servicios a esta distancia cerca de mí"
+    }
+  ],
+  "z+Mzjn": [
+    {
+      "type": 0,
+      "value": "Eliminación de la cuenta en proceso"
+    }
+  ],
+  "zAGI4/": [
+    {
+      "type": 0,
+      "value": "No se encontró el estado"
+    }
+  ],
+  "zEhfKQ": [
+    {
+      "type": 0,
+      "value": "Continuar comprando"
+    }
+  ],
+  "zF4S3v": [
+    {
+      "type": 0,
+      "value": "Servicios populares"
+    }
+  ],
+  "zSOvI0": [
+    {
+      "type": 0,
+      "value": "Filtros"
+    }
+  ],
+  "zSuhDL": [
+    {
+      "type": 0,
+      "value": "Quiero comprar"
+    }
+  ],
+  "zdLDux": [
+    {
+      "type": 0,
+      "value": "Confirmar el borrado"
+    }
+  ],
+  "zeP3UD": [
+    {
+      "type": 0,
+      "value": "Coste de entrega"
+    }
+  ],
+  "zpDqqG": [
+    {
+      "type": 0,
+      "value": "Eliminar servicio"
+    }
+  ],
+  "zwNDxG": [
+    {
+      "type": 0,
+      "value": "Tu Carrito"
+    }
+  ],
+  "zx7CKB": [
+    {
+      "type": 0,
+      "value": "Comprueba tu email"
+    }
+  ]
+}

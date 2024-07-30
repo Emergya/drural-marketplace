@@ -1,0 +1,157 @@
+@import "../../../globalStyles/scss/variables-drural.scss";
+
+.home-page {
+  &__hero {
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 12rem 0 8rem;
+    margin-bottom: 66px;
+
+    &-text {
+      overflow: hidden;
+      margin-bottom: $spacer * 5;
+    }
+
+    @media (max-width: $medium-screen) {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      height: 200px;
+      justify-content: space-between;
+      padding: $spacer;
+      padding-top: 90px;
+
+      &-text {
+        margin-top: $spacer * 5;
+        width: 100%;
+      }
+
+      &-action {
+        margin-bottom: $spacer * 3;
+        width: 100%;
+      }
+    }
+
+    @media (max-width: $medium-small-screen) {
+      padding-top: 75px;
+    }
+
+    @media (max-width: $small-screen) {
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      display: inline-block;
+      margin-bottom: $spacer;
+
+      h1 {
+        display: inline-block;
+        font-weight: $boldFontWeight;
+        color: $white;
+      }
+      h4 {
+        display: inline-block;
+        font-size: $lightTitleFontSize;
+        color: $white;
+        font-weight: $lightFontWeight;
+      }
+    }
+  }
+
+  &__mobile {
+    &__title {
+      display: inline-block;
+      margin: $spacer;
+
+      h6 {
+        display: inline-block;
+        font-size: 13px;
+        color: $white;
+        font-weight: $normalFontWeight;
+      }
+    }
+  }
+
+  &__row-square-items {
+    padding-bottom: 36px;
+
+    &__first-row {
+      padding-top: 66px;
+    }
+
+    .container {
+      margin-top: 0;
+    }
+  }
+
+  &__row-circle-items {
+    padding-bottom: 92px;
+
+    .container {
+      margin-top: 0;
+    }
+
+    @media (max-width: $small-screen) {
+      padding-bottom: 42px;
+    }
+  }
+
+  &__categories {
+    margin-bottom: 2rem;
+
+    h3 {
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    &__list {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 2rem;
+
+      @media (min-width: $small-screen) {
+        grid-template-columns: 1fr 1fr;
+
+        > div {
+          &:nth-child(3) {
+            grid-column: 3 / 1;
+          }
+
+          &:nth-child(n + 4) {
+            display: none;
+          }
+        }
+      }
+
+      a {
+        text-decoration: none;
+
+        h3 {
+          text-transform: uppercase;
+
+          &:after {
+            content: url("../../../images/carousel-arrow.svg");
+            display: inline-block;
+            transform: rotate(180deg);
+            margin-left: 1rem;
+          }
+        }
+      }
+
+      &__image {
+        width: 100%;
+        height: 30rem;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 1rem;
+
+        &--no-photo {
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+  }
+}

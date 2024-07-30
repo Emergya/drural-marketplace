@@ -1,0 +1,176 @@
+// 1. Colors
+
+// Primary - green
+$primary_100: #ebfbf6;
+$primary_200: #c4f4e5;
+$primary_300: #9dedd4;
+$primary_400: #76e6c3;
+$primary: #3cdcaa;
+$primary_600: #23c290;
+$primary_700: #1b9770;
+$primary_800: #136c50;
+$primary_900: #0c4030;
+
+// Secondary - orange
+$secondary_100: #fef7ec;
+$secondary_200: #fde6c6;
+$secondary_300: #fcd7a0;
+$secondary_400: #fac77a;
+$secondary: #f9af42;
+$secondary_600: #f49407;
+$secondary_700: #b76f05;
+$secondary_800: #7a4a03;
+$secondary_900: #3d2501;
+
+// Others
+$errorRed: #cc0000;
+$blueGray: #87a2c7;
+$skin: #763e47;
+$disabledGray: #e5e5e5;
+
+// Gray scale
+$druralGray_50: #f7f6f8;
+$druralGray_100: #e0dee3;
+$druralGray_200: #c1bec8;
+$druralGray_300: #a39ead;
+$druralGray_400: #847d91;
+$druralGray: #676173;
+$druralGray_600: #524d5c;
+$druralGray_700: #3d3a45;
+$druralGray_800: #29262e;
+$druralGray_900: #141316;
+
+$white: #ffffff;
+$black: #000000;
+
+// 4. Typografy
+$baseFontFamily: "Poppins", sans-serif;
+$baseFontSize: 1rem; // 16px
+$baseLineHeight: 1.5rem; // 24px
+// Headings
+$h1FontSize: 3rem; // 48px
+$h1LineHeight: 4.5rem; // 72px
+$h2FontSize: 1.75rem; // 28px
+$h2LineHeight: 2.5rem; // 40px
+$h3FontSize: 1.375rem; // 22px
+$h3LineHeight: 2rem; // 32px
+$h4FontSize: 1.125rem; // 18px
+$h4LineHeight: 1.5rem; // 24px
+$h5FontSize: 0.875rem; // 14px
+$h5LineHeight: 1.25rem; // 20px
+// Headings mobile
+$h1FontSizeMobile: 1.5rem; // 24px
+$h1LineHeightMobile: 2rem; // 32px
+$h2FontSizeMobile: 1.125rem; // 18px
+$h2LineHeightMobile: 1.5rem; // 24px
+$h3FontSizeMobile: 1rem; // 16px
+$h3LineHeightMobile: 1.5rem; // 24px
+$h4FontSizeMobile: 0.875rem; // 14px
+$h4LineHeightMobile: 1.25rem; // 20px
+// Custom titles
+$lightTitleFontSize: 1.25rem; // 20px
+$lightTitleLineHeight: 2rem; // 32px
+$preTitleFontSize: 0.75rem; // 12px
+$preTitleLineHeight: 1.125rem; // 18px
+// Parragraphs
+$p20FontSize: 1.25rem; // 20px
+$p16FontSize: 1rem; // 16px
+$p14FontSize: 0.875rem; // 14px
+$smallTextFontSize: 0.8125rem; // 13px
+$extraSmallTextFontSize: 0.75rem; // 12px
+$textLineHeight: 1.5rem; // 24px
+$extraSmallTextLineHeight: 1.25rem; // 20px
+// Liks
+$linkFontSize: 0.875rem; // 14px
+$linkLineHeight: 21px; // 0.80769230769rem
+// Weights
+$extraBoldFontWeight: 700;
+$boldFontWeight: 600;
+$semiBoldFontWeight: 500;
+$normalFontWeight: 400;
+$lightFontWeight: 300;
+// Text transforms
+$uppercase: uppercase;
+$capitalize: capitalize;
+$lowercase: lowercase;
+
+// 3. Sizes
+$xsSize: 0.75rem; // 12px
+$xlSize: 3rem; // 48px
+
+// spacing
+$spacer: 1rem; // 16px
+
+// grid
+$containerWidth: 1170px;
+$colsSpace: 30px;
+$rowsSpace: 8px;
+
+// button
+$button-font-size: $p16FontSize;
+$button-line-height: $textLineHeight;
+$button-padding: $xsSize $xlSize;
+$button-padding-small-screen: 0.9rem 1rem;
+$button-transition: 0.3s;
+$button-transform: skew(45deg);
+$button-content-transform: skew(-45deg);
+$button-text-transform: capitalize;
+$button-font-weight: $normalFontWeight;
+
+// TODO
+
+// input
+$label-font-size: $p14FontSize; // 14px
+$label-color: $black;
+$select-menu-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.15);
+
+// message
+$message-width: 25rem;
+$message-padding: 1.5rem;
+$message-background-color: $white;
+$message-shadow: 0px 6px 15px 3px rgba(0, 0, 0, 0.25);
+$message-right-position: $spacer;
+$message-botttom-position: $spacer;
+$message-success-color: $primary;
+$message-error-color: $errorRed;
+$message-neutral-color: $druralGray;
+$message-border-left: 0.3rem solid $druralGray;
+$message-title-transform: uppercase;
+$message-title-weight: $boldFontWeight;
+$message-title-margin: 0 $spacer * 1.5 0 0;
+$message-content-margin: $spacer 0 0;
+
+// product item
+$product-item-title-text-transform: uppercase;
+$product-item-title-font-weight: $boldFontWeight;
+$product-item-title-margin: $spacer / 2 0 0;
+$product-item-title-height: 2.5rem;
+$product-item-category-color: $druralGray;
+$product-item-price-font-weight: $boldFontWeight;
+$product-item-price-margin: $spacer 0 0;
+
+// breakpoints
+$xlarge-screen: 1280px;
+$medium-screen: 992px;
+$medium-small-screen: 720px;
+$small-screen: 540px;
+$extra-small-screen: 400px;
+
+// carousel
+$carousel-control-padding: 0.2rem 0.5rem;
+$carousel-control-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+
+// container
+$container-width: 1600px;
+
+// modal
+$modal-width: 555px;
+$modal-min-height: 455px;
+
+:export {
+  xlargeScreen: $xlarge-screen;
+  mediumScreen: $medium-screen;
+  mediumSmallScreen: $medium-small-screen;
+  smallScreen: $small-screen;
+  extraSmallScreen: $extra-small-screen;
+}

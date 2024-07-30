@@ -1,0 +1,2722 @@
+{
+  "+Q1sXM": [
+    {
+      "type": 0,
+      "value": "Dit zijn uw afrekengegevens. Zorg ervoor dat u deze controleert voordat u afrekent."
+    }
+  ],
+  "+ckxNx": [
+    {
+      "type": 0,
+      "value": "Weet je zeker dat je de dienst "
+    },
+    {
+      "type": 1,
+      "value": "serviceName"
+    },
+    {
+      "type": 0,
+      "value": " van de verlanglijst "
+    },
+    {
+      "type": 1,
+      "value": "listName"
+    },
+    {
+      "type": 0,
+      "value": " wilt verwijderen?"
+    }
+  ],
+  "+d/I+9": [
+    {
+      "type": 0,
+      "value": "Instellen als standaard verzendadres"
+    }
+  ],
+  "+kMQfn": [
+    {
+      "type": 0,
+      "value": "Prijsklasse"
+    }
+  ],
+  "/+HyHJ": [
+    {
+      "type": 0,
+      "value": "Laat een beoordeling achter"
+    }
+  ],
+  "/+uCYW": [
+    {
+      "type": 0,
+      "value": "Gerelateerde diensten"
+    }
+  ],
+  "/7OBeN": [
+    {
+      "type": 0,
+      "value": "Kan product niet rapporteren"
+    }
+  ],
+  "/C/h4C": [
+    {
+      "type": 0,
+      "value": "Weet je zeker dat je je review wilt verwijderen?"
+    }
+  ],
+  "/DVYB1": [
+    {
+      "type": 0,
+      "value": "Ondersteunde formaten: jpeg, gif, png."
+    }
+  ],
+  "/FBJmw": [
+    {
+      "type": 0,
+      "value": "Hoeveel wil je uitgeven?"
+    }
+  ],
+  "/NZV5a": [
+    {
+      "type": 0,
+      "value": "Je bent nu uitgelogd"
+    }
+  ],
+  "/X8Mjx": [
+    {
+      "type": 0,
+      "value": "Speel met "
+    },
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": "GraphQL API"
+        }
+      ],
+      "type": 8,
+      "value": "emphasis"
+    }
+  ],
+  "00LcfG": [
+    {
+      "type": 0,
+      "value": "Meer laden"
+    }
+  ],
+  "0f45G+": [
+    {
+      "type": 0,
+      "value": "OFFLINE :("
+    }
+  ],
+  "0fxBj6": [
+    {
+      "type": 0,
+      "value": "Nieuw in"
+    }
+  ],
+  "0g/1TG": [
+    {
+      "type": 0,
+      "value": "Doorgaan naar betaling"
+    }
+  ],
+  "0vL5u1": [
+    {
+      "type": 0,
+      "value": "Account aanmaken"
+    }
+  ],
+  "0zNair": [
+    {
+      "type": 0,
+      "value": "Over dRural"
+    }
+  ],
+  "12/Dpd": [
+    {
+      "type": 0,
+      "value": "Â¿Weet je zeker dat je je account wilt verwijderen?"
+    }
+  ],
+  "1851Kr": [
+    {
+      "type": 0,
+      "value": "Bestellingsnummer: #"
+    },
+    {
+      "type": 1,
+      "value": "orderNum"
+    }
+  ],
+  "1KGwKk": [
+    {
+      "type": 0,
+      "value": "Geef het verzendadres op."
+    }
+  ],
+  "1RO7fs": [
+    {
+      "type": 0,
+      "value": "Terug naar service"
+    }
+  ],
+  "1jbPX/": [
+    {
+      "type": 0,
+      "value": "Selecteer uur"
+    }
+  ],
+  "1oz7Jc": [
+    {
+      "type": 0,
+      "value": "Chat met de verkoper"
+    }
+  ],
+  "1w9HXE": [
+    {
+      "type": 0,
+      "value": "Miljoenen shoppers wachten op je om mee te doen"
+    }
+  ],
+  "2/2yg+": [
+    {
+      "type": 0,
+      "value": "Toevoegen"
+    }
+  ],
+  "29Ei25": [
+    {
+      "type": 0,
+      "value": "ZIP/Postcode"
+    }
+  ],
+  "2XRzbc": [
+    {
+      "type": 0,
+      "value": "Koppeling 3"
+    }
+  ],
+  "2bGejb": [
+    {
+      "type": 0,
+      "value": "Mijn rekening"
+    }
+  ],
+  "2xjjlC": [
+    {
+      "type": 0,
+      "value": "Lage voorraad"
+    }
+  ],
+  "3SfdR4": [
+    {
+      "type": 0,
+      "value": "Keer terug naar service"
+    }
+  ],
+  "3mBt9u": [
+    {
+      "type": 0,
+      "value": "Geef niet op - controleer de spelling, bedenk iets minder specifieks en gebruik dan de zoekbalk hierboven."
+    }
+  ],
+  "4/1XCq": [
+    {
+      "type": 0,
+      "value": "Bericht verzonden!"
+    }
+  ],
+  "45425G": [
+    {
+      "type": 0,
+      "value": "Lijst maken"
+    }
+  ],
+  "47FYwb": [
+    {
+      "type": 0,
+      "value": "Annuleren"
+    }
+  ],
+  "4RD+CZ": [
+    {
+      "type": 0,
+      "value": "Verzendmethode:"
+    }
+  ],
+  "4WE+R8": [
+    {
+      "type": 0,
+      "value": "Servicedetails"
+    }
+  ],
+  "4WcB2q": [
+    {
+      "type": 0,
+      "value": "OMSCHRIJVING"
+    }
+  ],
+  "515QcK": [
+    {
+      "type": 0,
+      "value": "Laat je telefoon achter*"
+    }
+  ],
+  "54Ou53": [
+    {
+      "type": 0,
+      "value": "Maximaal bestandsgrootte 2 MB"
+    }
+  ],
+  "54VA/h": [
+    {
+      "type": 1,
+      "value": "value"
+    },
+    {
+      "type": 0,
+      "value": " %"
+    }
+  ],
+  "5bOFRX": [
+    {
+      "type": 0,
+      "value": "Verwijder van Lijst"
+    }
+  ],
+  "5qDwFV": [
+    {
+      "type": 0,
+      "value": "Nieuwe versie is beschikbaar!"
+    }
+  ],
+  "5sc/mV": [
+    {
+      "type": 0,
+      "value": "Verken "
+    },
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": "Dashboard van de winkel"
+        }
+      ],
+      "type": 8,
+      "value": "emphasis"
+    }
+  ],
+  "5sg7KC": [
+    {
+      "type": 0,
+      "value": "Wachtwoord"
+    }
+  ],
+  "5zZZ90": [
+    {
+      "type": 0,
+      "value": "Adresboek"
+    }
+  ],
+  "66HUnz": [
+    {
+      "type": 0,
+      "value": "Categorieën voorkeuren"
+    }
+  ],
+  "6Hdj1s": [
+    {
+      "type": 0,
+      "value": "Geselecteerde bron"
+    }
+  ],
+  "6I+DHW": [
+    {
+      "type": 0,
+      "value": "Selecteer prijsklasse"
+    }
+  ],
+  "6Iqx81": [
+    {
+      "type": 0,
+      "value": "De service is beoordeeld"
+    }
+  ],
+  "6SY/Lj": [
+    {
+      "type": 0,
+      "value": "Lijstnaam"
+    }
+  ],
+  "6XQAoN": [
+    {
+      "type": 0,
+      "value": "diensten gevonden"
+    }
+  ],
+  "6orx1c": [
+    {
+      "type": 0,
+      "value": "Facturatie adres"
+    }
+  ],
+  "748LIQ": [
+    {
+      "type": 0,
+      "value": "Ga verder als gast"
+    }
+  ],
+  "79lKyO": [
+    {
+      "type": 0,
+      "value": "Zoekresultaten"
+    }
+  ],
+  "7EENi3": [
+    {
+      "type": 0,
+      "value": "1 sterren"
+    }
+  ],
+  "7NFfmz": [
+    {
+      "type": 0,
+      "value": "Producten"
+    }
+  ],
+  "7NJAYu": [
+    {
+      "type": 0,
+      "value": "Vraag aan verkoper"
+    }
+  ],
+  "7OW8BT": [
+    {
+      "type": 0,
+      "value": "Configuratie"
+    }
+  ],
+  "7UOvbT": [
+    {
+      "type": 0,
+      "value": "Offline"
+    }
+  ],
+  "7uioo9": [
+    {
+      "type": 0,
+      "value": "Geen lijst geselecteerd of nog geen diensten toegevoegd aan de lijst"
+    }
+  ],
+  "7wZ61D": [
+    {
+      "type": 0,
+      "value": "Wachtwoord herstel"
+    }
+  ],
+  "8FpaMK": [
+    {
+      "type": 0,
+      "value": "Staat/provincie"
+    }
+  ],
+  "8RtoNZ": [
+    {
+      "type": 0,
+      "value": "Voor het geval we contact met u moeten opnemen voor meer informatie"
+    }
+  ],
+  "8WtyrD": [
+    {
+      "type": 0,
+      "value": "Spaans"
+    }
+  ],
+  "8YHEGD": [
+    {
+      "type": 0,
+      "value": "Rapportageservice"
+    }
+  ],
+  "8cv9D4": [
+    {
+      "type": 0,
+      "value": "Volgende stap"
+    }
+  ],
+  "8sXhNb": [
+    {
+      "type": 0,
+      "value": "Zie lijst"
+    }
+  ],
+  "8uddA3": [
+    {
+      "type": 0,
+      "value": "Ongeldige inzending van betaling."
+    }
+  ],
+  "9AgXoz": [
+    {
+      "type": 0,
+      "value": "Verkopen"
+    }
+  ],
+  "9FjY/U": [
+    {
+      "type": 1,
+      "value": "serviceName"
+    },
+    {
+      "type": 0,
+      "value": " is toegevoegd aan "
+    },
+    {
+      "type": 1,
+      "value": "listName"
+    },
+    {
+      "type": 0,
+      "value": "?"
+    }
+  ],
+  "9T40iW": [
+    {
+      "type": 0,
+      "value": "Deze service heeft geen bijbehorende bronnen"
+    }
+  ],
+  "9WRlF4": [
+    {
+      "type": 0,
+      "value": "Versturen"
+    }
+  ],
+  "9k5qQl": [
+    {
+      "type": 0,
+      "value": "Betaalmethodes"
+    }
+  ],
+  "9pv+ed": [
+    {
+      "type": 0,
+      "value": "U moet een reden opgeven waarom u denkt dat deze service moet worden gemeld (bijvoorbeeld deze service bestaat niet meer, deze serviceprovider is gesloten, deze service is ongepast, enz.). U kunt afbeeldingen toevoegen om uw opmerkingen te illustreren."
+    }
+  ],
+  "9qnRSj": [
+    {
+      "type": 0,
+      "value": "Toon +"
+    }
+  ],
+  "9yjrxH": [
+    {
+      "type": 0,
+      "value": "EIGENSCHAPPEN"
+    }
+  ],
+  "A1T/GS": [
+    {
+      "type": 0,
+      "value": "Zoek in de winkel"
+    }
+  ],
+  "AEzWZu": [
+    {
+      "type": 0,
+      "value": "Persoonlijke gegevens"
+    }
+  ],
+  "AJRRLW": [
+    {
+      "type": 0,
+      "value": "Annuleer bestelling"
+    }
+  ],
+  "AMbsOQ": [
+    {
+      "type": 0,
+      "value": "Begin nu met verkopen"
+    }
+  ],
+  "Ak/e7n": [
+    {
+      "type": 0,
+      "value": "Sorry, maar we konden geen zoekresultaten vinden voor: "
+    },
+    {
+      "type": 1,
+      "value": "search"
+    }
+  ],
+  "B52Em/": [
+    {
+      "type": 0,
+      "value": "Adres regel 1"
+    }
+  ],
+  "BE6zwi": [
+    {
+      "type": 0,
+      "value": "Zoekterm:"
+    }
+  ],
+  "BJ2TKX": [
+    {
+      "type": 0,
+      "value": "Uitchecken"
+    }
+  ],
+  "BQuFrc": [
+    {
+      "type": 1,
+      "value": "duration"
+    },
+    {
+      "type": 0,
+      "value": " minuten"
+    }
+  ],
+  "BS3FlI": [
+    {
+      "type": 0,
+      "value": "Doorgaan naar recensie"
+    }
+  ],
+  "BdjtYv": [
+    {
+      "type": 0,
+      "value": "Deel deze dienst"
+    }
+  ],
+  "Bdy3TR": [
+    {
+      "type": 0,
+      "value": "Hoe dichtbij?"
+    }
+  ],
+  "Bg8a3A": [
+    {
+      "type": 0,
+      "value": "U kunt uw voorkeuren op elk moment instellen op uw gebruikersprofielpagina. Ga naar configuratie om uw voorkeurscategorieën en locatievoorkeuren te selecteren."
+    }
+  ],
+  "C6lhFD": [
+    {
+      "type": 0,
+      "value": "U bent slechts één stap verwijderd van het activeren van uw account op dRural-marktplaats."
+    }
+  ],
+  "CTSLLJ": [
+    {
+      "type": 0,
+      "value": "Mijn wagen"
+    }
+  ],
+  "Cft/3d": [
+    {
+      "type": 0,
+      "value": "Ik wil informatie ontvangen van dRural"
+    }
+  ],
+  "ChDAaD": [
+    {
+      "type": 0,
+      "value": "Gedeeltelijk opgeladen"
+    }
+  ],
+  "CiCBq1": [
+    {
+      "type": 1,
+      "value": "totalReviews"
+    },
+    {
+      "type": 0,
+      "value": " beoordelingen"
+    }
+  ],
+  "CilfB2": [
+    {
+      "type": 0,
+      "value": "Bekijk alle beoordelingen"
+    }
+  ],
+  "CtoGPj": [
+    {
+      "type": 0,
+      "value": "Uw bestelling is geplaatst, deze moet nog worden bevestigd door het personeel, we sturen u een e-mail als deze klaar is."
+    }
+  ],
+  "D+bY29": [
+    {
+      "type": 0,
+      "value": "Verzendmethode:"
+    }
+  ],
+  "DClFoP": [
+    {
+      "type": 0,
+      "value": "Vernieuw de pagina om de applicatie bij te werken naar de nieuwste versie!"
+    }
+  ],
+  "DP5VOH": [
+    {
+      "type": 0,
+      "value": "Verzendingsadres"
+    }
+  ],
+  "Dfjc65": [
+    {
+      "type": 0,
+      "value": "Best beoordeeld"
+    }
+  ],
+  "Dmb0KB": [
+    {
+      "type": 0,
+      "value": "De betaling heeft bevestiging nodig, maar de gegevens die nodig zijn voor de bevestiging zijn niet ontvangen van de server."
+    }
+  ],
+  "E4wn7I": [
+    {
+      "type": 0,
+      "value": "Geen gegevens gevonden"
+    }
+  ],
+  "EGHx3D": [
+    {
+      "type": 1,
+      "value": "rating"
+    },
+    {
+      "type": 0,
+      "value": " van 5"
+    }
+  ],
+  "EWw/tK": [
+    {
+      "type": 0,
+      "value": "Van toepassing zijn"
+    }
+  ],
+  "EeMv7L": [
+    {
+      "type": 0,
+      "value": "Lijst verwijderen"
+    }
+  ],
+  "EiEAKD": [
+    {
+      "type": 0,
+      "value": "Nederlands"
+    }
+  ],
+  "EnCOBJ": [
+    {
+      "type": 0,
+      "value": "Kopen"
+    }
+  ],
+  "Ev6SEF": [
+    {
+      "type": 0,
+      "value": "nieuw paswoord"
+    }
+  ],
+  "ExS48t": [
+    {
+      "type": 0,
+      "value": "Standaard factuuradres"
+    }
+  ],
+  "F6NI+0": [
+    {
+      "type": 0,
+      "value": "Hoe ben je van plan dRural te gebruiken?"
+    }
+  ],
+  "FGJNIh": [
+    {
+      "type": 0,
+      "value": "CLEAR FILTERS"
+    }
+  ],
+  "FyUqOJ": [
+    {
+      "type": 0,
+      "value": "Volgeboekt"
+    }
+  ],
+  "G+l9fC": [
+    {
+      "type": 0,
+      "value": "Alle beoordelingen"
+    }
+  ],
+  "GJoRL/": [
+    {
+      "type": 0,
+      "value": "Verkoop uw diensten in dRural"
+    }
+  ],
+  "GXJC43": [
+    {
+      "type": 0,
+      "value": "Nieuwe verlanglijst maken"
+    }
+  ],
+  "GfYXu2": [
+    {
+      "type": 0,
+      "value": "Terug naar mijn verlanglijstjes"
+    }
+  ],
+  "GytZH5": [
+    {
+      "type": 0,
+      "value": "Zoekdiensten"
+    }
+  ],
+  "H0JBH6": [
+    {
+      "type": 0,
+      "value": "Uitloggen"
+    }
+  ],
+  "HgSye9": [
+    {
+      "type": 0,
+      "value": "dRural Â© 2022"
+    }
+  ],
+  "I5NMJ8": [
+    {
+      "type": 0,
+      "value": "Meer"
+    }
+  ],
+  "IY2TiN": [
+    {
+      "type": 0,
+      "value": "Naam verlanglijst bewerken"
+    }
+  ],
+  "IeNMka": [
+    {
+      "type": 0,
+      "value": "Ga naar mijn winkelwagen"
+    }
+  ],
+  "InWqys": [
+    {
+      "type": 0,
+      "value": "Optioneel"
+    }
+  ],
+  "IwxuZY": [
+    {
+      "type": 0,
+      "value": "dRural wil toegang tot uw locatie om u een betere service te bieden en u de dichtstbijzijnde diensten te tonen."
+    }
+  ],
+  "J+buBa": [
+    {
+      "type": 0,
+      "value": "Oud Wachtwoord"
+    }
+  ],
+  "J6Eyds": [
+    {
+      "type": 0,
+      "value": "Aankoop"
+    }
+  ],
+  "JE4+x5": [
+    {
+      "type": 0,
+      "value": "Service van verlanglijst verwijderen"
+    }
+  ],
+  "JItzoH": [
+    {
+      "type": 0,
+      "value": "Plaats bestelling"
+    }
+  ],
+  "JN6MSK": [
+    {
+      "type": 0,
+      "value": "Nieuw wachtwoord instellen"
+    }
+  ],
+  "JRlv3P": [
+    {
+      "type": 0,
+      "value": "Aandacht! hiermee worden uw accountgegevens permanent verwijderd. Als u het proces wilt voortzetten, klikt u op de onderstaande bevestigingsknop."
+    }
+  ],
+  "JSooiR": [
+    {
+      "type": 0,
+      "value": "Bedrijfsnaam (optioneel)"
+    }
+  ],
+  "JXdbo8": [
+    {
+      "type": 0,
+      "value": "Gedaan"
+    }
+  ],
+  "JqiqNj": [
+    {
+      "type": 0,
+      "value": "Er is iets fout gegaan"
+    }
+  ],
+  "Jrw8G7": [
+    {
+      "type": 0,
+      "value": "Bewerken"
+    }
+  ],
+  "KGERmF": [
+    {
+      "type": 0,
+      "value": "Boekingsreferentienummer"
+    }
+  ],
+  "KSlktl": [
+    {
+      "type": 0,
+      "value": "Controleer je e-mail, je zou een massage moeten hebben ontvangen met een link om het verwijderen van je account te bevestigen."
+    }
+  ],
+  "KUBgP9": [
+    {
+      "type": 0,
+      "value": "Afrekenen details"
+    }
+  ],
+  "KmgRL+": [
+    {
+      "type": 0,
+      "value": "Er is iets misgegaan met de kaarttoepassing"
+    }
+  ],
+  "KorORN": [
+    {
+      "type": 0,
+      "value": "Niet beschikbaar voor aankoop"
+    }
+  ],
+  "L8seEc": [
+    {
+      "type": 0,
+      "value": "Subtotaal"
+    }
+  ],
+  "LABC/Y": [
+    {
+      "type": 0,
+      "value": "Meer +"
+    }
+  ],
+  "LFcS5g": [
+    {
+      "type": 0,
+      "value": "Betalen in de winkel"
+    }
+  ],
+  "LMdzKV": [
+    {
+      "type": 0,
+      "value": "Je houdt misschien van"
+    }
+  ],
+  "LkCowx": [
+    {
+      "type": 0,
+      "value": "Kies een betaalmethode."
+    }
+  ],
+  "LmAYuU": [
+    {
+      "type": 0,
+      "value": "km"
+    }
+  ],
+  "Lv0zJu": [
+    {
+      "type": 0,
+      "value": "Details"
+    }
+  ],
+  "MJ2jZQ": [
+    {
+      "type": 0,
+      "value": "Totaal"
+    }
+  ],
+  "MVlVYL": [
+    {
+      "type": 0,
+      "value": "Uw winkelwagen is leeg"
+    }
+  ],
+  "MYiZl4": [
+    {
+      "type": 0,
+      "value": "Service beoordelingen"
+    }
+  ],
+  "MjOjxw": [
+    {
+      "type": 0,
+      "value": "Bestelling geannuleerd"
+    }
+  ],
+  "Mnkq4K": [
+    {
+      "type": 0,
+      "value": "Vertel ons waarom u deze service meldt"
+    }
+  ],
+  "N1KsBC": [
+    {
+      "type": 0,
+      "value": "Boekingsdetails"
+    }
+  ],
+  "N2S5pk": [
+    {
+      "type": 0,
+      "value": "ziet er leeg uit"
+    }
+  ],
+  "NAidKb": [
+    {
+      "type": 0,
+      "value": "Meldingen"
+    }
+  ],
+  "NT+3fY": [
+    {
+      "type": 0,
+      "value": "Geweigerd"
+    }
+  ],
+  "NdFB/s": [
+    {
+      "type": 0,
+      "value": "Alle diensten"
+    }
+  ],
+  "NfwDx2": [
+    {
+      "type": 0,
+      "value": "Bestel Details"
+    }
+  ],
+  "NmK6zy": [
+    {
+      "type": 0,
+      "value": "Betaling"
+    }
+  ],
+  "O95R3Z": [
+    {
+      "type": 0,
+      "value": "Telefoon"
+    }
+  ],
+  "OK5+Fh": [
+    {
+      "type": 0,
+      "value": "Variant"
+    }
+  ],
+  "OKGZwS": [
+    {
+      "type": 0,
+      "value": "Dienst toegevoegd aan verlanglijst"
+    }
+  ],
+  "OV7mgg": [
+    {
+      "type": 0,
+      "value": "Factuur downloaden"
+    }
+  ],
+  "Oa/XSP": [
+    {
+      "type": 0,
+      "value": "adres"
+    }
+  ],
+  "OtMych": [
+    {
+      "type": 0,
+      "value": "Beoordeling verwijderen"
+    }
+  ],
+  "P+JT42": [
+    {
+      "type": 0,
+      "value": "Mijn adressen"
+    }
+  ],
+  "P7PLVj": [
+    {
+      "type": 0,
+      "value": "Datum"
+    }
+  ],
+  "PFtMy9": [
+    {
+      "type": 0,
+      "value": "Geannuleerd"
+    }
+  ],
+  "PR2F1h": [
+    {
+      "type": 1,
+      "value": "message"
+    }
+  ],
+  "PRlD0A": [
+    {
+      "type": 0,
+      "value": "Verzenden"
+    }
+  ],
+  "PRzft5": [
+    {
+      "type": 0,
+      "value": "Best verkopende"
+    }
+  ],
+  "PgJGHT": [
+    {
+      "type": 0,
+      "value": "Verkrijgbaar"
+    }
+  ],
+  "PjRbR1": [
+    {
+      "type": 0,
+      "value": "Link 2"
+    }
+  ],
+  "PlBReU": [
+    {
+      "type": 0,
+      "value": "Uitloggen"
+    }
+  ],
+  "PspJ6Q": [
+    {
+      "type": 0,
+      "value": "Selecteer bron"
+    }
+  ],
+  "Q62mJ9": [
+    {
+      "type": 0,
+      "value": "Welkom, "
+    },
+    {
+      "type": 1,
+      "value": "username"
+    },
+    {
+      "type": 0,
+      "value": "!"
+    }
+  ],
+  "Q6wcZ5": [
+    {
+      "type": 0,
+      "value": "Voornaam"
+    }
+  ],
+  "Q8Qw5B": [
+    {
+      "type": 0,
+      "value": "Beschrijving"
+    }
+  ],
+  "QH5kv3": [
+    {
+      "type": 0,
+      "value": "Dichtstbijzijnde"
+    }
+  ],
+  "QRsC1D": [
+    {
+      "type": 0,
+      "value": "Jouw locatie"
+    }
+  ],
+  "R+J5ox": [
+    {
+      "type": 0,
+      "value": "Opnieuw bekijken"
+    }
+  ],
+  "RDuVyt": [
+    {
+      "type": 0,
+      "value": "Laat dRural uw locatie volgen, zodat we u de meest geweldige services bij u in de buurt kunnen laten zien."
+    }
+  ],
+  "RMAVgz": [
+    {
+      "type": 0,
+      "value": "Link 4"
+    }
+  ],
+  "RQ44K7": [
+    {
+      "type": 0,
+      "value": "Voorkeurscategorieën"
+    }
+  ],
+  "RqOE8H": [
+    {
+      "type": 0,
+      "value": "Standaard adres"
+    }
+  ],
+  "RtKR9V": [
+    {
+      "type": 0,
+      "value": "GeoLokalisatie"
+    }
+  ],
+  "RzsKm8": [
+    {
+      "type": 0,
+      "value": "Verzendmethoden:"
+    }
+  ],
+  "SENRqu": [
+    {
+      "type": 0,
+      "value": "Helpen"
+    }
+  ],
+  "SGdcJD": [
+    {
+      "type": 0,
+      "value": "Voer code in"
+    }
+  ],
+  "SQJto2": [
+    {
+      "type": 0,
+      "value": "Log in"
+    }
+  ],
+  "Seanpx": [
+    {
+      "type": 0,
+      "value": "Verplicht"
+    }
+  ],
+  "SuBsH3": [
+    {
+      "type": 0,
+      "value": "De betaling kon niet worden bevestigd."
+    }
+  ],
+  "TE4fIS": [
+    {
+      "type": 0,
+      "value": "Stad"
+    }
+  ],
+  "TSP1Mj": [
+    {
+      "type": 0,
+      "value": "Terug naar de dienst"
+    }
+  ],
+  "TwyMau": [
+    {
+      "type": 0,
+      "value": "Account"
+    }
+  ],
+  "U2el92": [
+    {
+      "type": 0,
+      "value": "Betaling is geannuleerd."
+    }
+  ],
+  "UHXgba": [
+    {
+      "type": 0,
+      "value": "Beschikbare dag"
+    }
+  ],
+  "USfLuS": [
+    {
+      "type": 0,
+      "value": "Geef een nieuw wachtwoord op"
+    }
+  ],
+  "Ut7ZVi": [
+    {
+      "type": 0,
+      "value": "Beoordeel je ervaring"
+    }
+  ],
+  "V6P9GB": [
+    {
+      "type": 0,
+      "value": "Je hebt niets aan je tas toegevoegd. We weten zeker dat je iets in onze winkel zult vinden"
+    }
+  ],
+  "VKb1MS": [
+    {
+      "type": 0,
+      "value": "Categorieën"
+    }
+  ],
+  "VcQV4Z": [
+    {
+      "type": 0,
+      "value": "Volledig terugbetaald"
+    }
+  ],
+  "Vf57Ie": [
+    {
+      "type": 0,
+      "value": "Gedeeltelijk vervuld"
+    }
+  ],
+  "VhcCOO": [
+    {
+      "type": 0,
+      "value": "Nieuwe verlanglijst"
+    }
+  ],
+  "W6nwjo": [
+    {
+      "type": 0,
+      "value": "Voorlopige versie"
+    }
+  ],
+  "WCcbn6": [
+    {
+      "type": 0,
+      "value": "Laatst bijgewerkt Oplopend"
+    }
+  ],
+  "WGCGLH": [
+    {
+      "type": 0,
+      "value": "Ja, ik wil mijn account in dRural verwijderen."
+    }
+  ],
+  "WHgdsk": [
+    {
+      "type": 0,
+      "value": "Geen voorraad meer"
+    }
+  ],
+  "WKXLYM": [
+    {
+      "type": 0,
+      "value": "dRural, de digitale marktplaats die gebruikers verbindt met lokale serviceproviders in de buurt"
+    }
+  ],
+  "Wai7xX": [
+    {
+      "type": 0,
+      "value": "Het lijkt erop dat het token voor het opnieuw instellen van het wachtwoord niet meer geldig is."
+    }
+  ],
+  "Wfj7wS": [
+    {
+      "type": 0,
+      "value": "We hebben u een e-mail gestuurd met instructies voor het wijzigen van uw wachtwoord."
+    }
+  ],
+  "WghPED": [
+    {
+      "type": 0,
+      "value": "Terug naar Inloggen"
+    }
+  ],
+  "WkrNSk": [
+    {
+      "type": 0,
+      "value": "Engels"
+    }
+  ],
+  "WmzATS": [
+    {
+      "type": 0,
+      "value": "Telefoonnummer: "
+    },
+    {
+      "type": 1,
+      "value": "phone"
+    }
+  ],
+  "WxEpVL": [
+    {
+      "type": 0,
+      "value": "Nieuwe "
+    },
+    {
+      "type": 1,
+      "value": "type"
+    },
+    {
+      "type": 0,
+      "value": " . toevoegen"
+    }
+  ],
+  "XS0QmX": [
+    {
+      "type": 0,
+      "value": "Korting: "
+    },
+    {
+      "type": 1,
+      "value": "discountName"
+    }
+  ],
+  "XSr1Wg": [
+    {
+      "type": 0,
+      "value": "Fout bij het verzenden van betaling. Stripe gateway heeft geen betaalmethode geretourneerd in de payload."
+    }
+  ],
+  "XkwMjW": [
+    {
+      "type": 0,
+      "value": "Maximale hoeveelheid is "
+    },
+    {
+      "type": 1,
+      "value": "maxQuantity"
+    }
+  ],
+  "Xo3t9z": [
+    {
+      "type": 0,
+      "value": "Opslaan in verlanglijst"
+    }
+  ],
+  "XvZCaw": [
+    {
+      "type": 0,
+      "value": "Gedeeltelijk terugbetaald"
+    }
+  ],
+  "YKXkbB": [
+    {
+      "type": 0,
+      "value": "Hallo,"
+    }
+  ],
+  "YM709/": [
+    {
+      "type": 0,
+      "value": "Geef e-mailadres op."
+    }
+  ],
+  "YQVUHR": [
+    {
+      "type": 0,
+      "value": "BEKIJK ALLE OPTIES"
+    }
+  ],
+  "YfYlZP": [
+    {
+      "type": 0,
+      "value": "U heeft geen categorieën geselecteerd. Klik op de knop Bewerken om te beginnen met selecteren."
+    }
+  ],
+  "Ynjq+C": [
+    {
+      "type": 0,
+      "value": "Volledig opgeladen"
+    }
+  ],
+  "YqRDRu": [
+    {
+      "type": 0,
+      "value": "4 sterren"
+    }
+  ],
+  "Yx6py4": [
+    {
+      "type": 0,
+      "value": "Betalingsstatus"
+    }
+  ],
+  "Yy/yDL": [
+    {
+      "type": 0,
+      "value": "Wachtwoord opnieuw instellen"
+    }
+  ],
+  "Yywm0p": [
+    {
+      "type": 0,
+      "value": "Doorgaan met winkelen"
+    }
+  ],
+  "ZBUdiz": [
+    {
+      "type": 0,
+      "value": "Totale prijs"
+    }
+  ],
+  "ZIYTq9": [
+    {
+      "type": 0,
+      "value": "U verbinden met de diensten die u nodig heeft"
+    }
+  ],
+  "ZMCsQ+": [
+    {
+      "type": 0,
+      "value": "Zoekdiensten bij mij in de buurt"
+    }
+  ],
+  "a/4SMm": [
+    {
+      "type": 0,
+      "value": "verplicht veld"
+    }
+  ],
+  "a8gxsN": [
+    {
+      "type": 0,
+      "value": "De betaling werd geweigerd. Probeer de betaling opnieuw met een andere betaalmethode of kaart."
+    }
+  ],
+  "aIRWQB": [
+    {
+      "type": 0,
+      "value": "Terug naar huis"
+    }
+  ],
+  "aWoA8g": [
+    {
+      "type": 0,
+      "value": "Persoonlijke gegevens"
+    }
+  ],
+  "aei+HO": [
+    {
+      "type": 0,
+      "value": "Welkom bij dRural!"
+    }
+  ],
+  "aheQdn": [
+    {
+      "type": 0,
+      "value": "Achternaam"
+    }
+  ],
+  "ast9q1": [
+    {
+      "type": 0,
+      "value": "Bestelstatus"
+    }
+  ],
+  "ataTev": [
+    {
+      "type": 0,
+      "value": "onvervuld"
+    }
+  ],
+  "b11WUZ": [
+    {
+      "type": 0,
+      "value": "Uur"
+    }
+  ],
+  "b1zuN9": [
+    {
+      "type": 0,
+      "value": "Prijs"
+    }
+  ],
+  "b8sVDI": [
+    {
+      "type": 0,
+      "value": "Privacyverklaring"
+    }
+  ],
+  "baOQrt": [
+    {
+      "type": 0,
+      "value": "Bedankt voor het achterlaten van uw feedback. Uw melding wordt beoordeeld door een dRural-beheerder."
+    }
+  ],
+  "bsM94i": [
+    {
+      "type": 0,
+      "value": "Ga verder naar Verzenden"
+    }
+  ],
+  "bzEaXJ": [
+    {
+      "type": 0,
+      "value": "Wat zoek je?"
+    }
+  ],
+  "c7/79+": [
+    {
+      "type": 0,
+      "value": "Facturatie adres"
+    }
+  ],
+  "c8W0mH": [
+    {
+      "type": 0,
+      "value": "Heb je een cadeaubon of kortingscode?"
+    }
+  ],
+  "cQiUt4": [
+    {
+      "type": 0,
+      "value": "Nieuw adres toevoegen"
+    }
+  ],
+  "cZyhkN": [
+    {
+      "type": 0,
+      "value": "Foto's uploaden (optioneel)"
+    }
+  ],
+  "ccXLVi": [
+    {
+      "type": 0,
+      "value": "Categorie"
+    }
+  ],
+  "ceaFSA": [
+    {
+      "type": 0,
+      "value": "Standaard verzendadres"
+    }
+  ],
+  "clY0ZY": [
+    {
+      "type": 0,
+      "value": "ik wil verkopen"
+    }
+  ],
+  "cpCJUk": [
+    {
+      "type": 0,
+      "value": "Geregistreerde gebruiker"
+    }
+  ],
+  "cyR7Kh": [
+    {
+      "type": 0,
+      "value": "Rug"
+    }
+  ],
+  "d3jSMU": [
+    {
+      "type": 0,
+      "value": "U kunt maximaal 5 foto's uploaden."
+    }
+  ],
+  "d3lWas": [
+    {
+      "type": 0,
+      "value": "account aanmaken"
+    }
+  ],
+  "dABWQd": [
+    {
+      "type": 0,
+      "value": "Geen diensten gevonden"
+    }
+  ],
+  "dC3u7Z": [
+    {
+      "type": 0,
+      "value": "Meest populair"
+    }
+  ],
+  "dUxyza": [
+    {
+      "type": 0,
+      "value": "Beoordelingen"
+    }
+  ],
+  "deEeEI": [
+    {
+      "type": 0,
+      "value": "Register"
+    }
+  ],
+  "dlXyEz": [
+    {
+      "type": 1,
+      "value": "error"
+    }
+  ],
+  "e6Ph5+": [
+    {
+      "type": 0,
+      "value": "Adres"
+    }
+  ],
+  "eKEL/g": [
+    {
+      "type": 0,
+      "value": "In afwachting"
+    }
+  ],
+  "eh90Dc": [
+    {
+      "type": 1,
+      "value": "reviewsCount"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "type": 1,
+      "value": "reviews"
+    }
+  ],
+  "ejEGdx": [
+    {
+      "type": 0,
+      "value": "Huis"
+    }
+  ],
+  "erE1I9": [
+    {
+      "type": 0,
+      "value": "Moet een geldig e-mailadres zijn"
+    }
+  ],
+  "ev8nQc": [
+    {
+      "type": 0,
+      "value": "Prijs geselecteerd: "
+    },
+    {
+      "type": 1,
+      "value": "pge"
+    },
+    {
+      "type": 0,
+      "value": " - "
+    },
+    {
+      "type": 1,
+      "value": "ple"
+    },
+    {
+      "type": 0,
+      "value": " €"
+    }
+  ],
+  "ex+q9+": [
+    {
+      "type": 0,
+      "value": "Verander adres"
+    }
+  ],
+  "ezoYNP": [
+    {
+      "type": 0,
+      "value": "Stripe-betalingsgateway kan niet worden weergegeven. Streepelementen waren niet voorzien."
+    }
+  ],
+  "f/jyk+": [
+    {
+      "type": 0,
+      "value": "Kroatisch"
+    }
+  ],
+  "f1bdYj": [
+    {
+      "type": 0,
+      "value": "Telefoonnummer moet 15 of minder cijfers bevatten"
+    }
+  ],
+  "fE3ujL": [
+    {
+      "type": 0,
+      "value": "Bestel Details"
+    }
+  ],
+  "fVvfyb": [
+    {
+      "type": 0,
+      "value": "Lijstnaam bewerken"
+    }
+  ],
+  "fq86MK": [
+    {
+      "type": 0,
+      "value": "Meest recente"
+    }
+  ],
+  "gDxz/O": [
+    {
+      "type": 0,
+      "value": "Boek service"
+    }
+  ],
+  "gF7/Mv": [
+    {
+      "type": 0,
+      "value": "5 sterren"
+    }
+  ],
+  "gVph2B": [
+    {
+      "type": 0,
+      "value": "De betaling moet worden bevestigd, maar de gegevens die nodig zijn voor de bevestiging die van de server is ontvangen, hebben een verkeerde indeling."
+    }
+  ],
+  "gjwFsT": [
+    {
+      "type": 0,
+      "value": "Selecteer een datum"
+    }
+  ],
+  "h4IxgY": [
+    {
+      "type": 0,
+      "value": "E-mail bevestigd"
+    }
+  ],
+  "hDI+JM": [
+    {
+      "type": 0,
+      "value": "Sorteer op"
+    }
+  ],
+  "hMzcSq": [
+    {
+      "type": 0,
+      "value": "Berichten"
+    }
+  ],
+  "hNu2St": [
+    {
+      "type": 0,
+      "value": "Betalen in de winkel"
+    }
+  ],
+  "hX1ca3": [
+    {
+      "type": 0,
+      "value": "Ga terug naar Bestelgeschiedenis"
+    }
+  ],
+  "hXa/U/": [
+    {
+      "type": 0,
+      "value": "of je kan"
+    }
+  ],
+  "hcXlt0": [
+    {
+      "type": 0,
+      "value": "Link 1"
+    }
+  ],
+  "hefnRL": [
+    {
+      "type": 0,
+      "value": "Instellen als standaard factuuradres"
+    }
+  ],
+  "hqK0Mk": [
+    {
+      "type": 0,
+      "value": "Oeps!... 404"
+    }
+  ],
+  "hr8Rxf": [
+    {
+      "type": 0,
+      "value": "Ga terug naar de startpagina"
+    }
+  ],
+  "hvDAdI": [
+    {
+      "type": 0,
+      "value": "Laat mijn recensie achter"
+    }
+  ],
+  "hzSNj4": [
+    {
+      "type": 0,
+      "value": "Dashboard"
+    }
+  ],
+  "iFsDVR": [
+    {
+      "type": 0,
+      "value": "Bezig met laden"
+    }
+  ],
+  "iWbl/h": [
+    {
+      "type": 0,
+      "value": "Gedeeltelijk geretourneerd"
+    }
+  ],
+  "iZ3kzM": [
+    {
+      "type": 0,
+      "value": "Ik ben mijn wachtwoord vergeten"
+    }
+  ],
+  "ijJ3es": [
+    {
+      "type": 1,
+      "value": "star"
+    },
+    {
+      "type": 0,
+      "value": " sterren"
+    }
+  ],
+  "ipg5B3": [
+    {
+      "type": 0,
+      "value": "Er is een fout opgetreden bij het verwerken van de betaling."
+    }
+  ],
+  "ipwTkh": [
+    {
+      "type": 0,
+      "value": "Zelfde als verzendadres"
+    }
+  ],
+  "j5EA6m": [
+    {
+      "type": 0,
+      "value": "GA NAAR DE KASSA"
+    }
+  ],
+  "jAHnYU": [
+    {
+      "type": 0,
+      "value": "Diensten bij jou in de buurt"
+    }
+  ],
+  "jHKLNU": [
+    {
+      "type": 0,
+      "value": "Geef het factuuradres op."
+    }
+  ],
+  "jMQMBz": [
+    {
+      "type": 0,
+      "value": "Verlanglijst verwijderen"
+    }
+  ],
+  "jNHZSz": [
+    {
+      "type": 0,
+      "value": "Kan de bestelling niet annuleren"
+    }
+  ],
+  "jY+f2f": [
+    {
+      "type": 0,
+      "value": "vervuld"
+    }
+  ],
+  "jbbK0Z": [
+    {
+      "type": 0,
+      "value": "Beoordeling verwijderen?"
+    }
+  ],
+  "jnTBr4": [
+    {
+      "type": 0,
+      "value": "Toon alle resultaten"
+    }
+  ],
+  "jrEpw7": [
+    {
+      "type": 0,
+      "value": "Je bent nu ingelogd"
+    }
+  ],
+  "jruD6p": [
+    {
+      "type": 0,
+      "value": "Verwijder account bevestigen"
+    }
+  ],
+  "jvgIPx": [
+    {
+      "type": 0,
+      "value": "Zal beschikbaar zijn voor aankoop op "
+    },
+    {
+      "type": 1,
+      "value": "date"
+    },
+    {
+      "type": 0,
+      "value": " bij "
+    },
+    {
+      "type": 1,
+      "value": "time"
+    }
+  ],
+  "jvo0vs": [
+    {
+      "type": 0,
+      "value": "Opslaan"
+    }
+  ],
+  "jwiL7B": [
+    {
+      "type": 0,
+      "value": "Service gemeld"
+    }
+  ],
+  "jy71nZ": [
+    {
+      "type": 0,
+      "value": "Mijn verlanglijstjes"
+    }
+  ],
+  "k+RUwL": [
+    {
+      "type": 0,
+      "value": "Selecteer uw voorkeurscategorieën, zodat we u eerst de diensten kunnen laten zien waarin u meer geïnteresseerd bent. U kunt er zoveel selecteren als u wilt."
+    }
+  ],
+  "k4brJy": [
+    {
+      "type": 0,
+      "value": "Artikelnummer"
+    }
+  ],
+  "kIdQvC": [
+    {
+      "type": 0,
+      "value": "BESTEL DOOR"
+    }
+  ],
+  "kVzyDt": [
+    {
+      "type": 0,
+      "value": "Bedankt voor je bestelling!"
+    }
+  ],
+  "kXMpVK": [
+    {
+      "type": 0,
+      "value": "Geef nogmaals het wachtwoord"
+    }
+  ],
+  "kjhGGf": [
+    {
+      "type": 0,
+      "value": "Check je inbox"
+    }
+  ],
+  "ko8L67": [
+    {
+      "type": 0,
+      "value": "Misschien heb je je keuzes nog niet gemaakt"
+    }
+  ],
+  "kvOMtB": [
+    {
+      "type": 0,
+      "value": "Kredietkaart"
+    }
+  ],
+  "lUSk94": [
+    {
+      "type": 0,
+      "value": "Uw account is gedeactiveerd en het verwijderingsproces is gestart."
+    }
+  ],
+  "ls6X+z": [
+    {
+      "type": 0,
+      "value": "Geen opties"
+    }
+  ],
+  "mBBSyK": [
+    {
+      "type": 0,
+      "value": "Mijn creditcards"
+    }
+  ],
+  "mHIlV5": [
+    {
+      "type": 0,
+      "value": "Winkelmanager"
+    }
+  ],
+  "mLwkSx": [
+    {
+      "type": 0,
+      "value": "Voorkeuren opgeslagen!"
+    }
+  ],
+  "mOPLCp": [
+    {
+      "type": 0,
+      "value": "Afstand geselecteerd: "
+    },
+    {
+      "type": 1,
+      "value": "distanceSelected"
+    },
+    {
+      "type": 0,
+      "value": " km"
+    }
+  ],
+  "mah+Bl": [
+    {
+      "type": 0,
+      "value": "Totale prijs"
+    }
+  ],
+  "msgy7n": [
+    {
+      "type": 0,
+      "value": "Welkom terug bij dRural!"
+    }
+  ],
+  "mtIIl7": [
+    {
+      "type": 0,
+      "value": "overschrijving"
+    }
+  ],
+  "n6M10I": [
+    {
+      "type": 0,
+      "value": "Prijs Hoog-Laag"
+    }
+  ],
+  "n74igO": [
+    {
+      "type": 0,
+      "value": "Niet opgeladen"
+    }
+  ],
+  "n7yYXG": [
+    {
+      "type": 0,
+      "value": "Onderhoud"
+    }
+  ],
+  "n82YXC": [
+    {
+      "type": 0,
+      "value": "Mijn lijsten"
+    }
+  ],
+  "n8Z9ys": [
+    {
+      "type": 0,
+      "value": "Naam verhogen"
+    }
+  ],
+  "nFQbxh": [
+    {
+      "type": 0,
+      "value": "Betalingswijze"
+    }
+  ],
+  "nJCVT0": [
+    {
+      "type": 0,
+      "value": "Geen artikelen beschikbaar"
+    }
+  ],
+  "nJPv4b": [
+    {
+      "type": 0,
+      "value": "Betaalmethode is niet aangemaakt."
+    }
+  ],
+  "niQNPE": [
+    {
+      "type": 0,
+      "value": "Boekingsreferentie"
+    }
+  ],
+  "o+nfLw": [
+    {
+      "type": 1,
+      "value": "name"
+    }
+  ],
+  "o3XhL3": [
+    {
+      "type": 0,
+      "value": "Afstand vanaf mijn locatie:"
+    }
+  ],
+  "o4p2Q6": [
+    {
+      "type": 0,
+      "value": "Gebruiksvoorwaarden"
+    }
+  ],
+  "oQY0a2": [
+    {
+      "type": 0,
+      "value": "Adres lijn 2"
+    }
+  ],
+  "oVktm9": [
+    {
+      "type": 0,
+      "value": "Aanbevolen Services"
+    }
+  ],
+  "oYUboz": [
+    {
+      "type": 0,
+      "value": "Voer uw e-mailadres in, we sturen u instructies om uw wachtwoord opnieuw in te stellen."
+    }
+  ],
+  "ovr4vj": [
+    {
+      "type": 0,
+      "value": "Zweeds"
+    }
+  ],
+  "p+kmJg": [
+    {
+      "type": 0,
+      "value": "Stel je wachtwoord opnieuw in"
+    }
+  ],
+  "pEJQZZ": [
+    {
+      "type": 0,
+      "value": "U kunt uw voorkeuren op elk moment wijzigen op uw gebruikersprofielpagina. Ga naar configuratie om uw voorkeurscategorieën en locatievoorkeuren te selecteren."
+    }
+  ],
+  "pFqKoB": [
+    {
+      "type": 0,
+      "value": "Het kan tot 24 uur duren voordat alle gegevens die aan uw account zijn gekoppeld, volledig zijn verwijderd."
+    }
+  ],
+  "pGDBLH": [
+    {
+      "type": 0,
+      "value": "Als u geen account wilt registreren, hoeft u zich geen zorgen te maken. U kunt als gast afrekenen. We geven net zoveel om u als elke geregistreerde gebruiker."
+    }
+  ],
+  "pH1N57": [
+    {
+      "type": 0,
+      "value": "3 sterren"
+    }
+  ],
+  "pgOl4C": [
+    {
+      "type": 0,
+      "value": "Klik op de knop Bewerken als u uw account wilt verwijderen."
+    }
+  ],
+  "qHtK5E": [
+    {
+      "type": 0,
+      "value": "Uw e-mail is succesvol bevestigd. Ga terug naar inloggen om dRural in te voeren."
+    }
+  ],
+  "qIzA6S": [
+    {
+      "type": 0,
+      "value": "We kunnen een pagina die u zoekt niet vinden! Mogelijk hebt u het adres verkeerd getypt of is de pagina verplaatst. Onze excuses voor de fout en we hopen dat u een fijne dag zult hebben."
+    }
+  ],
+  "qRAN5x": [
+    {
+      "type": 0,
+      "value": "FILTEREN OP"
+    }
+  ],
+  "qVGRIE": [
+    {
+      "type": 0,
+      "value": "Hoeveelheid"
+    }
+  ],
+  "qr8m+g": [
+    {
+      "type": 0,
+      "value": "Uw bestelnummer is"
+    }
+  ],
+  "qyQ7t4": [
+    {
+      "type": 0,
+      "value": "zoeken"
+    }
+  ],
+  "r2Jjms": [
+    {
+      "type": 0,
+      "value": "Log in"
+    }
+  ],
+  "rELDbB": [
+    {
+      "type": 0,
+      "value": "Vernieuwen"
+    }
+  ],
+  "rI+UPp": [
+    {
+      "type": 0,
+      "value": "Kan hmac-token niet genereren"
+    }
+  ],
+  "rSx7QN": [
+    {
+      "type": 0,
+      "value": "Voer mijn locatie handmatig in"
+    }
+  ],
+  "reMHa9": [
+    {
+      "type": 0,
+      "value": "Stripe-gateway verkeerd geconfigureerd. API-sleutel niet verstrekt."
+    }
+  ],
+  "rhKM1Z": [
+    {
+      "type": 0,
+      "value": "Dienst geleverd door"
+    }
+  ],
+  "rmp2xg": [
+    {
+      "type": 0,
+      "value": "Mijn wachtwoord"
+    }
+  ],
+  "rvirM2": [
+    {
+      "type": 0,
+      "value": "Plaats"
+    }
+  ],
+  "s/8bAh": [
+    {
+      "type": 0,
+      "value": "Verwijder foto"
+    }
+  ],
+  "s3X0AG": [
+    {
+      "type": 0,
+      "value": "Bestellen #"
+    }
+  ],
+  "sPkeAp": [
+    {
+      "type": 0,
+      "value": "Moet 7 tekens bevatten en ten minste een hoofdletter, een kleine letter, een cijfer en een speciaal geval."
+    }
+  ],
+  "sgroIS": [
+    {
+      "type": 0,
+      "value": "2 sterren"
+    }
+  ],
+  "shwVin": [
+    {
+      "type": 0,
+      "value": "We zien dat je het nu druk hebt"
+    }
+  ],
+  "sk7Ets": [
+    {
+      "type": 0,
+      "value": "Wachtwoorden moeten overeenkomen!"
+    }
+  ],
+  "sy+pv5": [
+    {
+      "type": 0,
+      "value": "E-mail"
+    }
+  ],
+  "t2ZOTV": [
+    {
+      "type": 0,
+      "value": "Weet je zeker dat je de verlanglijst "
+    },
+    {
+      "type": 1,
+      "value": "listName"
+    },
+    {
+      "type": 0,
+      "value": " wilt verwijderen?"
+    }
+  ],
+  "t38Hon": [
+    {
+      "type": 0,
+      "value": "Er is een onbekende fout opgetreden bij het verzenden van de betaling."
+    }
+  ],
+  "tLca6A": [
+    {
+      "type": 0,
+      "value": "Telefoonnummer is niet geldig. Geef de landcode op gevolgd door het nummer zonder spaties."
+    }
+  ],
+  "tWmr3d": [
+    {
+      "type": 0,
+      "value": "Boekingsservice"
+    }
+  ],
+  "ts5w+M": [
+    {
+      "type": 0,
+      "value": "Niet bevestigd"
+    }
+  ],
+  "tzMNF3": [
+    {
+      "type": 0,
+      "value": "Toestand"
+    }
+  ],
+  "u3lkk5": [
+    {
+      "type": 0,
+      "value": "Deze dag heeft geen beschikbare uren meer."
+    }
+  ],
+  "uBT5kf": [
+    {
+      "type": 0,
+      "value": "We hebben u een orderbevestiging per e-mail gestuurd waarin u de bestelde services kunt controleren."
+    }
+  ],
+  "uPNlBw": [
+    {
+      "type": 0,
+      "value": "E-mail: "
+    },
+    {
+      "type": 1,
+      "value": "email"
+    }
+  ],
+  "uTagzw": [
+    {
+      "type": 0,
+      "value": "Xyz van "
+    },
+    {
+      "type": 1,
+      "value": "userCategoriesCount"
+    },
+    {
+      "type": 0,
+      "value": " . weergeven"
+    }
+  ],
+  "uVkBuo": [
+    {
+      "type": 0,
+      "value": "Selecteer "
+    },
+    {
+      "type": 1,
+      "value": "selectLabel"
+    }
+  ],
+  "ugX5fl": [
+    {
+      "type": 0,
+      "value": "Rapportageservice"
+    }
+  ],
+  "ulh3kf": [
+    {
+      "type": 0,
+      "value": "Collecties"
+    }
+  ],
+  "vONi+O": [
+    {
+      "type": 0,
+      "value": "Land"
+    }
+  ],
+  "vQt5XU": [
+    {
+      "type": 0,
+      "value": "Bestelgeschiedenis"
+    }
+  ],
+  "vUEawW": [
+    {
+      "type": 0,
+      "value": "Bedankt voor het achterlaten van je feedback"
+    }
+  ],
+  "vfG+nh": [
+    {
+      "type": 0,
+      "value": "bevestig wachtwoord"
+    }
+  ],
+  "voftCr": [
+    {
+      "type": 0,
+      "value": "Bevestig boeking"
+    }
+  ],
+  "vxYWzb": [
+    {
+      "type": 0,
+      "value": "Beoordeel de service"
+    }
+  ],
+  "w1ks9x": [
+    {
+      "type": 0,
+      "value": "Boek deze dienst"
+    }
+  ],
+  "w9OoUW": [
+    {
+      "type": 0,
+      "value": "Opslaan in nieuwe lijst"
+    }
+  ],
+  "wIWVus": [
+    {
+      "type": 0,
+      "value": "Ga naar de kassa"
+    }
+  ],
+  "wTo1un": [
+    {
+      "type": 0,
+      "value": "Filters toepassen"
+    }
+  ],
+  "wTrlQS": [
+    {
+      "type": 0,
+      "value": "Terug naar servicepagina"
+    }
+  ],
+  "wm96Jx": [
+    {
+      "type": 0,
+      "value": "Geretourneerd"
+    }
+  ],
+  "wmyg6t": [
+    {
+      "type": 0,
+      "value": "Bron"
+    }
+  ],
+  "wyxJrL": [
+    {
+      "type": 0,
+      "value": "Account verwijderen"
+    }
+  ],
+  "x/OgEF": [
+    {
+      "type": 0,
+      "value": "Laatst bijgewerkt Aflopend"
+    }
+  ],
+  "x2/i6X": [
+    {
+      "type": 0,
+      "value": "Prijs Laag-Hoog"
+    }
+  ],
+  "xCzQG8": [
+    {
+      "type": 0,
+      "value": "Duidelijk..."
+    }
+  ],
+  "xLs7Jb": [
+    {
+      "type": 0,
+      "value": "Verander foto"
+    }
+  ],
+  "xMnH8F": [
+    {
+      "type": 0,
+      "value": "Meer laden"
+    }
+  ],
+  "xNXi4O": [
+    {
+      "type": 0,
+      "value": "Er is een bevestigingslink naar uw e-mail gestuurd. Controleer uw inbox en klik op de link om het registratieproces te voltooien."
+    }
+  ],
+  "xvfNSm": [
+    {
+      "type": 1,
+      "value": "productCount"
+    },
+    {
+      "type": 0,
+      "value": "-services gepubliceerd"
+    }
+  ],
+  "xwEc8K": [
+    {
+      "type": 0,
+      "value": "API"
+    }
+  ],
+  "xxQxLE": [
+    {
+      "type": 0,
+      "value": "E-mailadres"
+    }
+  ],
+  "xxhML8": [
+    {
+      "type": 0,
+      "value": "Betalingsdetails"
+    }
+  ],
+  "xyNMpb": [
+    {
+      "type": 0,
+      "value": "Betalingsgateway heeft geen betalingsbevestiging gegeven."
+    }
+  ],
+  "yLAlyl": [
+    {
+      "type": 0,
+      "value": "Alle sterren"
+    }
+  ],
+  "yLRtkC": [
+    {
+      "type": 0,
+      "value": "Naam Aflopend"
+    }
+  ],
+  "yU8L4Y": [
+    {
+      "type": 0,
+      "value": "Maximaal bestandsupload is 5"
+    }
+  ],
+  "yzwEMI": [
+    {
+      "type": 0,
+      "value": "Toon diensten op deze afstand bij mij in de buurt"
+    }
+  ],
+  "z+Mzjn": [
+    {
+      "type": 0,
+      "value": "Account wordt verwijderd"
+    }
+  ],
+  "zAGI4/": [
+    {
+      "type": 0,
+      "value": "Niet-status gevonden"
+    }
+  ],
+  "zEhfKQ": [
+    {
+      "type": 0,
+      "value": "Doorgaan met winkelen"
+    }
+  ],
+  "zF4S3v": [
+    {
+      "type": 0,
+      "value": "Populaire diensten"
+    }
+  ],
+  "zSOvI0": [
+    {
+      "type": 0,
+      "value": "Filters"
+    }
+  ],
+  "zSuhDL": [
+    {
+      "type": 0,
+      "value": "ik wil kopen"
+    }
+  ],
+  "zdLDux": [
+    {
+      "type": 0,
+      "value": "Bevestig verwijdering"
+    }
+  ],
+  "zeP3UD": [
+    {
+      "type": 0,
+      "value": "Bezorgkosten:"
+    }
+  ],
+  "zpDqqG": [
+    {
+      "type": 0,
+      "value": "Dienst verwijderen"
+    }
+  ],
+  "zwNDxG": [
+    {
+      "type": 0,
+      "value": "Jouw winkelwagen"
+    }
+  ],
+  "zx7CKB": [
+    {
+      "type": 0,
+      "value": "Controleer je e-mail"
+    }
+  ]
+}

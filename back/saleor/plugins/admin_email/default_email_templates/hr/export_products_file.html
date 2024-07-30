@@ -1,0 +1,60 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head>
+    <title>
+
+    </title>
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+      #outlook a { padding:0; }
+      body { margin:0;padding:0;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%; }
+      table, td { border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt; }
+      img { border:0;height:auto;line-height:100%; outline:none;text-decoration:none;-ms-interpolation-mode:bicubic; }
+      p { display:block;margin:13px 0; }
+    </style>
+
+    <!--[if mso]>
+    <xml>
+    <o:OfficeDocumentSettings>
+      <o:AllowPNG/>
+      <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+  </head>
+
+  {{> body }}
+    <!-- Adds style tags inside body for gmail suport-->
+    {{> fonts }}
+    {{> global_styles }}
+
+    {{> email_container }}
+      {{> logo }}
+      {{> email_wrapper }}
+        {{> image }}
+        {{> content_wrapper }}
+          {{> title }}
+          <p style="margin-bottom: 56px;">
+            Your file with services data is ready to download.
+            Just press the button below.
+          </p>
+          <div style="display: flex; justify-content: center;">
+            <a style="align-items: center; border-radius: 24px; cursor: pointer; display: flex; flex-direction: row; justify-content: center; padding: 14px 48px 13px; text-decoration: none; margin-bottom: 54px; background: {{#if site_primary_color}} {{ site_primary_color }} {{else}} #3CDCAA; {{/if}}" href="{{ confirm_url }}" href="{{ csv_link }}" style="margin-bottom: 54px;">
+              <span style="font-size: 14px; line-height: 21px; color: #fff;">Download</span>
+            </a>
+          </div>
+          <p style="margin-bottom: 16px;">If that doesn’t work, copy and paste the following link in your browser:</p>
+          <a style="cursor: pointer; font-size: 12px; text-decoration: underline; word-break: break-all; color: {{#if site_primary_color}} {{ site_primary_color }}; {{else}} #3CDCAA; {{/if}}" href="{{ csv_link }}">
+            {{ csv_link }}
+          </a>
+          {{> schema_markup}}
+        {{> close_div }}
+      {{> close_div }}
+      {{> footer }}
+    {{> close_div }}
+  {{> close_body }}
+</html>

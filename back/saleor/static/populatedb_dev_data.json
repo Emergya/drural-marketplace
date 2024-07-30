@@ -1,0 +1,3435 @@
+[{
+  "model": "product.category",
+  "pk": 77,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {},
+    "seo_title": "",
+    "seo_description": "",
+    "name": "Art & books",
+    "slug": "art-and-books",
+    "description": {
+      "blocks": [{
+        "data": {
+          "text": ""
+        },
+        "type": "paragraph"
+      }]
+    },
+    "parent": null,
+    "lft": 1,
+    "rght": 8,
+    "tree_id": 1,
+    "level": 0
+  }
+},
+{
+  "model": "product.category",
+  "pk": 78,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {},
+    "seo_title": "",
+    "seo_description": "",
+    "name": "Baby & children",
+    "slug": "baby-and-children",
+    "description": {
+      "blocks": [{
+        "data": {
+          "text": ""
+        },
+        "type": "paragraph"
+      }]
+    },
+    "parent": null,
+    "lft": 1,
+    "rght": 6,
+    "tree_id": 2,
+    "level": 0
+  }
+},
+{
+  "model": "product.category",
+  "pk": 79,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {},
+    "seo_title": "",
+    "seo_description": "",
+    "name": "Beauty",
+    "slug": "beauty",
+    "description": {
+      "blocks": [{
+        "data": {
+          "text": ""
+        },
+        "type": "paragraph"
+      }]
+    },
+    "parent": null,
+
+    "lft": 1,
+    "rght": 10,
+    "tree_id": 3,
+    "level": 0
+  }
+},
+{
+  "model": "product.category",
+  "pk": 80,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {},
+    "seo_title": "",
+    "seo_description": "",
+    "name": "Accomodation",
+    "slug": "accomodation",
+    "description": {},
+    "parent": null,
+    "lft": 2,
+    "rght": 3,
+    "tree_id": 3,
+    "level": 0
+  }
+},
+{
+  "model": "product.category",
+  "pk": 81,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {},
+    "seo_title": "",
+    "seo_description": "",
+    "name": "Fashion",
+    "slug": "fashion",
+    "description": {},
+    "parent": null,
+    "lft": 4,
+    "rght": 5,
+    "tree_id": 3,
+    "level": 0
+  }
+},
+{
+  "model": "product.category",
+  "pk": 82,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {},
+    "seo_title": "",
+    "seo_description": "",
+    "name": "Food",
+    "slug": "food",
+    "description": {},
+    "parent": null,
+    "lft": 6,
+    "rght": 7,
+    "tree_id": 3,
+    "level": 0
+  }
+},
+{
+  "model": "product.category",
+  "pk": 83,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {},
+    "seo_title": "",
+    "seo_description": "",
+    "name": "Health",
+    "slug": "health",
+    "description": {},
+    "parent": null,
+    "lft": 8,
+    "rght": 9,
+    "tree_id": 3,
+    "level": 0
+  }
+},
+{
+  "model": "product.category",
+  "pk": 84,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {},
+    "seo_title": "",
+    "seo_description": "",
+    "name": "Home & Garden",
+    "slug": "home-and-garden",
+    "description": {},
+    "parent": null,
+    "lft": 4,
+    "rght": 5,
+    "tree_id": 2,
+    "level": 0
+  }
+},
+{
+  "model": "product.category",
+  "pk": 85,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {},
+    "seo_title": "",
+    "seo_description": "",
+    "name": "Home appliances",
+    "slug": "home-appliances",
+    "description": {},
+    "parent": 84,
+    "lft": 2,
+    "rght": 3,
+    "tree_id": 2,
+    "level": 1
+  }
+},
+{
+  "model": "product.category",
+  "pk": 86,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {},
+    "seo_title": "",
+    "seo_description": "",
+    "name": "Pets",
+    "slug": "pets",
+    "description": {},
+    "parent": null,
+    "lft": 2,
+    "rght": 3,
+    "tree_id": 1,
+    "level": 0
+  }
+},
+{
+  "model": "product.category",
+  "pk": 87,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {},
+    "seo_title": "",
+    "seo_description": "",
+    "name": "Sports",
+    "slug": "sports",
+    "description": {},
+    "parent": null,
+    "lft": 4,
+    "rght": 5,
+    "tree_id": 1,
+    "level": 0
+  }
+},
+{
+  "model": "product.category",
+  "pk": 88,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {},
+    "seo_title": "",
+    "seo_description": "",
+    "name": "Transportation",
+    "slug": "transportation",
+    "description": {
+      "blocks": [{
+        "data": {
+          "text": ""
+        },
+        "type": "paragraph"
+      }]
+    },
+    "parent": null,
+    "lft": 6,
+    "rght": 7,
+    "tree_id": 1,
+    "level": 0
+  }
+},
+{
+  "model": "product.producttype",
+  "fields": {
+    "private_metadata": {},
+    "metadata": {
+      "vatlayer.code": "standard",
+      "vatlayer.description": "standard"
+    },
+    "name": "Simple",
+    "slug": "Simple",
+    "has_variants": false,
+    "is_shipping_required": false,
+    "is_digital": true,
+    "weight": "0.0:kg"
+  }
+},
+{
+  "model": "product.productcategory",
+  "pk": 67,
+  "fields": {
+    "sort_order": null,
+    "product": 61,
+    "category": 78
+  }
+},
+{
+  "model": "product.productcategory",
+  "pk": 68,
+  "fields": {
+    "sort_order": null,
+    "product": 61,
+    "category": 82
+  }
+},
+{
+  "model": "product.productcategory",
+  "pk": 69,
+  "fields": {
+    "sort_order": null,
+    "product": 62,
+    "category": 78
+  }
+},
+{
+  "model": "product.productcategory",
+  "pk": 70,
+  "fields": {
+    "sort_order": null,
+    "product": 62,
+    "category": 82
+  }
+},
+{
+  "model": "product.productcategory",
+  "pk": 71,
+  "fields": {
+    "sort_order": null,
+    "product": 63,
+    "category": 80
+  }
+},
+{
+  "model": "product.productcategory",
+  "pk": 72,
+  "fields": {
+    "sort_order": null,
+    "product": 63,
+    "category": 82
+  }
+},
+{
+  "model": "product.productcategory",
+  "pk": 73,
+  "fields": {
+    "sort_order": null,
+    "product": 64,
+    "category": 78
+  }
+},
+{
+  "model": "product.productcategory",
+  "pk": 74,
+  "fields": {
+    "sort_order": null,
+    "product": 64,
+    "category": 82
+  }
+},
+{
+  "model": "product.productcategory",
+  "pk": 75,
+  "fields": {
+    "sort_order": null,
+    "product": 65,
+    "category": 82
+  }
+},
+{
+  "model": "product.productcategory",
+  "pk": 76,
+  "fields": {
+    "sort_order": null,
+    "product": 71,
+    "category": 82
+  }
+},
+{
+  "model": "product.productcategory",
+  "pk": 77,
+  "fields": {
+    "sort_order": null,
+    "product": 72,
+    "category": 84
+  }
+},
+{
+  "model": "product.productcategory",
+  "pk": 78,
+  "fields": {
+    "sort_order": null,
+    "product": 73,
+    "category": 86
+  }
+},
+{
+  "model": "product.productcategory",
+  "pk": 79,
+  "fields": {
+    "sort_order": null,
+    "product": 74,
+    "category": 78
+  }
+},
+{
+  "model": "product.productcategory",
+  "pk": 80,
+  "fields": {
+    "sort_order": null,
+    "product": 74,
+    "category": 86
+  }
+},
+{
+  "model": "product.productcategory",
+  "pk": 81,
+  "fields": {
+    "sort_order": null,
+    "product": 74,
+    "category": 87
+  }
+},
+{
+  "model": "product.productcategory",
+  "pk": 82,
+  "fields": {
+    "sort_order": null,
+    "product": 75,
+    "category": 82
+  }
+},
+{
+  "model": "product.productcategory",
+  "pk": 83,
+  "fields": {
+    "sort_order": null,
+    "product": 76,
+    "category": 79
+  }
+},
+{
+  "model": "product.productcategory",
+  "pk": 84,
+  "fields": {
+    "sort_order": null,
+    "product": 76,
+    "category": 83
+  }
+},
+{
+  "model": "product.productcategory",
+  "pk": 85,
+  "fields": {
+    "sort_order": null,
+    "product": 77,
+    "category": 78
+  }
+},
+{
+  "model": "product.productcategory",
+  "pk": 86,
+  "fields": {
+    "sort_order": null,
+    "product": 77,
+    "category": 86
+  }
+},
+{
+  "model": "product.productcategory",
+  "pk": 87,
+  "fields": {
+    "sort_order": null,
+    "product": 77,
+    "category": 87
+  }
+},
+{
+  "model": "product.product",
+  "pk": 61,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {
+      "taxes": {
+        "vatlayer": {
+          "code": "standard",
+          "description": "standard"
+        }
+      }
+    },
+    "seo_title": "",
+    "seo_description": "Tonight, my love, let us take fat brushes and paint the skies with the shades of nebula tides. Get the dark, moody shades of the ether.",
+    "description_plaintext": "Tonight, my love, let us take fat brushes and paint the skies with the shades of nebula tides. Get the dark, moody shades of the ether.",
+    "details_plaintext": "Tonight, my love, let us take fat brushes and paint the skies with the shades of nebula tides. Get the dark, moody shades of the ether.",
+    "product_type": 1,
+    "name": "Candy bar for parties",
+    "slug": "candy-bar-for-parties",
+    "description": {
+      "blocks": [{
+        "data": {
+          "text": "Tonight, my love, let us take fat brushes and paint the skies with the shades of nebula tides. Get the dark, moody shades of the ether."
+        },
+        "type": "paragraph"
+      }]
+    },
+    "details": {
+      "blocks": [{
+        "data": {
+          "text": "Tonight, my love, let us take fat brushes and paint the skies with the shades of nebula tides. Get the dark, moody shades of the ether."
+        },
+        "type": "paragraph"
+      }]
+    },
+    "category": 78,
+    "company": 62,
+    "updated_at": "2020-08-31T06:53:16.102Z",
+    "charge_taxes": true,
+    "is_bookable": false,
+    "is_billable": true,
+    "skip_stock": true,
+    "weight": "0.0:kg"
+  }
+},
+{
+  "model": "product.product",
+  "pk": 62,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {
+      "vatlayer.code": "standard",
+      "vatlayer.description": "standard"
+    },
+    "seo_title": "",
+    "seo_description": "The rich, deep hue of space dust. Vacuum packed and airlocked for long-lasting freshness of color.",
+    "description_plaintext": "The rich, deep hue of space dust. Vacuum packed and airlocked for long-lasting freshness of color.",
+    "details_plaintext": "The rich, deep hue of space dust. Vacuum packed and airlocked for long-lasting freshness of color.",
+    "product_type": 1,
+    "name": "Gummy Cakes",
+    "slug": "gummy-cakes",
+    "description": {
+      "blocks": [{
+        "data": {
+          "text": "The rich, deep hue of space dust. Vacuum packed and airlocked for long-lasting freshness of color."
+        },
+        "type": "paragraph"
+      }]
+    },
+    "details": {
+      "blocks": [{
+        "data": {
+          "text": "The rich, deep hue of space dust. Vacuum packed and airlocked for long-lasting freshness of color."
+        },
+        "type": "paragraph"
+      }]
+    },
+    "category": 78,
+    "company": 62,
+    "updated_at": "2020-08-31T06:53:16.307Z",
+    "charge_taxes": true,
+    "is_bookable": false,
+    "is_billable": false,
+    "skip_stock": true,
+    "weight": "0.0:kg"
+  }
+},
+{
+  "model": "product.product",
+  "pk": 63,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {
+      "vatlayer.code": "standard",
+      "vatlayer.description": "standard"
+    },
+    "seo_title": "",
+    "seo_description": "",
+    "product_type": 1,
+    "name": "Bungalow accomodation",
+    "slug": "bungalow-accomodation",
+    "description": {
+      "blocks": [{
+        "data": {
+          "text": "We are all connected to the universe, because every cell in our bodies was cooked in the hearts of dying stars. Red Dwarf Paint: the color of Carl Sagan’s dreams."
+        },
+        "type": "paragraph"
+      }]
+    },
+    "details": {
+      "blocks": [{
+        "data": {
+          "text": "We are all connected to the universe, because every cell in our bodies was cooked in the hearts of dying stars. Red Dwarf Paint: the color of Carl Sagan’s dreams."
+        },
+        "type": "paragraph"
+      }]
+    },
+    "description_plaintext": "We are all connected to the universe, because every cell in our bodies was cooked in the hearts of dying stars. Red Dwarf Paint: the color of Carl Sagan’s dreams.",
+    "details_plaintext": "We are all connected to the universe, because every cell in our bodies was cooked in the hearts of dying stars. Red Dwarf Paint: the color of Carl Sagan’s dreams.",
+    "category": 80,
+    "company": 68,
+    "updated_at": "2020-08-31T06:53:29.317Z",
+    "charge_taxes": true,
+    "is_bookable": true,
+    "is_billable": false,
+    "skip_stock": true,
+    "duration": 120,
+    "weight": "0.0:kg"
+  }
+},
+{
+  "model": "product.product",
+  "pk": 64,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {
+      "vatlayer.code": "standard",
+      "vatlayer.description": "standard"
+    },
+    "seo_title": "",
+    "seo_description": "There is life in outer space. This vibrant light speed yellow paint brings life to any surface. Goes on easy and dries at light speed.",
+    "description_plaintext": "There is life in outer space. This vibrant light speed yellow paint brings life to any surface. Goes on easy and dries at light speed.",
+    "details_plaintext": "There is life in outer space. This vibrant light speed yellow paint brings life to any surface. Goes on easy and dries at light speed.",
+    "product_type": 1,
+    "name": "Canndy bar service",
+    "slug": "canndy-bar-service",
+    "description": {
+      "blocks": [{
+        "data": {
+          "text": "There is life in outer space. This vibrant light speed yellow paint brings life to any surface. Goes on easy and dries at light speed."
+        },
+        "type": "paragraph"
+      }]
+    },
+    "details": {
+      "blocks": [{
+        "data": {
+          "text": "There is life in outer space. This vibrant light speed yellow paint brings life to any surface. Goes on easy and dries at light speed."
+        },
+        "type": "paragraph"
+      }]
+    },
+    "category": 78,
+    "company": 62,
+    "updated_at": "2020-08-31T06:53:29.548Z",
+    "charge_taxes": true,
+    "is_bookable": true,
+    "duration": 120,
+    "is_billable": true,
+    "skip_stock": true,
+    "weight": "0.0:kg"
+  }
+},
+{
+  "model": "product.product",
+  "pk": 65,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {
+      "vatlayer.code": "standard",
+      "vatlayer.description": "standard"
+    },
+    "seo_title": "",
+    "seo_description": "Turquoise is the new black. No more gloomy night skies, brighten up your evenings with hyperspace paint.",
+    "description_plaintext": "Turquoise is the new black. No more gloomy night skies, brighten up your evenings with hyperspace paint.",
+    "details_plaintext": "Turquoise is the new black. No more gloomy night skies, brighten up your evenings with hyperspace paint.",
+    "product_type": 1,
+    "name": "Ecological vegetables basket",
+    "slug": "ecological-vegetales-basket",
+    "description": {
+      "blocks": [{
+        "data": {
+          "text": "Turquoise is the new black. No more gloomy night skies, brighten up your evenings with hyperspace paint."
+        },
+        "type": "paragraph"
+      }]
+    },
+    "details": {
+      "blocks": [{
+        "data": {
+          "text": "Turquoise is the new black. No more gloomy night skies, brighten up your evenings with hyperspace paint."
+        },
+        "type": "paragraph"
+      }]
+    },
+    "category": 82,
+    "company": 61,
+    "updated_at": "2020-08-31T06:53:29.787Z",
+    "charge_taxes": true,
+    "is_bookable": false,
+    "is_billable": true,
+    "skip_stock": true,
+    "weight": "0.0:kg"
+  }
+},
+{
+  "model": "product.product",
+  "pk": 71,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {
+      "vatlayer.code": "standard",
+      "vatlayer.description": "standard"
+    },
+    "seo_title": "",
+    "seo_description": "Fell from a tree straight into the bottle. No additives, no preservatives, just the refreshing taste of pure sun-kissed Californian oranges.",
+    "description_plaintext": "Fell from a tree straight into the bottle. No additives, no preservatives, just the refreshing taste of pure sun-kissed Californian oranges.",
+    "details_plaintext": "Fell from a tree straight into the bottle. No additives, no preservatives, just the refreshing taste of pure sun-kissed Californian oranges.",
+    "product_type": 1,
+    "name": "Daily bread delivery",
+    "slug": "daily-bread-delivery",
+    "description": {
+      "blocks": [{
+        "data": {
+          "text": "Fell from a tree straight into the bottle. No additives, no preservatives, just the refreshing taste of pure sun-kissed Californian oranges."
+        },
+        "type": "paragraph"
+      }]
+    },
+    "details": {
+      "blocks": [{
+        "data": {
+          "text": "Fell from a tree straight into the bottle. No additives, no preservatives, just the refreshing taste of pure sun-kissed Californian oranges."
+        },
+        "type": "paragraph"
+      }]
+    },
+    "category": 82,
+    "company": 61,
+    "updated_at": "2020-08-31T06:53:17.155Z",
+    "charge_taxes": true,
+    "is_bookable": false,
+    "is_billable": true,
+    "skip_stock": true,
+    "weight": "0.0:kg"
+  }
+},
+{
+  "model": "product.product",
+  "pk": 72,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {
+      "vatlayer.code": "standard",
+      "vatlayer.description": "standard"
+    },
+    "seo_title": "",
+    "seo_description": "Fell straight from the tree, on to Newton’s head, then into the bottle. The autumn taste of English apples. Brought to you by gravity.",
+    "description_plaintext": "Fell straight from the tree, on to Newton’s head, then into the bottle. The autumn taste of English apples. Brought to you by gravity.",
+    "details_plaintext": "Fell straight from the tree, on to Newton’s head, then into the bottle. The autumn taste of English apples. Brought to you by gravity.",
+    "product_type": 1,
+    "name": "Gardening services",
+    "slug": "gardening-services",
+    "description": {
+      "blocks": [{
+        "data": {
+          "text": "Fell straight from the tree, on to Newton’s head, then into the bottle. The autumn taste of English apples. Brought to you by gravity."
+        },
+        "type": "paragraph"
+      }]
+    },
+    "details": {
+      "blocks": [{
+        "data": {
+          "text": "Fell straight from the tree, on to Newton’s head, then into the bottle. The autumn taste of English apples. Brought to you by gravity."
+        },
+        "type": "paragraph"
+      }]
+    },
+    "category": 84,
+    "company": 67,
+    "updated_at": "2020-08-31T06:53:17.312Z",
+    "charge_taxes": true,
+    "is_bookable":true,
+    "duration": 120,
+    "is_billable": true,
+    "skip_stock": true,
+    "weight": "0.0:kg"
+  }
+},
+{
+  "model": "product.product",
+  "pk": 73,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {
+      "vatlayer.code": "standard",
+      "vatlayer.description": "standard"
+    },
+    "seo_title": "",
+    "seo_description": "Improve your eyesight the natural way with 100% pure, squeezed carrot juice. The sweet, orange nectar of Mother Earth.",
+    "description_plaintext": "Improve your eyesight the natural way with 100% pure, squeezed carrot juice. The sweet, orange nectar of Mother Earth.",
+    "details_plaintext": "Improve your eyesight the natural way with 100% pure, squeezed carrot juice. The sweet, orange nectar of Mother Earth.",
+    "product_type": 1,
+    "name": "At home veterinary care",
+    "slug": "at-home-veterinary-care",
+    "description": {
+      "blocks": [{
+        "data": {
+          "text": "Improve your eyesight the natural way with 100% pure, squeezed carrot juice. The sweet, orange nectar of Mother Earth."
+        },
+        "type": "paragraph"
+      }]
+    },
+    "details": {
+      "blocks": [{
+        "data": {
+          "text": "Improve your eyesight the natural way with 100% pure, squeezed carrot juice. The sweet, orange nectar of Mother Earth."
+        },
+        "type": "paragraph"
+      }]
+    },
+    "category": 86,
+    "company": 64,
+    "updated_at": "2020-08-31T06:53:17.473Z",
+    "charge_taxes": true,
+    "is_bookable": true,
+    "skip_stock": true,
+    "duration": 30,
+    "weight": "0.0:kg"
+  }
+},
+{
+  "model": "product.product",
+  "pk": 74,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {
+      "vatlayer.code": "standard",
+      "vatlayer.description": "standard"
+    },
+    "seo_title": "",
+    "seo_description": "Build your protein the natural way, with exotic banana juice made from ripe fruit and packed with all the goodness of the tropical sun.",
+    "description_plaintext": "Build your protein the natural way, with exotic banana juice made from ripe fruit and packed with all the goodness of the tropical sun.",
+    "details_plaintext": "Build your protein the natural way, with exotic banana juice made from ripe fruit and packed with all the goodness of the tropical sun.",
+    "product_type": 1,
+    "name": "Pony ride for children",
+    "slug": "pony-ride-for-children",
+    "description": {
+      "blocks": [{
+        "data": {
+          "text": "Build your protein the natural way, with exotic banana juice made from ripe fruit and packed with all the goodness of the tropical sun."
+        },
+        "type": "paragraph"
+      }]
+    },
+    "details": {
+      "blocks": [{
+        "data": {
+          "text": "Build your protein the natural way, with exotic banana juice made from ripe fruit and packed with all the goodness of the tropical sun."
+        },
+        "type": "paragraph"
+      }]
+    },
+    "category": 78,
+    "company": 66,
+    "updated_at": "2020-08-31T06:53:17.630Z",
+    "charge_taxes": true,
+    "is_bookable": true,
+    "skip_stock": true,
+    "duration": 120,
+    "weight": "0.0:kg"
+  }
+},
+{
+  "model": "product.product",
+  "pk": 75,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {
+      "vatlayer.code": "standard",
+      "vatlayer.description": "standard"
+    },
+    "seo_title": "",
+    "seo_description": "I can’t stand pineapples, so this one is not for me. They have a weird, fluffy, tangy taste. But if it is your kind of thing, then knock yourself out.",
+    "description_plaintext": "I can’t stand pineapples, so this one is not for me. They have a weird, fluffy, tangy taste. But if it is your kind of thing, then knock yourself out.",
+    "details_plaintext": "I can’t stand pineapples, so this one is not for me. They have a weird, fluffy, tangy taste. But if it is your kind of thing, then knock yourself out.",
+    "product_type": 1,
+    "name": "Vineyard tour",
+    "slug": "vineyard-tour",
+    "description": {
+      "blocks": [{
+        "data": {
+          "text": "I can’t stand pineapples, so this one is not for me. They have a weird, fluffy, tangy taste. But if it is your kind of thing, then knock yourself out."
+        },
+        "type": "paragraph"
+      }]
+    },
+    "details": {
+      "blocks": [{
+        "data": {
+          "text": "I can’t stand pineapples, so this one is not for me. They have a weird, fluffy, tangy taste. But if it is your kind of thing, then knock yourself out."
+        },
+        "type": "paragraph"
+      }]
+    },
+    "category": 82,
+    "company": 63,
+    "updated_at": "2020-08-31T06:53:17.782Z",
+    "charge_taxes": true,
+    "duration": 120,
+    "is_bookable": true,
+    "skip_stock": true,
+    "weight": "0.0:kg"
+  }
+},
+{
+  "model": "product.product",
+  "pk": 76,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {
+      "vatlayer.code": "standard",
+      "vatlayer.description": "standard"
+    },
+    "seo_title": "",
+    "seo_description": "Did you know falling coconuts kill 150 people a year? But did you know that coconut juice is the new superfood? You win some, you lose some.",
+    "description_plaintext": "Did you know falling coconuts kill 150 people a year? But did you know that coconut juice is the new superfood? You win some, you lose some.",
+    "details_plaintext": "Did you know falling coconuts kill 150 people a year? But did you know that coconut juice is the new superfood? You win some, you lose some.",
+    "product_type": 1,
+    "name": "At home massage session",
+    "slug": "at-home-massage-session",
+    "description": {
+      "blocks": [{
+        "data": {
+          "text": "Did you know falling coconuts kill 150 people a year? But did you know that coconut juice is the new superfood? You win some, you lose some."
+        },
+        "type": "paragraph"
+      }]
+    },
+    "details": {
+      "blocks": [{
+        "data": {
+          "text": "Did you know falling coconuts kill 150 people a year? But did you know that coconut juice is the new superfood? You win some, you lose some."
+        },
+        "type": "paragraph"
+      }]
+    },
+    "category": 79,
+    "company": 65,
+    "updated_at": "2020-08-31T06:53:31.827Z",
+    "charge_taxes": true,
+    "is_bookable":true,
+    "skip_stock": true,
+    "duration": 30,
+    "weight": "0.0:kg"
+  }
+},
+{
+  "model": "product.product",
+  "pk": 77,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {
+      "vatlayer.code": "standard",
+      "vatlayer.description": "standard"
+    },
+    "seo_title": "",
+    "seo_description": "Is it a bird? Is it a plane? No! It’s some jacked dude who just sucked down a bottle of our brand new power juice! Look at him go!",
+    "description_plaintext": "Is it a bird? Is it a plane? No! It’s some jacked dude who just sucked down a bottle of our brand new power juice! Look at him go!",
+    "details_plaintext": "Is it a bird? Is it a plane? No! It’s some jacked dude who just sucked down a bottle of our brand new power juice! Look at him go!",
+    "product_type": 1,
+    "name": "Animal tour for kids",
+    "slug": "animal-tour-for-kids",
+    "description": {
+      "blocks": [{
+        "data": {
+          "text": "Is it a bird? Is a plane? No! It’s some jacked dude who just sucked down a bottle of our brand new power juice! Look at him go!"
+        },
+        "type": "paragraph"
+      }]
+    },
+    "details": {
+      "blocks": [{
+        "data": {
+          "text": "Is it a bird? Is a plane? No! It’s some jacked dude who just sucked down a bottle of our brand new power juice! Look at him go!"
+        },
+        "type": "paragraph"
+      }]
+    },
+    "category": 78,
+    "company": 66,
+    "updated_at": "2020-08-31T06:53:18.105Z",
+    "charge_taxes": true,
+    "is_billable": true,
+    "is_bookable": true,
+    "skip_stock": true,
+    "duration":120,
+    "weight": "0.0:kg"
+  }
+},
+{
+  "model": "product.productrating",
+  "pk": 100,
+  "fields": {
+    "product": 61,
+    "rating": 5,
+    "comment":"Fantastic service and kind workers."
+  }
+},
+{
+  "model": "product.productrating",
+  "pk": 102,
+  "fields": {
+    "product": 61,
+    "rating": 1,
+    "comment":"A waste of time and money."
+  }
+},
+{
+  "model": "product.productrating",
+  "pk": 104,
+  "fields": {
+    "product": 62,
+    "rating": 4,
+    "comment":"Good service but improvable."
+  }
+},
+{
+  "model": "product.productrating",
+  "pk": 105,
+  "fields": {
+    "product": 63,
+    "rating": 4,
+    "comment":"Good service but improvable."
+  }
+},
+{
+  "model": "product.productrating",
+  "pk": 106,
+  "fields": {
+    "product": 64,
+    "rating": 4,
+    "comment":"Good service but improvable."
+  }
+},
+{
+  "model": "product.productaddress",
+  "pk": 100,
+  "fields": {
+    "street": "C. Luis de Morales",
+    "postal_code": "41005",
+    "locality": "Sevilla",
+    "region": "Andalucía",
+    "country": "ES",
+    "product": 61,
+    "latitude": 37.383348,
+    "longitude": -5.973439
+  }
+},
+{
+  "model": "product.productaddress",
+  "pk": 101,
+  "fields": {
+    "street": "C. Éfeso, s/n",
+    "postal_code": "41007",
+    "locality": "Sevilla",
+    "region": "Andalucía",
+    "country": "ES",
+    "product": 62,
+    "latitude":  37.396020,
+    "longitude":  -5.965036
+  }
+},
+{
+  "model": "product.productaddress",
+  "pk": 102,
+  "fields": {
+    "street": "Av. de Andalucía, 1",
+    "postal_code": "41007",
+    "locality": "Sevilla",
+    "region": "Andalucía",
+    "country": "ES",
+    "product": 63,
+    "latitude":  37.387782,
+    "longitude":  -5.964423
+  }
+},
+{
+  "model": "product.productaddress",
+  "pk": 103,
+  "fields": {
+    "street": "C. Imagen, 3",
+    "postal_code": "41003",
+    "locality": "Sevilla",
+    "region": "Andalucía",
+    "country": "ES",
+    "product": 64,
+    "latitude":  37.392726,
+    "longitude":  -5.991167
+  }
+},
+{
+  "model": "product.productaddress",
+  "pk": 104,
+  "fields": {
+    "street": "Pl. del Museo, 9",
+    "postal_code": "41001",
+    "locality": "Sevilla",
+    "region": "Andalucía",
+    "country": "ES",
+    "product": 65,
+    "latitude":  37.392652,
+    "longitude": -5.999822
+  }
+},
+{
+  "model": "product.productaddress",
+  "pk": 105,
+  "fields": {
+    "street": "Pabellón de Sevilla, s/n",
+    "postal_code": "41092",
+    "locality": "Sevilla",
+    "region": "Andalucía",
+    "country": "ES",
+    "product": 71,
+    "latitude":  37.405378,
+    "longitude": -5.999301
+  }
+},
+{
+  "model": "product.productaddress",
+  "pk": 106,
+  "fields": {
+    "street": "Alameda de Hércules, 85",
+    "postal_code": "41002",
+    "locality": "Sevilla",
+    "region": "Andalucía",
+    "country": "ES",
+    "product": 72,
+    "latitude":  37.374250,
+    "longitude":  -5.965737
+  }
+},
+{
+  "model": "product.productaddress",
+  "pk": 107,
+  "fields": {
+    "street": "Av. Ramón y Cajal, s/n",
+    "postal_code": "41005",
+    "locality": "Sevilla",
+    "region": "Andalucía",
+    "country": "ES",
+    "product": 73,
+    "latitude":  37.397854,
+    "longitude": -5.993535
+  }
+},
+{
+  "model": "product.productaddress",
+  "pk": 108,
+  "fields": {
+    "street": "Av. Alcalde Luis Uruñuela",
+    "postal_code": "41005",
+    "locality": "Sevilla",
+    "region": "Andalucía",
+    "country": "ES",
+    "product": 74,
+    "latitude":  37.404744,
+    "longitude": -5.932609
+  }
+},
+{
+  "model": "product.productaddress",
+  "pk": 109,
+  "fields": {
+    "street": "C. Calatrava, 26",
+    "postal_code": "41002",
+    "locality": "Sevilla",
+    "region": "Andalucía",
+    "country": "ES",
+    "product": 75,
+    "latitude":  37.402155,
+    "longitude": -5.994339
+  }
+},
+{
+  "model": "product.productaddress",
+  "pk": 110,
+  "fields": {
+    "street": "C. San Fernando, 57",
+    "postal_code": "41009",
+    "locality": "Sevilla",
+    "region": "Andalucía",
+    "country": "ES",
+    "product": 76,
+    "latitude":  37.405531,
+    "longitude": -5.989737
+  }
+},
+{
+  "model": "product.productaddress",
+  "pk": 111,
+  "fields": {
+    "street": "C. José Díaz, 5",
+    "postal_code": "41009",
+    "locality": "Sevilla",
+    "region": "Andalucía",
+    "country": "ES",
+    "product": 77,
+    "latitude":  37.408736,
+    "longitude": -5.989864
+  }
+},
+{
+  "model": "product.productchannellisting",
+  "pk": 100,
+  "fields": {
+    "publication_date": "2020-01-01",
+    "is_published": true,
+    "product": 61,
+    "channel": 1,
+    "visible_in_listings": true,
+    "available_for_purchase": "2020-08-31",
+    "currency": "EUR"
+  }
+},
+{
+  "model": "product.productchannellisting",
+  "pk": 102,
+  "fields": {
+    "publication_date": "2020-01-01",
+    "is_published": true,
+    "product": 62,
+    "channel": 1,
+    "visible_in_listings": true,
+    "available_for_purchase": "2020-08-31",
+    "currency": "EUR"
+  }
+},
+{
+  "model": "product.productchannellisting",
+  "pk": 106,
+  "fields": {
+    "publication_date": "2020-01-01",
+    "is_published": true,
+    "product": 63,
+    "channel": 1,
+    "visible_in_listings": true,
+    "available_for_purchase": "2020-08-31",
+    "currency": "EUR"
+  }
+},
+{
+  "model": "product.productchannellisting",
+  "pk": 107,
+  "fields": {
+    "publication_date": "2020-01-01",
+    "is_published": true,
+    "product": 64,
+    "channel": 1,
+    "visible_in_listings": true,
+    "available_for_purchase": "2020-08-31",
+    "currency": "EUR"
+  }
+},
+{
+  "model": "product.productchannellisting",
+  "pk": 108,
+  "fields": {
+    "publication_date": "2020-01-01",
+    "is_published": true,
+    "product": 65,
+    "channel": 1,
+    "visible_in_listings": true,
+    "available_for_purchase": "2020-08-31",
+    "currency": "EUR"
+  }
+},
+{
+  "model": "product.productchannellisting",
+  "pk": 109,
+  "fields": {
+    "publication_date": "2020-01-01",
+    "is_published": true,
+    "product": 71,
+    "channel": 1,
+    "visible_in_listings": true,
+    "available_for_purchase": "2020-08-31",
+    "currency": "EUR"
+  }
+},
+{
+  "model": "product.productchannellisting",
+  "pk": 110,
+  "fields": {
+    "publication_date": "2020-01-01",
+    "is_published": true,
+    "product": 72,
+    "channel": 1,
+    "visible_in_listings": true,
+    "available_for_purchase": "2020-08-31",
+    "currency": "EUR"
+  }
+},
+{
+  "model": "product.productchannellisting",
+  "pk": 111,
+  "fields": {
+    "publication_date": "2020-01-01",
+    "is_published": true,
+    "product": 73,
+    "channel": 1,
+    "discounted_price_amount": 5.000,
+    "visible_in_listings": true,
+    "available_for_purchase": "2020-08-31",
+    "currency": "EUR"
+  }
+},
+{
+  "model": "product.productchannellisting",
+  "pk": 112,
+  "fields": {
+    "publication_date": "2020-01-01",
+    "is_published": true,
+    "product": 74,
+    "channel": 1,
+    "visible_in_listings": true,
+    "available_for_purchase": "2021-08-31",
+    "currency": "EUR"
+  }
+},
+{
+  "model": "product.productchannellisting",
+  "pk": 113,
+  "fields": {
+    "publication_date": "2020-01-01",
+    "is_published": true,
+    "product": 75,
+    "channel": 1,
+    "visible_in_listings": true,
+    "available_for_purchase": "2020-08-31",
+    "currency": "EUR"
+  }
+},
+{
+  "model": "product.productchannellisting",
+  "pk": 114,
+  "fields": {
+    "publication_date": "2020-01-01",
+    "is_published": true,
+    "product": 76,
+    "channel": 1,
+    "visible_in_listings": true,
+    "available_for_purchase": "2020-08-31",
+    "currency": "EUR"
+  }
+},
+{
+  "model": "product.productchannellisting",
+  "pk": 115,
+  "fields": {
+    "publication_date": "2020-01-01",
+    "is_published": true,
+    "product": 77,
+    "channel": 1,
+    "visible_in_listings": true,
+    "available_for_purchase": "2020-08-31",
+    "currency": "EUR"
+  }
+},
+{
+  "model": "product.productvariant",
+  "pk": 171,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {},
+    "sku": "546451996",
+    "name": "Candy bar for parties",
+    "product": 61,
+    "track_inventory": true,
+    "weight": "0.0:kg",
+    "default": true
+  }
+},
+{
+  "model": "product.productvariant",
+  "pk": 172,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {},
+    "sku": "546451997",
+    "name": "Gummy Cakes",
+    "product": 62,
+    "track_inventory": true,
+    "weight": "0.0:kg",
+    "default": true
+  }
+},
+{
+  "model": "product.productvariant",
+  "pk": 173,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {},
+    "sku": "546451999",
+    "name": "Bungalow accomodation",
+    "product": 63,
+    "track_inventory": true,
+    "weight": "0.0:kg",
+    "default": true
+  }
+},
+{
+  "model": "product.productvariant",
+  "pk": 174,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {},
+    "sku": "998223591",
+    "name": "Canndy bar service",
+    "product": 64,
+    "track_inventory": true,
+    "weight": "0.0:kg",
+    "default": true
+  }
+},
+{
+  "model": "product.productvariant",
+  "pk": 175,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {},
+    "sku": "998223599",
+    "name": "Ecological vegetables basket",
+    "product": 65,
+    "track_inventory": true,
+    "weight": "0.0:kg",
+    "default": true
+  }
+},
+{
+  "model": "product.productvariant",
+  "pk": 176,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {},
+    "sku": "998223594",
+    "name": "Daily bread delivery",
+    "product": 71,
+    "track_inventory": true,
+    "weight": "0.0:kg",
+    "default": true
+  }
+},
+{
+  "model": "product.productvariant",
+  "pk": 177,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {},
+    "sku": "998223582",
+    "name": "Gardening services",
+    "product": 72,
+    "track_inventory": true,
+    "weight": "0.0:kg",
+    "default": true
+  }
+},
+{
+  "model": "product.productvariant",
+  "pk": 178,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {},
+    "sku": "998223583",
+    "name": "At home veterinary care",
+    "product": 73,
+    "track_inventory": true,
+    "weight": "0.0:kg",
+    "default": true
+  }
+},
+{
+  "model": "product.productvariant",
+  "pk": 179,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {},
+    "sku": "998223584",
+    "name": "Pony ride for children",
+    "product": 74,
+    "track_inventory": true,
+    "weight": "0.0:kg",
+    "default": true
+  }
+},
+{
+  "model": "product.productvariant",
+  "pk": 180,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {},
+    "sku": "998323582",
+    "name": "Vineyard tour",
+    "product": 75,
+    "track_inventory": true,
+    "weight": "0.0:kg",
+    "default": true
+  }
+},
+{
+  "model": "product.productvariant",
+  "pk": 181,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {},
+    "sku": "998323583",
+    "name": "At home massage session",
+    "product": 76,
+    "track_inventory": true,
+    "weight": "0.0:kg",
+    "default": true
+  }
+},
+{
+  "model": "product.productvariant",
+  "pk": 182,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {},
+    "sku": "998323584",
+    "name": "Animal tour for kids",
+    "product": 77,
+    "track_inventory": true,
+    "weight": "0.0:kg",
+    "default": true
+  }
+},
+{
+  "model": "product.productvariantchannellisting",
+  "pk": 101,
+  "fields": {
+    "variant": 171,
+    "channel": 1,
+    "currency": "EUR",
+    "price_amount": "5.000",
+    "cost_price_amount": "10.000"
+  }
+},
+{
+  "model": "product.productvariantchannellisting",
+  "pk": 102,
+  "fields": {
+    "variant": 172,
+    "channel": 1,
+    "currency": "EUR",
+    "price_amount": "5.000",
+    "cost_price_amount": "10.000"
+  }
+},
+{
+  "model": "product.productvariantchannellisting",
+  "pk": 103,
+  "fields": {
+    "variant": 173,
+    "channel": 1,
+    "currency": "EUR",
+    "price_amount": "5.000",
+    "cost_price_amount": "10.000"
+  }
+},
+{
+  "model": "product.productvariantchannellisting",
+  "pk": 104,
+  "fields": {
+    "variant": 174,
+    "channel": 1,
+    "currency": "EUR",
+    "price_amount": "5.000",
+    "cost_price_amount": null
+  }
+},
+{
+  "model": "product.productvariantchannellisting",
+  "pk": 105,
+  "fields": {
+    "variant": 175,
+    "channel": 1,
+    "currency": "EUR",
+    "price_amount": "5.000",
+    "cost_price_amount": null
+  }
+},
+{
+  "model": "product.productvariantchannellisting",
+  "pk": 106,
+  "fields": {
+    "variant": 176,
+    "channel": 1,
+    "currency": "EUR",
+    "price_amount": "5.000",
+    "cost_price_amount": "1.500"
+  }
+},
+{
+  "model": "product.productvariantchannellisting",
+  "pk": 107,
+  "fields": {
+    "variant": 177,
+    "channel": 1,
+    "currency": "EUR",
+    "price_amount": "5.000",
+    "cost_price_amount": "10.000"
+  }
+},
+{
+  "model": "product.productvariantchannellisting",
+  "pk": 108,
+  "fields": {
+    "variant": 178,
+    "channel": 1,
+    "currency": "EUR",
+    "price_amount": "5.000",
+    "cost_price_amount": "10.000"
+  }
+},
+{
+  "model": "product.productvariantchannellisting",
+  "pk": 109,
+  "fields": {
+    "variant": 179,
+    "channel": 1,
+    "currency": "EUR",
+    "price_amount": "5.000",
+    "cost_price_amount": "10.000"
+  }
+},
+{
+  "model": "product.productvariantchannellisting",
+  "pk": 110,
+  "fields": {
+    "variant": 180,
+    "channel": 1,
+    "currency": "EUR",
+    "price_amount": "5.000",
+    "cost_price_amount": "10.000"
+  }
+},
+{
+  "model": "product.productvariantchannellisting",
+  "pk": 111,
+  "fields": {
+    "variant": 181,
+    "channel": 1,
+    "currency": "EUR",
+    "price_amount": "7.000",
+    "cost_price_amount": "2.000"
+  }
+},
+{
+  "model": "product.productvariantchannellisting",
+  "pk": 112,
+  "fields": {
+    "variant": 182,
+    "channel": 1,
+    "currency": "EUR",
+    "price_amount": "5.000",
+    "cost_price_amount": "10.000"
+  }
+},
+{
+  "model": "attribute.assignedpageattribute",
+  "pk": 1,
+  "fields": {
+    "page": 1,
+    "assignment": 2,
+    "values": [
+        87
+    ]
+  }
+},
+{
+  "model": "attribute.attributepage",
+  "pk": 2,
+  "fields": {
+    "sort_order": null,
+    "attribute": 35,
+    "page_type": 1
+  }
+},
+{
+  "model": "attribute.attribute",
+  "pk": 35,
+  "fields": {
+      "private_metadata": {},
+      "metadata": {},
+      "slug": "default",
+      "name": "Default",
+      "type": "product-type",
+      "input_type": "date-time",
+      "entity_type": null,
+      "unit": null,
+      "value_required": false,
+      "is_variant_only": false,
+      "visible_in_storefront": false,
+      "filterable_in_storefront": false,
+      "filterable_in_dashboard": false,
+      "storefront_search_position": 0,
+      "available_in_grid": false
+  }
+},
+{
+  "model": "attribute.attributevalue",
+  "pk": 1,
+  "fields": {
+    "sort_order": 6,
+    "name": "Default",
+    "value": "",
+    "slug": "default",
+    "attribute": 35
+  }
+},
+{
+  "model": "product.productimage",
+  "pk": 1,
+  "fields": {
+    "sort_order": 0,
+    "product": 61,
+    "image": "products/saleordemoservice_05_dmNMuso.jpg",
+    "ppoi": "0.5x0.5",
+    "alt": ""
+  }
+},
+{
+  "model": "product.productimage",
+  "pk": 2,
+  "fields": {
+    "sort_order": 0,
+    "product": 62,
+    "image": "products/saleordemoservice_04_4u6jO55.jpg",
+    "ppoi": "0.5x0.5",
+    "alt": ""
+  }
+},
+{
+  "model": "product.productimage",
+  "pk": 3,
+  "fields": {
+    "sort_order": 0,
+    "product": 63,
+    "image": "products/saleordemoservice_02_jysITqk.jpg",
+    "ppoi": "0.5x0.5",
+    "alt": ""
+  }
+},
+{
+  "model": "product.productimage",
+  "pk": 4,
+  "fields": {
+    "sort_order": 0,
+    "product": 64,
+    "image": "products/saleordemoservice_10_td1hbTG.jpg",
+    "ppoi": "0.5x0.5",
+    "alt": ""
+  }
+},
+{
+  "model": "product.productimage",
+  "pk": 5,
+  "fields": {
+    "sort_order": 0,
+    "product": 65,
+    "image": "products/saleordemoservice_09_UPktmD3.jpg",
+    "ppoi": "0.5x0.5",
+    "alt": ""
+  }
+},
+{
+  "model": "product.productimage",
+  "pk": 6,
+  "fields": {
+    "sort_order": 0,
+    "product": 71,
+    "image": "products/saleordemoservice_12_6yqUiG3.jpg",
+    "ppoi": "0.5x0.5",
+    "alt": ""
+  }
+},
+{
+  "model": "product.productimage",
+  "pk": 7,
+  "fields": {
+    "sort_order": 0,
+    "product": 72,
+    "image": "products/saleordemoservice_03_qlQMYR4.jpg",
+    "ppoi": "0.5x0.5",
+    "alt": ""
+  }
+},
+{
+  "model": "product.productimage",
+  "pk": 8,
+  "fields": {
+    "sort_order": 0,
+    "product": 73,
+    "image": "products/saleordemoservice_06_oCrWnfD.png",
+    "ppoi": "0.5x0.5",
+    "alt": ""
+  }
+},
+{
+  "model": "product.productimage",
+  "pk": 9,
+  "fields": {
+    "sort_order": 0,
+    "product": 74,
+    "image": "products/saleordemoservice_01_7OldG9Y.jpg",
+    "ppoi": "0.5x0.5",
+    "alt": ""
+  }
+},
+{
+  "model": "product.productimage",
+  "pk": 10,
+  "fields": {
+    "sort_order": 0,
+    "product": 75,
+    "image": "saleordemoservice_11_iglYIFD.jpg",
+    "ppoi": "0.5x0.5",
+    "alt": ""
+  }
+},
+{
+  "model": "product.productimage",
+  "pk": 11,
+  "fields": {
+    "sort_order": 0,
+    "product": 76,
+    "image": "products/saleordemoservice_08_FaX3TRF.jpg",
+    "ppoi": "0.5x0.5",
+    "alt": ""
+  }
+},
+{
+  "model": "product.productimage",
+  "pk": 12,
+  "fields": {
+    "sort_order": 0,
+    "product": 77,
+    "image": "products/saleordemoservice_07_EmsnyJm.jpg",
+    "ppoi": "0.5x0.5",
+    "alt": ""
+  }
+},
+{
+  "model": "product.collectionproduct",
+  "pk": 61,
+  "fields": {
+    "sort_order": null,
+    "collection": 61,
+    "product": 73
+  }
+},
+{
+  "model": "product.collectionproduct",
+  "pk": 62,
+  "fields": {
+    "sort_order": null,
+    "collection": 62,
+    "product": 72
+  }
+},
+{
+  "model": "product.collectionproduct",
+  "pk": 63,
+  "fields": {
+    "sort_order": null,
+    "collection": 63,
+    "product": 74
+  }
+},
+{
+  "model": "product.collection",
+  "pk": 61,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {},
+    "seo_title": null,
+    "seo_description": null,
+    "name": "Summer collection",
+    "slug": "summer-collection",
+    "background_image": "collection-backgrounds/summer_F5A4bVb.jpg",
+    "background_image_alt": "",
+    "description": {
+      "blocks": [
+        {
+          "data": {
+              "text": "The Saleor Summer Collection features a range of products that feel the heat of the market. A demo store for all seasons. Saleor captures the open source, e-commerce sun."
+          },
+          "type": "paragraph"
+        }
+      ]
+    }
+  }
+},
+{
+  "model": "product.collection",
+  "pk": 62,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {},
+    "seo_title": null,
+    "seo_description": null,
+    "name": "Winter sale",
+    "slug": "winter-sale",
+    "background_image": "collection-backgrounds/clothing_R7nkNxS.jpg",
+    "background_image_alt": "",
+    "description": {
+      "blocks": [
+        {
+          "data": {
+              "text": "The Saleor Winter Sale Collection is snowed under with seasonal offers. Unreal products at unreal prices. Literally, they are not real products, but the Saleor demo store is a genuine e-commerce leader."
+          },
+          "type": "paragraph"
+        }
+      ]
+    }
+  }
+},
+{
+  "model": "product.collection",
+  "pk": 63,
+  "fields": {
+    "private_metadata": {},
+    "metadata": {},
+    "seo_title": null,
+    "seo_description": null,
+    "name": "Featured services",
+    "slug": "featured-products",
+    "background_image": "collection-backgrounds/clothing_R7nkNxS.jpg",
+    "background_image_alt": "",
+    "description": {
+      "blocks": [
+        {
+          "data": {
+              "text": "The Saleor Featured Services Collection contains services that have been most consulted and consumed by users."
+          },
+          "type": "paragraph"
+        }
+      ]
+    }
+  }
+},
+{
+  "model": "product.collectionchannellisting",
+  "fields": {
+    "publication_date": "2020-01-01",
+    "is_published": true,
+    "collection": 61,
+    "channel": 1
+  }
+},
+{
+  "model": "product.collectionchannellisting",
+  "fields": {
+    "publication_date": "2020-01-01",
+    "is_published": true,
+    "collection": 62,
+    "channel": 1
+  }
+},
+{
+  "model": "product.collectionchannellisting",
+  "fields": {
+    "publication_date": "2020-01-01",
+    "is_published": true,
+    "collection": 63,
+    "channel": 1
+  }
+},
+{
+  "model": "company.company",
+  "pk": 61,
+  "fields": {
+      "name": "St Paul's market",
+      "public_name": "St Paul's market",
+      "cif": "A59752717",
+      "phone": "957039992",
+      "email": "about@stpmarket.com",
+      "status": "DEA",
+      "is_enabled": true,
+      "description": "Ecological market",
+      "image": "drural-company-01_1.png"
+  }
+},
+{
+  "model": "company.company",
+  "pk": 62,
+  "fields": {
+    "name": "The pink shark",
+    "public_name": "The pink shark",
+    "cif": "B32645400",
+    "phone": "917540898",
+    "email": "info@pinkshark.com",
+    "status": "PEN",
+    "rating": 3.5,
+    "is_enabled": true,
+    "description": "Candy shop",
+    "image": "drural-company-01_2.png"
+  }
+},
+{
+  "model": "company.company",
+  "pk": 63,
+  "fields": {
+    "name": "Casa Josefina",
+    "public_name": "Casa Josefina",
+    "cif": "U13595996",
+    "phone": "957847009",
+    "email": "info@casajosefina.com",
+    "status": "REJ",
+    "is_enabled": true,
+    "description": "Cata wine bar",
+    "image": "drural-company-01_3.png"
+  }
+},
+{
+  "model": "company.company",
+  "pk": 64,
+  "fields": {
+    "name": "Karen Veterinary",
+    "public_name": "Karen veterinary",
+    "cif": "S2921085C",
+    "phone": "953801364",
+    "email": "info@katevet.com",
+    "status": "ACC",
+    "is_enabled": true,
+    "description": "Veterinary",
+    "image": "drural-company-01_4.png"
+  }
+},
+{
+  "model": "company.company",
+  "pk": 65,
+  "fields": {
+    "name": "Naisha Massage Center",
+    "public_name": "Naisha Massage Center",
+    "cif": "J67165829",
+    "phone": "953801234",
+    "email": "info@naisha.com",
+    "status": "ACC",
+    "is_enabled": true,
+    "description": "Centro de Masajes especializado",
+    "image": "drural-company-01_4.png"
+  }
+},
+{
+  "model": "company.company",
+  "pk": 66,
+  "fields": {
+    "name": "El Pony Pisador",
+    "public_name": "El Pony Pisador",
+    "cif": "U19087345",
+    "phone": "952701234",
+    "email": "info@esdlajrrt.com",
+    "status": "ACC",
+    "is_enabled": true,
+    "description": "Tours en pony y caballos para los más pequeños",
+    "image": "drural-company-01_4.png"
+  }
+},
+{
+  "model": "company.company",
+  "pk": 67,
+  "fields": {
+    "name": "Orchid Garden",
+    "public_name": "Orchid Garden",
+    "cif": "A45512076",
+    "phone": "953801234",
+    "email": "info@orchidgarden.com",
+    "status": "ACC",
+    "is_enabled": true,
+    "description": "Gardening services",
+    "image": "drural-company-01_4.png"
+  }
+},
+{
+  "model": "company.company",
+  "pk": 68,
+  "fields": {
+    "name": "Camping Aves del Doñana",
+    "public_name": "Camping Aves del Doñana",
+    "cif": "U75589044",
+    "phone": "952701247",
+    "email": "info@campdon.com",
+    "status": "ACC",
+    "is_enabled": true,
+    "description": "Camping con observatorio de aves en Doñana",
+    "image": "drural-company-01_4.png"
+  }
+},
+{
+  "model": "company.companyaddress",
+  "pk": 61,
+  "fields": {
+    "street": "C. Éfeso, s/n",
+    "postal_code": "41007",
+    "locality": "Sevilla",
+    "region": "Andalucía",
+    "country": "ES",
+    "latitude":  37.396020,
+    "longitude":  -5.965036,
+    "company": 62
+  }
+},
+{
+  "model": "company.companyaddress",
+  "pk": 62,
+  "fields": {
+    "street": "Pabellón de Sevilla, s/n",
+    "postal_code": "41092",
+    "locality": "Sevilla",
+    "region": "Andalucía",
+    "country": "ES",
+    "latitude":  37.405378,
+    "longitude": -5.999301,
+    "company": 61
+  }
+},
+{
+  "model": "company.companyaddress",
+  "pk": 63,
+  "fields": {
+    "street": "C. Calatrava, 26",
+    "postal_code": "41002",
+    "locality": "Sevilla",
+    "region": "Andalucía",
+    "country": "ES",
+    "latitude":  37.402155,
+    "longitude": -5.994339,
+    "company": 63
+  }
+},
+{
+  "model": "company.companyaddress",
+  "pk": 64,
+  "fields": {
+    "street": "Av. Ramón y Cajal, s/n",
+    "postal_code": "41005",
+    "locality": "Sevilla",
+    "region": "Andalucía",
+    "country": "ES",
+    "latitude":  37.397854,
+    "longitude": -5.993535,
+    "company": 64
+  }
+},
+{
+  "model": "company.companyaddress",
+  "pk": 65,
+  "fields": {
+    "street": "C. San Fernando, 57",
+    "postal_code": "41009",
+    "locality": "Sevilla",
+    "region": "Andalucía",
+    "country": "ES",
+    "latitude":  37.405531,
+    "longitude": -5.989737,
+    "company": 65
+  }
+},
+{
+  "model": "company.companyaddress",
+  "pk": 66,
+  "fields": {
+    "street": "Av. Alcalde Luis Uruñuela",
+    "postal_code": "41005",
+    "locality": "Sevilla",
+    "region": "Andalucía",
+    "country": "ES",
+    "latitude":  37.404744,
+    "longitude": -5.932609,
+    "company": 66
+  }
+},
+{
+  "model": "company.companyaddress",
+  "pk": 67,
+  "fields": {
+    "street": "Alameda de Hércules, 85",
+    "postal_code": "41002",
+    "locality": "Sevilla",
+    "region": "Andalucía",
+    "country": "ES",
+    "latitude":  37.374250,
+    "longitude":  -5.965737,
+    "company": 67
+  }
+},
+{
+  "model": "company.companyaddress",
+  "pk": 68,
+  "fields": {
+    "street": "Carretera de la Puebla del Río - Isla Mayor",
+    "postal_code": "41130",
+    "locality": "La Puebla del Río",
+    "region": "Andalucía",
+    "country": "ES",
+    "latitude":  37.238086,
+    "longitude":  -6.131487,
+    "company": 68
+  }
+},
+{
+  "model": "wishlist.wishlist",
+  "pk": 100,
+  "fields": {
+    "name": "Wishlist 1"
+  }
+},
+{
+  "model": "wishlist.wishlist",
+  "pk": 101,
+  "fields": {
+    "name": "Wishlist 2"
+  }
+},
+{
+  "model": "wishlist.wishlist",
+  "pk": 102,
+  "fields": {
+    "name": "Wishlist 3"
+  }
+},
+{
+  "model": "wishlist.wishlist",
+  "pk": 103,
+  "fields": {
+    "name": "Wishlist 4"
+  }
+},
+{
+  "model": "wishlist.wishlist",
+  "pk": 104,
+  "fields": {
+    "name": "Wishlist 5"
+  }
+},
+{
+  "model": "wishlist.wishlistitem",
+  "pk": 100,
+  "fields": {
+    "wishlist": 100,
+    "variant": 172,
+    "created_at": "2020-08-31T06:53:16.102Z"
+  }
+},
+{
+  "model": "wishlist.wishlistitem",
+  "pk": 101,
+  "fields": {
+    "wishlist": 100,
+    "variant": 181,
+    "created_at": "2020-08-31T06:53:16.102Z"
+  }
+},
+{
+  "model": "wishlist.wishlistitem",
+  "pk": 102,
+  "fields": {
+    "wishlist": 101,
+    "variant": 178,
+    "created_at": "2020-08-31T06:53:16.102Z"
+  }
+},
+{
+  "model": "wishlist.wishlistitem",
+  "pk": 103,
+  "fields": {
+    "wishlist": 102,
+    "variant": 178,
+    "created_at": "2020-08-31T06:53:16.102Z"
+  }
+},
+{
+  "model": "wishlist.wishlistitem",
+  "pk": 104,
+  "fields": {
+    "wishlist": 102,
+    "variant": 176,
+    "created_at": "2020-08-31T06:53:16.102Z"
+  }
+},
+{
+  "model": "wishlist.wishlistitem",
+  "pk": 105,
+  "fields": {
+    "wishlist": 103,
+    "variant": 173,
+    "created_at": "2020-08-31T06:53:16.102Z"
+  }
+},
+{
+  "model": "wishlist.wishlistitem",
+  "pk": 106,
+  "fields": {
+    "wishlist": 103,
+    "variant": 178,
+    "created_at": "2020-08-31T06:53:16.102Z"
+  }
+},
+{
+  "model": "wishlist.wishlistitem",
+  "pk": 107,
+  "fields": {
+    "wishlist": 104,
+    "variant": 174,
+    "created_at": "2020-08-31T06:53:16.102Z"
+  }
+},
+{
+  "model": "product.bookableresource",
+  "pk": 100,
+  "fields": {
+    "name": "Stall schedule",
+    "is_active": true,
+    "quantity_infinite": false,
+    "quantity": 1,
+    "company": 62,
+    "full_day": false
+  }
+},{
+  "model": "product.bookableresource",
+  "pk": 101,
+  "fields": {
+    "name": "Capacity of the Jerez vineyard tour",
+    "is_active": true,
+    "quantity_infinite": false,
+    "quantity": 10,
+    "company": 63,
+    "full_day": false
+  }
+},{
+  "model": "product.bookableresource",
+  "pk": 102,
+  "fields": {
+    "name": "Karen's schedule",
+    "is_active": true,
+    "quantity_infinite": false,
+    "quantity": 1,
+    "company": 64,
+    "full_day": false
+  }
+},
+{
+  "model": "product.bookableresource",
+  "pk": 103,
+  "fields": {
+    "name": "Dwight Scofield's schedule",
+    "is_active": true,
+    "quantity_infinite": false,
+    "quantity": 1,
+    "company": 65,
+    "full_day": false
+  }
+},
+{
+  "model": "product.bookableresource",
+  "pk": 104,
+  "fields": {
+    "name": "Andalusian horses",
+    "is_active": true,
+    "quantity_infinite": false,
+    "quantity": 9,
+    "company": 66,
+    "full_day": false
+  }
+},
+{
+  "model": "product.bookableresource",
+  "pk": 105,
+  "fields": {
+    "name": "Gardeners",
+    "is_active": true,
+    "quantity_infinite": false,
+    "quantity": 10,
+    "company": 67,
+    "full_day": false
+  }
+},
+{
+  "model": "product.bookableresource",
+  "pk": 106,
+  "fields": {
+    "name": "Bungalow 1",
+    "is_active": true,
+    "quantity_infinite": false,
+    "quantity": 1,
+    "company": 68,
+    "full_day": true
+  }
+},
+{
+  "model": "product.bookableresource",
+  "pk": 107,
+  "fields": {
+    "name": "Bungalow 2",
+    "is_active": true,
+    "quantity_infinite": false,
+    "quantity": 1,
+    "company": 68,
+    "full_day": true
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 100,
+  "fields": {
+    "bookable_resource": 100,
+    "day": "FRIDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 102,
+  "fields": {
+    "bookable_resource": 100,
+    "day": "SUNDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 103,
+  "fields": {
+    "bookable_resource": 101,
+    "day": "WEDNESDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 104,
+  "fields": {
+    "bookable_resource": 101,
+    "day": "THURSDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 105,
+  "fields": {
+    "bookable_resource": 101,
+    "day": "FRIDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 106,
+  "fields": {
+    "bookable_resource": 101,
+    "day": "SATURDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 107,
+  "fields": {
+    "bookable_resource": 101,
+    "day": "SUNDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 108,
+  "fields": {
+    "bookable_resource": 102,
+    "day": "MONDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 109,
+  "fields": {
+    "bookable_resource": 102,
+    "day": "TUESDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 110,
+  "fields": {
+    "bookable_resource": 102,
+    "day": "WEDNESDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 111,
+  "fields": {
+    "bookable_resource": 102,
+    "day": "THURSDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 112,
+  "fields": {
+    "bookable_resource": 102,
+    "day": "FRIDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 113,
+  "fields": {
+    "bookable_resource": 103,
+    "day": "MONDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 114,
+  "fields": {
+    "bookable_resource": 103,
+    "day": "TUESDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 115,
+  "fields": {
+    "bookable_resource": 103,
+    "day": "WEDNESDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 116,
+  "fields": {
+    "bookable_resource": 103,
+    "day": "THURSDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 117,
+  "fields": {
+    "bookable_resource": 103,
+    "day": "FRIDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 118,
+  "fields": {
+    "bookable_resource": 104,
+    "day": "FRIDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 119,
+  "fields": {
+    "bookable_resource": 104,
+    "day": "SATURDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 120,
+  "fields": {
+    "bookable_resource": 104,
+    "day": "SUNDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 121,
+  "fields": {
+    "bookable_resource": 105,
+    "day": "MONDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 122,
+  "fields": {
+    "bookable_resource": 105,
+    "day": "TUESDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 123,
+  "fields": {
+    "bookable_resource": 105,
+    "day": "WEDNESDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 124,
+  "fields": {
+    "bookable_resource": 105,
+    "day": "THURSDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 125,
+  "fields": {
+    "bookable_resource": 105,
+    "day": "FRIDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 126,
+  "fields": {
+    "bookable_resource": 106,
+    "day": "MONDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 127,
+  "fields": {
+    "bookable_resource": 106,
+    "day": "TUESDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 128,
+  "fields": {
+    "bookable_resource": 106,
+    "day": "WEDNESDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 129,
+  "fields": {
+    "bookable_resource": 106,
+    "day": "THURSDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 130,
+  "fields": {
+    "bookable_resource": 106,
+    "day": "FRIDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 131,
+  "fields": {
+    "bookable_resource": 106,
+    "day": "SATURDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 132,
+  "fields": {
+    "bookable_resource": 106,
+    "day": "SUNDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 133,
+  "fields": {
+    "bookable_resource": 107,
+    "day": "MONDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 134,
+  "fields": {
+    "bookable_resource": 107,
+    "day": "TUESDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 135,
+  "fields": {
+    "bookable_resource": 107,
+    "day": "WEDNESDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 136,
+  "fields": {
+    "bookable_resource": 107,
+    "day": "THURSDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 137,
+  "fields": {
+    "bookable_resource": 107,
+    "day": "FRIDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 138,
+  "fields": {
+    "bookable_resource": 107,
+    "day": "SATURDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 139,
+  "fields": {
+    "bookable_resource": 107,
+    "day": "SUNDAY"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 100,
+  "fields": {
+    "bookable_resource_calendar": 100,
+    "start_time": "12:00:00",
+    "end_time": "20:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 101,
+  "fields": {
+    "bookable_resource_calendar": 101,
+    "start_time": "12:00:00",
+    "end_time": "20:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 102,
+  "fields": {
+    "bookable_resource_calendar": 102,
+    "start_time": "12:00:00",
+    "end_time": "20:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 103,
+  "fields": {
+    "bookable_resource_calendar": 103,
+    "start_time": "11:00:00",
+    "end_time": "17:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 104,
+  "fields": {
+    "bookable_resource_calendar": 104,
+    "start_time": "11:00:00",
+    "end_time": "17:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 105,
+  "fields": {
+    "bookable_resource_calendar": 105,
+    "start_time": "11:00:00",
+    "end_time": "17:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 106,
+  "fields": {
+    "bookable_resource_calendar": 106,
+    "start_time": "11:00:00",
+    "end_time": "17:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 107,
+  "fields": {
+    "bookable_resource_calendar": 107,
+    "start_time": "11:00:00",
+    "end_time": "17:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 108,
+  "fields": {
+    "bookable_resource_calendar": 108,
+    "start_time": "08:00:00",
+    "end_time": "15:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 109,
+  "fields": {
+    "bookable_resource_calendar": 109,
+    "start_time": "08:00:00",
+    "end_time": "15:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 110,
+  "fields": {
+    "bookable_resource_calendar": 110,
+    "start_time": "08:00:00",
+    "end_time": "15:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 111,
+  "fields": {
+    "bookable_resource_calendar": 111,
+    "start_time": "08:00:00",
+    "end_time": "15:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 112,
+  "fields": {
+    "bookable_resource_calendar": 112,
+    "start_time": "08:00:00",
+    "end_time": "15:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 113,
+  "fields": {
+    "bookable_resource_calendar": 113,
+    "start_time": "08:00:00",
+    "end_time": "15:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 114,
+  "fields": {
+    "bookable_resource_calendar": 114,
+    "start_time": "08:00:00",
+    "end_time": "15:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 115,
+  "fields": {
+    "bookable_resource_calendar": 115,
+    "start_time": "08:00:00",
+    "end_time": "15:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 116,
+  "fields": {
+    "bookable_resource_calendar": 116,
+    "start_time": "08:00:00",
+    "end_time": "15:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 118,
+  "fields": {
+    "bookable_resource_calendar": 118,
+    "start_time": "09:00:00",
+    "end_time": "13:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 119,
+  "fields": {
+    "bookable_resource_calendar": 119,
+    "start_time": "09:00:00",
+    "end_time": "13:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 120,
+  "fields": {
+    "bookable_resource_calendar": 120,
+    "start_time": "09:00:00",
+    "end_time": "13:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 121,
+  "fields": {
+    "bookable_resource_calendar": 121,
+    "start_time": "08:00:00",
+    "end_time": "15:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 122,
+  "fields": {
+    "bookable_resource_calendar": 122,
+    "start_time": "08:00:00",
+    "end_time": "15:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 123,
+  "fields": {
+    "bookable_resource_calendar": 123,
+    "start_time": "08:00:00",
+    "end_time": "15:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 124,
+  "fields": {
+    "bookable_resource_calendar": 124,
+    "start_time": "08:00:00",
+    "end_time": "15:00:00"
+  }
+},
+{
+  "model": "product.booking",
+  "pk": 100,
+  "fields": {
+    "start_date": "2023-07-31T11:30:00.0Z",
+    "end_date": "2023-02-07T12:00:00.0Z",
+    "bookable_resource": 101,
+    "variant": 171,
+    "company": 62
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 100,
+  "fields": {
+    "bookable_resource": 100,
+    "day": "MONDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 101,
+  "fields": {
+    "bookable_resource": 100,
+    "day": "TUESDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 102,
+  "fields": {
+    "bookable_resource": 100,
+    "day": "THURSDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 103,
+  "fields": {
+    "bookable_resource": 101,
+    "day": "MONDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 104,
+  "fields": {
+    "bookable_resource": 101,
+    "day": "TUESDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 105,
+  "fields": {
+    "bookable_resource": 101,
+    "day": "WEDNESDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 107,
+  "fields": {
+    "bookable_resource": 102,
+    "day": "SATURDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 108,
+  "fields": {
+    "bookable_resource": 102,
+    "day": "SUNDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 110,
+  "fields": {
+    "bookable_resource": 103,
+    "day": "SATURDAY"
+  }
+},
+{
+  "model": "product.bookableresourcedailycalendar",
+  "pk": 111,
+  "fields": {
+    "bookable_resource": 103,
+    "day": "SUNDAY"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 100,
+  "fields": {
+    "bookable_resource_calendar": 100,
+    "start_time": "09:00:00",
+    "end_time": "14:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 101,
+  "fields": {
+    "bookable_resource_calendar": 101,
+    "start_time": "09:00:00",
+    "end_time": "14:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 102,
+  "fields": {
+    "bookable_resource_calendar": 102,
+    "start_time": "09:00:00",
+    "end_time": "14:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 103,
+  "fields": {
+    "bookable_resource_calendar": 103,
+    "start_time": "09:00:00",
+    "end_time": "14:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 104,
+  "fields": {
+    "bookable_resource_calendar": 104,
+    "start_time": "09:00:00",
+    "end_time": "14:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 105,
+  "fields": {
+    "bookable_resource_calendar": 105,
+    "start_time": "09:00:00",
+    "end_time": "14:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 106,
+  "fields": {
+    "bookable_resource_calendar": 106,
+    "start_time": "12:00:00",
+    "end_time": "19:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 107,
+  "fields": {
+    "bookable_resource_calendar": 107,
+    "start_time": "12:00:00",
+    "end_time": "19:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 108,
+  "fields": {
+    "bookable_resource_calendar": 108,
+    "start_time": "12:00:00",
+    "end_time": "19:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 109,
+  "fields": {
+    "bookable_resource_calendar": 109,
+    "start_time": "12:00:00",
+    "end_time": "19:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 110,
+  "fields": {
+    "bookable_resource_calendar": 110,
+    "start_time": "12:00:00",
+    "end_time": "19:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 111,
+  "fields": {
+    "bookable_resource_calendar": 111,
+    "start_time": "12:00:00",
+    "end_time": "19:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 112,
+  "fields": {
+    "bookable_resource_calendar": 112,
+    "start_time": "12:00:00",
+    "end_time": "19:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 113,
+  "fields": {
+    "bookable_resource_calendar": 113,
+    "start_time": "12:00:00",
+    "end_time": "19:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 114,
+  "fields": {
+    "bookable_resource_calendar": 114,
+    "start_time": "12:00:00",
+    "end_time": "19:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 115,
+  "fields": {
+    "bookable_resource_calendar": 115,
+    "start_time": "12:00:00",
+    "end_time": "19:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 116,
+  "fields": {
+    "bookable_resource_calendar": 116,
+    "start_time": "12:00:00",
+    "end_time": "19:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 117,
+  "fields": {
+    "bookable_resource_calendar": 117,
+    "start_time": "12:00:00",
+    "end_time": "19:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 118,
+  "fields": {
+    "bookable_resource_calendar": 118,
+    "start_time": "12:00:00",
+    "end_time": "19:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 119,
+  "fields": {
+    "bookable_resource_calendar": 119,
+    "start_time": "12:00:00",
+    "end_time": "19:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 120,
+  "fields": {
+    "bookable_resource_calendar": 120,
+    "start_time": "12:00:00",
+    "end_time": "19:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 121,
+  "fields": {
+    "bookable_resource_calendar": 121,
+    "start_time": "08:00:00",
+    "end_time": "15:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 122,
+  "fields": {
+    "bookable_resource_calendar": 122,
+    "start_time": "08:00:00",
+    "end_time": "15:00:00"
+  }
+},{
+  "model": "product.slot",
+  "pk": 123,
+  "fields": {
+    "bookable_resource_calendar": 123,
+    "start_time": "08:00:00",
+    "end_time": "15:00:00"
+  }
+},{
+  "model": "product.slot",
+  "pk": 124,
+  "fields": {
+    "bookable_resource_calendar": 124,
+    "start_time": "08:00:00",
+    "end_time": "15:00:00"
+  }
+},{
+  "model": "product.slot",
+  "pk": 125,
+  "fields": {
+    "bookable_resource_calendar": 125,
+    "start_time": "08:00:00",
+    "end_time": "15:00:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 126,
+  "fields": {
+    "bookable_resource_calendar": 126,
+    "start_time": "00:00:00",
+    "end_time": "23:45:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 127,
+  "fields": {
+    "bookable_resource_calendar": 127,
+    "start_time": "00:00:00",
+    "end_time": "23:45:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 128,
+  "fields": {
+    "bookable_resource_calendar": 128,
+    "start_time": "00:00:00",
+    "end_time": "23:45:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 129,
+  "fields": {
+    "bookable_resource_calendar": 129,
+    "start_time": "00:00:00",
+    "end_time": "23:45:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 130,
+  "fields": {
+    "bookable_resource_calendar": 130,
+    "start_time": "00:00:00",
+    "end_time": "23:45:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 131,
+  "fields": {
+    "bookable_resource_calendar": 131,
+    "start_time": "00:00:00",
+    "end_time": "23:45:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 132,
+  "fields": {
+    "bookable_resource_calendar": 132,
+    "start_time": "00:00:00",
+    "end_time": "23:45:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 133,
+  "fields": {
+    "bookable_resource_calendar": 133,
+    "start_time": "00:00:00",
+    "end_time": "23:45:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 134,
+  "fields": {
+    "bookable_resource_calendar": 134,
+    "start_time": "00:00:00",
+    "end_time": "23:45:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 135,
+  "fields": {
+    "bookable_resource_calendar": 135,
+    "start_time": "00:00:00",
+    "end_time": "23:45:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 136,
+  "fields": {
+    "bookable_resource_calendar": 136,
+    "start_time": "00:00:00",
+    "end_time": "23:45:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 137,
+  "fields": {
+    "bookable_resource_calendar": 137,
+    "start_time": "00:00:00",
+    "end_time": "23:45:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 138,
+  "fields": {
+    "bookable_resource_calendar": 138,
+    "start_time": "00:00:00",
+    "end_time": "23:45:00"
+  }
+},
+{
+  "model": "product.slot",
+  "pk": 139,
+  "fields": {
+    "bookable_resource_calendar": 139,
+    "start_time": "00:00:00",
+    "end_time": "23:45:00"
+  }
+},
+{
+  "model": "product.booking",
+  "pk": 100,
+  "fields": {
+    "start_date": "2023-07-31T11:30:00.0Z",
+    "end_date": "2023-02-07T12:00:00.0Z",
+    "bookable_resource": 101,
+    "variant": 171,
+    "company": 62
+  }
+},
+{
+  "model": "product.bookableresourceproduct",
+  "pk": 100,
+  "fields": {
+    "product": 64,
+    "bookable_resource": 100
+  }
+},{
+  "model": "product.bookableresourceproduct",
+  "pk": 101,
+  "fields": {
+    "product": 75,
+    "bookable_resource": 101
+  }
+},
+{
+  "model": "product.bookableresourceproduct",
+  "pk": 102,
+  "fields": {
+    "product": 73,
+    "bookable_resource": 102
+  }
+},
+{
+  "model": "product.bookableresourceproduct",
+  "pk": 103,
+  "fields": {
+    "product": 76,
+    "bookable_resource": 103
+  }
+},
+{
+  "model": "product.bookableresourceproduct",
+  "pk": 104,
+  "fields": {
+    "product": 74,
+    "bookable_resource": 104
+  }
+},
+{
+  "model": "product.bookableresourceproduct",
+  "pk": 105,
+  "fields": {
+    "product": 72,
+    "bookable_resource": 105
+  }
+},
+{
+  "model": "product.bookableresourceproduct",
+  "pk": 106,
+  "fields": {
+    "product": 77,
+    "bookable_resource": 104
+  }
+},
+{
+  "model": "product.bookableresourceproduct",
+  "pk": 107,
+  "fields": {
+    "product": 63,
+    "bookable_resource": 106
+  }
+},
+{
+  "model": "product.bookableresourceproduct",
+  "pk": 108,
+  "fields": {
+    "product": 63,
+    "bookable_resource": 107
+  }
+}
+]

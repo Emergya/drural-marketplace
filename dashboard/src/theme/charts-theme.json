@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "themeName": "dRural",
+  "theme": {
+    "seriesCnt": "3",
+    "backgroundColor": "rgba(255,255,255,0)",
+    "titleColor": "#666666",
+    "subtitleColor": "#999999",
+    "textColorShow": false,
+    "textColor": "#333",
+    "markTextColor": "#ffffff",
+    "color": ["#23c290"],
+    "line": {
+        "symbol": "emptyCircle",
+        "smooth": true
+    }
+  }
+}

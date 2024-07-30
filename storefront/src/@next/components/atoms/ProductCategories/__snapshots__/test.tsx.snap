@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProductInfo /> renders correctly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c1 {
+  background-color: #C4F4E5;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.c1:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.c2 {
+  font-size: 0.8125rem;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <p
+      className="c2"
+    >
+      Art & books
+    </p>
+  </div>
+  <div
+    className="c1"
+  >
+    <p
+      className="c2"
+    >
+      Art & books
+    </p>
+  </div>
+  <div
+    className="c1"
+  >
+    <p
+      className="c2"
+    >
+      Art & books
+    </p>
+  </div>
+</div>
+`;

@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProductInfo /> renders correctly 1`] = `
+.c2 .ce-block__content {
+  max-width: 100%;
+}
+
+.c0:not(:last-child) {
+  padding-bottom: 3rem;
+}
+
+.c0:last-child {
+  padding-bottom: 1rem;
+}
+
+.c1 {
+  margin-bottom: 14px;
+}
+
+@media (max-width:540px) {
+  .c0:not(:last-child) {
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width:540px) {
+  .c0:last-child {
+    padding-bottom: 10px;
+  }
+}
+
+<div
+  className="c0"
+>
+  <h3
+    className="c1"
+  >
+    Description
+  </h3>
+  <div
+    className="c2"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "<p>This is the product description</p>",
+      }
+    }
+  />
+</div>
+`;
