@@ -5,7 +5,7 @@ from unittest import mock
 from measurement.measures import Weight
 from prices import Money, fixed_discount
 
-from ...core.notifications import get_site_context
+from ...core.notifications import get_language_code_or_default, get_site_context
 from ...core.notify_events import NotifyEventType
 from ...discount import DiscountValueType
 from ...order import notifications
@@ -282,7 +282,7 @@ def test_send_email_payment_confirmation(mocked_notify, site_settings, payment_d
         },
         "site_name": "mirumee.com",
         "domain": "mirumee.com",
-        "language_code": "es",
+        "language_code": get_language_code_or_default(order),
         **get_site_context(),
     }
     # import pdb; pdb.set_trace()
@@ -312,7 +312,7 @@ def test_send_email_order_confirmation(mocked_notify, order, order_line, site_se
         "domain": "mirumee.com",
         "is_billable": True,
         "is_bookable": False,
-        "language_code": "es",
+        "language_code": get_language_code_or_default(order),
         **get_site_context(),
     }
     mocked_notify.assert_called_once_with(
@@ -547,7 +547,7 @@ def test_send_email_order_canceled_by_user(
         "domain": "mirumee.com",
         "requester_user_id": staff_user.id,
         "requester_app_id": None,
-        "language_code": "es",
+        "language_code": get_language_code_or_default(order),
         **get_site_context(),
     }
     mocked_notify.assert_called_once_with(
@@ -608,7 +608,7 @@ def test_send_email_order_refunded_by_user(
         "recipient_email": order.get_customer_email(),
         "site_name": "mirumee.com",
         "domain": "mirumee.com",
-        "language_code": "es",
+        "language_code": get_language_code_or_default(order),
         **get_site_context(),
     }
 

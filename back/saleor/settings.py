@@ -100,6 +100,7 @@ USE_L10N = True
 USE_TZ = True
 
 FORM_RENDERER = "django.forms.renderers.TemplatesSetting"
+DEFAULT_LANGAUGE_CODE = "en"
 
 EMAIL_URL = os.environ.get("MK_EMAIL_URL")
 SENDGRID_USERNAME = os.environ.get("SENDGRID_USERNAME")
