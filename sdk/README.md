@@ -2,11 +2,9 @@
   <h1>Saleor SDK</h1>
 </div>
 
-This package contains methods providing Saleor business logic for storefront. It handles Saleor GraphQL queries and mutations, manages Apollo cache and provides internal state to manage popular storefront use cases, like user authentication or checkout process.
+This package contains methods providing Saleor business logic for a storefront and apps. It handles Saleor GraphQL queries and mutations, manages Apollo cache, and provides an internal state to manage popular storefront use cases, like user authentication or checkout.
 
-Please take a look at [sample storefront](https://github.com/mirumee/saleor-storefront) which already uses Saleor SDK. For specific use cases you may also refer to [saleor-sdk/examples](https://github.com/mirumee/saleor-sdk/tree/add/examples/examples/react/typescript/src).
-
-> :warning: **Note: Saleor SDK is still under heavy development and its API may change.**
+> :warning: **Note: Saleor SDK is still under heavy development, and its API may change.**
 
 ## Table of Contents
 
@@ -26,35 +24,40 @@ First install SDK as dependency to your project
 npm install @saleor/sdk
 ```
 
-Use `SaleorProvider` with passed custom config in a prop. Then use React hooks in any component passed as child to `SaleorProvider`.
+Use `SaleorProvider` with passed Saleor's client created by `createSaleorClient` in a prop. Then use React hooks in any component passed as child to `SaleorProvider`.
 
 ```tsx
-import { SaleorProvider, useAuth } from "@saleor/sdk";
+import {
+  SaleorProvider,
+  createSaleorClient,
+  useAuth,
+  useAuthState,
+} from "@saleor/sdk";
 
-const config = { apiUrl: "http://localhost:8000/graphql/", channel: "" };
-const apolloConfig = {
-  /* 
-    Optional custom Apollo client config.
-    Here you may append custom Apollo cache, links or the whole client. 
-    You may also use import { createSaleorCache, createSaleorClient, createSaleorLinks } from "@saleor/sdk" to create semi-custom implementation of Apollo.
-  */
-};
+const client = createSaleorClient({
+  apiUrl: "<SALEOR_GRAPHQL_URL>",
+  channel: "<CHANNEL>",
+});
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
-  <SaleorProvider config={config} apolloConfig={apolloConfig}>
+  <SaleorProvider client={client}>
     <App />
   </SaleorProvider>,
   rootElement
 );
 
 const App = () => {
-  const { authenticated, user, signIn } = useAuth();
+  const { login } = useAuth();
+  const { authenticated, user } = useAuthState();
 
   const handleSignIn = async () => {
-    const { data, dataError } = await signIn("admin@example.com", "admin");
+    const { data } = await login({
+      email: "admin@example.com",
+      password: "admin",
+    });
 
-    if (dataError) {
+    if (data.tokenCreate.errors.length > 0) {
       /**
        * Unable to sign in.
        **/
@@ -67,65 +70,60 @@ const App = () => {
 
   if (authenticated && user) {
     return <span>Signed in as {user.firstName}</span>;
-  } else {
-    return <button onClick={handleSignIn}>Sign in</button>;
   }
+
+  return <button onClick={handleSignIn}>Sign in</button>;
 };
 ```
 
-### Custom implementation
+### Using with NodeJS and other frameworks
 
 ```bash
 npm install @saleor/sdk
 ```
 
-Then use SaleorManager to get `SaleorAPI` from `connect` method. This method may also take optional function as an argument, which will be executed every time the `SaleorAPI` state changes.
+Then use `createSaleorClient` to get Saleor api methods and internal config variables like channel and Apollo client.
 
 ```tsx
-const config = { apiUrl: "http://localhost:8000/graphql/", channel: "" };
-const apolloConfig = {
-  /* 
-    Optional custom Apollo client config.
-    Here you may append custom Apollo cache, links or the whole client. 
-    You may also use import { createSaleorCache, createSaleorClient, createSaleorLinks } from "@saleor/sdk" to create semi-custom implementation of Apollo.
-  */
-};
-const manager = new SaleorManager(config, apolloConfig);
+import { createSaleorClient } from "@saleor/sdk";
 
-const { api, apolloClient } = await manager.connect(saleorAPI => {
-  /* Optional listener to API state change. You may use it to update your app state reactively - e.g. trigger the React context update. */
+const client = createSaleorClient({
+  apiUrl: "<SALEOR_GRAPHQL_URL>",
+  channel: "<CHANNEL>",
 });
+
+const { auth, config, _internal } = client;
 ```
 
-Finally, methods from `api` might be used:
+Finally, API methods can be used:
 
 ```tsx
-const { data, dataError } = await api.auth.signIn("admin@example.com", "admin");
+const { data } = await auth.login({
+  email: "admin@example.com",
+  password: "admin",
+});
 
-if (dataError) {
+if (data.tokenCreate.errors.length > 0) {
   /**
    * Unable to sign in.
    **/
 } else if (data) {
   /**
-   * User signed in successfully. Read user object from data or from api.auth.
+   * User signed in successfully.
    **/
-  const userData = api.auth.user;
+  const userData = api.auth.tokenCreate.user;
 }
 ```
 
 ## Features
 
-We provide an API with methods and fields, performing one, scoped type of work. You may access them straight from `SaleorAPI` or use React hooks, depending on [which setup do you select](#setup).
+We provide an API with methods and fields, performing one, scoped type of work. You may access them straight from `createSaleorClient()` or use React hooks:
 
-| API object              | React hook                                                                                             | Description                                                                     |
-| :---------------------- | :----------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------ |
-| `SaleorAPI.auth`        | `useAuth()`                                                                                            | Handles user authentication and stores data about the currently signed in user. |
-| `SaleorAPI.cart`        | `useCart()`                                                                                            | Collects products to cart and calculates their prices.                          |
-| `SaleorAPI.checkout`    | `useCheckout()`                                                                                        | Uses cart and handles the whole checkout process.                               |
-| `SaleorAPI.products`    | `useProductDetails()`, `useProductList()`                                                              | Obtains products.                                                               |
-| `SaleorAPI.collections` | `useCollectionDetails()`, `useCollectionList()`                                                        | Obtains collections.                                                            |
-| `SaleorAPI.categories`  | `useCategoryDetails()`, `useCategoryList()`, `useCategoryAncestorsList()`, `useCategoryChildrenList()` | Obtains categories.                                                             |
+| API object | React hook                    | Description                                                                      |
+| :--------- | :---------------------------- | :------------------------------------------------------------------------------- |
+| `getState()`| `useAuthState()`             | Returns current SDK state: `user`, `authenticated` and `token`.                  |
+| `auth`      | `useAuth()`                  | Handles user authentication methods.                                             |
+| `user`      | `useUser()`                  | Handles user account methods.                                                    |
 
 ## Local development
 
@@ -144,3 +142,61 @@ webpack is configured to always resolve `react` to `./node_modules/react`. It ma
 seem redundant for the most use cases, but helps in sdk's local development, because
 it overcomes `npm`'s limitations regarding peer dependencies hoisting, explicitly
 telling webpack to always have one and only copy of `react`.
+
+### Configuration
+
+Set environment variables:
+
+```bash
+export API_URI=https://your.saleor.instance.com/graphql/
+export TEST_AUTH_EMAIL=admin@example.com
+export TEST_AUTH_PASSWORD=admin
+```
+
+### Development
+
+1. Download repository
+2. Install dependencies: `npm i`
+3. Now you can start files watcher with: `npm run start`
+
+### Production build
+
+```bash
+npm run build
+```
+
+### Tests
+
+Tests are located at `/test` directory. To start the test suite:
+
+```bash
+npm run test
+```
+
+All communication with API is prerecorded using [Polly.JS](https://netflix.github.io/pollyjs/#/README). Unless requests changed or code executes new ones, no requests to API will be made.
+
+Changes in `/recordings` directory should be reviewed before committing to make sure that changes in communication are intentional.
+
+### Code quality
+
+The project has configured Prettier and ESLint. To check your code:
+
+```bash
+npm run lint
+```
+
+### Fetch current GraphQL schema
+
+```bash
+npm run download-schema
+```
+
+Command will overwrite `introspection.json` with server schema, based on `API_URL` variable.
+
+### Updating TS types
+
+GraphQL Code Generator is an automatic tool that converts schema to TS types. After changing schema file run:
+
+```bash
+npm run build-types
+```
