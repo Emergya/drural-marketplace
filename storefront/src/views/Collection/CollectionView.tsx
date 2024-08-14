@@ -16,7 +16,7 @@ import {
 import { Loader, OfflinePlaceholder } from "@components/atoms";
 import { NotificationModal } from "@components/organisms/NotificationModal";
 import { useGeoLocation } from "@hooks/useGeoLocation";
-import { MAPBOX_TOKEN } from "@temp/constants";
+import { MAPBOX_TOKEN, priceFilterMaxValue } from "@temp/constants";
 import { commonMessages } from "@temp/intl";
 import { IFilters } from "@types";
 import { FilterQuerySet, SORT_OPTIONS } from "@utils/collections";
@@ -49,7 +49,7 @@ export const CollectionView: NextPage = () => {
         setCollection(data);
       })
       .finally(() => setLoadingCollection(false));
-  }, []);
+  }, [slug]);
 
   const { location, getLocation, setLocation } = useGeoLocation();
   const [showLocationAlert, setShowLocationAlert] = React.useState(false);
@@ -173,8 +173,11 @@ export const CollectionView: NextPage = () => {
     setQueryFilter({
       categories: filterState.categories,
       priceGte: filterState.priceGte,
-      priceLte: filterState.priceLte,
-      distance: isLocationEnabled ? filterState.distance : undefined,
+      priceLte:
+        filterState.priceLte !== priceFilterMaxValue
+          ? filterState.priceLte
+          : null,
+      distance: isLocationEnabled ? filterState.distance : null,
     });
 
     if (isLocationEnabled) {

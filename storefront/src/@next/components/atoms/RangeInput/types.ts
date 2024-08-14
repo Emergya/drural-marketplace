@@ -7,6 +7,7 @@ export interface IGeneralProps {
   marks?: GenericSliderProps["marks"];
   max?: GenericSliderProps["max"];
   step?: GenericSliderProps["step"];
+  unlimited?: boolean;
   units: string;
   zIndex?: number;
 }
@@ -22,9 +23,13 @@ export interface IRangeProps extends IGeneralProps {
 }
 
 // Handle funtion
-export type HandleFunction = SliderProps["handle"];
 export type HandleWithUnits = (
-  units: string,
-  zIndex?: number,
-  getTooltipContainer?: (node: HTMLElement) => HTMLElement
-) => HandleFunction;
+  params: HandleWithUnitsParams
+) => SliderProps["handle"];
+
+interface HandleWithUnitsParams {
+  units: string;
+  unlimited?: boolean;
+  zIndex?: number;
+  getTooltipContainer?: (node: HTMLElement) => HTMLElement;
+}

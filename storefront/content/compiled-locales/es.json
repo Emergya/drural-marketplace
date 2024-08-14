@@ -45,6 +45,16 @@
       "value": "Puede que hayas escrito mal la dirección o que la página se haya movido."
     }
   ],
+  "+zKPn6": [
+    {
+      "type": 0,
+      "value": "Distancia seleccionada: "
+    },
+    {
+      "type": 1,
+      "value": "distanceSelected"
+    }
+  ],
   "/+HyHJ": [
     {
       "type": 0,
@@ -829,6 +839,24 @@
       "value": "ELIMINAR FILTROS"
     }
   ],
+  "Fa4WYC": [
+    {
+      "type": 0,
+      "value": "Precio seleccionado: "
+    },
+    {
+      "type": 1,
+      "value": "pge"
+    },
+    {
+      "type": 0,
+      "value": " - "
+    },
+    {
+      "type": 1,
+      "value": "ple"
+    }
+  ],
   "FyUqOJ": [
     {
       "type": 0,
@@ -1203,6 +1231,12 @@
     {
       "type": 0,
       "value": "Mas vendidos"
+    }
+  ],
+  "PfW4AI": [
+    {
+      "type": 0,
+      "value": "Sin límite"
     }
   ],
   "PgJGHT": [
@@ -1593,6 +1627,12 @@
       "value": "4 estrellas"
     }
   ],
+  "YqsgWz": [
+    {
+      "type": 0,
+      "value": "Esloveno"
+    }
+  ],
   "Yx6py4": [
     {
       "type": 0,
@@ -1675,6 +1715,12 @@
     {
       "type": 0,
       "value": "Apellidos"
+    }
+  ],
+  "airHOF": [
+    {
+      "type": 0,
+      "value": "Visitar la página del servicio"
     }
   ],
   "ast9q1": [
@@ -1957,6 +2003,12 @@
     {
       "type": 0,
       "value": "Selecciona la fecha"
+    }
+  ],
+  "gsuLMm": [
+    {
+      "type": 0,
+      "value": "Griego"
     }
   ],
   "h4IxgY": [
@@ -2257,6 +2309,12 @@
       "value": "Gestor de tiendas"
     }
   ],
+  "mHjOY8": [
+    {
+      "type": 0,
+      "value": "Serbio"
+    }
+  ],
   "mLwkSx": [
     {
       "type": 0,
@@ -2395,6 +2453,12 @@
     {
       "type": 0,
       "value": "Activar todas"
+    }
+  ],
+  "oukwYF": [
+    {
+      "type": 0,
+      "value": "Introduzca su búsqueda..."
     }
   ],
   "ovr4vj": [

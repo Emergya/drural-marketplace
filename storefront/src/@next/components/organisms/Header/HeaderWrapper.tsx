@@ -3,6 +3,8 @@ import { useRouter } from "next/router";
 import React from "react";
 import { useQuery } from "react-apollo";
 
+import { locationFilterMaxValue, priceFilterMaxValue } from "@temp/constants";
+
 import {
   SearchSuggestionsQuery,
   SearchSuggestionsQueryVariables,
@@ -33,11 +35,18 @@ export const HeaderComponent: React.FC<IPropsWrapper> = ({ loading }) => {
     if (searchState.query) {
       urlSearchQuery += `q=${searchState.query}`;
     }
-    if (searchState.distance !== undefined) {
+    if (
+      searchState.distance !== undefined &&
+      searchState.distance !== locationFilterMaxValue
+    ) {
       urlSearchQuery += `&distance=${searchState.distance}`;
     }
     if (searchState.price.length > 1) {
-      urlSearchQuery += `&priceGte=${searchState.price[0]}&priceLte=${searchState.price[1]}`;
+      urlSearchQuery += `&priceGte=${searchState.price[0]}`;
+
+      if (priceFilterMaxValue !== searchState.price[1]) {
+        urlSearchQuery += `&priceLte=${searchState.price[1]}`;
+      }
     }
 
     push(urlSearchQuery);

@@ -41,7 +41,7 @@ export const ProductAddress: FC<IProps> = ({ address }) => {
     <S.Wrapper>
       <S.HeaderWrapper>
         <UilLocationPoint />
-        <S.Samlltaxt>{`${address.postalCode}, ${address.street}`}</S.Samlltaxt>
+        <S.Samlltaxt>{`${address.street}, ${address.postalCode}, ${address.region}, ${address.country}`}</S.Samlltaxt>
       </S.HeaderWrapper>
       <S.MapWrapper>
         <S.Map>

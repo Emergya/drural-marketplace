@@ -15,7 +15,7 @@ We use [atomic design](http://bradfrost.com/blog/post/atomic-web-design/) to org
 
 ### Pages
 
-Pages use templates and connect them with outside of the world e.g. with SDK, without any styling (think login page).
+Pages use templates to create the whole view of the page. They are responsible for fetching data (from the SDK or custom queries) and passing it to the templates. Usually, they are structured in a view and page file. The view file is responsible for fetching data and passing it to the page file. The page file is responsible for rendering the template with the data.
 
 ### Hooks
 

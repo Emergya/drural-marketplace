@@ -185,7 +185,7 @@ export interface VariantList_productVariants_edges_node_product {
   id: string;
   slug: string;
   name: string;
-  hasNoPrice: boolean;
+  hasNoPrice: boolean | null;
   rating: number;
   /**
    * The main thumbnail for a product.

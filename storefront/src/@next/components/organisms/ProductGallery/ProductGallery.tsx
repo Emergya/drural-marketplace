@@ -9,7 +9,7 @@ import { IProps } from "./types";
 
 const MINIMAL_NUMBER_OF_IMAGES_FOR_BUTTONS = 4;
 
-export const ProductGallery: React.FC<IProps> = ({ images }: IProps) => {
+export const ProductGallery: React.FC<IProps> = ({ images }) => {
   const [imageIndex, setImageIndex] = React.useState<number>(0);
 
   const displayButtons = images.length > MINIMAL_NUMBER_OF_IMAGES_FOR_BUTTONS;

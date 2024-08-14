@@ -167,3 +167,8 @@ export const OverlayButtonsWrapper = styled.div`
     }
   }
 `;
+
+// 3. Language select
+export const LanguageSelectWrapper = styled.div`
+  width: 340px;
+`;

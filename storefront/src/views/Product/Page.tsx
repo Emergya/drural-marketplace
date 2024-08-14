@@ -89,15 +89,15 @@ const Page: React.FC<
 
   // 2. Functions + methods
   const getImages = () => {
-    if (product.variants && variantId) {
-      const variant = product.variants.find(
-        variant => variant.id === variantId
-      );
+    // if (product.variants && variantId) {
+    //   const variant = product.variants.find(
+    //     variant => variant.id === variantId
+    //   );
 
-      if (variant?.images.length > 0) {
-        return variant.images;
-      }
-    }
+    //   if (variant?.images.length > 0) {
+    //     return variant.images;
+    //   }
+    // }
 
     return product.images;
   };

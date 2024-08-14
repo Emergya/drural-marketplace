@@ -15,6 +15,7 @@ import {
   GetUserCategories,
   GetUserCategoriesVariables,
 } from "./gqlTypes/GetUserCategories";
+import { GetUserLanguage } from "./gqlTypes/GetUserLanguage";
 import { GetUserLocation } from "./gqlTypes/GetUserLocation";
 import {
   SetAccountCategoriesPreferences,
@@ -24,6 +25,22 @@ import {
   SetAccountLocationPreferences,
   SetAccountLocationPreferencesVariables,
 } from "./gqlTypes/SetAccountLocationPreferences";
+
+// Query - get user language
+const getUserLanguageQuery = gql`
+  query GetUserLanguage {
+    me {
+      id
+      languageCode
+    }
+  }
+`;
+
+export const useUserLanguageQuery = () => {
+  return useTypedQuery<GetUserLanguage>(getUserLanguageQuery, {
+    fetchPolicy: "cache-and-network",
+  });
+};
 
 // Query - get user location
 const getUserLocationQuery = gql`
@@ -105,6 +122,22 @@ export const useAllCategoriesQuery = (variables: { first: number }) => {
     }
   );
 };
+
+// Mutation - set language preferences
+export const accountUpdateMutation = gql`
+  mutation AccountUpdateMutation($input: AccountInput!) {
+    accountUpdate(input: $input) {
+      errors {
+        field
+        message
+      }
+      user {
+        id
+        languageCode
+      }
+    }
+  }
+`;
 
 // Mutation - set location preferences
 const setAccountLocationPreferencesMutation = gql`

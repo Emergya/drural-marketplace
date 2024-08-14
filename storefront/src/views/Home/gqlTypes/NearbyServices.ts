@@ -250,7 +250,7 @@ export interface NearbyServices_products_edges_node {
   id: string;
   slug: string;
   name: string;
-  hasNoPrice: boolean;
+  hasNoPrice: boolean | null;
   rating: number;
   /**
    * The main thumbnail for a product.

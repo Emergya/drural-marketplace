@@ -12,7 +12,7 @@ interface IOptions {
 
 export interface IProps {
   id: string;
-  style: React.CSSProperties;
+  style?: React.CSSProperties;
   message: IMessage;
   options: IOptions;
   close: () => void;

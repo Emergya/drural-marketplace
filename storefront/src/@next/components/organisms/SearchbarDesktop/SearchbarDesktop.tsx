@@ -1,11 +1,13 @@
 import { UilSearch } from "@iconscout/react-unicons";
 import React from "react";
-import { FormattedMessage } from "react-intl";
+import { FormattedMessage, useIntl } from "react-intl";
 
 import { SearchListTile } from "@components/atoms/SearchListTile";
 import { SearchLocationTile } from "@components/atoms/SearchLocationTile";
 import { SearchPriceTile } from "@components/atoms/SearchPriceTile";
 import { useHandlerWhenClickedOutside } from "@hooks/useHandlerWhenClickedOutside";
+import { locationFilterMaxValue, priceFilterMaxValue } from "@temp/constants";
+import { commonMessages } from "@temp/intl";
 
 import * as S from "./styles";
 import { IProps } from "./types";
@@ -21,6 +23,7 @@ export const SearchbarDesktop: React.FC<IProps> = ({
   onPriceChange,
   onSubmit,
 }: IProps) => {
+  const intl = useIntl();
   const { setElementRef } = useHandlerWhenClickedOutside(() => {
     setSearchTileShow(false);
     setLocationTileShow(false);
@@ -65,7 +68,9 @@ export const SearchbarDesktop: React.FC<IProps> = ({
             type="text"
             onChange={onQueryChange}
             ref={inputEl}
-            placeholder="Enter your search..."
+            placeholder={intl.formatMessage({
+              defaultMessage: "Enter your search...",
+            })}
             value={query}
           />
           {searchTileShow && (
@@ -85,9 +90,12 @@ export const SearchbarDesktop: React.FC<IProps> = ({
           <S.P>
             {distance ? (
               <FormattedMessage
-                defaultMessage="Distance selected: {distanceSelected} km"
+                defaultMessage="Distance selected: {distanceSelected}"
                 values={{
-                  distanceSelected: distance,
+                  distanceSelected:
+                    distance === locationFilterMaxValue
+                      ? intl.formatMessage(commonMessages.noLimint)
+                      : `${distance} km`,
                 }}
               />
             ) : (
@@ -96,7 +104,7 @@ export const SearchbarDesktop: React.FC<IProps> = ({
           </S.P>
           {locationTileShow && (
             <SearchLocationTile
-              distance={distance === undefined ? 100 : distance}
+              distance={distance === undefined ? 300 : distance}
               onChange={onDistanceChange}
             />
           )}
@@ -108,10 +116,13 @@ export const SearchbarDesktop: React.FC<IProps> = ({
           <S.P>
             {price.length > 1 ? (
               <FormattedMessage
-                defaultMessage="Price selected: {pge} - {ple} €"
+                defaultMessage="Price selected: {pge} - {ple}"
                 values={{
                   pge: price[0],
-                  ple: price[1],
+                  ple:
+                    priceFilterMaxValue === price[1]
+                      ? intl.formatMessage(commonMessages.noLimint)
+                      : `${price[1]} €`,
                 }}
               />
             ) : (
@@ -120,7 +131,7 @@ export const SearchbarDesktop: React.FC<IProps> = ({
           </S.P>
           {priceTileShow && (
             <SearchPriceTile
-              price={price.length > 1 ? price : [0, 100]}
+              price={price.length > 1 ? price : [0, 500]}
               onChange={onPriceChange}
             />
           )}
