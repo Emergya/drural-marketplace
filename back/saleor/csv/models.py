@@ -10,6 +10,14 @@ from . import ExportEvents
 
 
 class ExportFile(Job):
+    """
+    Represents an export file.
+
+    Attributes:
+        user (User): The user associated with the export file.
+        app (App): The app associated with the export file.
+        content_file (FileField): The file field containing the exported content.
+    """
     user = models.ForeignKey(
         User, related_name="export_files", on_delete=models.CASCADE, null=True
     )

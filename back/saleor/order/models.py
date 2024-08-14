@@ -34,6 +34,12 @@ from . import FulfillmentStatus, OrderEvents, OrderOrigin, OrderStatus
 
 
 class OrderLineQueryset(models.QuerySet):
+    """
+    Return lines with digital products.
+
+    Returns:
+        generator: A generator that yields OrderLine objects with digital products.
+    """
     def digital(self):
         """Return lines with digital products."""
         for line in self.all():
@@ -48,6 +54,48 @@ class OrderLineQueryset(models.QuerySet):
 
 
 class OrderLine(models.Model):
+    """
+    Represents a line item in an order.
+
+    Order lines are different from product variants in that they store the
+    quantity of a product that was sold, whereas product variants represent
+    the specific product with its price and attributes.
+
+    Attributes:
+        order (Order): The order to which this line item belongs.
+        variant (ProductVariant): The product variant associated with this line item.
+        product_name (str): The name of the product.
+        variant_name (str): The name of the variant.
+        translated_product_name (str): The translated name of the product.
+        translated_variant_name (str): The translated name of the variant.
+        product_sku (str): The SKU (stock keeping unit) of the product.
+        is_shipping_required (bool): Indicates whether shipping is required for this line item.
+        quantity (int): The quantity of the line item.
+        quantity_fulfilled (int): The quantity of the line item that has been fulfilled.
+        currency (str): The currency code for the line item.
+        unit_discount_amount (Decimal): The amount of discount applied to each unit of the line item.
+        unit_discount (Money): The discount applied to each unit of the line item.
+        unit_discount_type (str): The type of discount applied to each unit of the line item.
+        unit_discount_reason (str): The reason for the discount applied to each unit of the line item.
+        unit_price_net_amount (Decimal): The net price of each unit of the line item.
+        unit_discount_value (Decimal): The value of the applied discount for each unit of the line item.
+        unit_price_net (Money): The net price of each unit of the line item.
+        unit_price_gross_amount (Decimal): The gross price of each unit of the line item.
+        unit_price_gross (Money): The gross price of each unit of the line item.
+        unit_price (TaxedMoney): The taxed price of each unit of the line item.
+        total_price_net_amount (Decimal): The net total price of the line item.
+        total_price_net (Money): The net total price of the line item.
+        total_price_gross_amount (Decimal): The gross total price of the line item.
+        total_price_gross (Money): The gross total price of the line item.
+        total_price (TaxedMoney): The taxed total price of the line item.
+        undiscounted_unit_price_gross_amount (Decimal): The undiscounted gross price of each unit of the line item.
+        undiscounted_unit_price_net_amount (Decimal): The undiscounted net price of each unit of the line item.
+        undiscounted_unit_price (TaxedMoney): The undiscounted taxed price of each unit of the line item.
+        undiscounted_total_price_gross_amount (Decimal): The undiscounted gross total price of the line item.
+        undiscounted_total_price_net_amount (Decimal): The undiscounted net total price of the line item.
+        undiscounted_total_price (TaxedMoney): The undiscounted taxed total price of the line item.
+        tax_rate (Decimal): The tax rate applied to the line item.
+    """
     order = models.ForeignKey(
         "Order", related_name="lines", editable=False, on_delete=models.CASCADE
     )
@@ -204,6 +252,9 @@ class OrderLine(models.Model):
 
 
 class OrderQueryset(models.QuerySet):
+    """
+    Return orders with digital products.
+    """
     def get_by_checkout_token(self, token):
         """Return non-draft order with matched checkout token."""
         return self.non_draft().filter(checkout_token=token).first()
@@ -259,6 +310,55 @@ class OrderQueryset(models.QuerySet):
 
 
 class Order(ModelWithMetadata):
+    """
+    Represents an order in the marketplace.
+
+    An order is a collection of products that a customer has purchased.
+
+    Attributes:
+        created (DateTimeField): The date and time when the order was created.
+        status (CharField): The status of the order.
+        user (ForeignKey): The user associated with the order.
+        language_code (CharField): The language code for the order.
+        tracking_client_id (CharField): The tracking client ID for the order.
+        billing_address (ForeignKey): The billing address for the order.
+        shipping_address (ForeignKey): The shipping address for the order.
+        user_email (EmailField): The email address of the user associated with the order.
+        original (ForeignKey): The original order from which this order was created.
+        origin (CharField): The origin of the order.
+        currency (CharField): The currency used for the order.
+        shipping_method (ForeignKey): The shipping method for the order.
+        shipping_method_name (CharField): The name of the shipping method.
+        channel (ForeignKey): The channel associated with the order.
+        shipping_price_net_amount (DecimalField): The net amount of the shipping price.
+        shipping_price_net (MoneyField): The net shipping price.
+        shipping_price_gross_amount (DecimalField): The gross amount of the shipping price.
+        shipping_price_gross (MoneyField): The gross shipping price.
+        shipping_price (TaxedMoneyField): The taxed shipping price.
+        shipping_tax_rate (DecimalField): The tax rate for the shipping price.
+        token (CharField): The token associated with the order.
+        checkout_token (CharField): The token of the checkout instance that the order was created from.
+        total_net_amount (DecimalField): The net amount of the total price.
+        undiscounted_total_net_amount (DecimalField): The undiscounted net amount of the total price.
+        total_net (MoneyField): The net total price.
+        undiscounted_total_net (MoneyField): The undiscounted net total price.
+        total_gross_amount (DecimalField): The gross amount of the total price.
+        undiscounted_total_gross_amount (DecimalField): The undiscounted gross amount of the total price.
+        total_gross (MoneyField): The gross total price.
+        undiscounted_total_gross (MoneyField): The undiscounted gross total price.
+        total (TaxedMoneyField): The taxed total price.
+        undiscounted_total (TaxedMoneyField): The undiscounted taxed total price.
+        total_paid_amount (DecimalField): The amount that has been paid for the order.
+        total_paid (MoneyField): The total amount paid for the order.
+        voucher (ForeignKey): The voucher associated with the order.
+        gift_cards (ManyToManyField): The gift cards associated with the order.
+        display_gross_prices (BooleanField): Indicates whether gross prices should be displayed.
+        customer_note (TextField): The customer's note for the order.
+        weight (MeasurementField): The weight of the order.
+        redirect_url (URLField): The redirect URL for the order.
+        booking (OneToOneField): The booking associated with the order.
+    """
+
     created = models.DateTimeField(default=now, editable=False)
     status = models.CharField(
         max_length=32, default=OrderStatus.UNFULFILLED, choices=OrderStatus.CHOICES
@@ -560,6 +660,21 @@ class Order(ModelWithMetadata):
 
 
 class Fulfillment(ModelWithMetadata):
+    """
+    Represents a fulfillment of an order.
+
+    A fulfillment is a collection of products that have been shipped.
+
+    Attributes:
+        fulfillment_order (int): The order in which the fulfillment was created.
+        order (Order): The order associated with the fulfillment.
+        status (str): The status of the fulfillment.
+        tracking_number (str): The tracking number for the fulfillment.
+        created (datetime): The date and time when the fulfillment was created.
+        shipping_refund_amount (Decimal): The amount refunded for shipping.
+        total_refund_amount (Decimal): The total amount refunded.
+
+    """
     fulfillment_order = models.PositiveIntegerField(editable=False)
     order = models.ForeignKey(
         Order, related_name="fulfillments", editable=False, on_delete=models.CASCADE
@@ -619,6 +734,17 @@ class Fulfillment(ModelWithMetadata):
 
 
 class FulfillmentLine(models.Model):
+    """
+    Represents a line item in a fulfillment.
+
+    
+
+    Attributes:
+        order_line (OrderLine): The order line associated with this fulfillment line.
+        fulfillment (Fulfillment): The fulfillment associated with this fulfillment line.
+        quantity (int): The quantity of items in this fulfillment line.
+        stock (Stock): The stock associated with this fulfillment line (optional).
+    """
     order_line = models.ForeignKey(
         OrderLine, related_name="fulfillment_lines", on_delete=models.CASCADE
     )

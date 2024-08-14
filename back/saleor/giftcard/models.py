@@ -10,6 +10,16 @@ from ..core.permissions import GiftcardPermissions
 
 
 class GiftCardQueryset(models.QuerySet):
+    """
+    Returns a queryset of active gift cards based on the given date.
+
+    Parameters:
+        date (datetime.date): The date to filter the gift cards.
+
+    Returns:
+        QuerySet: A queryset of active gift cards.
+
+    """
     def active(self, date):
         return self.filter(
             Q(end_date__isnull=True) | Q(end_date__gte=date),
@@ -19,6 +29,28 @@ class GiftCardQueryset(models.QuerySet):
 
 
 class GiftCard(models.Model):
+    """
+    Model representing a gift card.
+
+    Gif card is a type of voucher that can be used as a payment method.
+
+    Attributes:
+        code (str): The code of the gift card.
+        user (User): The user associated with the gift card.
+        created (datetime): The date and time when the gift card was created.
+        start_date (date): The start date of the gift card validity.
+        end_date (date): The end date of the gift card validity.
+        last_used_on (datetime): The date and time when the gift card was last used.
+        is_active (bool): Indicates if the gift card is active.
+        currency (str): The currency of the gift card.
+        initial_balance_amount (Decimal): The initial balance amount of the gift card.
+        initial_balance (Money): The initial balance of the gift card.
+        current_balance_amount (Decimal): The current balance amount of the gift card.
+        current_balance (Money): The current balance of the gift card.
+
+    Methods:
+        display_code(): Returns the display code of the gift card.
+    """
     code = models.CharField(max_length=16, unique=True, db_index=True)
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL,

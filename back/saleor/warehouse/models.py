@@ -15,6 +15,13 @@ from ..shipping.models import ShippingZone
 
 
 class WarehouseQueryset(models.QuerySet):
+    """
+    Custom queryset for the Warehouse model.
+
+    Methods:
+        prefetch_data: Prefetches related address and shipping zones for warehouses.
+        for_country: Filters warehouses by the given country code.
+    """
     def prefetch_data(self):
         return self.select_related("address").prefetch_related("shipping_zones")
 
@@ -27,6 +34,17 @@ class WarehouseQueryset(models.QuerySet):
 
 
 class Warehouse(ModelWithMetadata):
+    """
+    Represents a warehouse.
+
+    Attributes:
+        id (UUIDField): The unique identifier for the warehouse.
+        name (str): The name of the warehouse.
+        slug (str): The slug for the warehouse.
+        shipping_zones (ManyToManyField): The shipping zones associated with the warehouse.
+        address (ForeignKey): The address of the warehouse.
+        email (str): The email address of the warehouse.
+    """
     id = models.UUIDField(default=uuid.uuid4, primary_key=True)
     name = models.CharField(max_length=250)
     slug = models.SlugField(max_length=255, unique=True, allow_unicode=True)
@@ -46,16 +64,32 @@ class Warehouse(ModelWithMetadata):
 
     @property
     def countries(self) -> Set[str]:
+        """
+        Returns the set of countries associated with the warehouse's shipping zones.
+        """
         shipping_zones = self.shipping_zones.all()
         return set(itertools.chain(*[zone.countries for zone in shipping_zones]))
 
     def delete(self, *args, **kwargs):
+        """
+        Deletes the warehouse and its associated address.
+        """
         address = self.address
         super().delete(*args, **kwargs)
         address.delete()
 
 
 class StockQuerySet(models.QuerySet):
+    """
+    Custom queryset for the Stock model.
+
+    Methods:
+        annotate_available_quantity: Annotates the available quantity of stock.
+        for_channel: Filters stocks by the given channel slug.
+        for_country_and_channel: Filters stocks by the given country code and channel slug.
+        get_variant_stocks_for_country: Returns stock information for a product variant for a given country and channel.
+        get_product_stocks_for_country_and_channel: Returns stock information for a product for a given country and channel.
+    """
     def annotate_available_quantity(self):
         return self.annotate(
             available_quantity=F("quantity")
@@ -102,9 +136,16 @@ class StockQuerySet(models.QuerySet):
     def get_variant_stocks_for_country(
         self, country_code: str, channel_slug: str, product_variant: ProductVariant
     ):
-        """Return the stock information about the a stock for a given country.
+        """
+        Returns stock information about a variant for a given country and channel.
 
-        Note it will raise a 'Stock.DoesNotExist' exception if no such stock is found.
+        Args:
+            country_code (str): The country code to filter by.
+            channel_slug (str): The channel slug to filter by.
+            product_variant (ProductVariant): The product variant to filter by.
+
+        Returns:
+            QuerySet: The queryset of stock information.
         """
         return self.for_country_and_channel(country_code, channel_slug).filter(
             product_variant=product_variant
@@ -113,12 +154,31 @@ class StockQuerySet(models.QuerySet):
     def get_product_stocks_for_country_and_channel(
         self, country_code: str, channel_slug: str, product: Product
     ):
+        """
+        Returns stock information about a product for a given country and channel.
+
+        Args:
+            country_code (str): The country code to filter by.
+            channel_slug (str): The channel slug to filter by.
+            product (Product): The product to filter by.
+
+        Returns:
+            QuerySet: The queryset of stock information.
+        """
         return self.for_country_and_channel(country_code, channel_slug).filter(
             product_variant__product_id=product.pk
         )
 
 
 class Stock(models.Model):
+    """
+    Represents the stock of a product variant in a warehouse.
+
+    Attributes:
+        warehouse (ForeignKey): The warehouse where the stock is located.
+        product_variant (ForeignKey): The product variant of the stock.
+        quantity (int): The quantity of the stock.
+    """
     warehouse = models.ForeignKey(Warehouse, null=False, on_delete=models.CASCADE)
     product_variant = models.ForeignKey(
         ProductVariant, null=False, on_delete=models.CASCADE, related_name="stocks"
@@ -132,18 +192,45 @@ class Stock(models.Model):
         ordering = ("pk",)
 
     def increase_stock(self, quantity: int, commit: bool = True):
-        """Return given quantity of product to a stock."""
+        """
+        Increases the stock quantity by the given amount.
+
+        Args:
+            quantity (int): The amount to increase the stock by.
+            commit (bool): Whether to save the change to the database immediately.
+
+        Returns:
+            None
+        """
         self.quantity = F("quantity") + quantity
         if commit:
             self.save(update_fields=["quantity"])
 
     def decrease_stock(self, quantity: int, commit: bool = True):
+        """
+        Decreases the stock quantity by the given amount.
+
+        Args:
+            quantity (int): The amount to decrease the stock by.
+            commit (bool): Whether to save the change to the database immediately.
+
+        Returns:
+            None
+        """
         self.quantity = F("quantity") - quantity
         if commit:
             self.save(update_fields=["quantity"])
 
 
 class Allocation(models.Model):
+    """
+    Represents the allocation of stock to an order line.
+
+    Attributes:
+        order_line (ForeignKey): The order line the stock is allocated to.
+        stock (ForeignKey): The stock being allocated.
+        quantity_allocated (int): The quantity of stock allocated.
+    """
     order_line = models.ForeignKey(
         OrderLine,
         null=False,

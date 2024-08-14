@@ -11,6 +11,19 @@ from ..core.permissions import CompanyPermissions, StatPermissions
 
 
 class CompanyAddress(models.Model):
+    """
+    Model representing a company address.
+
+    Attributes:
+        street (str): The street of the address.
+        street_second_line (str): The second line of the street address.
+        postal_code (str): The postal code of the address.
+        locality (str): The locality of the address.
+        region (str): The region of the address.
+        location_point (PointField): The location point of the address.
+        country (CountryField): The country of the address.
+        company (OneToOneField): The company associated with the address.
+    """
     street = models.CharField(max_length=2000, blank=True, null=True)
     street_second_line = models.CharField(max_length=2000, blank=True, null=True)
     postal_code = models.CharField(max_length=10, blank=True, null=True)
@@ -24,6 +37,36 @@ class CompanyAddress(models.Model):
 
 
 class Company(ModelWithMetadata):
+    """
+    A model representing a company.
+
+    The company model is used to represent a company in the system.
+
+    Attributes:
+        name (str): The name of the company.
+        public_name (str): The public name of the company.
+        cif (str): The CIF (tax identification number) of the company.
+        phone (str): The phone number of the company.
+        email (str): The email address of the company.
+        language_code (str): The language code of the company.
+        status (str): The status of the company.
+        is_enabled (bool): Indicates if the company is enabled.
+        description (str): The description of the company.
+        image (ImageField): The image of the company.
+        banner (ImageField): The banner image of the company.
+        banner_alt (str): The alternative text for the banner image.
+        managers (ManyToManyField): The managers of the company.
+        created (DateTimeField): The date and time when the company was created.
+        modified (DateTimeField): The date and time when the company was last modified.
+        rating (float): The rating of the company.
+
+    Methods:
+        image_url: Returns the URL of the company's image.
+
+    Meta:
+        ordering: Specifies the default ordering for Company objects.
+        permissions: Specifies the permissions for managing companies and viewing company stats.
+    """
     class Status(models.TextChoices):
         PENDING = "PEN", _("Pending")
         ACCEPTED = "ACC", _("Accepted")
@@ -72,6 +115,9 @@ class Company(ModelWithMetadata):
 
 
 class StripeCredentials(models.Model):
+    """
+    Model representing the Stripe credentials of a company.
+    """
     company = models.OneToOneField(
         Company,
         primary_key=True,
@@ -83,6 +129,10 @@ class StripeCredentials(models.Model):
 
 
 class ChatwootCredentials(models.Model):
+    """
+    Model representing the Chatwoot credentials of a company.
+    
+    """
     company = models.OneToOneField(
         Company,
         primary_key=True,
@@ -102,6 +152,9 @@ class ChatwootCredentials(models.Model):
 
 
 class CompanyValidationEvent(models.Model):
+    """
+    Model representing a company validation event.
+    """
     company = models.ForeignKey(
         Company,
         related_name="validation_events",
