@@ -2996,6 +2996,9 @@
   "src_dot_generalInformations": {
     "string": "General Information"
   },
+  "src_dot_greek": {
+    "string": "Ελληνικά"
+  },
   "src_dot_home": {
     "context": "home section name",
     "string": "Home"

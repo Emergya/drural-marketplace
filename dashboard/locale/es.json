@@ -1112,7 +1112,7 @@
   "src_dot_back": {
     "context": "button",
     "string": "Atrás"
-  }, 
+  },
   "src_dot_backToServiceEdition": {
     "string": "Volver a la edición del servicio"
   },
@@ -4106,6 +4106,9 @@
   "src_dot_generalInformations": {
     "string": "Informacion general"
   },
+  "src_dot_greek": {
+    "string": "Griego"
+  },
   "src_dot_home": {
     "context": "home section name",
     "string": "Inicio"
@@ -7091,6 +7094,9 @@
     "context": "button",
     "string": "Enviar"
   },
+  "src_dot_serbian": {
+    "string": "Serbio"
+  },
   "src_dot_service": {
     "string": "Servicio"
   },
@@ -7638,6 +7644,9 @@
   "src_dot_siteSettings_dot_components_dot_SiteSettingsPage_dot_943508702": {
     "context": "section header",
     "string": "Etiquetas marketing"
+  },
+  "src_dot_slovenian": {
+    "string": "Esloveno"
   },
   "src_dot_siteSettings_dot_components_dot_SiteSettingsPage_dot_866304242": {
     "string": "Aquí encontrará todas las configuraciones que determinan los correos electrónicos de sus tiendas. Puede determinar la dirección de correo electrónico principal y algunos de los contenidos de sus correos electrónicos."
@@ -9155,7 +9164,7 @@
   "src_dot_translations_dot_components_dot_TranslationsLanguageListPage_dot_336068186": {
     "string": "Esta sección está en construcción. Puedes hacer las traducciones pero no serán propagadas a través de toda la aplicación"
   },
-    "src_dot_staff_dot_components_dot_StaffPasswordResetDialog_dot_2150115939": {
+  "src_dot_staff_dot_components_dot_StaffPasswordResetDialog_dot_2150115939": {
     "string": "Debe contener 7 caracteres y al menos una mayúscula, una minúscula, un número y un caso especial."
   },
   "src_dot_staff_dot_components_dot_StaffPasswordResetDialog_dot_3515002007": {

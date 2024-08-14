@@ -1,6 +1,7 @@
 import { CompanyEnableStripe } from "@saleor/business/types/CompanyEnableStripe";
 import { CompanyLinkStripeAccount } from "@saleor/business/types/CompanyLinkStripeAccount";
 import { CompanyStripeAccountCreate } from "@saleor/business/types/CompanyStripeAccountCreate";
+import { BusinessContext } from "@saleor/components/BusinessProvider";
 import NotFoundPage from "@saleor/components/NotFoundPage";
 import { StripeConnectionStatus } from "@saleor/components/StripeAccountConfiguration/types";
 import { getStripeAccountConfigurationStep } from "@saleor/components/StripeAccountConfiguration/utils";
@@ -13,7 +14,7 @@ import {
   getBusinessLinkStripeAccountErrorMessage,
   getBusinessStripeAccountCreateErrorMessage
 } from "@saleor/utils/errors/business";
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import { useIntl } from "react-intl";
 
 import { APP_MOUNT_URI } from "../../../config";
@@ -38,6 +39,7 @@ export const BusinessStripeConfiguration: React.FC<IBusinessStripeConfigurationP
   const intl = useIntl();
   const navigate = useNavigator();
   const notify = useNotifier();
+  const { refreshAvailableBusinesses } = useContext(BusinessContext);
 
   const {
     data: businessDetailsData,
@@ -62,6 +64,11 @@ export const BusinessStripeConfiguration: React.FC<IBusinessStripeConfigurationP
     }
   );
 
+  const refetchBusinessData = () => {
+    refetchBusinessDetails();
+    refreshAvailableBusinesses();
+  };
+
   const handleCreateStripeAccountComplete = (
     data: CompanyStripeAccountCreate
   ) => {
@@ -75,7 +82,7 @@ export const BusinessStripeConfiguration: React.FC<IBusinessStripeConfigurationP
         })
       );
     } else {
-      refetchBusinessDetails();
+      refetchBusinessData();
       notify({
         status: "success",
         text: intl.formatMessage({
@@ -104,7 +111,7 @@ export const BusinessStripeConfiguration: React.FC<IBusinessStripeConfigurationP
         })
       );
     } else {
-      refetchBusinessDetails();
+      refetchBusinessData();
       window.open(stripeFormUrl, "_blank");
     }
   };
@@ -134,7 +141,7 @@ export const BusinessStripeConfiguration: React.FC<IBusinessStripeConfigurationP
         })
       );
     } else {
-      refetchBusinessDetails();
+      refetchBusinessData();
 
       navigate(
         businessStripeConfigurationUrl(businessId, {

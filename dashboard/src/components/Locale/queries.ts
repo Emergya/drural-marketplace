@@ -1,6 +1,6 @@
 import gql from "graphql-tag";
 
-export const shopDefaultLanguage = gql`
+export const shopDefaultLanguageQuery = gql`
   query ShopDefaultLanguage {
     shop {
       defaultLanguage
