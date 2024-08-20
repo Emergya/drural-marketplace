@@ -1,4 +1,4 @@
-# MacawUI
+# dRural MacawUI
 
 Even it started as the official React UI components kit for dRural platform. It is only used in the dashboard. It has some important components as the `ThemeProvider`, the `Sidebar` and other navigational components. But apart from this is been deprecated, if you need to create components for dRural, the recomended way is to create them in the frontend application itlsef: storefront or dashboard.
 
