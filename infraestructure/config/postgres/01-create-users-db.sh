@@ -1,0 +1,19 @@
+#!/bin/bash
+set -e
+
+set -u
+
+echo "Creating marketplace and database"
+echo "Creating db ${MK_POSTGRES_DB}, WITH ${MK_POSTGRES_PASS} for user ${MK_POSTGRES_USER}"
+psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" <<-EOSQL
+	    CREATE DATABASE ${MK_POSTGRES_DB} owner ${MK_POSTGRES_USER};
+	    GRANT ALL PRIVILEGES ON DATABASE ${MK_POSTGRES_DB} TO ${MK_POSTGRES_USER};
+EOSQL
+
+echo "Creating chatwoot user and database"
+echo "Creating user ${CW_POSTGRES_USER}, db ${CW_POSTGRES_DB}, WITH ${CW_POSTGRES_PASS}"
+psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" <<-EOSQL
+	    CREATE USER ${CW_POSTGRES_USER} WITH CREATEDB PASSWORD '${CW_POSTGRES_PASS}';
+	    CREATE DATABASE ${CW_POSTGRES_DB} owner ${CW_POSTGRES_USER};
+	    GRANT ALL PRIVILEGES ON DATABASE ${CW_POSTGRES_DB} TO ${CW_POSTGRES_USER};
+EOSQL

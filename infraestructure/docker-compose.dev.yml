@@ -1,0 +1,73 @@
+version: "3.8"
+
+services:
+  api:
+    stdin_open: true
+    tty: true
+    build:
+      context: ../back
+      dockerfile: ./Dockerfile
+      target: build-python
+    volumes:
+      - ../back/:/app
+    working_dir: /app
+    env_file:
+      - dev.env
+
+  api-setup:
+    build:
+      context: ../back
+      dockerfile: ./Dockerfile
+      target: build-python
+
+    volumes:
+      - ../back/:/app
+    env_file:
+      - dev.env
+
+  storefront:
+    stdin_open: true
+    tty: true
+    user: node
+    image: node:14
+    volumes:
+      - ../storefront/:/app
+    working_dir: /app
+    command: >
+      bash -c "mkdir -p ~/.ssh/ &&
+               ssh-keyscan github.com >> ~/.ssh/known_hosts &&
+               npm ci &&
+               npm run start:dev -- --hostname 0.0.0.0"
+    env_file:
+      - dev.env
+    environment:
+      - SSH_AUTH_SOCK=/ssh-agent
+
+  dashboard:
+    stdin_open: true
+    tty: true
+    user: node
+    image: node:14
+    volumes:
+      - ../dashboard/:/app
+    working_dir: /app
+    command: >
+      bash -c "mkdir -p ~/.ssh/ &&
+               ssh-keyscan github.com >> ~/.ssh/known_hosts &&
+               npm ci &&
+               npm start -- --host 0.0.0.0 --disable-host-check"
+    env_file:
+      - dev.env
+    environment:
+      - SSH_AUTH_SOCK=/ssh-agent
+
+  worker:
+    build:
+      context: ../back
+      dockerfile: ./Dockerfile
+      target: build-python
+    env_file:
+      - dev.env
+    volumes:
+      - ../back/:/app
+    working_dir: /app

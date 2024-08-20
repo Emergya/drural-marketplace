@@ -1,0 +1,153 @@
+version: "3.8"
+
+services:
+  api:
+    stdin_open: true
+    tty: true
+    build:
+      context: ../back
+      dockerfile: ./Dockerfile
+      target: build-python
+    container_name: api.dev.drural.back.com
+    depends_on:
+      - db
+      - redis
+    restart: unless-stopped
+    ports:
+      - 8000:8000
+    networks:
+      - drural-marketplace
+    volumes:
+      - ./data/marketplace/media:/app/media
+    command: python manage.py runserver 0.0.0.0:8000
+    env_file:
+      - dev.env
+
+  api-setup:
+    build:
+      context: ../back
+      dockerfile: ./Dockerfile
+      target: build-python
+    depends_on:
+      - api
+      - db
+    volumes:
+      - ./data/marketplace/media:/app/media
+    networks:
+      - drural-marketplace
+    command: bash -c "python3 -m venv venv &&
+      source venv/bin/activate &&
+      pip install -r requirements_dev.txt &&
+      python3 manage.py migrate &&
+      python3 manage.py collectstatic --no-input"
+    env_file:
+      - dev.env
+
+  storefront:
+    stdin_open: true
+    tty: true
+    build:
+      context: ../storefront
+      dockerfile: ./Dockerfile
+    container_name: storefront.dev.drural.front.com
+    restart: unless-stopped
+    ports:
+      - 3000:3000
+    networks:
+      - drural-marketplace
+
+  dashboard:
+    stdin_open: true
+    tty: true
+    build:
+      context: ../dashboard
+      dockerfile: ./Dockerfile
+
+    container_name: dashboard.dev.drural.front.com
+    restart: unless-stopped
+    ports:
+      - 9000:9000
+    networks:
+      - drural-marketplace
+
+  db:
+    image: postgis/postgis:11-2.5-alpine
+    container_name: db.dev.drural.db.com
+    expose:
+      - 5432
+    restart: unless-stopped
+    networks:
+      - drural-marketplace
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data
+      - ./config/postgres:/docker-entrypoint-initdb.d
+    env_file:
+      - dev.env
+
+  redis:
+    image: library/redis:5.0-alpine
+    container_name: redis.dev.drural.com
+    ports:
+      - 6379:6379
+    restart: unless-stopped
+    networks:
+      - drural-marketplace
+    volumes:
+      - marketplace-redis:/data
+
+  worker:
+    build:
+      context: ../back
+      dockerfile: ./Dockerfile
+      target: build-python
+
+    container_name: worker.dev.drural.com
+    command: >
+      bash -c "python3 -m venv venv &&
+               source venv/bin/activate &&
+               celery -A saleor --app=saleor.celeryconf:app worker --loglevel=info"
+    restart: unless-stopped
+    networks:
+      - drural-marketplace
+    env_file:
+      - dev.env
+    depends_on:
+      - redis
+      - mailhog
+      - api
+    volumes:
+      - ./data/marketplace/media:/app/media
+
+  mailhog:
+    image: mailhog/mailhog
+    container_name: mailhog.dev.drural.com
+    ports:
+      - 1025:1025
+      - 8025:8025
+    restart: unless-stopped
+    networks:
+      - drural-marketplace
+
+  minio:
+    image: bitnami/minio:2022
+    ports:
+      - 7000:9000
+      - 7001:9001
+    depends_on:
+      - api-setup
+      - db
+    volumes:
+      - ./data/minio/:/data
+    networks:
+      - drural-marketplace
+    env_file:
+      - dev.env
+
+volumes:
+  marketplace-redis:
+    driver: local
+
+networks:
+  drural-marketplace:
+    name: drural-marketplace
+    driver: bridge
