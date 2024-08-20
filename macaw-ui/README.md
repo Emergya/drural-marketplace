@@ -1,17 +1,11 @@
-<div align="center">
-  <a href="https://macaw-ui.vercel.app/" rel="noopener" target="_blank"><img src="/stories/assets/macaw-ui-logo.svg" alt="Material-ui-pickers logo"></a></p>
-  
-  [![npm package](https://img.shields.io/npm/v/@saleor/macaw-ui.svg)](https://www.npmjs.com/package/@saleor/macaw-ui)
-  [![npm download](https://img.shields.io/npm/dm/@saleor/macaw-ui.svg)](https://www.npmjs.com/package/@saleor/macaw-ui)
-<!--   [![Bundle Size](https://badgen.net/bundlephobia/minzip/@saleor/macaw-ui)](https://bundlephobia.com/result?p=@saleor/macaw-ui@latest) -->
-</div>
-
 # MacawUI
-Official React UI components kit for [Saleor](https://saleor.io/) — an open-source GraphQL-first and Next.js ready e-commerce platform. You can find most of the elements used in the creation of Saleor's dashboard interface and use it to create Saleor Apps. Have a great time working on your projects and empowering your users. If you have any questions, feel free to let us know on [GitHub Discussions](https://github.com/mirumee/saleor/discussions).
+
+Even it started as the official React UI components kit for dRural platform. It is only used in the dashboard. It has some important components as the `ThemeProvider`, the `Sidebar` and other navigational components. But apart from this is been deprecated, if you need to create components for dRural, the recomended way is to create them in the frontend application itlsef: storefront or dashboard.
 
 ## Installation
+
 ```sh
-npm i @saleor/macaw-ui
+npm i @drural/macaw-ui
 ```
 
 Note that this package depends on the following Material-UI **v4** packages: `@material-ui/core`, `@material-ui/icons` and `@material-ui/lab`. If your project doesn't have them installed and you're not using npm v7 with [automatically installed peer dependencies](https://github.blog/2020-10-13-presenting-v7-0-0-of-the-npm-cli/) then you'll need to install them manually:
@@ -20,21 +14,14 @@ Note that this package depends on the following Material-UI **v4** packages: `@m
 npm i @material-ui/core @material-ui/icons @material-ui/lab
 ```
 
-## Documentation
-Take a look at our [storybook docs](https://macaw-ui.vercel.app). You can find guides, component overview, and project ideas there.
+## Working with Material-UI
 
-### Working with Material-UI
 MacawUI was created to integrate with [Material-UI](https://material-ui.com/) seamlessly. It exports a `ThemeProvider` that will override Material-UI component styles:
-```jsx
-import { ThemeProvider } from "@saleor/macaw-ui";
 
-// ...
+```jsx
+import { ThemeProvider } from "@drural/macaw-ui";
 
 <ThemeProvider>
   <App />
-</ThemeProvider>
+</ThemeProvider>;
 ```
-
-## License
-Distributed under the Creative Common Attribution 4.0 International License
-[https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/)

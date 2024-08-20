@@ -1,6 +1,4 @@
-<div align="center">
-  <h1>dRural SDK</h1>
-</div>
+# dRural SDK
 
 This package contains methods providing dRural business logic for storefront. It handles dRural GraphQL queries and mutations, manages Apollo cache and provides internal state to manage popular storefront use cases, like user authentication or checkout process.
 
