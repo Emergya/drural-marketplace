@@ -49,12 +49,26 @@ services:
     build:
       context: ../storefront
       dockerfile: ./Dockerfile
+      args:
+        NEXT_PUBLIC_API_URI: ${NEXT_PUBLIC_API_URI}
+        NEXT_PUBLIC_MK_DEFAULT_LATITUDE: ${NEXT_PUBLIC_MK_DEFAULT_LATITUDE}
+        NEXT_PUBLIC_MK_DEFAULT_LONGITUDE: ${NEXT_PUBLIC_MK_DEFAULT_LONGITUDE}
+        NEXT_PUBLIC_RADIUS: ${NEXT_PUBLIC_RADIUS}
+        NEXT_PUBLIC_MAPBOX_TOKEN: ${NEXT_PUBLIC_MAPBOX_TOKEN}
+        NEXT_PUBLIC_MAPBOX_STYLES_URL: ${NEXT_PUBLIC_MAPBOX_STYLES_URL}
+        NEXT_PUBLIC_DASHBOARD: ${NEXT_PUBLIC_DASHBOARD}
+        NEXT_PUBLIC_CW_FRONTEND_URI: ${NEXT_PUBLIC_CW_FRONTEND_URI}
+        NEXT_PUBLIC_TZ: ${NEXT_PUBLIC_TZ}
+        NEXT_PUBLIC_EUR_TO_HRK_RATE: ${NEXT_PUBLIC_EUR_TO_HRK_RATE}
+        NEXT_PUBLIC_DEFAULT_LOCALE: ${NEXT_PUBLIC_DEFAULT_LOCALE}
     container_name: storefront.dev.drural.front.com
     restart: unless-stopped
     ports:
       - 3000:3000
     networks:
       - drural-marketplace
+    env_file:
+      - dev.env
 
   dashboard:
     stdin_open: true
@@ -62,6 +76,15 @@ services:
     build:
       context: ../dashboard
       dockerfile: ./Dockerfile
+      args:
+        API_URI: "${API_URI}"
+        MAPBOX_TOKEN: ${MAPBOX_TOKEN}
+        MAPBOX_STYLES_URL: ${MAPBOX_STYLES_URL}
+        MK_DEFAULT_LATITUDE: ${MK_DEFAULT_LATITUDE}
+        MK_DEFAULT_LONGITUDE: ${MK_DEFAULT_LONGITUDE}
+        STOREFRONT_URI: ${STOREFRONT_URI}
+        CW_FRONTEND_URI: ${CW_FRONTEND_URI}
+        EUR_TO_HRK_RATE: ${EUR_TO_HRK_RATE}
 
     container_name: dashboard.dev.drural.front.com
     restart: unless-stopped
@@ -69,6 +92,8 @@ services:
       - 9000:9000
     networks:
       - drural-marketplace
+    env_file:
+      - dev.env
 
   db:
     image: postgis/postgis:11-2.5-alpine
