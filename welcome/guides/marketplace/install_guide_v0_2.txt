@@ -83,7 +83,7 @@ From now, we recommend using drural user.
 
 From now we will work in /opt/drural/infrastructure folder
 	
-5.- Setting data in dev.env config file
+5.- Setting data in .env config file
 
 	With all the previous data we should be ready for setting up platform. At least you will need to setup:
 		# Address hosting marketplace
@@ -114,13 +114,13 @@ From now we will work in /opt/drural/infrastructure folder
 		STRIPE_WEBHOOK_SECRET_KEY=whsec_gTWXaviE4IwGW2lssM
         
         You can make a general domain replacement with sed:
-            sed -i 's/drural-sandbox.eu/yourdomain.eu/g' dev.env
+            sed -i 's/drural-sandbox.eu/yourdomain.eu/g' .env
 
 6.- Set your domain name in docker-compose.yml
 	Docker compose needs it for Traefik. Traefik it's a reverse proxy used to distribute requests across containers and manage https trafic and certificates.
 
         Again you can replace your domain with sed:
-            sed -i 's/drural-sandbox.eu/yourdomain.eu/g' dev.env
+            sed -i 's/drural-sandbox.eu/yourdomain.eu/g' .env
 
         Traefik will generate certificates with Let's Encrypt. Put your email address for notifications:
             - --certificatesresolvers.le.acme.email=your@email.com
@@ -129,7 +129,7 @@ From now we will work in /opt/drural/infrastructure folder
 	
 	Login as drural user for this tasks
 
-	Compile containers and code. HIGHLY RECOMMENDED AFTER CHANGES IN dev.env!!!!
+	Compile containers and code. HIGHLY RECOMMENDED AFTER CHANGES IN .env!!!!
 
             cd /opt/drural/infrastructure
             ./build.sh

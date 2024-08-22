@@ -12,7 +12,7 @@ services:
       - ../back/:/app
     working_dir: /app
     env_file:
-      - dev.env
+      - .env
 
   api-setup:
     build:
@@ -23,7 +23,7 @@ services:
     volumes:
       - ../back/:/app
     env_file:
-      - dev.env
+      - .env
 
   storefront:
     stdin_open: true
@@ -39,7 +39,7 @@ services:
                npm ci &&
                npm run start:dev -- --hostname 0.0.0.0"
     env_file:
-      - dev.env
+      - .env
     environment:
       - SSH_AUTH_SOCK=/ssh-agent
 
@@ -57,7 +57,7 @@ services:
                npm ci &&
                npm start -- --host 0.0.0.0 --disable-host-check"
     env_file:
-      - dev.env
+      - .env
     environment:
       - SSH_AUTH_SOCK=/ssh-agent
 
@@ -67,7 +67,7 @@ services:
       dockerfile: ./Dockerfile
       target: build-python
     env_file:
-      - dev.env
+      - .env
     volumes:
       - ../back/:/app
     working_dir: /app
