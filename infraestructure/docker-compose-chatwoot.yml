@@ -13,11 +13,11 @@ services:
       - db
       - redis
     ports:
-      - '2000:2000'
+      - "2000:2000"
     entrypoint: docker/entrypoints/rails.sh
     networks:
       - drural-chatwoot
-    command: ['bundle', 'exec', 'rails', 's', '-p', '2000', '-b', '0.0.0.0']
+    command: ["bundle", "exec", "rails", "s", "-p", "2000", "-b", "0.0.0.0"]
 
   rails-setup:
     <<: *base
@@ -26,7 +26,7 @@ services:
     networks:
       - drural-chatwoot
     command: sh -c 'bundle exec rails db:chatwoot_prepare'
-    
+
   sidekiq:
     <<: *base
     depends_on:
@@ -34,7 +34,7 @@ services:
       - redis
     networks:
       - drural-chatwoot
-    command: ['bundle', 'exec', 'sidekiq', '-C', 'config/sidekiq.yml']
+    command: ["bundle", "exec", "sidekiq", "-C", "config/sidekiq.yml"]
 
 networks:
   drural-chatwoot:

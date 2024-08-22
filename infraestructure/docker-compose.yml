@@ -19,6 +19,7 @@ services:
       - drural-marketplace
     volumes:
       - ./data/marketplace/media:/app/media
+      - ../back/:/app
     command: python manage.py runserver 0.0.0.0:8000
     env_file:
       - .env
