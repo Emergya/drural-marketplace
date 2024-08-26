@@ -34,6 +34,7 @@ services:
       - db
     volumes:
       - ./data/marketplace/media:/app/media
+      - ../back/:/app
     networks:
       - drural-marketplace
     command: bash -c "python3 -m venv venv &&
@@ -66,10 +67,12 @@ services:
     restart: unless-stopped
     ports:
       - 3000:3000
+    volumes:
+      - ../storefront/:/app
     networks:
       - drural-marketplace
     env_file:
-      - dev.env
+      - .env
 
   dashboard:
     stdin_open: true
@@ -93,8 +96,10 @@ services:
       - 9000:9000
     networks:
       - drural-marketplace
+    # volumes:
+    #   - ../dashboard/:/app
     env_file:
-      - dev.env
+      - .env
 
   db:
     image: postgis/postgis:11-2.5-alpine
@@ -143,6 +148,7 @@ services:
       - api
     volumes:
       - ./data/marketplace/media:/app/media
+      - ../back/:/app
 
   mailhog:
     image: mailhog/mailhog
