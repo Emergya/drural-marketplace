@@ -8,7 +8,7 @@ services:
       context: ../back
       dockerfile: ./Dockerfile
       target: build-python
-    container_name: api.dev.drural.back.com
+    container_name: dev.marketplace.drural.com
     depends_on:
       - db
       - redis
@@ -63,7 +63,7 @@ services:
         NEXT_PUBLIC_TZ: ${NEXT_PUBLIC_TZ}
         NEXT_PUBLIC_EUR_TO_HRK_RATE: ${NEXT_PUBLIC_EUR_TO_HRK_RATE}
         NEXT_PUBLIC_DEFAULT_LOCALE: ${NEXT_PUBLIC_DEFAULT_LOCALE}
-    container_name: storefront.dev.drural.front.com
+    container_name: storefront.dev.marketplace.drural.com
     restart: unless-stopped
     ports:
       - 3000:3000
@@ -90,7 +90,7 @@ services:
         CW_FRONTEND_URI: ${CW_FRONTEND_URI}
         EUR_TO_HRK_RATE: ${EUR_TO_HRK_RATE}
 
-    container_name: dashboard.dev.drural.front.com
+    container_name: dashboard.dev.marketplace.drural.com
     restart: unless-stopped
     ports:
       - 9000:9000
@@ -103,7 +103,7 @@ services:
 
   db:
     image: postgis/postgis:11-2.5-alpine
-    container_name: db.dev.drural.db.com
+    container_name: db.dev.marketplace.drural.com
     expose:
       - 5432
     restart: unless-stopped
@@ -117,7 +117,7 @@ services:
 
   redis:
     image: library/redis:5.0-alpine
-    container_name: redis.dev.drural.com
+    container_name: redis.dev.marketplace.drural.com
     ports:
       - 6379:6379
     restart: unless-stopped
@@ -132,7 +132,7 @@ services:
       dockerfile: ./Dockerfile
       target: build-python
 
-    container_name: worker.dev.drural.com
+    container_name: worker.dev.marketplace.drural.com
     command: >
       bash -c "python3 -m venv venv &&
                source venv/bin/activate &&
@@ -152,7 +152,7 @@ services:
 
   mailhog:
     image: mailhog/mailhog
-    container_name: mailhog.dev.drural.com
+    container_name: mailhog.dev.marketplace.drural.com
     ports:
       - 1025:1025
       - 8025:8025
