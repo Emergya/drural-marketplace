@@ -10,7 +10,7 @@ See the [public demo](https://dashboard.drural-sandbox.eu/) of dRural Dashboard!
 
 ## Getting Started
 
-Checkout the dRural infrastructure repository in the develop branch, these instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+Checkout the [dRural infrastructure folder](../infraestructure/README.md) in the develop branch, these instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ## Understading the project structure
 
@@ -60,7 +60,7 @@ Let's take a look at the more important parts of the project:
 
 ### Run the project
 
-Checkout the dRural infrastructure repository in the develop branch. The recomended way is to use the docker-compose file to run the project.
+Checkout the [dRural infrastructure folder](../infraestructure/README.md).
 
 ### Build graphql types
 

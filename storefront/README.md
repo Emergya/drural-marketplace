@@ -18,7 +18,7 @@ See the [public demo](https://drural-sandbox.eu/en/) of dRural Storefront!
 
 ## Getting Started
 
-Checkout the [dRural infrastructure repository](https://github.com/Emergya/drural-marketplace-infraestructure/tree/develop) in the develop branch, these instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+Checkout the [dRural infrastructure folder](../infraestructure/README.md) in the develop branch, these instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ## Understading the project structure
 
@@ -72,7 +72,7 @@ How to:
 
 ### Run the project
 
-Checkout the dRural infrastructure repository in the develop branch. The recomended way is to use the docker-compose file to run the project.
+Checkout the [dRural infrastructure folder](../infraestructure/README.md).
 
 ### Build graphql types
 
