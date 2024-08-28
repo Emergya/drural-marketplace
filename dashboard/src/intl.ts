@@ -696,6 +696,12 @@ export const weekDayMesagges = defineMessages({
 });
 
 export const languageMessages = defineMessages({
+  czech: {
+    defaultMessage: "Czech"
+  },
+  greek: {
+    defaultMessage: "Greek"
+  },
   croatian: {
     defaultMessage: "Croatian"
   },
@@ -704,6 +710,21 @@ export const languageMessages = defineMessages({
   },
   english: {
     defaultMessage: "English"
+  },
+  french: {
+    defaultMessage: "French"
+  },
+  polish: {
+    defaultMessage: "Polish"
+  },
+  portuguese: {
+    defaultMessage: "Portuguese"
+  },
+  serbian: {
+    defaultMessage: "Serbian"
+  },
+  slovenian: {
+    defaultMessage: "Slovenian"
   },
   spanish: {
     defaultMessage: "Spanish"

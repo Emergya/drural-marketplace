@@ -19,7 +19,20 @@ module.exports = withPlugins(
   ],
   {
     i18n: {
-      locales: ["en", "es", "hr", "nl", "sv"],
+      locales: [
+        "cs",
+        "el",
+        "en",
+        "es",
+        "fr",
+        "hr",
+        "nl",
+        "pl",
+        "pt",
+        "sl",
+        "sr",
+        "sv",
+      ],
       defaultLocale: process.env.NEXT_PUBLIC_DEFAULT_LOCALE || "en",
       localeDetection: false,
     },

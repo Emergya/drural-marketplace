@@ -63,12 +63,18 @@ export const BusinessProvider: React.FC = ({ children }) => {
           updateBusinesses(data.companies.edges);
           if (data.companies.edges.length === 0) {
             setBusiness(undefined);
-          }
-          if (data.companies.edges.length === 1) {
+          } else if (data.companies.edges.length === 1) {
             setBusiness({
               index: 0,
               active: data.companies.edges[0]
             });
+          } else {
+            if (activeBusiness) {
+              setBusiness({
+                index: activeBusiness.index,
+                active: data.companies.edges[activeBusiness.index]
+              });
+            }
           }
         }
       }

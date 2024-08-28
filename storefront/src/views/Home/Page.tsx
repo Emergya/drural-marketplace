@@ -20,7 +20,11 @@ import { SearchbarDesktop } from "@components/organisms/SearchbarDesktop";
 import { SearchbarMobileHome } from "@components/organisms/SearchbarMobileHome";
 import { useGeoLocation } from "@hooks";
 import { paths } from "@paths";
-import { dashboardUrl } from "@temp/constants";
+import {
+  dashboardUrl,
+  locationFilterMaxValue,
+  priceFilterMaxValue,
+} from "@temp/constants";
 import { commonMessages } from "@temp/intl";
 import { mapEdgesToItems } from "@utils/misc";
 import { FeaturedProducts, PopularServices } from "@utils/ssr";
@@ -168,11 +172,18 @@ const Page: React.FC<{
     if (searchState.query) {
       urlSearchQuery += `q=${searchState.query}`;
     }
-    if (searchState.distance !== undefined) {
+    if (
+      searchState.distance !== undefined &&
+      searchState.distance !== locationFilterMaxValue
+    ) {
       urlSearchQuery += `&distance=${searchState.distance}`;
     }
     if (searchState.price.length > 1) {
-      urlSearchQuery += `&priceGte=${searchState.price[0]}&priceLte=${searchState.price[1]}`;
+      urlSearchQuery += `&priceGte=${searchState.price[0]}`;
+
+      if (priceFilterMaxValue !== searchState.price[1]) {
+        urlSearchQuery += `&priceLte=${searchState.price[1]}`;
+      }
     }
 
     push(urlSearchQuery);

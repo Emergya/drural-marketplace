@@ -11,7 +11,7 @@ interface IOptions {
 
 export interface INotificationTemplate {
   id: string;
-  style: React.CSSProperties;
+  style?: React.CSSProperties;
   message: IMessage;
   options: IOptions;
   close: () => void;

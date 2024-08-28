@@ -10,6 +10,13 @@ from ..product.models import Category, Collection
 
 
 class Menu(ModelWithMetadata):
+    """
+    Model representing a menu.
+
+    Attributes:
+        name (str): The name of the menu.
+        slug (str): The slug of the menu.
+    """
     name = models.CharField(max_length=250)
     slug = models.SlugField(max_length=255, unique=True, allow_unicode=True)
 
@@ -22,6 +29,22 @@ class Menu(ModelWithMetadata):
 
 
 class MenuItem(ModelWithMetadata, MPTTModel, SortableModel):
+    """
+    Represents a menu item in the system.
+
+    Attributes:
+        menu (ForeignKey): The menu to which this item belongs.
+        name (CharField): The name of the menu item.
+        parent (ForeignKey): The parent menu item, if any.
+        url (URLField): The URL associated with the menu item.
+        category (ForeignKey): The category associated with the menu item.
+        collection (ForeignKey): The collection associated with the menu item.
+        page (ForeignKey): The page associated with the menu item.
+        objects (Manager): The default manager for the model.
+        tree (TreeManager): The manager for handling tree operations.
+        translated (TranslationProxy): The proxy for handling translations.
+
+    """
     menu = models.ForeignKey(Menu, related_name="items", on_delete=models.CASCADE)
     name = models.CharField(max_length=128)
     parent = models.ForeignKey(
@@ -62,6 +85,13 @@ class MenuItem(ModelWithMetadata, MPTTModel, SortableModel):
 
 
 class MenuItemTranslation(Translation):
+    """
+    Represents a translation of a menu item.
+
+    Attributes:
+        menu_item (ForeignKey): The menu item associated with this translation.
+        name (CharField): The translated name of the menu item.
+    """
     menu_item = models.ForeignKey(
         MenuItem, related_name="translations", on_delete=models.CASCADE
     )

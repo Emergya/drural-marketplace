@@ -74,6 +74,16 @@ def _get_weight_type_display(min_weight, max_weight):
 
 
 class ShippingZone(ModelWithMetadata):
+    """
+    Represents a shipping zone.
+
+    Attributes:
+        name (str): The name of the shipping zone.
+        countries (CountryField): The countries included in this shipping zone.
+        default (bool): Indicates if this is the default shipping zone.
+        description (str): A description of the shipping zone.
+        channels (ManyToManyField): The channels associated with this shipping zone.
+    """
     name = models.CharField(max_length=100)
     countries = CountryField(multiple=True, default=[], blank=True)
     default = models.BooleanField(default=False)
@@ -90,6 +100,9 @@ class ShippingZone(ModelWithMetadata):
 
 
 class ShippingMethodQueryset(models.QuerySet):
+    """
+    Custom queryset for filtering shipping methods.
+    """
     def price_based(self):
         return self.filter(type=ShippingMethodType.PRICE_BASED)
 
@@ -111,20 +124,12 @@ class ShippingMethodQueryset(models.QuerySet):
             "price_amount"
         )
 
-    def exclude_shipping_methods_for_excluded_products(
-        self, qs, product_ids: List[int]
-    ):
+    def exclude_shipping_methods_for_excluded_products(self, qs, product_ids: List[int]):
         """Exclude the ShippingMethods which have excluded given products."""
         return qs.exclude(excluded_products__id__in=product_ids)
 
-    def applicable_shipping_methods(
-        self, price: Money, channel_id, weight, country_code, product_ids=None
-    ):
-        """Return the ShippingMethods that can be used on an order with shipment.
-
-        It is based on the given country code, and by shipping methods that are
-        applicable to the given price, weight and products.
-        """
+    def applicable_shipping_methods(self, price: Money, channel_id, weight, country_code, product_ids=None):
+        """Return the ShippingMethods that can be used on an order with shipment."""
         qs = self.filter(
             shipping_zone__countries__contains=country_code,
             shipping_zone__channels__id=channel_id,
@@ -134,9 +139,6 @@ class ShippingMethodQueryset(models.QuerySet):
         qs = self.applicable_shipping_methods_by_channel(qs, channel_id)
         qs = qs.prefetch_related("shipping_zone")
 
-        # Products IDs are used to exclude shipping methods that may be not applicable
-        # to some of these products, based on exclusion rules defined in shipping method
-        # instances.
         if product_ids:
             qs = self.exclude_shipping_methods_for_excluded_products(qs, product_ids)
 
@@ -157,10 +159,8 @@ class ShippingMethodQueryset(models.QuerySet):
         if not instance.shipping_address:
             return None
         if not country_code:
-            # TODO: country_code should come from argument
             country_code = instance.shipping_address.country.code  # type: ignore
         if lines is None:
-            # TODO: lines should comes from args in get_valid_shipping_methods_for_order
             lines = instance.lines.prefetch_related("variant__product").all()
             instance_product_ids = set(lines.values_list("variant__product", flat=True))
         else:
@@ -179,6 +179,22 @@ class ShippingMethodQueryset(models.QuerySet):
 
 
 class ShippingMethod(ModelWithMetadata):
+    """
+    Represents a shipping method.
+
+    Shipping methods are used to define the shipping options available to customers.
+
+    Attributes:
+        name (str): The name of the shipping method.
+        type (str): The type of the shipping method (price-based or weight-based).
+        shipping_zone (ForeignKey): The shipping zone associated with this method.
+        minimum_order_weight (MeasurementField): The minimum order weight for this method.
+        maximum_order_weight (MeasurementField): The maximum order weight for this method.
+        excluded_products (ManyToManyField): The products excluded from this shipping method.
+        maximum_delivery_days (int): The maximum delivery days for this method.
+        minimum_delivery_days (int): The minimum delivery days for this method.
+        description (SanitizedJSONField): A description of the shipping method.
+    """
     name = models.CharField(max_length=100)
     type = models.CharField(max_length=30, choices=ShippingMethodType.CHOICES)
     shipping_zone = models.ForeignKey(
@@ -225,6 +241,15 @@ class ShippingMethod(ModelWithMetadata):
 
 
 class ShippingMethodPostalCodeRule(models.Model):
+    """
+    Represents a postal code rule for a shipping method.
+
+    Attributes:
+        shipping_method (ForeignKey): The shipping method associated with this rule.
+        start (str): The starting postal code for this rule.
+        end (str): The ending postal code for this rule.
+        inclusion_type (str): The inclusion type (include or exclude) for this rule.
+    """
     shipping_method = models.ForeignKey(
         ShippingMethod, on_delete=models.CASCADE, related_name="postal_code_rules"
     )
@@ -241,6 +266,20 @@ class ShippingMethodPostalCodeRule(models.Model):
 
 
 class ShippingMethodChannelListing(models.Model):
+    """
+    Represents the channel-specific listing of a shipping method.
+
+    Attributes:
+        shipping_method (ForeignKey): The shipping method associated with this listing.
+        channel (ForeignKey): The channel associated with this listing.
+        minimum_order_price_amount (DecimalField): The minimum order price amount for this listing.
+        minimum_order_price (MoneyField): The minimum order price for this listing.
+        currency (str): The currency for this listing.
+        maximum_order_price_amount (DecimalField): The maximum order price amount for this listing.
+        maximum_order_price (MoneyField): The maximum order price for this listing.
+        price (MoneyField): The price for this listing.
+        price_amount (DecimalField): The price amount for this listing.
+    """
     shipping_method = models.ForeignKey(
         ShippingMethod,
         null=False,
@@ -293,6 +332,14 @@ class ShippingMethodChannelListing(models.Model):
 
 
 class ShippingMethodTranslation(Translation):
+    """
+    Represents the translation of a shipping method.
+
+    Attributes:
+        name (str): The translated name of the shipping method.
+        shipping_method (ForeignKey): The shipping method associated with this translation.
+        description (SanitizedJSONField): The translated description of the shipping method.
+    """
     name = models.CharField(max_length=255, null=True, blank=True)
     shipping_method = models.ForeignKey(
         ShippingMethod, related_name="translations", on_delete=models.CASCADE

@@ -39,6 +39,16 @@
       "value": "Price range"
     }
   ],
+  "+zKPn6": [
+    {
+      "type": 0,
+      "value": "Distance selected: "
+    },
+    {
+      "type": 1,
+      "value": "distanceSelected"
+    }
+  ],
   "/+HyHJ": [
     {
       "type": 0,
@@ -293,12 +303,6 @@
     {
       "type": 0,
       "value": "Remove from list"
-    }
-  ],
-  "5qDwFV": [
-    {
-      "type": 0,
-      "value": "New version is available!"
     }
   ],
   "5sc/mV": [
@@ -677,12 +681,6 @@
       "value": "Shipping Method"
     }
   ],
-  "DClFoP": [
-    {
-      "type": 0,
-      "value": "To update the application to the latest version, please refresh the page!"
-    }
-  ],
   "DOtajr": [
     {
       "type": 0,
@@ -769,6 +767,24 @@
     {
       "type": 0,
       "value": "CLEAR FILTERS"
+    }
+  ],
+  "Fa4WYC": [
+    {
+      "type": 0,
+      "value": "Price selected: "
+    },
+    {
+      "type": 1,
+      "value": "pge"
+    },
+    {
+      "type": 0,
+      "value": " - "
+    },
+    {
+      "type": 1,
+      "value": "ple"
     }
   ],
   "FyUqOJ": [
@@ -1147,6 +1163,12 @@
       "value": "Best selling"
     }
   ],
+  "PfW4AI": [
+    {
+      "type": 0,
+      "value": "No limit"
+    }
+  ],
   "PgJGHT": [
     {
       "type": 0,
@@ -1511,6 +1533,12 @@
       "value": "4 stars"
     }
   ],
+  "YqsgWz": [
+    {
+      "type": 0,
+      "value": "Slovenian"
+    }
+  ],
   "Yx6py4": [
     {
       "type": 0,
@@ -1587,6 +1615,12 @@
     {
       "type": 0,
       "value": "Last Name"
+    }
+  ],
+  "airHOF": [
+    {
+      "type": 0,
+      "value": "Visit service page"
     }
   ],
   "ast9q1": [
@@ -1771,28 +1805,6 @@
       "value": "Must be a valid email"
     }
   ],
-  "ev8nQc": [
-    {
-      "type": 0,
-      "value": "Price selected: "
-    },
-    {
-      "type": 1,
-      "value": "pge"
-    },
-    {
-      "type": 0,
-      "value": " - "
-    },
-    {
-      "type": 1,
-      "value": "ple"
-    },
-    {
-      "type": 0,
-      "value": " €"
-    }
-  ],
   "ex+q9+": [
     {
       "type": 0,
@@ -1857,6 +1869,12 @@
     {
       "type": 0,
       "value": "Select date"
+    }
+  ],
+  "gsuLMm": [
+    {
+      "type": 0,
+      "value": "Greek"
     }
   ],
   "h4IxgY": [
@@ -2145,24 +2163,16 @@
       "value": "Shop manager"
     }
   ],
+  "mHjOY8": [
+    {
+      "type": 0,
+      "value": "Serbian"
+    }
+  ],
   "mLwkSx": [
     {
       "type": 0,
       "value": "Preferences saved!"
-    }
-  ],
-  "mOPLCp": [
-    {
-      "type": 0,
-      "value": "Distance selected: "
-    },
-    {
-      "type": 1,
-      "value": "distanceSelected"
-    },
-    {
-      "type": 0,
-      "value": " km"
     }
   ],
   "mah+Bl": [
@@ -2279,6 +2289,12 @@
       "value": "Activate all"
     }
   ],
+  "oukwYF": [
+    {
+      "type": 0,
+      "value": "Enter your search..."
+    }
+  ],
   "ovr4vj": [
     {
       "type": 0,
@@ -2361,12 +2377,6 @@
     {
       "type": 0,
       "value": "Log In"
-    }
-  ],
-  "rELDbB": [
-    {
-      "type": 0,
-      "value": "Refresh"
     }
   ],
   "rI+UPp": [

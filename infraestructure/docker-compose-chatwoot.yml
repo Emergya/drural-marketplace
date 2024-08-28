@@ -1,0 +1,41 @@
+version: "3.8"
+
+services:
+  base: &base
+    image: chatwoot/chatwoot:latest
+    env_file: chatwoot.env
+    volumes:
+      - /data/storage:/app/storage
+
+  rails:
+    <<: *base
+    depends_on:
+      - db
+      - redis
+    ports:
+      - "2000:2000"
+    entrypoint: docker/entrypoints/rails.sh
+    networks:
+      - drural-chatwoot
+    command: ["bundle", "exec", "rails", "s", "-p", "2000", "-b", "0.0.0.0"]
+
+  rails-setup:
+    <<: *base
+    depends_on:
+      - db
+    networks:
+      - drural-chatwoot
+    command: sh -c 'bundle exec rails db:chatwoot_prepare'
+  sidekiq:
+    <<: *base
+    depends_on:
+      - db
+      - redis
+    networks:
+      - drural-chatwoot
+    command: ["bundle", "exec", "sidekiq", "-C", "config/sidekiq.yml"]
+
+networks:
+  drural-chatwoot:
+    external:
+      name: drural-marketplace

@@ -1,4 +1,6 @@
+import logging
 from django.contrib.sites.models import Site
+from django.conf import settings
 from ..account.models import User
 from ..company.models import Company
 from ..order.models import Order
@@ -6,7 +8,7 @@ from ..order.models import Order
 from ..site.models import SiteSettings
 
 from ..settings import STATIC_URL
-
+logger = logging.getLogger(__name__)
 
 def get_site_context():
     site: Site = Site.objects.get_current()
@@ -40,11 +42,11 @@ def get_booking_context(order):
     return booking_context
 
 
-def get_language_code_from_user(object):
+def get_language_code_from_payload(object):
 
     if object is None:
         return None
-    
+
     if isinstance(object, Order):
         return object.user.language_code if object.user else None
     if isinstance(object, User):
@@ -53,13 +55,31 @@ def get_language_code_from_user(object):
         return object.managers.first().language_code
     return None
 
-def get_language_code_or_default(object):
-    language_code = get_language_code_from_user(object)
+def get_language_code_or_default(object, seller=False):
 
-    if language_code:
-        return language_code
-    if SiteSettings.objects.exists():
-        return SiteSettings.objects.first().default_language
+    try:
+        ## TIPO ORDER
+        if isinstance(object, Order) and seller:
+            return object.lines.first().variant.product.company.managers.first().language_code
+        
+        if isinstance(object, Order):
+            return object.user.language_code if object.user else settings.DEFAULT_LANGAUGE_CODE
+        
+        ## tipo USER
+        if isinstance(object, User):
+            return object.language_code if object else settings.DEFAULT_LANGAUGE_CODE
+        
+        ## tipo COMPANY
+        if isinstance(object, Company):
+            return object.managers.first().language_code
 
-    return "en"
+        if SiteSettings.objects.exists():
+            return SiteSettings.objects.first().default_language
+        return settings.DEFAULT_LANGAUGE_CODE
+    except:
+        logger.error("Error en get_language_code_or_default")
+        return settings.DEFAULT_LANGAUGE_CODE
+ 
+
+
 

@@ -25,6 +25,8 @@ export const mapLocalesWithLanguage = (
     });
   });
 
+  options?.options?.sort((a, b) => a?.label.localeCompare(b?.label));
+
   return options;
 };
 

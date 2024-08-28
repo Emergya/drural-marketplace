@@ -243,6 +243,9 @@ export const commonMessages = defineMessages({
   newIn: {
     defaultMessage: "New in",
   },
+  noLimint: {
+    defaultMessage: "No limit",
+  },
   nonStatusFound: {
     defaultMessage: "Non status found",
   },
@@ -512,14 +515,35 @@ export function translateOrderStatusCode(
 }
 
 export const languageMessages = defineMessages({
+  czech: {
+    defaultMessage: "Czech",
+  },
   croatian: {
     defaultMessage: "Croatian",
   },
   dutch: {
     defaultMessage: "Dutch",
   },
+  greek: {
+    defaultMessage: "Greek",
+  },
   english: {
     defaultMessage: "English",
+  },
+  french: {
+    defaultMessage: "French",
+  },
+  polish: {
+    defaultMessage: "Polish",
+  },
+  portuguese: {
+    defaultMessage: "Portuguese",
+  },
+  serbian: {
+    defaultMessage: "Serbian",
+  },
+  slovenian: {
+    defaultMessage: "Slovenian",
   },
   spanish: {
     defaultMessage: "Spanish",

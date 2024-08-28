@@ -1,18 +1,11 @@
 import React from "react";
 import { FormattedMessage } from "react-intl";
 
-import * as SliderStyles from "@components/atoms/RangeInput/styles";
+import { priceFilterMaxValue } from "@temp/constants";
 
 import { RangeInput } from "../RangeInput/Range/RangeInput";
 import * as S from "./styles";
 import { IProps } from "./types";
-
-const sliderMarks = {
-  100: {
-    label: "100 €",
-    style: SliderStyles.rangeInput.markStyle,
-  },
-};
 
 export const SearchPriceTile: React.FC<IProps> = ({ price, onChange }) => {
   return (
@@ -23,10 +16,10 @@ export const SearchPriceTile: React.FC<IProps> = ({ price, onChange }) => {
       <RangeInput
         value={[price[0], price[1]]}
         min={0}
-        max={100}
+        max={priceFilterMaxValue}
         step={10}
-        marks={sliderMarks}
         units="€"
+        unlimited
         onChange={onChange}
         zIndex={20}
       />

@@ -4,7 +4,7 @@
   "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/drural/drural-macaw-ui.git"
+    "url": "git://github.com/emergya/drural-macaw-ui.git"
   },
   "keywords": [
     "drural",

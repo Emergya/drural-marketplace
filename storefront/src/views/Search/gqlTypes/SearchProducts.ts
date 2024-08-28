@@ -270,7 +270,7 @@ export interface SearchProducts_products_edges_node {
   id: string;
   name: string;
   slug: string;
-  hasNoPrice: boolean;
+  hasNoPrice: boolean | null;
   rating: number;
   address: SearchProducts_products_edges_node_address | null;
   /**

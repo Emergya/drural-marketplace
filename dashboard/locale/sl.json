@@ -5270,6 +5270,7 @@
     "context": "button",
     "string": "Send"
   },
+
   "src_dot_serviceAccounts": {
     "context": "service accounts section name",
     "string": "Service Accounts"
@@ -5735,6 +5736,9 @@
   },
   "src_dot_siteSettings_dot_components_dot_SiteSettingsPage_dot_866304242": {
     "string": "This where you will find all of the settings determining your stores e-mails. You can determine main email address and some of the contents of your emails."
+  },
+  "src_dot_slovenian": {
+    "string": "Slovenščina"
   },
   "src_dot_somethingWentWrong": {
     "string": "Saleor ran into an unexpected problem"

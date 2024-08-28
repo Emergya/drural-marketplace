@@ -33,8 +33,44 @@ def email_sender_name_validators():
         MaxLengthValidator(settings.DEFAULT_MAX_EMAIL_DISPLAY_NAME_LENGTH),
     ]
 
-
 class SiteSettings(models.Model):
+    """
+    Represents the settings for a site.
+
+    The site settings are used to store all site-specific data, like the header text,
+    description, menus, and other site-specific data.
+
+    Attributes:
+        site (OneToOneField): The site associated with these settings.
+        header_text (str): The header text for the site.
+        description (str): The description of the site.
+        top_menu (ForeignKey): The top menu of the site.
+        bottom_menu (ForeignKey): The bottom menu of the site.
+        include_taxes_in_prices (bool): Indicates if taxes are included in prices.
+        display_gross_prices (bool): Indicates if gross prices are displayed.
+        charge_taxes_on_shipping (bool): Indicates if taxes are charged on shipping.
+        track_inventory_by_default (bool): Indicates if inventory is tracked by default.
+        default_weight_unit (str): The default weight unit for the site.
+        automatic_fulfillment_digital_products (bool): Indicates if digital products are automatically fulfilled.
+        default_digital_max_downloads (int): The default maximum number of downloads for digital products.
+        default_digital_url_valid_days (int): The default number of days digital URLs are valid.
+        company_address (ForeignKey): The company address.
+        default_mail_sender_name (str): The default sender name for emails.
+        default_mail_sender_address (str): The default sender address for emails.
+        customer_set_password_url (str): The URL for customers to set their password.
+        automatically_confirm_all_new_orders (bool): Indicates if all new orders are automatically confirmed.
+        translated (TranslationProxy): Proxy for translation.
+        default_language (str): The default language for the site.
+        primary_color (str): The primary color for the site.
+        secondary_color (str): The secondary color for the site.
+        logo (ImageField): The logo of the site.
+        logo_alt (str): The alt text for the logo.
+        dashboard_banner (ImageField): The dashboard banner of the site.
+        dashboard_banner_alt (str): The alt text for the dashboard banner.
+        storefront_banner (ImageField): The storefront banner of the site.
+        storefront_banner_alt (str): The alt text for the storefront banner.
+        commission_rate (float): The commission rate for the site.
+    """
     site = models.OneToOneField(Site, related_name="settings", on_delete=models.CASCADE)
     header_text = models.CharField(max_length=200, blank=True)
     description = models.CharField(max_length=500, blank=True)
@@ -59,8 +95,6 @@ class SiteSettings(models.Model):
     company_address = models.ForeignKey(
         "account.Address", blank=True, null=True, on_delete=models.SET_NULL
     )
-    # FIXME these values are configurable from email plugin. Not needed to be placed
-    # here
     default_mail_sender_name = models.CharField(
         max_length=settings.DEFAULT_MAX_EMAIL_DISPLAY_NAME_LENGTH,
         blank=True,
@@ -101,6 +135,9 @@ class SiteSettings(models.Model):
 
     @property
     def default_from_email(self) -> str:
+        """
+        Returns the default 'from' email address formatted according to RFC 5322.
+        """
         sender_name: str = self.default_mail_sender_name
         sender_address: Optional[str] = self.default_mail_sender_address
 
@@ -112,16 +149,24 @@ class SiteSettings(models.Model):
 
             sender_name, sender_address = parseaddr(sender_address)
 
-        # Note: we only want to format the address in accordance to RFC 5322
-        # but our job is not to sanitize the values. The sanitized value, encoding, etc.
-        # will depend on the email backend being used.
-        #
-        # Refer to email.header.Header and django.core.mail.message.sanitize_address.
         value = str(Address(sender_name, addr_spec=sender_address))
         return value
 
 
 class ShopChatwootCredentials(models.Model):
+    """
+    Represents the Chatwoot credentials for a shop.
+
+    Attributes:
+        site_settings (OneToOneField): The site settings associated with these credentials.
+        email (str): The email associated with the Chatwoot account.
+        chatwoot_user_id (int): The user ID in Chatwoot.
+        chatwoot_account_id (int): The account ID in Chatwoot.
+        is_active (bool): Indicates if the credentials are active.
+        user_api_key (str): The API key for the Chatwoot user.
+        website_token (str): The website token for Chatwoot.
+        hmac (str): The HMAC for Chatwoot.
+    """
     site_settings = models.OneToOneField(
         SiteSettings,
         primary_key=True,
@@ -142,6 +187,14 @@ class ShopChatwootCredentials(models.Model):
 
 
 class SiteSettingsTranslation(Translation):
+    """
+    Represents the translation of site settings.
+
+    Attributes:
+        site_settings (ForeignKey): The site settings associated with this translation.
+        header_text (str): The translated header text for the site.
+        description (str): The translated description of the site.
+    """
     site_settings = models.ForeignKey(
         SiteSettings, related_name="translations", on_delete=models.CASCADE
     )
@@ -172,8 +225,15 @@ class SiteSettingsTranslation(Translation):
         }
 
 
-# google analytics model
 class ShopGoogleAnalytics(models.Model):
+    """
+    Represents the Google Analytics settings for a shop.
+
+    Attributes:
+        site_settings (OneToOneField): The site settings associated with these Google Analytics settings.
+        measurement_id (str): The Google Analytics measurement ID.
+        is_active (bool): Indicates if Google Analytics is active.
+    """
     site_settings = models.OneToOneField(
         SiteSettings,
         primary_key=True,

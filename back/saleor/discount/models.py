@@ -39,6 +39,18 @@ class NotApplicable(ValueError):
 
 
 class VoucherQueryset(models.QuerySet):
+    """
+    A custom QuerySet for Voucher model.
+
+    This QuerySet provides methods for filtering vouchers based on their active status,
+    expiration status, and channel.
+
+    Methods:
+    - active(date): Filters vouchers that are currently active.
+    - active_in_channel(date, channel_slug): Filters vouchers that are active in a specific channel.
+    - expired(date): Filters vouchers that have expired.
+
+    """
     def active(self, date):
         return self.filter(
             Q(usage_limit__isnull=True) | Q(used__lt=F("usage_limit")),
@@ -59,6 +71,30 @@ class VoucherQueryset(models.QuerySet):
 
 
 class Voucher(ModelWithMetadata):
+    """
+    Represents a voucher that can be applied to an order to provide a discount.
+
+    Attributes:
+        type (str): The type of the voucher. Choices are defined in VoucherType.CHOICES.
+        name (str): The name of the voucher.
+        code (str): The unique code of the voucher.
+        usage_limit (int): The maximum number of times the voucher can be used.
+        used (int): The number of times the voucher has been used.
+        start_date (datetime): The start date of the voucher's validity period.
+        end_date (datetime): The end date of the voucher's validity period.
+        apply_once_per_order (bool): Indicates if the discount should be applied per order.
+        apply_once_per_customer (bool): Indicates if the discount should be applied once per customer.
+        only_for_staff (bool): Indicates if the voucher is only valid for staff customers.
+        discount_value_type (str): The type of discount value. Choices are defined in DiscountValueType.CHOICES.
+        countries (list): The list of countries for which the voucher is valid.
+        min_checkout_items_quantity (int): The minimum quantity of items required to apply the voucher.
+        products (QuerySet): The products to which the voucher is applicable.
+        collections (QuerySet): The collections to which the voucher is applicable.
+        categories (QuerySet): The categories to which the voucher is applicable.
+        objects (QuerySet): The manager for querying Voucher objects.
+        translated (TranslationProxy): The proxy for accessing translated fields of the voucher.
+
+    """
     type = models.CharField(
         max_length=20, choices=VoucherType.CHOICES, default=VoucherType.ENTIRE_ORDER
     )
@@ -163,6 +199,22 @@ class Voucher(ModelWithMetadata):
 
 
 class VoucherChannelListing(models.Model):
+    """
+    Model representing the relationship between a Voucher and a Channel.
+
+    Attributes:
+        voucher (ForeignKey): The voucher associated with the channel listing.
+        channel (ForeignKey): The channel associated with the voucher listing.
+        discount_value (Decimal): The value of the discount.
+        discount (MoneyField): The discount amount in the specified currency.
+        currency (CharField): The currency code.
+        min_spent_amount (Decimal): The minimum amount that needs to be spent to apply the voucher.
+        min_spent (MoneyField): The minimum spent amount in the specified currency.
+
+    Meta:
+        unique_together (tuple): Specifies that the combination of voucher and channel should be unique.
+        ordering (tuple): Specifies the default ordering of the model instances.
+    """
     voucher = models.ForeignKey(
         Voucher,
         null=False,
@@ -199,6 +251,17 @@ class VoucherChannelListing(models.Model):
 
 
 class VoucherCustomer(models.Model):
+    """
+    Represents a customer associated with a voucher.
+
+    Attributes:
+        voucher (ForeignKey): The voucher associated with the customer.
+        customer_email (EmailField): The email address of the customer.
+
+    Meta:
+        ordering (tuple): The fields used for ordering the VoucherCustomer instances.
+        unique_together (tuple): The fields that must be unique together for each VoucherCustomer instance.
+    """
     voucher = models.ForeignKey(
         Voucher, related_name="customers", on_delete=models.CASCADE
     )
@@ -210,6 +273,10 @@ class VoucherCustomer(models.Model):
 
 
 class SaleQueryset(models.QuerySet):
+    """
+    Returns a queryset of active sales.
+   
+    """
     def active(self, date=None):
         if date is None:
             date = timezone.now()
@@ -224,6 +291,23 @@ class SaleQueryset(models.QuerySet):
 
 
 class VoucherTranslation(Translation):
+    """
+    Represents a translation of a Voucher object.
+
+    Attributes:
+        voucher (Voucher): The Voucher object associated with this translation.
+        name (str): The translated name of the voucher.
+
+    Meta:
+        ordering (tuple): The ordering of the translations based on language code, voucher, and primary key.
+        unique_together (tuple): The combination of language code and voucher must be unique.
+
+    Methods:
+        get_translated_object_id: Returns the object ID of the translated Voucher.
+        get_translated_keys: Returns the translated keys of the Voucher.
+
+    """
+
     voucher = models.ForeignKey(
         Voucher, related_name="translations", on_delete=models.CASCADE
     )
@@ -241,6 +325,22 @@ class VoucherTranslation(Translation):
 
 
 class Sale(ModelWithMetadata):
+    """
+    Represents a sale in the marketplace.
+
+    The sale can be applied to products, categories, or collections.
+
+    Attributes:
+        name (str): The name of the sale.
+        type (str): The type of the sale. Choices are defined in DiscountValueType.CHOICES.
+        products (ManyToManyField): The products associated with the sale.
+        categories (ManyToManyField): The categories associated with the sale.
+        collections (ManyToManyField): The collections associated with the sale.
+        start_date (DateTimeField): The start date of the sale.
+        end_date (DateTimeField): The end date of the sale.
+
+
+    """
     name = models.CharField(max_length=255)
     type = models.CharField(
         max_length=10,
@@ -292,6 +392,19 @@ class Sale(ModelWithMetadata):
 
 
 class SaleChannelListing(models.Model):
+    """
+    Model representing the relationship between a Sale and a Channel.
+
+    Attributes:
+        sale (Sale): The Sale object associated with the channel listing.
+        channel (Channel): The Channel object associated with the channel listing.
+        discount_value (Decimal): The discount value for the channel listing.
+        currency (str): The currency code for the channel listing.
+
+    Meta:
+        unique_together (list): A list of fields that must be unique together.
+        ordering (tuple): A tuple specifying the default ordering of instances.
+    """
     sale = models.ForeignKey(
         Sale,
         null=False,
@@ -321,6 +434,17 @@ class SaleChannelListing(models.Model):
 
 
 class SaleTranslation(Translation):
+    """
+    Model representing the translation of a Sale object.
+
+    Attributes:
+        name (str): The translated name of the Sale.
+        sale (Sale): The Sale object associated with this translation.
+
+    Meta:
+        ordering (tuple): The ordering of the SaleTranslation objects.
+        unique_together (tuple): The unique constraints for the SaleTranslation objects.
+    """
     name = models.CharField(max_length=255, null=True, blank=True)
     sale = models.ForeignKey(
         Sale, related_name="translations", on_delete=models.CASCADE
@@ -338,6 +462,22 @@ class SaleTranslation(Translation):
 
 
 class OrderDiscount(models.Model):
+    """
+    Represents a discount applied to an order.
+
+    Attributes:
+        order (ForeignKey): The order to which the discount is applied.
+        type (CharField): The type of the discount.
+        value_type (CharField): The type of value used for the discount.
+        value (DecimalField): The value of the discount.
+        amount_value (DecimalField): The amount value of the discount.
+        amount (MoneyField): The amount of the discount.
+        currency (CharField): The currency used for the discount.
+        name (CharField): The name of the discount.
+        translated_name (CharField): The translated name of the discount.
+        reason (TextField): The reason for the discount.
+
+    """
     order = models.ForeignKey(
         "order.Order",
         related_name="discounts",

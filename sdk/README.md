@@ -1,12 +1,6 @@
-<div align="center">
-  <h1>Saleor SDK</h1>
-</div>
+# dRural SDK
 
-This package contains methods providing Saleor business logic for storefront. It handles Saleor GraphQL queries and mutations, manages Apollo cache and provides internal state to manage popular storefront use cases, like user authentication or checkout process.
-
-Please take a look at [sample storefront](https://github.com/mirumee/saleor-storefront) which already uses Saleor SDK. For specific use cases you may also refer to [saleor-sdk/examples](https://github.com/mirumee/saleor-sdk/tree/add/examples/examples/react/typescript/src).
-
-> :warning: **Note: Saleor SDK is still under heavy development and its API may change.**
+This package contains methods providing dRural business logic for storefront. It handles dRural GraphQL queries and mutations, manages Apollo cache and provides internal state to manage popular storefront use cases, like user authentication or checkout process.
 
 ## Table of Contents
 
@@ -16,27 +10,27 @@ Please take a look at [sample storefront](https://github.com/mirumee/saleor-stor
 
 ## Setup
 
-There are two ways to use SDK - making custom implementation or using React components and hooks, which already has that implementation ready.
+There are two ways to use SDK - making custom implementation or using React components and hooks, which already has that implementation ready. The storefrnt consumes the SDK using the latter method, you can see it in the main entiry file of the storefront.
 
 ### Using React
 
 First install SDK as dependency to your project
 
 ```bash
-npm install @saleor/sdk
+npm install @drural/sdk
 ```
 
 Use `SaleorProvider` with passed custom config in a prop. Then use React hooks in any component passed as child to `SaleorProvider`.
 
 ```tsx
-import { SaleorProvider, useAuth } from "@saleor/sdk";
+import { SaleorProvider, useAuth } from "@drural/sdk";
 
 const config = { apiUrl: "http://localhost:8000/graphql/", channel: "" };
 const apolloConfig = {
   /* 
     Optional custom Apollo client config.
     Here you may append custom Apollo cache, links or the whole client. 
-    You may also use import { createSaleorCache, createSaleorClient, createSaleorLinks } from "@saleor/sdk" to create semi-custom implementation of Apollo.
+    You may also use import { createSaleorCache, createSaleorClient, createSaleorLinks } from "@drural/sdk" to create semi-custom implementation of Apollo.
   */
 };
 
@@ -76,7 +70,7 @@ const App = () => {
 ### Custom implementation
 
 ```bash
-npm install @saleor/sdk
+npm install @drural/sdk
 ```
 
 Then use SaleorManager to get `SaleorAPI` from `connect` method. This method may also take optional function as an argument, which will be executed every time the `SaleorAPI` state changes.
@@ -87,12 +81,12 @@ const apolloConfig = {
   /* 
     Optional custom Apollo client config.
     Here you may append custom Apollo cache, links or the whole client. 
-    You may also use import { createSaleorCache, createSaleorClient, createSaleorLinks } from "@saleor/sdk" to create semi-custom implementation of Apollo.
+    You may also use import { createSaleorCache, createSaleorClient, createSaleorLinks } from "@drural/sdk" to create semi-custom implementation of Apollo.
   */
 };
 const manager = new SaleorManager(config, apolloConfig);
 
-const { api, apolloClient } = await manager.connect(saleorAPI => {
+const { api, apolloClient } = await manager.connect(druralAPI => {
   /* Optional listener to API state change. You may use it to update your app state reactively - e.g. trigger the React context update. */
 });
 ```
@@ -116,16 +110,16 @@ if (dataError) {
 
 ## Features
 
-We provide an API with methods and fields, performing one, scoped type of work. You may access them straight from `SaleorAPI` or use React hooks, depending on [which setup do you select](#setup).
+We provide an API with methods and fields, performing one, scoped type of work. You may access them straight from `dRuralAPI` or use React hooks, depending on [which setup do you select](#setup).
 
 | API object              | React hook                                                                                             | Description                                                                     |
 | :---------------------- | :----------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------ |
-| `SaleorAPI.auth`        | `useAuth()`                                                                                            | Handles user authentication and stores data about the currently signed in user. |
-| `SaleorAPI.cart`        | `useCart()`                                                                                            | Collects products to cart and calculates their prices.                          |
-| `SaleorAPI.checkout`    | `useCheckout()`                                                                                        | Uses cart and handles the whole checkout process.                               |
-| `SaleorAPI.products`    | `useProductDetails()`, `useProductList()`                                                              | Obtains products.                                                               |
-| `SaleorAPI.collections` | `useCollectionDetails()`, `useCollectionList()`                                                        | Obtains collections.                                                            |
-| `SaleorAPI.categories`  | `useCategoryDetails()`, `useCategoryList()`, `useCategoryAncestorsList()`, `useCategoryChildrenList()` | Obtains categories.                                                             |
+| `dRuralAPI.auth`        | `useAuth()`                                                                                            | Handles user authentication and stores data about the currently signed in user. |
+| `dRuralAPI.cart`        | `useCart()`                                                                                            | Collects products to cart and calculates their prices.                          |
+| `dRuralAPI.checkout`    | `useCheckout()`                                                                                        | Uses cart and handles the whole checkout process.                               |
+| `dRuralAPI.products`    | `useProductDetails()`, `useProductList()`                                                              | Obtains products.                                                               |
+| `dRuralAPI.collections` | `useCollectionDetails()`, `useCollectionList()`                                                        | Obtains collections.                                                            |
+| `dRuralAPI.categories`  | `useCategoryDetails()`, `useCategoryList()`, `useCategoryAncestorsList()`, `useCategoryChildrenList()` | Obtains categories.                                                             |
 
 ## Local development
 
@@ -133,13 +127,13 @@ Our aim it to build SDK, highly configurable, as a separate package, which you w
 to link it to the storefront's project.
 
 ```bash
-$ cd lib
-$ npm link
-$ cd <your storefront path>
-$ npm link @saleor/sdk
+  cd lib
+  npm link
+  cd <your storefront path>
+  npm link @drural/sdk
 ```
 
-Notice that in [our example storefront](https://github.com/mirumee/saleor-storefront)
+Notice that in [our example storefront](https://github.com/mirumee/drural-storefront)
 webpack is configured to always resolve `react` to `./node_modules/react`. It may
 seem redundant for the most use cases, but helps in sdk's local development, because
 it overcomes `npm`'s limitations regarding peer dependencies hoisting, explicitly

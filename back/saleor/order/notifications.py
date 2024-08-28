@@ -307,7 +307,7 @@ def send_order_confirmation(order, redirect_url, manager):
             "recipient_list": recipient_emails,
             "is_billable": order.lines.first().variant.product.is_billable,
             "is_bookable": order.lines.first().variant.product.is_bookable,
-            "language_code": get_language_code_or_default(order),
+            "language_code": get_language_code_or_default(order, seller=True),
             **get_site_context(),
         }
         if order.booking:

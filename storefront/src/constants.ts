@@ -79,3 +79,6 @@ export const fixedSlugMenus = {
   footer: "footer",
   navbar: "navbar",
 };
+
+export const locationFilterMaxValue = 1000;
+export const priceFilterMaxValue = 1000;

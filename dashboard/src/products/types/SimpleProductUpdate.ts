@@ -822,7 +822,7 @@ export interface SimpleProductUpdate_productUpdate_product {
   slug: string;
   description: any | null;
   details: any | null;
-  hasNoPrice: boolean;
+  hasNoPrice: boolean | null;
   seoTitle: string | null;
   seoDescription: string | null;
   rating: number;

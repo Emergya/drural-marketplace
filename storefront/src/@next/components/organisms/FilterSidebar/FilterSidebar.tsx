@@ -10,50 +10,25 @@ import {
   SwitchInput,
 } from "@components/atoms";
 import { CloseIcon } from "@components/atoms/CloseIcon";
-import * as SliderStyles from "@components/atoms/RangeInput/styles";
 import { AttributeValuesChecklist } from "@components/molecules";
 import { CategoriesChecklist } from "@components/molecules/CategoriesChecklist";
 import { useHandlerWhenClickedOutside } from "@hooks";
-import { MAPBOX_STYLES_URL, MAPBOX_TOKEN } from "@temp/constants";
+import {
+  locationFilterMaxValue,
+  MAPBOX_STYLES_URL,
+  MAPBOX_TOKEN,
+  priceFilterMaxValue,
+} from "@temp/constants";
 import { commonMessages } from "@temp/intl";
 
-import { IFilterAttribute, IFilters } from "../../../types";
+import { IFilterAttribute } from "../../../types";
 import { Overlay } from "..";
 import * as S from "./styles";
 import { IProps } from "./types";
+import { checkIfAttributeIsChecked, MARKER_OPTIONS } from "./utils";
 
 import "mapbox-gl/dist/mapbox-gl.css";
 import "react-map-gl-geocoder/dist/mapbox-gl-geocoder.css";
-
-const checkIfAttributeIsChecked = (
-  filters: IFilters,
-  value: IFilterAttribute,
-  slug: string
-) => {
-  if (filters!.attributes && filters.attributes.hasOwnProperty(slug)) {
-    if (filters.attributes[slug].find(filter => filter === value.slug)) {
-      return true;
-    }
-    return false;
-  }
-  return false;
-};
-
-const sliderMarks = {
-  1000: {
-    label: "1000 Km",
-    style: SliderStyles.rangeInput.markStyle,
-  },
-};
-
-const sliderPriceMarks = {
-  1000: {
-    label: "1000 €",
-    style: SliderStyles.rangeInput.markStyle,
-  },
-};
-
-const MARKER_OPTIONS = { color: "#3CDCAA" };
 
 export const FilterSidebar: React.FC<IProps> = ({
   hide,
@@ -168,9 +143,8 @@ export const FilterSidebar: React.FC<IProps> = ({
                     <SliderInput
                       value={distance}
                       min={0}
-                      max={1000}
+                      max={locationFilterMaxValue}
                       step={10}
-                      marks={sliderMarks}
                       units="Km"
                       onChange={onDistanceFilterChange}
                       zIndex={20}
@@ -190,15 +164,14 @@ export const FilterSidebar: React.FC<IProps> = ({
                 <RangeInput
                   value={[priceGte!, priceLte]}
                   min={0}
-                  max={1000}
+                  max={priceFilterMaxValue}
                   step={10}
-                  marks={sliderPriceMarks}
                   units="€"
+                  unlimited
                   onChange={onPriceFilterChange}
                   zIndex={20}
                 />
               </S.DistanceWrapper>
-              <S.Separator />
             </>
           )}
           {attributes.map(({ id, slug, name, choices }) => {

@@ -5270,6 +5270,9 @@
     "context": "button",
     "string": "Pošaljite"
   },
+  "src_dot_serbian": {
+    "string": "Српски"
+  },
   "src_dot_serviceAccounts": {
     "context": "service accounts section name",
     "string": "Servisni nalozi"

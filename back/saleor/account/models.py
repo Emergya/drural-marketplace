@@ -62,6 +62,29 @@ class AddressQueryset(models.QuerySet):
 
 
 class Address(models.Model):
+    """
+    Represents user's address.
+
+    Attributes:
+        first_name (str): The first name of the user.
+        last_name (str): The last name of the user.
+        company_name (str): The name of the company associated with the address.
+        street_address_1 (str): The first line of the street address.
+        street_address_2 (str): The second line of the street address.
+        city (str): The city of the address.
+        city_area (str): The area within the city.
+        postal_code (str): The postal code of the address.
+        country (CountryField): The country of the address.
+        country_area (str): The area within the country.
+        phone (PossiblePhoneNumberField): The phone number associated with the address.
+    Methods:
+        full_name(): Returns the full name of the user.
+        __str__(): Returns a string representation of the address.
+        __eq__(other): Checks if the address is equal to another address.
+        as_data(): Returns the address as a dictionary suitable for passing as kwargs.
+        get_copy(): Returns a new instance of the same address.
+    """
+
     first_name = models.CharField(max_length=256, blank=True)
     last_name = models.CharField(max_length=256, blank=True)
     company_name = models.CharField(max_length=256, blank=True)
@@ -121,6 +144,11 @@ class Address(models.Model):
 
 
 class UserManager(BaseUserManager):
+    """
+
+    Custom user manager for creating and managing user instances.
+    
+    """
     def create_user(
         self, email, password=None, is_staff=False, is_active=True, **extra_fields
     ):
@@ -163,6 +191,39 @@ class UserManager(BaseUserManager):
 
 
 class User(PermissionsMixin, ModelWithMetadata, AbstractBaseUser):
+    """
+    Represents a user in the system.
+
+    Attributes:
+        email (str): The email address of the user. Must be unique.
+        first_name (str): The first name of the user. Can be blank.
+        last_name (str): The last name of the user. Can be blank.
+        addresses (ManyToManyField): The addresses associated with the user.
+        is_staff (bool): Indicates if the user is a staff member. Default is False.
+        is_active (bool): Indicates if the user is active. Default is True.
+        is_onboard (bool): Indicates if the user has completed the onboarding process. Default is False.
+        info_request (bool): Indicates if the user has requested additional information. Default is False.
+        note (str): Additional notes about the user. Can be null and blank.
+        date_joined (datetime): The date and time when the user joined. Default is the current time.
+        default_shipping_address (ForeignKey): The default shipping address for the user. Can be null and blank.
+        default_billing_address (ForeignKey): The default billing address for the user. Can be null and blank.
+        avatar (VersatileImageField): The avatar image of the user. Can be null and blank.
+        jwt_token_key (str): The JWT token key for the user. Default is a randomly generated string.
+        language_code (str): The language code for the user. Default is the system's language code.
+        distance (int): The distance for location-based operations. Can be null and blank. Default is 50.
+        is_location_allowed (bool): Indicates if the user's location is allowed. Default is False.
+        categories (ManyToManyField): The categories associated with the user.
+
+    Methods:
+        is_seller(): Checks if the user is a seller.
+        effective_permissions(): Returns the effective permissions of the user.
+        get_full_name(): Returns the full name of the user.
+        get_short_name(): Returns the short name of the user.
+        product_consumed(product): Checks if the user has consumed a specific product.
+        has_perm(perm, obj=None): Checks if the user has a specific permission.
+        is_company_manager(company_id): Checks if the user is a manager in a given company.
+    """
+    ...
     email = models.EmailField(unique=True)
     first_name = models.CharField(max_length=256, blank=True)
     last_name = models.CharField(max_length=256, blank=True)
@@ -301,6 +362,19 @@ class User(PermissionsMixin, ModelWithMetadata, AbstractBaseUser):
 
 
 class CustomerNote(models.Model):
+    """
+    Model representing a customer note.
+
+    Attributes:
+        user (ForeignKey): The user associated with the note (optional).
+        date (DateTimeField): The date and time the note was created.
+        content (TextField): The content of the note.
+        is_public (BooleanField): Indicates if the note is public or private.
+        customer (ForeignKey): The customer associated with the note.
+
+    Meta:
+        ordering (tuple): The default ordering of the notes by date.
+    """
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL, blank=True, null=True, on_delete=models.SET_NULL
     )
@@ -340,6 +414,15 @@ class CustomerEvent(models.Model):
 
 
 class StaffNotificationRecipient(models.Model):
+    """
+    Model representing a staff notification recipient.
+
+    Attributes:
+        user (User): The user associated with the recipient (OneToOneField).
+        staff_email (str): The email address of the recipient (EmailField).
+        active (bool): Indicates if the recipient is active or not (BooleanField).
+
+    """
     user = models.OneToOneField(
         User,
         related_name="staff_notification",

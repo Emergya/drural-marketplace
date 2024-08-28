@@ -28,6 +28,28 @@ class AppQueryset(models.QuerySet):
 
 
 class App(ModelWithMetadata):
+    """
+    Represents an application in the marketplace.
+
+    Attributes:
+        name (str): The name of the application.
+        created (datetime): The date and time when the application was created.
+        is_active (bool): Indicates whether the application is active or not.
+        type (str): The type of the application.
+        identifier (str): The identifier of the application.
+        permissions (ManyToManyField): The permissions associated with the application.
+        about_app (str): Information about the application.
+        data_privacy (str): The data privacy policy of the application.
+        data_privacy_url (str): The URL to the data privacy policy of the application.
+        homepage_url (str): The URL to the homepage of the application.
+        support_url (str): The URL to the support page of the application.
+        configuration_url (str): The URL to the configuration page of the application.
+        app_url (str): The URL to the application.
+        version (str): The version of the application.
+        user (ForeignKey): The user associated with the application.
+
+
+    """
     name = models.CharField(max_length=60)
     created = models.DateTimeField(auto_now_add=True)
     is_active = models.BooleanField(default=True)
@@ -106,12 +128,28 @@ class App(ModelWithMetadata):
 
 
 class AppToken(models.Model):
+    """
+    Model representing an app token.
+
+    Attributes:
+        app (ForeignKey): The app associated with the token.
+        name (CharField): The name of the token.
+        auth_token (CharField): The authentication token.
+    """
     app = models.ForeignKey(App, on_delete=models.CASCADE, related_name="tokens")
     name = models.CharField(blank=True, default="", max_length=128)
     auth_token = models.CharField(default=generate_token, unique=True, max_length=30)
 
 
 class AppInstallation(Job):
+    """
+    Represents an installation of an app.
+
+    Attributes:
+        app_name (str): The name of the app.
+        manifest_url (str): The URL of the app's manifest.
+        permissions (ManyToManyField): The permissions assigned to the app.
+    """
     app_name = models.CharField(max_length=60)
     manifest_url = models.URLField()
     permissions = models.ManyToManyField(

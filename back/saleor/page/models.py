@@ -10,6 +10,15 @@ from ..seo.models import SeoModel, SeoModelTranslation
 
 
 class PageQueryset(PublishedQuerySet):
+    """
+    Returns a queryset of pages visible to the given requestor.
+
+    Args:
+        requestor: The user making the request.
+
+    Returns:
+        QuerySet: A queryset of pages visible to the requestor.
+    """
     def visible_to_user(self, requestor):
         if requestor.has_perm(PagePermissions.MANAGE_PAGES):
             return self.all()
@@ -17,6 +26,19 @@ class PageQueryset(PublishedQuerySet):
 
 
 class Page(ModelWithMetadata, SeoModel, PublishableModel):
+    """
+    Represents a page in the marketplace.
+
+    The page can be of different types, which can be used to render the page
+    in different ways. 
+
+    Attributes:
+        slug (str): The unique slug of the page.
+        title (str): The title of the page.
+        page_type (PageType): The page type associated with the page.
+        content (str): The content of the page.
+        created (datetime): The date and time when the page was created.
+    """
     slug = models.SlugField(unique=True, max_length=255)
     title = models.CharField(max_length=250)
     page_type = models.ForeignKey(
@@ -39,6 +61,15 @@ class Page(ModelWithMetadata, SeoModel, PublishableModel):
 
 
 class PageTranslation(SeoModelTranslation):
+    """
+    Represents a translation of a Page object.
+
+    Attributes:
+        page (Page): The Page object that this translation belongs to.
+        title (str): The translated title of the page.
+        content (str): The translated content of the page.
+    """
+
     page = models.ForeignKey(
         Page, related_name="translations", on_delete=models.CASCADE
     )
@@ -76,6 +107,13 @@ class PageTranslation(SeoModelTranslation):
 
 
 class PageType(ModelWithMetadata):
+    """
+    Represents a type of page in the marketplace.
+
+    Attributes:
+        name (str): The name of the page type.
+        slug (str): The slug of the page type.
+    """
     name = models.CharField(max_length=250)
     slug = models.SlugField(max_length=255, unique=True, allow_unicode=True)
 

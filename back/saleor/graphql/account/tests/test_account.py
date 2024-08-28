@@ -17,6 +17,7 @@ from django.core.files import File
 from django.test import override_settings
 from django.utils import timezone
 from freezegun import freeze_time
+from saleor.core.notifications import get_language_code_or_default
 
 from ....account import events as account_events
 from ....account.error_codes import AccountErrorCode
@@ -1149,7 +1150,7 @@ def test_customer_register(mocked_notify, mocked_generator, api_client, channel_
         "site_primary_color": None,
         "site_secondary_color": None,
         "channel_slug": channel_EUR.slug,
-        "language_code": "pl",
+        "language_code": get_language_code_or_default(new_user)
     }
     assert new_user.metadata == {"meta": "data"}
     assert new_user.language_code == "pl"

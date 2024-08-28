@@ -52,9 +52,16 @@ export const localeData: Record<Locale, string | undefined> = {
 };
 
 export const availableLanguages: Partial<Record<string, string>> = {
+  [Locale.CS]: "Čeština",
+  [Locale.EL]: "Ελληνικά",
   [Locale.EN]: "English",
   [Locale.ES]: "Español",
+  [Locale.FR]: "Français",
   [Locale.HR]: "Hrvatski",
   [Locale.NL]: "Netherlands",
+  [Locale.PL]: "Polski",
+  [Locale.PT]: "Português",
+  [Locale.SL]: "Slovenščina",
+  [Locale.SR]: "Српски",
   [Locale.SV]: "Svenska",
 };

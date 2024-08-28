@@ -90,9 +90,9 @@ export const OrderTable: React.FC<IProps> = ({ orders, isGuest }: IProps) => {
                         {matches ? (
                           <>
                             <S.ProductsOrdered>
-                              {lines.slice(0, 1).map(line => (
-                                <p key={line!.variant!.product.id}>
-                                  {line?.variant?.product.name}
+                              {lines.slice(0, 1).map((line, index) => (
+                                <p key={line?.variant?.product?.id || index}>
+                                  {line?.variant?.product?.name}
                                 </p>
                               ))}
                             </S.ProductsOrdered>

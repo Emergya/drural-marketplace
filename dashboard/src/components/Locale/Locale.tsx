@@ -1,27 +1,34 @@
 import useLocalStorage from "@saleor/hooks/useLocalStorage";
-import React from "react";
-import { useQuery } from "react-apollo";
+import { LanguageCodeEnum } from "@saleor/types/globalTypes";
+import React, { useEffect, useState } from "react";
+import { useMutation, useQuery } from "react-apollo";
 import { IntlProvider, ReactIntlErrorCode } from "react-intl";
 
 import English from "../../../locale/defaultMessages.json";
-import { shopDefaultLanguage } from "./query";
+import { updateAccoutLanguageMutation } from "./mutations";
+import { shopDefaultLanguageQuery } from "./queries";
 import { ShopDefaultLanguage } from "./types/ShopDefaultLanguage";
+import {
+  UpdateAccoutLanguage,
+  UpdateAccoutLanguageVariables
+} from "./types/UpdateAccoutLanguage";
+
 export enum Locale {
   // AR = "ar",
   // AZ = "az",
   // BG = "bg",
   // BN = "bn",
   // CA = "ca",
-  // CS = "cs",
+  CS = "cs",
   // DA = "da",
   // DE = "de",
-  // EL = "el",
+  EL = "el",
   EN = "en",
   ES = "es",
   // ES_CO = "es-CO",
   // ET = "et",
   // FA = "fa",
-  // FR = "fr",
+  FR = "fr",
   // HI = "hi",
   HR = "hr",
   // HU = "hu",
@@ -34,15 +41,15 @@ export enum Locale {
   // MN = "mn",
   // NB = "nb",
   NL = "nl",
-  // PL = "pl",
-  // PT = "pt",
+  PL = "pl",
+  PT = "pt",
   // PT_BR = "pt-BR",
   // RO = "ro",
   // RU = "ru",
   // SK = "sk",
-  // SL = "sl",
+  SL = "sl",
   // SQ = "sq",
-  // SR = "sr",
+  SR = "sr",
   SV = "sv"
   // TH = "th",
   // TR = "tr",
@@ -64,16 +71,16 @@ export const localeNames: Record<Locale, string> = {
   // [Locale.BG]: "български",
   // [Locale.BN]: "বাংলা",
   // [Locale.CA]: "català",
-  // [Locale.CS]: "česky",
+  [Locale.CS]: "česky",
   // [Locale.DA]: "dansk",
   // [Locale.DE]: "Deutsch",
-  // [Locale.EL]: "Ελληνικά",
+  [Locale.EL]: "Ελληνικά",
   [Locale.EN]: "English",
   [Locale.ES]: "Español",
   // [Locale.ES_CO]: "español de Colombia",
   // [Locale.ET]: "eesti",
   // [Locale.FA]: "فارسی",
-  // [Locale.FR]: "français",
+  [Locale.FR]: "français",
   // [Locale.HI]: "Hindi",
   [Locale.HR]: "Hrvatski",
   // [Locale.HU]: "Magyar",
@@ -86,15 +93,15 @@ export const localeNames: Record<Locale, string> = {
   // [Locale.MN]: "Mongolian",
   // [Locale.NB]: "norsk (bokmål)",
   [Locale.NL]: "Netherlands",
-  // [Locale.PL]: "polski",
-  // [Locale.PT]: "Português",
+  [Locale.PL]: "polski",
+  [Locale.PT]: "Português",
   // [Locale.PT_BR]: "Português Brasileiro",
   // [Locale.RO]: "Română",
   // [Locale.RU]: "Русский",
   // [Locale.SK]: "Slovensky",
-  // [Locale.SL]: "Slovenščina",
+  [Locale.SL]: "Slovenščina",
   // [Locale.SQ]: "shqip",
-  // [Locale.SR]: "српски",
+  [Locale.SR]: "српски",
   [Locale.SV]: "Svenska"
   // [Locale.TH]: "ภาษาไทย",
   // [Locale.TR]: "Türkçe",
@@ -131,11 +138,16 @@ export function getMatchingLocale(languages: readonly string[]): Locale {
   return undefined;
 }
 
+function localeToLanguageCode(locale: Locale): LanguageCodeEnum {
+  const upperCaseLocale = locale?.toUpperCase();
+  return LanguageCodeEnum[upperCaseLocale];
+}
+
 const defaultLocale = Locale.EN;
 
 export interface LocaleContextType {
   locale: Locale;
-  setLocale: (locale: Locale) => void;
+  setLocale: (locale: Locale) => Promise<void>;
 }
 export const LocaleContext = React.createContext<LocaleContextType>({
   locale: defaultLocale,
@@ -145,18 +157,44 @@ export const LocaleContext = React.createContext<LocaleContextType>({
 const { Consumer: LocaleConsumer, Provider: RawLocaleProvider } = LocaleContext;
 
 const LocaleProvider: React.FC = ({ children }) => {
+  // 1. State
   const [locale, setLocale] = useLocalStorage("locale", undefined);
+
   const [defaultLanguage, setDefaultLanguage] = useLocalStorage(
     "defaultLanguage",
     undefined
   );
-  const [messages, setMessages] = React.useState(undefined);
+  const [messages, setMessages] = useState(undefined);
+
+  // 2. Queries
   const { data, loading: shopLoading } = useQuery<ShopDefaultLanguage>(
-    shopDefaultLanguage
+    shopDefaultLanguageQuery
   );
 
-  React.useEffect(() => {
+  const [updateAccoutLanguage] = useMutation<
+    UpdateAccoutLanguage,
+    UpdateAccoutLanguageVariables
+  >(updateAccoutLanguageMutation);
+
+  const updateLocale = async (locale: Locale) => {
+    const result = await updateAccoutLanguage({
+      variables: {
+        input: { languageCode: localeToLanguageCode(locale) }
+      }
+    });
+
+    const errors =
+      result.errors?.length || result.data?.accountUpdate?.errors?.length;
+
+    if (!errors) {
+      setLocale(locale);
+    }
+  };
+
+  // 3. Effects
+  useEffect(() => {
     async function changeLocale() {
+      // 1. Set user langeage
       if (locale) {
         // It seems like Webpack is unable to use aliases for lazy imports
         let mod;
@@ -165,15 +203,18 @@ const LocaleProvider: React.FC = ({ children }) => {
         } else {
           mod = await import(`../../../locale/${locale}.json`);
         }
-        setLocale(locale);
+        updateLocale(locale);
         setMessages(mod.default);
       }
+
+      // 2. Set shop default language
       if (
         data?.shop?.defaultLanguage &&
         data?.shop?.defaultLanguage !== defaultLanguage
       ) {
         setDefaultLanguage(data.shop.defaultLanguage);
       }
+
       if (!locale && data?.shop?.defaultLanguage) {
         let mod;
         if (data.shop.defaultLanguage === Locale.EN) {
@@ -187,18 +228,21 @@ const LocaleProvider: React.FC = ({ children }) => {
         setMessages(mod.default);
       }
     }
+
+    //  Run the function
     if (!shopLoading) {
       changeLocale();
     }
   }, [locale, data?.shop?.defaultLanguage, shopLoading]);
 
+  // 4. Return
   return (
     <IntlProvider
       defaultLocale={defaultLocale}
       locale={locale || defaultLanguage || defaultLocale}
       messages={getKeyValueJson(messages) || getKeyValueJson(English)}
       onError={err => {
-        if (!(err.code === ReactIntlErrorCode.MISSING_TRANSLATION)) {
+        if (err.code !== ReactIntlErrorCode.MISSING_TRANSLATION) {
           console.error(err);
         }
       }}
@@ -207,7 +251,7 @@ const LocaleProvider: React.FC = ({ children }) => {
       <RawLocaleProvider
         value={{
           locale: locale || defaultLanguage || defaultLocale,
-          setLocale
+          setLocale: updateLocale
         }}
       >
         {children}

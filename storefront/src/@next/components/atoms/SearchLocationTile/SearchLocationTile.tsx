@@ -1,18 +1,11 @@
 import React from "react";
 import { FormattedMessage } from "react-intl";
 
-import * as SliderStyles from "@components/atoms/RangeInput/styles";
+import { locationFilterMaxValue } from "@temp/constants";
 
 import { SliderInput } from "../RangeInput/Slider/SliderInput";
 import * as S from "./styles";
 import { IProps } from "./types";
-
-const sliderMarks = {
-  100: {
-    label: "100 Km",
-    style: SliderStyles.rangeInput.markStyle,
-  },
-};
 
 export const SearchLocationTile: React.FC<IProps> = ({
   distance,
@@ -26,10 +19,10 @@ export const SearchLocationTile: React.FC<IProps> = ({
       <SliderInput
         value={distance}
         min={0}
-        max={1000}
+        max={locationFilterMaxValue}
         step={10}
-        marks={sliderMarks}
         units="Km"
+        unlimited
         onChange={onChange}
         zIndex={20}
       />

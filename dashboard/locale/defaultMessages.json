@@ -3595,6 +3595,9 @@
   "src_dot_generalInformations": {
     "string": "General Information"
   },
+  "src_dot_greek": {
+    "string": "Greek"
+  },
   "src_dot_home": {
     "context": "home section name",
     "string": "Home"
@@ -5645,6 +5648,9 @@
   "src_dot_products_dot_components_dot_ProductDetailsForm_dot_1261034579": {
     "string": "Write a list including the main features of the service."
   },
+  "src_dot_products_dot_components_dot_ProductDetailsForm_dot_515400966": {
+    "string": "This service has no price"
+  },
   "src_dot_products_dot_components_dot_ProductDetailsForm_dot_636461959": {
     "context": "product name",
     "string": "Name"
@@ -6087,6 +6093,15 @@
   },
   "src_dot_products_dot_components_dot_ProductUpdatePage_dot_78424404": {
     "string": "Are you sure you want {isActive, select, true {activate} other {deactivate}} this service?"
+  },
+  "src_dot_products_dot_components_dot_ProductUrl_dot_1324178587": {
+    "string": "URL"
+  },
+  "src_dot_products_dot_components_dot_ProductUrl_dot_1711809676": {
+    "string": "The url of the service"
+  },
+  "src_dot_products_dot_components_dot_ProductUrl_dot_1963353809": {
+    "string": "Service url"
   },
   "src_dot_products_dot_components_dot_ProductVariantCreateDialog_dot_description": {
     "context": "create product variants",
@@ -6620,6 +6635,9 @@
     "context": "button",
     "string": "Send"
   },
+  "src_dot_serbian": {
+    "string": "Serbian"
+  },
   "src_dot_service": {
     "string": "Service"
   },
@@ -6752,6 +6770,9 @@
   "src_dot_siteSettings_dot_components_dot_SiteSettingsPage_dot_943508702": {
     "context": "section header",
     "string": "Marketing tags"
+  },
+  "src_dot_slovenian": {
+    "string": "Slovenian"
   },
   "src_dot_somethingWentWrong": {
     "string": "Saleor ran into an unexpected problem"
@@ -7545,6 +7566,9 @@
   },
   "src_dot_utils_dot_errors_dot_invalidTitle": {
     "string": "Max characters for title is 65."
+  },
+  "src_dot_utils_dot_errors_dot_invalidUrl": {
+    "string": "Invalid URL"
   },
   "src_dot_utils_dot_errors_dot_invalidUrlFormat": {
     "string": "Url has invalid format"
