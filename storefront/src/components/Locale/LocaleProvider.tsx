@@ -16,7 +16,6 @@ import {
 } from "./utils";
 import { useMutation } from "react-apollo";
 import { accountUpdateMutation } from "@components/molecules/AccountConfigurationTiles/queries";
-import { NotificationTemplate } from "@components/atoms";
 
 const LocaleProvider: React.FC = ({ children }) => {
   // 1. Page rendered locale
