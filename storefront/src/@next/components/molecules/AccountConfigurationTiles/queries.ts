@@ -15,7 +15,6 @@ import {
   GetUserCategories,
   GetUserCategoriesVariables,
 } from "./gqlTypes/GetUserCategories";
-import { GetUserLanguage } from "./gqlTypes/GetUserLanguage";
 import { GetUserLocation } from "./gqlTypes/GetUserLocation";
 import {
   SetAccountCategoriesPreferences,
@@ -25,22 +24,6 @@ import {
   SetAccountLocationPreferences,
   SetAccountLocationPreferencesVariables,
 } from "./gqlTypes/SetAccountLocationPreferences";
-
-// Query - get user language
-const getUserLanguageQuery = gql`
-  query GetUserLanguage {
-    me {
-      id
-      languageCode
-    }
-  }
-`;
-
-export const useUserLanguageQuery = () => {
-  return useTypedQuery<GetUserLanguage>(getUserLanguageQuery, {
-    fetchPolicy: "cache-and-network",
-  });
-};
 
 // Query - get user location
 const getUserLocationQuery = gql`
