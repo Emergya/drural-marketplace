@@ -98,7 +98,7 @@ _Both storefront and dashboard are quite big frontend projects and it might take
 - MinIO panel - http://dev.marketplace.drural.com:7000
 - Chatwoot panel - http://dev.marketplace.drural.com:2000
 
-## Disk Setup and Backup Configuration for LVM in dRural
+## Backup
 
 This section provides detailed instructions for preparing a disk and configuring a backup system using LVM (Logical Volume Manager) in the dRural environment. The setup ensures efficient management of disk space, allowing for future expansion and snapshot storage. These instructions assume root or `sudo` privileges.
 
