@@ -105,7 +105,7 @@ docker-compose -f docker-compose.yml -f docker-compose.dev.yml run --rm api bash
 docker-compose -f docker-compose.yml -f docker-compose.dev.yml down -v
 ```
 
-Go back to step 4 and start again.
+Go back to step 5 (Prepare / clean volumes) and start again.
 
 _Note that `--createsuperuser` argument creates an admin account for `admin@example.com` with the password set to `admin`._
 
