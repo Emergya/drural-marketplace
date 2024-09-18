@@ -41,7 +41,11 @@ cd marketplace/infraestructure
 echo "127.0.0.1 dev.marketplace.drural.com" | sudo tee -a /etc/hosts
 ```
 
-#### 4. Prepare / clean volumes
+#### 4. Add .env files
+
+Create an `.env` and a `chatwoot.env` (chatwoot only) files, from `example.env` and `example.chatwoot.env` and fulfill the required values.
+
+#### 5. Prepare / clean volumes
 
 ```
 sudo rm -rf data
@@ -52,10 +56,6 @@ chmod 777 minio
 mkdir redis
 cd ..
 ```
-
-#### 5. Add .env files
-
-Create an `.env` and a `chatwoot.env` (chatwoot only) files, from `example.env` and `example.chatwoot.env` and fulfill the required values.
 
 #### 6. Run the application
 
@@ -99,13 +99,13 @@ docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d api
 docker-compose -f docker-compose.yml -f docker-compose.dev.yml run --rm api bash -c "source venv/bin/activate && python3 manage.py populatedb --createsuperuser"
 ```
 
-**Important**: If this step or the migrations previous one fails for any reason (step 6), you will need to remove the database volumes and restart again:
+**Important**: If this step or the migrations previous one fails for any reason (step 7), you will need to remove the database volumes and restart again:
 
 ```bash
 docker-compose -f docker-compose.yml -f docker-compose.dev.yml down -v
+```
 
 Go back to step 4 and start again.
-```
 
 _Note that `--createsuperuser` argument creates an admin account for `admin@example.com` with the password set to `admin`._
 
