@@ -9,7 +9,7 @@
 
 ### How to run it?
 
-#### 1. Clone required git repository (ssh is prefered):
+#### 1. Clone required git repository (ssh is prefered)
 
 ```bash
 git clone git@github.com:Emergya/drural-marketplace.git
@@ -29,7 +29,7 @@ git clone git@github.com:Emergya/drural-marketplace.git
 
 ```
 
-#### 2. Go to the infrastructure cloned directory:
+#### 2. Go to the infrastructure cloned directory
 
 ```
 cd marketplace/infraestructure
@@ -41,7 +41,7 @@ cd marketplace/infraestructure
 echo "127.0.0.1 dev.marketplace.drural.com" | sudo tee -a /etc/hosts
 ```
 
-#### 4. Prepare / clean volumes:
+#### 4. Prepare / clean volumes
 
 ```
 sudo rm -rf data
@@ -53,7 +53,11 @@ mkdir redis
 cd ..
 ```
 
-#### 5. Run the application:
+#### 5. Add .env files
+
+Create an `.env` and a `chatwoot.env` (chatwoot only) files, from `example.env` and `example.chatwoot.env` and fulfill the required values.
+
+#### 6. Run the application
 
 Use the docker-compose and docker-compose.dev files to run the application in development mode.
 
@@ -69,7 +73,7 @@ docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d
 docker-compose -f docker-compose.yml -f docker-compose.dev.yml -f docker-compose-chatwoot.yml up -d
 ```
 
-#### 6. Wait untill db mirations finishes succesfully (exit code 0) before moving to the next step, otherwise it will fail.
+#### 7. Wait untill db mirations finishes succesfully (exit code 0) before moving to the next step, otherwise it will fail
 
 ```bash
 docker-compose -f docker-compose.yml -f docker-compose.dev.yml logs -f api-setup
@@ -77,19 +81,19 @@ docker-compose -f docker-compose.yml -f docker-compose.dev.yml logs -f api-setup
 
 - If it doesnt finish with exit code 0 there are problems, dont continue.
 
-#### 7. [Optional - chatwoot only] [RUN ONCE] Generate the Chatwoot Token, save it into .env and reload the api container:
+#### 8. [Optional - chatwoot only] [RUN ONCE] Generate the Chatwoot Token, save it into .env and reload the api container
 
 ```
 docker-compose -f docker-compose.yml -f docker-compose.dev.yml -f docker-compose-chatwoot.yml run --rm rails bin/rails runner "app = PlatformApp.create(name:'dRural');puts 'CHATWOOT_PLATFORM_TOKEN='+app.access_token.token" | tail -n 1 >> .env
 ```
 
-#### 8. [Optional - chatwoot only] Up the backend service again
+#### 9. [Optional - chatwoot only] Up the backend service again
 
 ```
 docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d api
 ```
 
-#### 9. [RUN ONCE] Populate the database with example data and create the admin user:
+#### 10. [RUN ONCE] Populate the database with example data and create the admin user
 
 ```
 docker-compose -f docker-compose.yml -f docker-compose.dev.yml run --rm api bash -c "source venv/bin/activate && python3 manage.py populatedb --createsuperuser"
@@ -180,6 +184,7 @@ Ensure that you have a dedicated disk available for LVM, with at least 40GB of s
 
 9. **Create a Directory for Snapshots:**
    Create a directory for mounting LVM snapshots:
+
    ```bash
    mkdir /mnt/snapshots
    ```
@@ -204,6 +209,7 @@ Now that the LVM setup is complete, you can use the [provided backup script](./b
 
 3. **Restart Cron Service:**
    After updating the `crontab`, restart the cron service to apply changes:
+
    ```bash
    systemctl restart cron
    ```
