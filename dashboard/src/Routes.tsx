@@ -159,13 +159,13 @@ export const Routes: React.FC<{ tokenRefreshLinkError: boolean }> = ({
                     path="/products"
                     component={ProductSection}
                   />
-                  <SectionRoute
+                  {/*} <SectionRoute
                     permissions={[
                       PermissionEnum.MANAGE_PRODUCT_TYPES_AND_ATTRIBUTES
                     ]}
                     path="/product-types"
                     component={ProductTypesSection}
-                  />
+                  /> */}
                   <Route exact path="/staff" component={StaffSection} />
                   <Route path="/staff/:id" component={StaffSection} />
                   <SectionRoute
@@ -178,33 +178,33 @@ export const Routes: React.FC<{ tokenRefreshLinkError: boolean }> = ({
                     path="/site-settings"
                     component={SiteSettingsSection}
                   />
-                  <SectionRoute
+                  {/* <SectionRoute
                     permissions={[PermissionEnum.MANAGE_SETTINGS]}
                     path="/taxes"
                     component={TaxesSection}
-                  />
+                  /> */}
                   {/* <SectionRoute
                     permissions={[PermissionEnum.MANAGE_SHIPPING]}
                     path="/shipping"
                     component={ShippingSection}
                   /> */}
-                  <SectionRoute
+                  {/*<SectionRoute
                     permissions={[PermissionEnum.MANAGE_TRANSLATIONS]}
                     path="/translations"
                     component={TranslationsSection}
-                  />
+                  /> */}
                   <SectionRoute
                     permissions={[PermissionEnum.MANAGE_MENUS]}
                     path={navigationSection}
                     component={NavigationSection}
                   />
-                  <SectionRoute
+                  {/* <SectionRoute
                     permissions={[
                       PermissionEnum.MANAGE_PRODUCT_TYPES_AND_ATTRIBUTES
                     ]}
                     path={attributeSection}
                     component={AttributeSection}
-                  />
+                  /> */}
                   <SectionRoute
                     permissions={[PermissionEnum.MANAGE_APPS]}
                     path={appsSection}
@@ -215,11 +215,11 @@ export const Routes: React.FC<{ tokenRefreshLinkError: boolean }> = ({
                     path={warehouseSection}
                     component={WarehouseSection}
                   /> */}
-                  <SectionRoute
+                  {/* <SectionRoute
                     permissions={[PermissionEnum.MANAGE_CHANNELS]}
                     path={channelsSection}
                     component={ChannelsSection}
-                  />
+                  /> */}
                   <SectionRoute
                     permissions={[PermissionEnum.MANAGE_SETTINGS]}
                     path={customizationSection}

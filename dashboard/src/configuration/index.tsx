@@ -43,7 +43,7 @@ import ConfigurationPage, { MenuSection } from "./ConfigurationPage";
 
 export function createConfigurationMenu(intl: IntlShape): MenuSection[] {
   return [
-    {
+    /*{
       label: intl.formatMessage({
         defaultMessage: "Attributes and Product Types"
       }),
@@ -71,8 +71,8 @@ export function createConfigurationMenu(intl: IntlShape): MenuSection[] {
           testId: "configurationMenuProductTypes"
         }
       ]
-    },
-    {
+    },*/
+    /*{
       label: intl.formatMessage({
         defaultMessage: "Product Settings"
       }),
@@ -89,7 +89,7 @@ export function createConfigurationMenu(intl: IntlShape): MenuSection[] {
           testId: "configurationMenuTaxes"
         }
       ]
-    },
+    },*/
     {
       label: intl.formatMessage({
         defaultMessage: "Staff Settings"
@@ -149,7 +149,7 @@ export function createConfigurationMenu(intl: IntlShape): MenuSection[] {
     //     }
     //   ]
     // },
-    {
+    /*{
       label: intl.formatMessage({
         defaultMessage: "Multichannel"
       }),
@@ -166,7 +166,7 @@ export function createConfigurationMenu(intl: IntlShape): MenuSection[] {
           testId: "configurationMenuChannels"
         }
       ]
-    },
+    },*/
     {
       label: intl.formatMessage({
         defaultMessage: "Content Management"

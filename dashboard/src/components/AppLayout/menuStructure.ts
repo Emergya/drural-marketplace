@@ -157,14 +157,14 @@ function createMenuStructure(intl: IntlShape, user: User): SidebarMenuItem[] {
       id: "apps",
       url: appsListPath
     },
-    {
+    /*{
       ariaLabel: "translations",
       iconSrc: translationsIcon,
       label: intl.formatMessage(sectionNames.translations),
       permissions: [PermissionEnum.MANAGE_TRANSLATIONS],
       id: "translations",
       url: languageListUrl
-    },
+    },*/
     {
       ariaLabel: "configure",
       iconSrc: configurationIcon,
