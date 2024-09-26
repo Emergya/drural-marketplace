@@ -5,7 +5,8 @@ import { OfflinePlaceholder } from "@components/atoms";
 import { CloseIcon } from "@components/atoms/CloseIcon";
 import { LoginTabs } from "@components/molecules/LoginTabs";
 
-// import { SocialMediaLogin } from "@components/molecules/SocialMediaLogin";
+import { SocialMediaLogin } from "@components/molecules/SocialMediaLogin";
+
 import {
   LoginForm,
   Offline,
@@ -17,6 +18,8 @@ import ForgottenPassword from "./ForgottenPassword";
 import RegisterForm from "./RegisterForm";
 
 import "./scss/index.scss";
+
+import { GoogleOAuthProvider } from '@react-oauth/google';
 
 class Login extends React.Component<
   { overlay: OverlayContextInterface; active?: "login" | "register" },
@@ -74,8 +77,10 @@ class Login extends React.Component<
                   <RegisterForm hide={hide} />
                 )}
               </div>
-              {/* <div className="separator">You can also</div> */}
-              {/* <SocialMediaLogin /> */}
+              <div className="separator">You can also</div>
+              <GoogleOAuthProvider clientId="875645446897-t18rh5vsj1uofsbskd0sgc492ptfru80.apps.googleusercontent.com">
+                <SocialMediaLogin />
+              </GoogleOAuthProvider>  
             </Online>
             <Offline>
               <OfflinePlaceholder />
