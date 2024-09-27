@@ -43,6 +43,7 @@ class Login extends React.Component<
   render() {
     const { overlay } = this.props;
     const { redirectUrl, hide } = overlay;
+    const Google_OAUTH_ClientId = process.env.NEXT_PUBLIC_GOOGLE_OAUTH_CLIENTID;
 
     return (
       <Overlay testingContext="loginOverlay" context={overlay}>
@@ -78,7 +79,7 @@ class Login extends React.Component<
                 )}
               </div>
               <div className="separator">You can also</div>
-              <GoogleOAuthProvider clientId="875645446897-t18rh5vsj1uofsbskd0sgc492ptfru80.apps.googleusercontent.com">
+              <GoogleOAuthProvider clientId={Google_OAUTH_ClientId}>
                 <SocialMediaLogin />
               </GoogleOAuthProvider>  
             </Online>
