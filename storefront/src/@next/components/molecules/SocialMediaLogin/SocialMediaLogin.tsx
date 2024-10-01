@@ -9,8 +9,24 @@ import * as S from "./styles";
 import { useGoogleLogin } from '@react-oauth/google';
 
 export const SocialMediaLogin: React.FC = () => {
-  const login = useGoogleLogin({
-    onSuccess: tokenResponse => console.log(tokenResponse),
+  const login =  useGoogleLogin({
+    onSuccess: async (tokenResponse )=> {
+      console.log(tokenResponse);
+      // Extraer el access_token
+      const accessToken = tokenResponse.access_token;
+      
+      // Realizar una solicitud a la API de Google Userinfo con el access_token
+      try {
+        const response = await fetch(`https://www.googleapis.com/oauth2/v1/userinfo?access_token=${accessToken}`);
+        const userInfo = await response.json();
+
+        // Mostrar la información del usuario
+        console.log('User Info:', userInfo);
+      } catch (error) {
+        console.error('Error fetching user info:', error);
+      }
+    },
+    scope: 'openid profile email', // Solicitar el scope de OpenID Connect
   });
   
   return (
