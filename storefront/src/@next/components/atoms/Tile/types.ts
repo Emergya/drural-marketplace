@@ -8,4 +8,5 @@ export interface IProps {
   padding?: string;
   height?: string;
   left?: boolean;
+  id?: string; //Se agrega ese campo para poner id en elementos necesarios para test automáticos
 }
