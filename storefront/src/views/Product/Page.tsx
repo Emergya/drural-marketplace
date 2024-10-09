@@ -267,6 +267,7 @@ const Page: React.FC<
             <Separator />
             <Media query={{ minWidth: smallScreen }}>
               <ProductReviews
+                isStaff = {user?.isStaff}
                 product={data?.product}
                 onClick={() => setShowRatingModal(true)}
                 onDelete={(reviewID: string) => {
@@ -306,6 +307,7 @@ const Page: React.FC<
             <Media query={{ maxWidth: smallScreen }}>
               <>
                 <ProductReviews
+                  isStaff = {user?.isStaff}
                   product={data?.product}
                   onClick={() => setShowRatingModal(true)}
                   onDelete={(reviewID: string) => {

@@ -74,6 +74,9 @@ from ..discount.utils import calculate_discounted_price
 from ..payment.models import PaymentMethod
 from ..seo.models import SeoModel, SeoModelTranslation
 from . import BookableResourceDay, BookingStatus, ProductMediaTypes
+# Needed for moderate comments
+from django.core.exceptions import ValidationError 
+from better_profanity import profanity
 
 if TYPE_CHECKING:
     # flake8: noqa
@@ -1457,7 +1460,17 @@ class ProductRating(models.Model):
 
     def __str__(self) -> str:
         return f"{self.product}: {self.rating}"
-
+    
+    # Validate a comment, if comment has profanity raise a msg
+    def clean(self):
+        custom_badwords = ['mierda', 'puta', 'pene']
+        msg = "You have entered obscene or illegal language in your comment. Please write a valid comment."
+        if (profanity.contains_profanity(self.comment)):
+            raise ValidationError(msg)
+        else:
+            profanity.load_censor_words(custom_badwords)
+            if (profanity.contains_profanity(self.comment)):
+                raise ValidationError(msg)
 
 class BookableResource(models.Model):
     """

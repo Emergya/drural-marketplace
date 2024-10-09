@@ -2452,7 +2452,7 @@ class ProductRatingDelete(ModelDeleteMutation):
         product_instance = instance.product
 
         # Check if the review is created by current user
-        if info.context.user != instance.user:
+        if info.context.user != instance.user and not info.context.user.is_staff:
             raise PermissionDenied()
 
         if instance:

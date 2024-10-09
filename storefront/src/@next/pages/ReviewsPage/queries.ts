@@ -32,6 +32,7 @@ const getServiceReviews = gql`
         alt
       }
       company {
+        id
         name
       }
       reviewPercentages {
