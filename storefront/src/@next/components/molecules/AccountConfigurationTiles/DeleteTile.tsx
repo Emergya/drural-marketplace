@@ -26,7 +26,7 @@ export const DeleteTile: React.FC = () => {
   return (
     <>
       <S.TileWrapper>
-        <Tile>
+        <Tile  id="myaccount__configuration__delete_account">
           <S.Header marginTop="1rem">
             <S.Title>
               <FormattedMessage {...commonMessages.deleteAccount} />

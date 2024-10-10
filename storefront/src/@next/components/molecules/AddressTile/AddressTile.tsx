@@ -99,7 +99,7 @@ export const AddressTile: React.FC<IProps> = ({
       data-test-billing-default={address.isDefaultBillingAddress}
       data-test-shipping-default={address.isDefaultShippingAddress}
     >
-      <Tile footer={footer} header={header}>
+      <Tile footer={footer} header={header} id="myaccount__myaccount__myadress__address">
         {content}
       </Tile>
     </S.Wrapper>
