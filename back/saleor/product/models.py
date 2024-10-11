@@ -75,8 +75,9 @@ from ..payment.models import PaymentMethod
 from ..seo.models import SeoModel, SeoModelTranslation
 from . import BookableResourceDay, BookingStatus, ProductMediaTypes
 # Needed for moderate comments
-from django.core.exceptions import ValidationError 
+from django.core.exceptions import ValidationError, ImproperlyConfigured
 from better_profanity import profanity
+import os.path
 
 if TYPE_CHECKING:
     # flake8: noqa
@@ -1463,12 +1464,16 @@ class ProductRating(models.Model):
     
     # Validate a comment, if comment has profanity raise a msg
     def clean(self):
-        custom_badwords = ['mierda', 'puta', 'pene']
+        #custom_badwords = ['mierda', 'puta', 'pene']
         msg = "You have entered obscene or illegal language in your comment. Please write a valid comment."
         if (profanity.contains_profanity(self.comment)):
             raise ValidationError(msg)
         else:
-            profanity.load_censor_words(custom_badwords)
+            file = os.path.dirname(os.path.abspath(__file__))+"/bad_word_list.txt"
+            try:                  
+                profanity.load_censor_words_from_file(file)             
+            except Exception:
+                raise ImproperlyConfigured("Can't open bad_word_list.txt")                        
             if (profanity.contains_profanity(self.comment)):
                 raise ValidationError(msg)
 

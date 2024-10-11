@@ -65,6 +65,14 @@ const getServiceReviews = gql`
         }
       }
     }
+    me {
+      id
+      email
+      userPermissions {
+        code
+        name
+      }
+    }  
   }
 `;
 

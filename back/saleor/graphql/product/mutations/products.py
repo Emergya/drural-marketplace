@@ -2451,8 +2451,8 @@ class ProductRatingDelete(ModelDeleteMutation):
         instance = cls.get_node_or_error(info, node_id, only_type=model_type)
         product_instance = instance.product
 
-        # Check if the review is created by current user
-        if info.context.user != instance.user and not info.context.user.is_staff:
+        # Check if the review is created by current user and if current user has the MANAGE_PRODUCTS permision.
+        if info.context.user != instance.user and not info.context.user.has_perms([ProductPermissions.MANAGE_PRODUCTS]):    
             raise PermissionDenied()
 
         if instance:

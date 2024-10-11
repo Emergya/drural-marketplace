@@ -12,6 +12,7 @@ import { IProps } from "./types";
 
 export const ProductReviews: React.FC<IProps> = ({
   isStaff,
+  hasPermission,
   product,
   onClick,
   onDelete,
@@ -48,7 +49,7 @@ export const ProductReviews: React.FC<IProps> = ({
           {product?.reviews?.edges.map((review, index) => (
             <S.ReviewTile key={index}>
               <Review key={index} review={review.node} />
-              {(review.node.createdByUser || isStaff ) && (
+              {(review.node.createdByUser || (isStaff && hasPermission )) && (
                 <S.DeleteIcon
                   onClick={e => {
                     e.stopPropagation();

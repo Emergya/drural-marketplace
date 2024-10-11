@@ -149,6 +149,18 @@ const Page: React.FC<
     },
   });
 
+  const checkUserPermission = (permissions, requiredPermission) => {
+    if (permissions){
+      return permissions.some(permission => permission.code === requiredPermission);
+    }
+    else{
+      return false;
+    }
+  };
+
+  const hasPermission = checkUserPermission(data?.me?.userPermissions, "MANAGE_PRODUCTS");
+ 
+
   // 3. Sections
   const addToCartSection = (
     <AddToCartSection
@@ -268,6 +280,7 @@ const Page: React.FC<
             <Media query={{ minWidth: smallScreen }}>
               <ProductReviews
                 isStaff = {user?.isStaff}
+                hasPermission = {hasPermission}
                 product={data?.product}
                 onClick={() => setShowRatingModal(true)}
                 onDelete={(reviewID: string) => {
@@ -308,6 +321,7 @@ const Page: React.FC<
               <>
                 <ProductReviews
                   isStaff = {user?.isStaff}
+                  hasPermission = {hasPermission}
                   product={data?.product}
                   onClick={() => setShowRatingModal(true)}
                   onDelete={(reviewID: string) => {
