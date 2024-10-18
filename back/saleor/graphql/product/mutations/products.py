@@ -2467,8 +2467,50 @@ class ProductRatingDelete(ModelDeleteMutation):
         cls.post_delete_action(product_instance)
         product = ChannelContext(node=product_instance, channel_slug=None)
         return cls(review=instance, product=product)
-
+        user_reporter = get
+        print(user_reporter)
     @classmethod
     def post_delete_action(cls, product):
         """Perform an action after delete an object."""
         product.calcule_rating()
+
+class ProductReviewReportInput(graphene.InputObjectType): 
+    review_id = graphene.ID(
+        description="ID of a product rating reported.",
+        required=True,
+    )
+    reasons = graphene.List(graphene.String, required=True)
+    
+class ProductReviewReport(ModelMutation):
+    success = graphene.Boolean()
+    class Arguments:
+        input = ProductReviewReportInput(required=True) 
+
+    class Meta:
+        description = "Send an email when an user report a review."
+        model = models.ProductRating
+        permission_group = ProductPermissions.MANAGE_PRODUCTS
+        error_type_class = ReportError
+        error_type_field = "report_error"    
+
+    @classmethod
+    def perform_mutation(cls, root, info, input):  
+        reasons = input["reasons"]
+        reporter_user = info.context.user        
+
+        # Geting review information from the Id
+        node_id = input["review_id"]
+        model_type = cls.get_type_for_model()
+        reported_review = cls.get_node_or_error(info, node_id, only_type=model_type)
+
+        reported_info = {
+            "reported_review": reported_review,
+            "reporter_user": reporter_user,
+            "reasons": reasons
+        }
+        # Send a message to all administrators with manage_product permission
+        notifications.send_product_review_report(
+            info.context.plugins, reported_info
+        )
+        
+        return ProductReviewReport(success=True)

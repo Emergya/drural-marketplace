@@ -46,3 +46,12 @@ export const DeleteIcon = styled.div`
     background-color: ${props => props.theme.colors.primaryLight};
   }
 `;
+
+export const ReportIcon = styled.div`
+  display: flex;
+  align-items: center;
+  border-radius: 100%;
+  &:hover {
+    background-color: ${props => props.theme.colors.primaryLight};
+  }
+`;

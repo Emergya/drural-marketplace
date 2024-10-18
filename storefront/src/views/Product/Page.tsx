@@ -32,6 +32,8 @@ import AddToCartSection from "@components/organisms/AddToCartSection";
 import { useGetServiceReviews } from "@pages/ReviewsPage/queries";
 import RatingConfirmationModal from "@pages/ReviewsPage/RatingConfirmationModal/RatingConfirmationModal";
 import RatingDeleteModal from "@pages/ReviewsPage/RatingDeleteModal/RatingDeleteModal";
+import RatingReportModal from "@pages/ReviewsPage/RatingReportModal/RatingReportModal";
+import ReportRatingConfirmationModal from "@pages/ReviewsPage/ReportRatingConfirmationModal/ReportRatingConfirmationModal";
 import RatingModal from "@pages/ReviewsPage/RatingModal/RatingModal";
 import { paths } from "@paths";
 import { commonMessages } from "@temp/intl";
@@ -139,6 +141,10 @@ const Page: React.FC<
   );
   const [showDeleteModal, setShowDeleteModal] = React.useState(false);
   const [reviewToDelete, setReviewToDelete] = React.useState("");
+
+  const [showReportModal, setShowReportModal] = React.useState(false);
+  const [reviewToReport, setReviewToReport] = React.useState("");
+  const [showReportConfirmationModal, setShowReportConfirmationModal] = React.useState(false);
 
   const { data, refetch } = useGetServiceReviews({
     slug: product.slug as string,
@@ -287,6 +293,10 @@ const Page: React.FC<
                   setReviewToDelete(reviewID);
                   setShowDeleteModal(true);
                 }}
+                onReport={(reviewID: string) => {
+                  setReviewToReport(reviewID);
+                  setShowReportModal(true);  
+                }}
               />
             </Media>
           </div>
@@ -327,6 +337,10 @@ const Page: React.FC<
                   onDelete={(reviewID: string) => {
                     setReviewToDelete(reviewID);
                     setShowDeleteModal(true);
+                  }}
+                  onReport={(reviewID: string) => {
+                    setReviewToReport(reviewID);
+                    setShowReportModal(true);
                   }}
                 />
                 <Separator mobileMarginTop="26" />
@@ -369,6 +383,22 @@ const Page: React.FC<
           refetch={() => refetch()}
           hide={() => setShowDeleteModal(false)}
         />
+      )}
+      {showReportModal && (
+        <RatingReportModal        
+          serviceToReport={{
+            serviceId: product.id,
+            serviceImage: product.thumbnail?.url || defaultImage,
+            serviceName: product.name,
+          }}
+          ratingID={reviewToReport}
+          refetch={() => refetch()}
+          hide={() => setShowReportModal(false)}
+          showSucessModal={() => setShowReportConfirmationModal(true)}
+        />
+      )}
+      {showReportConfirmationModal && (
+        <ReportRatingConfirmationModal hide={() => setShowReportConfirmationModal(false)} />
       )}
     </div>
   );

@@ -6,4 +6,5 @@ export interface IProps {
   product: Partial<GetServiceReviews_product>;
   onClick: () => void;
   onDelete: (reviewID: string) => void;
+  onReport: (reviewID: string) => void;
 }

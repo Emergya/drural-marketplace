@@ -40,3 +40,29 @@ def send_featured_product_notification(user, manager, product_name):
         **get_site_context(),
     }
     manager.notify(NotifyEventType.PRODUCT_FEATURED, payload=payload)
+
+# send an email to admin user with "manage_products" permission when an user report a review
+def send_product_review_report(manager, reported_info):
+    perm = Permission.objects.get(codename="manage_products")
+    admins = (
+        User.objects.filter(is_staff=True)
+        .filter(Q(groups__permissions=perm) | Q(user_permissions=perm))
+        .distinct()
+    )
+
+    for admin in admins:
+        payload = {
+            "user": get_default_user_payload(admin),
+            "recipient_email": admin.email,
+            "requestor_full_name": reported_info["reporter_user"].get_full_name(),
+            "requestor_email": reported_info["reporter_user"].email,
+            "product": reported_info["reported_review"].product.name,
+            "company": reported_info["reported_review"].product.company.name,
+            "comment": reported_info["reported_review"].comment,
+            "reasons": reported_info["reasons"],
+            "reported_full_name": reported_info["reported_review"].user.get_full_name(),
+            "reported_email": reported_info["reported_review"].user.email,
+            "language_code": get_language_code_or_default(admin),
+            **get_site_context()          
+        }
+        manager.notify(NotifyEventType.PRODUCT_REVIEW_REPORT, payload=payload)
