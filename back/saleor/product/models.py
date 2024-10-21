@@ -1464,18 +1464,14 @@ class ProductRating(models.Model):
     
     # Validate a comment, if comment has profanity raise a msg
     def clean(self):
-        #custom_badwords = ['mierda', 'puta', 'pene']
         msg = "You have entered obscene or illegal language in your comment. Please write a valid comment."
-        if (profanity.contains_profanity(self.comment)):
+        file = os.path.dirname(os.path.abspath(__file__))+"/bad_word_list.txt"
+        try:                  
+            profanity.load_censor_words_from_file(file)             
+        except Exception:
+            raise ImproperlyConfigured("Can't open bad_word_list.txt")                        
+        if (profanity.contains_profanity(self.comment.lower())):
             raise ValidationError(msg)
-        else:
-            file = os.path.dirname(os.path.abspath(__file__))+"/bad_word_list.txt"
-            try:                  
-                profanity.load_censor_words_from_file(file)             
-            except Exception:
-                raise ImproperlyConfigured("Can't open bad_word_list.txt")                        
-            if (profanity.contains_profanity(self.comment)):
-                raise ValidationError(msg)
 
 class BookableResource(models.Model):
     """

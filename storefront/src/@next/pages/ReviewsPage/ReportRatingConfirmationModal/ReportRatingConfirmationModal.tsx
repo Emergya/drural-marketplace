@@ -24,13 +24,13 @@ const ReportRatingConfirmationModal: React.FC<ModalFormProps> = ({ hide }) => {
         <S.CloseIconRestyled onClose={hide} />
         <S.Content>
           <h2>
-            <FormattedMessage defaultMessage="The service has been reported" />
+            <FormattedMessage defaultMessage="The review has been reported" />
           </h2>
           <S.Image className="service-buy">
             <ReactSVG path={ratingIllustration} />
           </S.Image>
           <S.Text>
-            <FormattedMessage defaultMessage="Thank you for leaving your feedback" />
+            <FormattedMessage defaultMessage="Thank you for leaving your feedback.  Your report will be reviewed by a dRural administrator." />
           </S.Text>
         </S.Content>
       </S.Div>
