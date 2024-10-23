@@ -3,8 +3,8 @@
 # review comments. You must add one word per line. Words from different languages can be included,  #
 # and the system will check for inappropriate words regardless of whether the user mixes languages. #
 #                                                                                                   #
-# All modified spellings of words in this lits will be generated. For example the word hadjob would #
-# be loaded into:                                                                                   #
+# All modified spellings of words in this list will be generated. For example the word handjob      #
+# would be loaded into:                                                                             #
 # 'handjob', 'handj*b', 'handj0b', 'handj@b', 'h@ndjob', 'h@ndj*b', 'h@ndj0b', 'h@ndj@b',           #
 # 'h*ndjob', 'h*ndj*b', 'h*ndj0b', 'h*ndj@b', 'h4ndjob', 'h4ndj*b', 'h4ndj0b', 'h4ndj@b'            #
 #                                                                                                   #
