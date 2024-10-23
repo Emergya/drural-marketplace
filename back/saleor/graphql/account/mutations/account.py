@@ -728,7 +728,6 @@ class GoogleAccountRegister(ModelMutation):
     def save(cls, info, user, cleaned_input):
         user.google_id = cleaned_input["google_id"]  # Cambiado aquí para almacenar el googleID
         if settings.ENABLE_ACCOUNT_CONFIRMATION_BY_EMAIL:
-            print("Entro en el if")
             user.is_active = False
             user.save()
             notifications.send_account_confirmation(
@@ -737,9 +736,7 @@ class GoogleAccountRegister(ModelMutation):
                 info.context.plugins,
                 cleaned_input.get("channel"),
             )
-            print("user", user)
         else:
-            print("Entro en el else")
             user.save()
 
         wishlist = Wishlist(user=user, default=True)

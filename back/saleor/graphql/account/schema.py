@@ -346,7 +346,7 @@ class AccountMutations(graphene.ObjectType):
     account_update = AccountUpdate.Field()
     account_request_deletion = AccountRequestDeletion.Field()
     account_delete = AccountDelete.Field()
-    google_accout_register = GoogleAccountRegister.Field()
+    google_account_register = GoogleAccountRegister.Field()
     authenticate_google_user = AuthenticateGoogleUser.Field()
 
     set_account_categories_preferences = SetAccountCategoriesPreferences.Field()
