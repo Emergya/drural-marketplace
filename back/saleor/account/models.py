@@ -225,6 +225,7 @@ class User(PermissionsMixin, ModelWithMetadata, AbstractBaseUser):
     """
     ...
     email = models.EmailField(unique=True)
+    google_id = models.CharField(max_length=256, blank=True, null=True, unique=True)
     first_name = models.CharField(max_length=256, blank=True)
     last_name = models.CharField(max_length=256, blank=True)
     addresses = models.ManyToManyField(

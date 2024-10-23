@@ -34,6 +34,7 @@ from .mutations.account import (
     RequestEmailChange,
     SetAccountCategoriesPreferences,
     SetAccountLocationPreferences,
+    GoogleAccountRegister,
 )
 from .mutations.authentication import (
     CreateToken,
@@ -45,6 +46,7 @@ from .mutations.authentication import (
     ExternalVerify,
     RefreshToken,
     VerifyToken,
+    AuthenticateGoogleUser,
 )
 from .mutations.base import (
     ConfirmAccount,
@@ -344,6 +346,8 @@ class AccountMutations(graphene.ObjectType):
     account_update = AccountUpdate.Field()
     account_request_deletion = AccountRequestDeletion.Field()
     account_delete = AccountDelete.Field()
+    google_accout_register = GoogleAccountRegister.Field()
+    authenticate_google_user = AuthenticateGoogleUser.Field()
 
     set_account_categories_preferences = SetAccountCategoriesPreferences.Field()
     set_account_location_preferences = SetAccountLocationPreferences.Field()

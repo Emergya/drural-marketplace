@@ -617,3 +617,133 @@ class SetAccountLocationPreferences(ModelMutation):
         return super(SetAccountLocationPreferences, cls).perform_mutation(
             _root, info, **data
         )
+
+
+class GoogleAccountRegisterInput(graphene.InputObjectType):
+    first_name = graphene.String(
+        description="The first name of the user.", required=True
+    )
+    last_name = graphene.String(
+        description="The last name of the user.", required=True
+    )
+    email = graphene.String(description="The email address of the user.", required=True)
+    is_onboard = graphene.Boolean(required=False)
+    info_request = graphene.Boolean(
+        description="Informs whether users need to confirm their consent."
+    )
+    google_id = graphene.String(description="Google user ID", required=True)
+    redirect_url = graphene.String(
+        description=(
+            "Base of frontend URL that will be needed to create confirmation URL."
+        ),
+        required=False,
+    )
+    language_code = graphene.Argument(
+        LanguageCodeEnum, required=False, description="User language code."
+    )
+    metadata = graphene.List(
+        graphene.NonNull(MetadataInput),
+        description="User public metadata.",
+        required=False,
+    )
+    channel = graphene.String(
+        description=(
+            "Slug of a channel which will be used to notify users. Optional when "
+            "only one channel exists."
+        )
+    )
+
+class GoogleAccountRegister(ModelMutation):
+    class Arguments:
+        input = GoogleAccountRegisterInput(
+            description="Fields required to create a user via Google.", required=True
+        )
+
+    requires_confirmation = graphene.Boolean(
+        description="Informs whether users need to confirm their email address."
+    )
+
+    class Meta:
+        description = "Register a new user via Google."
+        exclude = ["password"]
+        model = models.User
+        error_type_class = AccountError
+        error_type_field = "account_errors"
+
+    @classmethod
+    def mutate(cls, root, info, **data):
+        response = super().mutate(root, info, **data)
+        response.requires_confirmation = settings.ENABLE_ACCOUNT_CONFIRMATION_BY_EMAIL
+        return response
+
+    @classmethod
+    def clean_input(cls, info, instance, data, input_cls=None):
+        data["metadata"] = {
+            item["key"]: item["value"] for item in data.get("metadata") or []
+        }
+
+        # Validar si ya existe un usuario con el googleID
+        google_id = data.get("google_id")
+        if google_id:
+            existing_user = models.User.objects.filter(google_id=google_id).first()
+            if existing_user:
+                raise ValidationError(
+                    {
+                        "google_id": ValidationError(
+                            "A user with this Google ID already exists.",
+                            code=AccountErrorCode.DUPLICATE.value,
+                        )
+                    }
+                )
+
+        # Validar redirect_url si es necesario
+        if not settings.ENABLE_ACCOUNT_CONFIRMATION_BY_EMAIL:
+            return super().clean_input(info, instance, data, input_cls=None)
+        elif not data.get("redirect_url"):
+            raise ValidationError(
+                {
+                    "redirect_url": ValidationError(
+                        "This field is required.", code=AccountErrorCode.REQUIRED
+                    )
+                }
+            )
+
+        try:
+            validate_storefront_url(data["redirect_url"])
+        except ValidationError as error:
+            raise ValidationError(
+                {
+                    "redirect_url": ValidationError(
+                        error.message, code=AccountErrorCode.INVALID
+                    )
+                }
+            )
+
+        data["language_code"] = data.get("language_code", settings.LANGUAGE_CODE)
+        return super().clean_input(info, instance, data, input_cls=None)
+
+
+    @classmethod
+    @traced_atomic_transaction()
+    def save(cls, info, user, cleaned_input):
+        user.google_id = cleaned_input["google_id"]  # Cambiado aquí para almacenar el googleID
+        if settings.ENABLE_ACCOUNT_CONFIRMATION_BY_EMAIL:
+            print("Entro en el if")
+            user.is_active = False
+            user.save()
+            notifications.send_account_confirmation(
+                user,
+                cleaned_input["redirect_url"],
+                info.context.plugins,
+                cleaned_input.get("channel"),
+            )
+            print("user", user)
+        else:
+            print("Entro en el else")
+            user.save()
+
+        wishlist = Wishlist(user=user, default=True)
+        wishlist.save()
+        utils.add_user_in_sellers_group(user)
+        account_events.customer_account_created_event(user=user)
+        info.context.plugins.customer_created(customer=user)

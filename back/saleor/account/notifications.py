@@ -58,6 +58,7 @@ def send_account_confirmation(user, redirect_url, manager, channel_slug):
     token = default_token_generator.make_token(user)
     params = urlencode({"email": user.email, "token": token})
     confirm_url = prepare_url(params, redirect_url)
+    print("confirm_url",confirm_url)
     welcome_image_url = STATIC_URL + "welcome-image.png"
     payload = {
         "user": get_default_user_payload(user),
@@ -70,6 +71,7 @@ def send_account_confirmation(user, redirect_url, manager, channel_slug):
         "language_code": get_language_code_or_default(user),
         **get_site_context(),
     }
+    print("payload:", payload)
     manager.notify(
         NotifyEventType.ACCOUNT_CONFIRMATION, payload=payload, channel_slug=channel_slug
     )
