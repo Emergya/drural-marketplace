@@ -453,6 +453,6 @@ def send_product_review_report(
         constants.PRODUCT_REVIEW_REPORT_SUBJECT_FIELD,
         constants.PRODUCT_REVIEW_REPORT_DEFAULT_SUBJECT,
     )
-    send_product_review_report_task(        
+    send_product_review_report_task.delay(        
         recipient_email, payload, config, subject, email_template_str
     )
