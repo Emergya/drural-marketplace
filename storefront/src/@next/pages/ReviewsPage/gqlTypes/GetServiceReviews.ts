@@ -140,6 +140,8 @@ export interface GetServiceReviews_product {
    * Reviews of the products by users.
    */
   reviews: GetServiceReviews_product_reviews | null;
+
+  userPermissions: string | null;
 }
 
 export interface GetServiceReviews {
@@ -147,6 +149,7 @@ export interface GetServiceReviews {
    * Look up a product by ID.
    */
   product: GetServiceReviews_product | null;
+  me: GetServiceReviews_product | null;
 }
 
 export interface GetServiceReviewsVariables {

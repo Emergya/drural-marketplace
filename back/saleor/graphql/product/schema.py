@@ -120,6 +120,7 @@ from .mutations.products import (
     ProductVariantUpdate,
     VariantMediaAssign,
     VariantMediaUnassign,
+    ProductReviewReport,
 )
 from .resolvers import (
     resolve_bookable_resource,
@@ -750,3 +751,5 @@ class ProductMutations(graphene.ObjectType):
 
     book_resource = BookResource.Field()
     book_resource_bulk = BookResourceBulk.Field()
+
+    product_review_report = ProductReviewReport.Field()
