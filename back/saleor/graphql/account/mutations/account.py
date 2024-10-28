@@ -619,7 +619,7 @@ class SetAccountLocationPreferences(ModelMutation):
         )
 
 
-class GoogleAccountRegisterInput(graphene.InputObjectType):
+class SocialMediaAccountRegisterInput(graphene.InputObjectType):
     first_name = graphene.String(
         description="The first name of the user.", required=True
     )
@@ -631,13 +631,13 @@ class GoogleAccountRegisterInput(graphene.InputObjectType):
     info_request = graphene.Boolean(
         description="Informs whether users need to confirm their consent."
     )
-    google_id = graphene.String(description="Google user ID", required=True)
-    redirect_url = graphene.String(
-        description=(
-            "Base of frontend URL that will be needed to create confirmation URL."
-        ),
-        required=False,
-    )
+    open_id = graphene.String(description="Open ID", required=True)
+    # redirect_url = graphene.String(
+    #     description=(
+    #         "Base of frontend URL that will be needed to create confirmation URL."
+    #     ),
+    #     required=False,
+    # )
     language_code = graphene.Argument(
         LanguageCodeEnum, required=False, description="User language code."
     )
@@ -653,9 +653,9 @@ class GoogleAccountRegisterInput(graphene.InputObjectType):
         )
     )
 
-class GoogleAccountRegister(ModelMutation):
+class SocialMediaAccountRegister(ModelMutation):
     class Arguments:
-        input = GoogleAccountRegisterInput(
+        input = SocialMediaAccountRegisterInput(
             description="Fields required to create a user via Google.", required=True
         )
 
@@ -673,7 +673,7 @@ class GoogleAccountRegister(ModelMutation):
     @classmethod
     def mutate(cls, root, info, **data):
         response = super().mutate(root, info, **data)
-        response.requires_confirmation = settings.ENABLE_ACCOUNT_CONFIRMATION_BY_EMAIL
+        # response.requires_confirmation = settings.ENABLE_ACCOUNT_CONFIRMATION_BY_EMAIL
         return response
 
     @classmethod
@@ -682,42 +682,42 @@ class GoogleAccountRegister(ModelMutation):
             item["key"]: item["value"] for item in data.get("metadata") or []
         }
 
-        # Validar si ya existe un usuario con el googleID
-        google_id = data.get("google_id")
-        if google_id:
-            existing_user = models.User.objects.filter(google_id=google_id).first()
+        # Validate if a user already exists with the OpenID
+        open_id = data.get("open_id")
+        if open_id:
+            existing_user = models.User.objects.filter(open_id=open_id).first()
             if existing_user:
                 raise ValidationError(
                     {
-                        "google_id": ValidationError(
-                            "A user with this Google ID already exists.",
+                        "open_id": ValidationError(
+                            "A user with this Open ID already exists.",
                             code=AccountErrorCode.DUPLICATE.value,
                         )
                     }
                 )
 
         # Validar redirect_url si es necesario
-        if not settings.ENABLE_ACCOUNT_CONFIRMATION_BY_EMAIL:
-            return super().clean_input(info, instance, data, input_cls=None)
-        elif not data.get("redirect_url"):
-            raise ValidationError(
-                {
-                    "redirect_url": ValidationError(
-                        "This field is required.", code=AccountErrorCode.REQUIRED
-                    )
-                }
-            )
+        # if not settings.ENABLE_ACCOUNT_CONFIRMATION_BY_EMAIL:
+        #     return super().clean_input(info, instance, data, input_cls=None)
+        # elif not data.get("redirect_url"):
+        #     raise ValidationError(
+        #         {
+        #             "redirect_url": ValidationError(
+        #                 "This field is required.", code=AccountErrorCode.REQUIRED
+        #             )
+        #         }
+        #     )
 
-        try:
-            validate_storefront_url(data["redirect_url"])
-        except ValidationError as error:
-            raise ValidationError(
-                {
-                    "redirect_url": ValidationError(
-                        error.message, code=AccountErrorCode.INVALID
-                    )
-                }
-            )
+        # try:
+        #     validate_storefront_url(data["redirect_url"])
+        # except ValidationError as error:
+        #     raise ValidationError(
+        #         {
+        #             "redirect_url": ValidationError(
+        #                 error.message, code=AccountErrorCode.INVALID
+        #             )
+        #         }
+        #     )
 
         data["language_code"] = data.get("language_code", settings.LANGUAGE_CODE)
         return super().clean_input(info, instance, data, input_cls=None)
@@ -726,18 +726,19 @@ class GoogleAccountRegister(ModelMutation):
     @classmethod
     @traced_atomic_transaction()
     def save(cls, info, user, cleaned_input):
-        user.google_id = cleaned_input["google_id"]  # Cambiado aquí para almacenar el googleID
-        if settings.ENABLE_ACCOUNT_CONFIRMATION_BY_EMAIL:
-            user.is_active = False
-            user.save()
-            notifications.send_account_confirmation(
-                user,
-                cleaned_input["redirect_url"],
-                info.context.plugins,
-                cleaned_input.get("channel"),
-            )
-        else:
-            user.save()
+        user.open_id = cleaned_input["open_id"]  # Changed here to store the openID
+        # if settings.ENABLE_ACCOUNT_CONFIRMATION_BY_EMAIL:
+        #     user.is_active = False
+        #     user.save()
+        #     notifications.send_account_confirmation(
+        #         user,
+        #         cleaned_input["redirect_url"],
+        #         info.context.plugins,
+        #         cleaned_input.get("channel"),
+        #     )
+        # else:
+        #user.is_active = True # In model is True by default
+        user.save()
 
         wishlist = Wishlist(user=user, default=True)
         wishlist.save()

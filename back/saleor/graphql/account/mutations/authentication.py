@@ -508,14 +508,14 @@ class ExternalVerify(BaseMutation):
         user, data = manager.external_verify(plugin_id, input_data, request)
         return cls(user=user, is_valid=bool(user), verify_data=data)
 
-class AuthenticateGoogleUser(BaseMutation):
-    """Mutation that authenticates a user using Google ID."""
+class AuthenticateSocialMediaUser(BaseMutation):
+    """Mutation that authenticates a user using Open ID."""
 
     class Arguments:
-        google_id = graphene.String(required=True, description="Google user ID.")
+        open_id = graphene.String(required=True, description="Open ID.")
 
     class Meta:
-        description = "Authenticate a user using Google ID."
+        description = "Authenticate a user using Open ID."
         error_type_class = AccountError
         error_type_field = "account_errors"
 
@@ -525,22 +525,22 @@ class AuthenticateGoogleUser(BaseMutation):
     user = graphene.Field(User, description="A user instance.")
 
     @classmethod
-    def _retrieve_user_by_google_id(cls, google_id) -> Optional[models.User]:
-        """Retrieve a user using the Google ID."""
-        return models.User.objects.filter(google_id=google_id).first()
+    def _retrieve_user_by_open_id(cls, open_id) -> Optional[models.User]:
+        """Retrieve a user using the Open ID."""
+        return models.User.objects.filter(open_id=open_id).first()
 
     @classmethod
     def perform_mutation(cls, root, info, **data):
-        google_id = data.get("google_id")
+        open_id = data.get("open_id")
 
-        # Retrieve the user by googleID
-        user = cls._retrieve_user_by_google_id(google_id)
+        # Retrieve the user by OpenID
+        user = cls._retrieve_user_by_open_id(open_id)
 
         if not user:
             raise ValidationError(
                 {
-                    "google_id": ValidationError(
-                        "No user found with this Google ID.",
+                    "open_id": ValidationError(
+                        "No user found with this Open ID.",
                         code=AccountErrorCode.NOT_FOUND.value,
                     )
                 }
@@ -550,7 +550,7 @@ class AuthenticateGoogleUser(BaseMutation):
         if not user.is_active:
             raise ValidationError(
                 {
-                    "google_id": ValidationError(
+                    "open_id": ValidationError(
                         "Account inactive.",
                         code=AccountErrorCode.INACTIVE.value,
                     )

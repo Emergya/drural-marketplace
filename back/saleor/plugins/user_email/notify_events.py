@@ -65,7 +65,7 @@ def send_account_confirmation(payload: dict, config: dict, plugin_configuration:
         constants.ACCOUNT_CONFIRMATION_SUBJECT_FIELD,
         constants.ACCOUNT_CONFIRMATION_DEFAULT_SUBJECT,
     )
-    send_account_confirmation_email_task(
+    send_account_confirmation_email_task.delay(
         recipient_email, payload, config, subject, template
     )
 
