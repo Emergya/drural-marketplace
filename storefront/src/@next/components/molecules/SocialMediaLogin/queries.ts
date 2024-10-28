@@ -1,18 +1,8 @@
 import gql from "graphql-tag";
 
-export const googleAccountRegister = gql `
-    mutation GoogleAccount($firstName: String!, $lastName: String!, $email: String!, $googleId: String!, $redirectUrl: String!){
-        googleAccountRegister(firstName: $firstName, lastName: $lastName, email: $email, googleId: $googleId, redirectUrl: $redirectUrl){
-            user{
-                id
-            }
-        }
-    }
-`;
-
-export const authenticateGoogleUser = gql `
-    mutation AuthenticateGoogleUser ($googleId: String!){
-        autenticateGoogleUser(googleId: $googleId){
+export const authenticateSocialMediaUser = gql `
+    mutation AuthenticateSocialMediaUser ($openId: String!){
+        authenticateSocialMediaUser(openId: $openId){
             token,
             refreshToken,
             csrfToken,
@@ -21,6 +11,26 @@ export const authenticateGoogleUser = gql `
             },
             user{
                 id
+                email
+                firstName
+                lastName
+                isStaff
+                # New ones
+                isOnboard
+                avatar(size: 760) {
+                url
+                }
+            }
+        }
+    }
+`;
+
+export const socialMediaAccountRegister = gql `
+    mutation SocialMediaAccountRegister($firstName: String!, $lastName: String!, $email: String!, $openId: String!){
+        socialMediaAccountRegister(input:{firstName: $firstName, lastName: $lastName, email: $email, openId: $openId}){
+            user{
+                id,
+                email
             }
         }
     }

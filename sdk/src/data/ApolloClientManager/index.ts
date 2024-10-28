@@ -97,6 +97,7 @@ import {
   RefreshSignInTokenInput,
   RemoveCheckoutInput,
 } from "./types";
+import { AuthenticateSocialMediaUser, AuthenticateSocialMediaUserVariables } from "src/mutations/gqlTypes/AuthenticateSocialMediaUser";
 
 export class ApolloClientManager {
   private client: ApolloClient<any>;
@@ -227,15 +228,14 @@ export class ApolloClientManager {
     };
   };
 
-  signInOpenId = async (email: string, openId: string) => {
+  signInOpenId = async (openId: string) => {
     const { data, errors } = await this.client.mutate<
-      TokenAuth,
-      TokenAuthVariables
+      AuthenticateSocialMediaUser,
+      AuthenticateSocialMediaUserVariables
     >({
       fetchPolicy: "no-cache",
       mutation: AuthMutations.tokenAuthMutationOpenId,
       variables: {
-        email,
         openId,
       },
     });
@@ -245,16 +245,16 @@ export class ApolloClientManager {
         error: errors,
       };
     }
-    if (data?.tokenCreate?.errors.length) {
+    if (data?.authenticateSocialMediaUser?.errors.length) {
       return {
-        error: data.tokenCreate.errors,
+        error: data.authenticateSocialMediaUser.errors,
       };
     }
     return {
       data: {
-        csrfToken: data?.tokenCreate?.csrfToken,
-        token: data?.tokenCreate?.token,
-        user: data?.tokenCreate?.user,
+        csrfToken: data?.authenticateSocialMediaUser?.csrfToken,
+        token: data?.authenticateSocialMediaUser?.token,
+        user: data?.authenticateSocialMediaUser?.user,
       },
     };
   };

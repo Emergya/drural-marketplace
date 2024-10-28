@@ -130,6 +130,32 @@ export class AuthJobs extends JobsHandler<AuthJobsEventsValues> {
     };
   };
 
+  signInOpenId = async ({
+    openId,
+  }: {
+    openId: string;
+  }): PromiseAuthJobRunResponse => {
+    const { data, error } = await this.apolloClientManager.signInOpenId(
+      openId
+    );
+
+    if (error) {
+      return {
+        dataError: {
+          error,
+          type: DataErrorAuthTypes.SIGN_IN,
+        },
+      };
+    }
+
+    this.localStorageHandler.setSignInToken(data?.token || null);
+    this.localStorageHandler.setCsrfToken(data?.csrfToken || null);
+
+    return {
+      data,
+    };
+  };
+
   signOut = async (): PromiseAuthJobRunResponse => {
     // 1. Get persistance storage data
     const cwAnonymousConversation = LocalStorageHandler.getCwAnonymousConversation();

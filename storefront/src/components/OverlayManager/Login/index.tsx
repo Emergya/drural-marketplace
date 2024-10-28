@@ -43,7 +43,7 @@ class Login extends React.Component<
   render() {
     const { overlay } = this.props;
     const { redirectUrl, hide } = overlay;
-    const Google_OAUTH_ClientId = process.env.NEXT_PUBLIC_GOOGLE_OAUTH_CLIENTID;
+    const Google_OAUTH_ClientId = process.env.NEXT_PUBLIC_GOOGLE_OAUTH_CLIENTID; //poner en el archivo de constantes
 
     return (
       <Overlay testingContext="loginOverlay" context={overlay}>

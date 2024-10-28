@@ -235,7 +235,7 @@ export interface ProductList_products_edges_node {
   id: string;
   name: string;
   slug: string;
-  hasNoPrice: boolean;
+  hasNoPrice: boolean | null;
   isBillable: boolean;
   isBookable: boolean;
   seoDescription: string | null;
