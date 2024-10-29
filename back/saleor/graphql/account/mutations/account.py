@@ -632,12 +632,6 @@ class SocialMediaAccountRegisterInput(graphene.InputObjectType):
         description="Informs whether users need to confirm their consent."
     )
     open_id = graphene.String(description="Open ID", required=True)
-    # redirect_url = graphene.String(
-    #     description=(
-    #         "Base of frontend URL that will be needed to create confirmation URL."
-    #     ),
-    #     required=False,
-    # )
     language_code = graphene.Argument(
         LanguageCodeEnum, required=False, description="User language code."
     )
@@ -673,7 +667,6 @@ class SocialMediaAccountRegister(ModelMutation):
     @classmethod
     def mutate(cls, root, info, **data):
         response = super().mutate(root, info, **data)
-        # response.requires_confirmation = settings.ENABLE_ACCOUNT_CONFIRMATION_BY_EMAIL
         return response
 
     @classmethod
@@ -696,48 +689,14 @@ class SocialMediaAccountRegister(ModelMutation):
                     }
                 )
 
-        # Validar redirect_url si es necesario
-        # if not settings.ENABLE_ACCOUNT_CONFIRMATION_BY_EMAIL:
-        #     return super().clean_input(info, instance, data, input_cls=None)
-        # elif not data.get("redirect_url"):
-        #     raise ValidationError(
-        #         {
-        #             "redirect_url": ValidationError(
-        #                 "This field is required.", code=AccountErrorCode.REQUIRED
-        #             )
-        #         }
-        #     )
-
-        # try:
-        #     validate_storefront_url(data["redirect_url"])
-        # except ValidationError as error:
-        #     raise ValidationError(
-        #         {
-        #             "redirect_url": ValidationError(
-        #                 error.message, code=AccountErrorCode.INVALID
-        #             )
-        #         }
-        #     )
-
         data["language_code"] = data.get("language_code", settings.LANGUAGE_CODE)
         return super().clean_input(info, instance, data, input_cls=None)
 
 
     @classmethod
     @traced_atomic_transaction()
-    def save(cls, info, user, cleaned_input):
-        user.open_id = cleaned_input["open_id"]  # Changed here to store the openID
-        # if settings.ENABLE_ACCOUNT_CONFIRMATION_BY_EMAIL:
-        #     user.is_active = False
-        #     user.save()
-        #     notifications.send_account_confirmation(
-        #         user,
-        #         cleaned_input["redirect_url"],
-        #         info.context.plugins,
-        #         cleaned_input.get("channel"),
-        #     )
-        # else:
-        #user.is_active = True # In model is True by default
+    def save(cls, info, user, cleaned_input):        
+        user.open_id = user.password = cleaned_input["open_id"]  # Changed here to store the openID and password
         user.save()
 
         wishlist = Wishlist(user=user, default=True)

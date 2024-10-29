@@ -82,3 +82,5 @@ export const fixedSlugMenus = {
 
 export const locationFilterMaxValue = 1000;
 export const priceFilterMaxValue = 1000;
+
+export const Google_OAUTH_ClientId = process.env.NEXT_PUBLIC_GOOGLE_OAUTH_CLIENTID;

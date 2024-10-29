@@ -21,6 +21,8 @@ import "./scss/index.scss";
 
 import { GoogleOAuthProvider } from '@react-oauth/google';
 
+import { Google_OAUTH_ClientId } from "@temp/constants";
+
 class Login extends React.Component<
   { overlay: OverlayContextInterface; active?: "login" | "register" },
   { active: "login" | "register" }
@@ -43,7 +45,6 @@ class Login extends React.Component<
   render() {
     const { overlay } = this.props;
     const { redirectUrl, hide } = overlay;
-    const Google_OAUTH_ClientId = process.env.NEXT_PUBLIC_GOOGLE_OAUTH_CLIENTID; //poner en el archivo de constantes
 
     return (
       <Overlay testingContext="loginOverlay" context={overlay}>
@@ -80,7 +81,7 @@ class Login extends React.Component<
               </div>
               <div className="separator">You can also</div>
               <GoogleOAuthProvider clientId={Google_OAUTH_ClientId}>
-                <SocialMediaLogin />
+                <SocialMediaLogin hide={hide} />
               </GoogleOAuthProvider>  
             </Online>
             <Offline>

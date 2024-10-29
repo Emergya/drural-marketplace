@@ -7,7 +7,7 @@
   "main": "dist/index.js",
   "browserslist": "last 2 versions",
   "dependencies": {
-    "@drural/sdk": "^2.4.0",
+    "@drural/sdk": "file:drural-sdk-2.4.0.tgz",
     "@iconscout/react-unicons": "^1.1.6",
     "@lhci/cli": "^0.7.0",
     "@mapbox/mapbox-sdk": "^0.13.2",
