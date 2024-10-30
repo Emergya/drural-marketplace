@@ -21,7 +21,7 @@ import "./scss/index.scss";
 
 import { GoogleOAuthProvider } from '@react-oauth/google';
 
-import { Google_OAUTH_ClientId } from "@temp/constants";
+import { Google_OAUTH_ClientId, FACEBOOK_APP_ID } from "@temp/constants";
 
 class Login extends React.Component<
   { overlay: OverlayContextInterface; active?: "login" | "register" },
@@ -79,16 +79,16 @@ class Login extends React.Component<
                   <RegisterForm hide={hide} />
                 )}
               </div>
-              <div className="separator">You can also</div>
-              {Google_OAUTH_ClientId ? (
-                // if Google_OAUTH_ClientId is defined, use GoogleOAuthProvider
-                <GoogleOAuthProvider clientId={Google_OAUTH_ClientId}>
-                  <SocialMediaLogin hide={hide} />
-                </GoogleOAuthProvider>
-              ) : (
-                // else render SocialMediaLogin without GoogleOAuthProvider
-                <SocialMediaLogin hide={hide} />
-              )} 
+              {(Google_OAUTH_ClientId || FACEBOOK_APP_ID) ? (
+                Google_OAUTH_ClientId ? (                  
+                  <GoogleOAuthProvider clientId={Google_OAUTH_ClientId}>
+                    <div className="separator">You can also</div>
+                    <SocialMediaLogin hide={hide} />
+                  </GoogleOAuthProvider>
+                ) : (                  
+                  <SocialMediaLogin hide={hide}><div className="separator">You can also</div></SocialMediaLogin>
+                )
+              ) : null}
             </Online>
             <Offline>
               <OfflinePlaceholder />
