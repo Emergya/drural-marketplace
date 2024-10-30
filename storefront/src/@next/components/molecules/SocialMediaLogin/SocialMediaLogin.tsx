@@ -10,6 +10,7 @@ import * as S from "./styles";
 "use client";
 import { useGoogleLogin } from '@react-oauth/google';
 import { useAuth } from "@drural/sdk";
+import { Google_OAUTH_ClientId } from "@temp/constants";
 
 interface userInfo {
   id: string;
@@ -25,7 +26,7 @@ export const SocialMediaLogin: React.FC <{ hide: () => void }> = ({ hide }) => {
   
   const logIn = async (userInfo: userInfo) => {
     let {data: user} = await signInOpenId(userInfo.id);
-
+    
     if (!user){
       await registerSocialMediaUser({
         variables:{
@@ -37,7 +38,6 @@ export const SocialMediaLogin: React.FC <{ hide: () => void }> = ({ hide }) => {
       });
 
       ({data: user} = await signInOpenId(userInfo.id));
-
     }
     
     if (!user?.isOnboard) {
@@ -47,7 +47,8 @@ export const SocialMediaLogin: React.FC <{ hide: () => void }> = ({ hide }) => {
     hide();
   };
 
-  const googleLogin =  useGoogleLogin({
+  const googleLogin = Google_OAUTH_ClientId
+    ? useGoogleLogin({
     onSuccess: async (tokenResponse )=> {
       // Extract the access_token
       const accessToken = tokenResponse.access_token;
@@ -56,7 +57,6 @@ export const SocialMediaLogin: React.FC <{ hide: () => void }> = ({ hide }) => {
       try {        
         const response = await fetch(`https://www.googleapis.com/oauth2/v1/userinfo?access_token=${accessToken}`);
         const googleUserInfo = await response.json();
-        console.log('User Info:', googleUserInfo);
         
         logIn({
           id: googleUserInfo.id,
@@ -70,7 +70,8 @@ export const SocialMediaLogin: React.FC <{ hide: () => void }> = ({ hide }) => {
       }
     },
     scope: 'openid profile email', // Request the OpenID Connect scope
-  });
+  })
+  : null;
   
   return (
     <S.Wrapper>
@@ -79,11 +80,13 @@ export const SocialMediaLogin: React.FC <{ hide: () => void }> = ({ hide }) => {
         Log In with Facebook
       </Button> 
 
+      {Google_OAUTH_ClientId && googleLogin && (
       <Button testingContext="google-login" color="secondary" fullWidth onClick={() => googleLogin()}> 
         <UilGoogle />
         Log In with Google
       </Button> 
-      
+      )}
+
       <p className="extraSmallText">
         By clicking on the Log In with Facebook or Google buttons,
         you agree to accept the Privacy Policy and conditions of this website.

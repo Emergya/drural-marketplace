@@ -80,9 +80,15 @@ class Login extends React.Component<
                 )}
               </div>
               <div className="separator">You can also</div>
-              <GoogleOAuthProvider clientId={Google_OAUTH_ClientId}>
+              {Google_OAUTH_ClientId ? (
+                // if Google_OAUTH_ClientId is defined, use GoogleOAuthProvider
+                <GoogleOAuthProvider clientId={Google_OAUTH_ClientId}>
+                  <SocialMediaLogin hide={hide} />
+                </GoogleOAuthProvider>
+              ) : (
+                // else render SocialMediaLogin without GoogleOAuthProvider
                 <SocialMediaLogin hide={hide} />
-              </GoogleOAuthProvider>  
+              )} 
             </Online>
             <Offline>
               <OfflinePlaceholder />
