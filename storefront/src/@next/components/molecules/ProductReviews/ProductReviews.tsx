@@ -1,5 +1,6 @@
-import { UilTrashAlt } from "@iconscout/react-unicons";
+import { UilTrashAlt, UilCommentAltExclamation } from "@iconscout/react-unicons";
 import { useRouter } from "next/router";
+import { useAuth } from "@drural/sdk";
 import React from "react";
 import { FormattedMessage } from "react-intl";
 
@@ -11,12 +12,16 @@ import * as S from "./styles";
 import { IProps } from "./types";
 
 export const ProductReviews: React.FC<IProps> = ({
+  isStaff,
+  hasPermission,
   product,
   onClick,
   onDelete,
+  onReport,
 }) => {
   const reviewsCount = product?.reviews?.totalCount || 0;
   const { push } = useRouter();
+  const { user } = useAuth();
 
   const alreadyReviewed = product?.reviews?.edges[0]?.node.createdByUser;
 
@@ -47,7 +52,7 @@ export const ProductReviews: React.FC<IProps> = ({
           {product?.reviews?.edges.map((review, index) => (
             <S.ReviewTile key={index}>
               <Review key={index} review={review.node} />
-              {review.node.createdByUser && (
+              {(review.node.createdByUser || (isStaff && hasPermission )) && (
                 <S.DeleteIcon
                   onClick={e => {
                     e.stopPropagation();
@@ -57,7 +62,17 @@ export const ProductReviews: React.FC<IProps> = ({
                   <UilTrashAlt size="24" color="#23C290" />
                 </S.DeleteIcon>
               )}
-            </S.ReviewTile>
+              {!review.node.createdByUser && user && !(isStaff && hasPermission ) && (
+                <S.ReportIcon
+                  onClick={e => {
+                    e.stopPropagation();
+                    onReport(review.node.id);
+                  }}
+                >
+                  <UilCommentAltExclamation size="24" color="#23C290" />
+                </S.ReportIcon>            
+              )}
+              </S.ReviewTile>
           ))}
         </S.ReviewsWrapper>
       </S.ContentWrapper>

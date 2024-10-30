@@ -19,6 +19,7 @@ class UserNotifyEvent:
     COMPANY_VALIDATION = "company_validation"
     FRAUDULENT_PRODUCT_REPORT = "fraudulent_product_report"
     PRODUCT_FEATURED = "product_featured"
+    PRODUCT_REVIEW_REPORT = "product_review_report"
 
     CHOICES = [
         ACCOUNT_CONFIRMATION,
@@ -41,6 +42,7 @@ class UserNotifyEvent:
         FRAUDULENT_PRODUCT_REPORT,
         PRODUCT_FEATURED,
         COMPANY_ADD_AGENT,
+        PRODUCT_REVIEW_REPORT,
     ]
 
 

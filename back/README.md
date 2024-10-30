@@ -11,6 +11,8 @@ Este repositorio contiene el código del backend de **Drural**, una aplicación 
    - [Aplicación de migraciones](#aplicación-de-migraciones)
    - [Mostrar cambios en el esquema GraphQL](#mostrar-cambios-en-el-esquema-graphql)
    - [Exportar esquema GraphQL](#generar-esquema-graphql)
+3. [Agregar palabras a la lista de palabras inapropiadas](#Agregar-palabras-a-la-lista-de-palabras-inapropiadas)
+
 
 ## Requisitos previos
 
@@ -46,4 +48,13 @@ docker-compose exec api python3 manage.py get_graphql_schema
 
 ```bash
 python3 manage.py get_graphql_schema > saleor/graphql/schema.graphql
+```
+
+## Agregar palabras a la lista de palabras inapropiadas
+
+El sistema comprueba si los usuarios introducen lenguaje inapropiado en los comentarios de las reseñas de los artículos.
+Puede agregar nuevas palabras para que se incluyan en éste filtro. Para ello debe editar el archivo:
+
+```bash
+/back/saleor/product/bad_word_list.txt
 ```

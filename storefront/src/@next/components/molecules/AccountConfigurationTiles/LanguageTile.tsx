@@ -81,7 +81,7 @@ export const LanguageTile: React.FC = () => {
           return (
             <Form>
               <S.TileWrapper>
-                <Tile>
+                <Tile id="myaccount__configuration__language">
                   <S.Header>
                     <S.Title>
                       <FormattedMessage defaultMessage="Language" />

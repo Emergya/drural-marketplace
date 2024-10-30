@@ -12,7 +12,7 @@ export const AddNewTile: React.FC<IProps> = ({
   ...props
 }: IProps) => {
   return (
-    <Tile boxShadow={boxShadow} tileType="addNew" {...props}>
+    <Tile boxShadow={boxShadow} tileType="addNew" {...props} id="myaccount__myadress__add_new_address">
       <S.Content>
         <S.IconWrapper>
           <UilPlus size="48" />

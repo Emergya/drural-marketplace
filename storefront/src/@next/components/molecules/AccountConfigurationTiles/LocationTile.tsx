@@ -97,7 +97,7 @@ export const LocationTile: React.FC = () => {
         return (
           <>
             <S.TileWrapper>
-              <Tile>
+              <Tile id="myaccount__configuration__location">
                 <S.Header>
                   <S.Title>
                     <FormattedMessage {...commonMessages.location} />

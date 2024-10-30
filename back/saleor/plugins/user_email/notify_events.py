@@ -21,6 +21,7 @@ from .tasks import (
     send_request_email_change_email_task,
     send_set_user_password_email_task,
     send_user_change_email_notification_task,
+    send_product_review_report_task,
 )
 
 
@@ -432,5 +433,26 @@ def send_product_featured(payload: dict, config: dict, plugin_configuration: lis
         constants.PRODUCT_FEATURED_DEFAULT_SUBJECT,
     )
     send_product_featured_task.delay(
+        recipient_email, payload, config, subject, email_template_str
+    )
+
+def send_product_review_report(
+    payload: dict, config: dict, plugin_configuration: list
+):
+    recipient_email = payload["recipient_email"]
+    language_code = payload.get("language_code", "en")
+    email_template_str = get_email_template_or_default(
+        plugin_configuration,
+        constants.PRODUCT_REVIEW_REPORT_TEMPLATE_FIELD,
+        constants.PRODUCT_REVIEW_REPORT_TEMPLATE,
+        constants.DEFAULT_EMAIL_TEMPLATES_PATH,
+        language_code=language_code,
+    )
+    subject = get_email_subject(
+        plugin_configuration,
+        constants.PRODUCT_REVIEW_REPORT_SUBJECT_FIELD,
+        constants.PRODUCT_REVIEW_REPORT_DEFAULT_SUBJECT,
+    )
+    send_product_review_report_task.delay(        
         recipient_email, payload, config, subject, email_template_str
     )

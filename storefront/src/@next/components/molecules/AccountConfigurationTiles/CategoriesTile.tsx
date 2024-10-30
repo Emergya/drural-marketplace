@@ -101,7 +101,7 @@ export const CategoriesTile: React.FC = () => {
   return (
     <>
       <S.TileWrapper>
-        <Tile>
+        <Tile id="myaccount__configuration__categories_preferences">
           <S.Header>
             <S.Title>
               <FormattedMessage {...commonMessages.categoriesPreferences} />

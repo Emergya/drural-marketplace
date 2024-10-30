@@ -372,3 +372,16 @@ def send_product_featured_task(recipient_email, payload, config, subject, templa
         subject=subject,
         template_str=template,
     )
+
+# Task to send email when an user report a product review
+@app.task(compression="zlib")
+def send_product_review_report_task(recipient_email, payload, config, subject, template):
+    email_config = EmailConfig(**config)
+
+    send_email(
+        config=email_config,
+        recipient_list=[recipient_email],
+        context=payload,
+        subject=subject,
+        template_str=template,
+    )
