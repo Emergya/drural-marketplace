@@ -11,7 +11,8 @@ import * as S from "./styles";
 import { useGoogleLogin } from '@react-oauth/google';
 import { useAuth } from "@drural/sdk";
 import { Google_OAUTH_ClientId, FACEBOOK_APP_ID } from "@temp/constants";
-
+import { useAlert } from "react-alert";
+import { useIntl } from "react-intl";
 
 interface userInfo {
   id: string;
@@ -22,6 +23,8 @@ interface userInfo {
 
 export const SocialMediaLogin: React.FC <{ hide: () => void }> = ({ hide }) => {
   const { signInOpenId } = useAuth();
+  const alert = useAlert();
+  const intl = useIntl();
   const [ registerSocialMediaUser ] = useMutation(socialMediaAccountRegister);
   const { push } = useRouter();
   
@@ -50,12 +53,12 @@ export const SocialMediaLogin: React.FC <{ hide: () => void }> = ({ hide }) => {
 
   const googleLogin = Google_OAUTH_ClientId
     ? useGoogleLogin({
-    onSuccess: async (tokenResponse )=> {
+    onSuccess: async (tokenResponse )=> {      
       // Extract the access_token
       const accessToken = tokenResponse.access_token;
       
       // Make a request to the Google Userinfo Api with the access_token
-      try {        
+      try { 
         const response = await fetch(`https://www.googleapis.com/oauth2/v1/userinfo?access_token=${accessToken}`);
         const googleUserInfo = await response.json();
         
@@ -67,7 +70,17 @@ export const SocialMediaLogin: React.FC <{ hide: () => void }> = ({ hide }) => {
         });
         
       } catch (error) {
-        console.error('Error fetching user info or procesing mutation:', error);
+        alert.show(
+          {
+            content: intl.formatMessage(            
+              {
+                defaultMessage: "Authentication or registration failed",
+              },
+            ),
+            title: "Error",
+          },
+          { type: "error", timeout: 5000 }
+        );
       }
     },
     scope: 'openid profile email', // Request the OpenID Connect scope
@@ -92,7 +105,17 @@ export const SocialMediaLogin: React.FC <{ hide: () => void }> = ({ hide }) => {
     }); 
     
     } catch (error) {
-      console.error("Authentication or registration failed", error);
+      alert.show(
+        {
+          content: intl.formatMessage(            
+            {
+              defaultMessage: "Authentication or registration failed",
+            },
+          ),
+          title: "Error",
+        },
+        { type: "error", timeout: 5000 }
+      );
     }
   };
 
