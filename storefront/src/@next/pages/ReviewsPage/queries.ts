@@ -32,6 +32,7 @@ const getServiceReviews = gql`
         alt
       }
       company {
+        id
         name
       }
       reviewPercentages {
@@ -64,6 +65,14 @@ const getServiceReviews = gql`
         }
       }
     }
+    me {
+      id
+      email
+      userPermissions {
+        code
+        name
+      }
+    }  
   }
 `;
 

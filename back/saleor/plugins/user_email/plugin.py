@@ -40,6 +40,7 @@ from .notify_events import (
     send_order_refund,
     send_payment_confirmation,
     send_product_featured,
+    send_product_review_report,
 )
 
 logger = logging.getLogger(__name__)
@@ -67,6 +68,7 @@ class UserTemplate:
     company_validation: Optional[str]
     fraudulent_product_report: Optional[str]
     product_featured: Optional[str]
+    product_review_report: Optional[str]
 
 
 def get_user_template_map(templates: UserTemplate):
@@ -101,6 +103,7 @@ def get_user_template_map(templates: UserTemplate):
         UserNotifyEvent.COMPANY_VALIDATION: templates.company_validation,
         UserNotifyEvent.FRAUDULENT_PRODUCT_REPORT: templates.fraudulent_product_report,
         UserNotifyEvent.PRODUCT_FEATURED: templates.product_featured,
+        UserNotifyEvent.PRODUCT_REVIEW_REPORT: templates.product_review_report,
     }
 
 
@@ -128,6 +131,7 @@ def get_user_event_map():
         UserNotifyEvent.COMPANY_VALIDATION: send_company_validation,
         UserNotifyEvent.FRAUDULENT_PRODUCT_REPORT: send_fraudulent_product_report,
         UserNotifyEvent.PRODUCT_FEATURED: send_product_featured,
+        UserNotifyEvent.PRODUCT_REVIEW_REPORT: send_product_review_report,
     }
 
 
@@ -283,6 +287,14 @@ class UserEmailPlugin(BasePlugin):
         },
         {
             "name": constants.PRODUCT_FEATURED_TEMPLATE_FIELD,
+            "value": DEFAULT_EMAIL_VALUE,
+        },
+        {
+            "name": constants.PRODUCT_REVIEW_REPORT_SUBJECT_FIELD,
+            "value": constants.PRODUCT_REVIEW_REPORT_DEFAULT_SUBJECT,
+        },
+        {
+            "name": constants.PRODUCT_REVIEW_REPORT_TEMPLATE_FIELD,
             "value": DEFAULT_EMAIL_VALUE,
         },
     ] + DEFAULT_EMAIL_CONFIGURATION  # type: ignore
@@ -478,6 +490,16 @@ class UserEmailPlugin(BasePlugin):
             "help_text": DEFAULT_SUBJECT_HELP_TEXT,
             "label": "Company validation - template",
         },
+        constants.PRODUCT_REVIEW_REPORT_SUBJECT_FIELD: {
+            "type": ConfigurationTypeField.STRING,
+            "help_text": DEFAULT_SUBJECT_HELP_TEXT,
+            "label": "Product review report - subject",
+        },
+        constants.PRODUCT_REVIEW_REPORT_TEMPLATE_FIELD: {
+            "type": ConfigurationTypeField.STRING,
+            "help_text": DEFAULT_SUBJECT_HELP_TEXT,
+            "label": "Product review report - template",
+        },
     }
     CONFIG_STRUCTURE.update(DEFAULT_EMAIL_CONFIG_STRUCTURE)
 
@@ -543,6 +565,9 @@ class UserEmailPlugin(BasePlugin):
                 constants.FRAUDULENT_PRODUCT_REPORT_TEMPLATE_FIELD
             ],
             product_featured=configuration[constants.PRODUCT_FEATURED_TEMPLATE_FIELD],
+            product_review_report=configuration[
+                constants.PRODUCT_REVIEW_REPORT_TEMPLATE_FIELD
+            ],
         )
 
     def notify(self, event: NotifyEventType, payload: dict, previous_value):
