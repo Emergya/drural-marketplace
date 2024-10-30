@@ -7,4 +7,6 @@ export default {
   component: SocialMediaLogin,
 };
 
-export const SocialMediaPlaceHolder = () => <SocialMediaLogin  hide={() => { }} />;
+export const SocialMediaPlaceHolder = () => (
+  <SocialMediaLogin hide={() => {}} />
+);

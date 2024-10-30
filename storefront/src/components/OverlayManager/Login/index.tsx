@@ -1,11 +1,12 @@
+import { GoogleOAuthProvider } from "@react-oauth/google";
 import * as React from "react";
 import { FormattedMessage } from "react-intl";
 
 import { OfflinePlaceholder } from "@components/atoms";
 import { CloseIcon } from "@components/atoms/CloseIcon";
 import { LoginTabs } from "@components/molecules/LoginTabs";
-
 import { SocialMediaLogin } from "@components/molecules/SocialMediaLogin";
+import { FACEBOOK_APP_ID, Google_OAUTH_ClientId } from "@temp/constants";
 
 import {
   LoginForm,
@@ -18,10 +19,6 @@ import ForgottenPassword from "./ForgottenPassword";
 import RegisterForm from "./RegisterForm";
 
 import "./scss/index.scss";
-
-import { GoogleOAuthProvider } from '@react-oauth/google';
-
-import { Google_OAUTH_ClientId, FACEBOOK_APP_ID } from "@temp/constants";
 
 class Login extends React.Component<
   { overlay: OverlayContextInterface; active?: "login" | "register" },
@@ -79,14 +76,16 @@ class Login extends React.Component<
                   <RegisterForm hide={hide} />
                 )}
               </div>
-              {(Google_OAUTH_ClientId || FACEBOOK_APP_ID) ? (
-                Google_OAUTH_ClientId ? (                  
+              {Google_OAUTH_ClientId || FACEBOOK_APP_ID ? (
+                Google_OAUTH_ClientId ? (
                   <GoogleOAuthProvider clientId={Google_OAUTH_ClientId}>
                     <div className="separator">You can also</div>
                     <SocialMediaLogin hide={hide} />
                   </GoogleOAuthProvider>
-                ) : (                  
-                  <SocialMediaLogin hide={hide}><div className="separator">You can also</div></SocialMediaLogin>
+                ) : (
+                  <SocialMediaLogin hide={hide}>
+                    <div className="separator">You can also</div>
+                  </SocialMediaLogin>
                 )
               ) : null}
             </Online>

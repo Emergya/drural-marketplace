@@ -1,7 +1,9 @@
 import router, { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
+import { useMutation } from "react-apollo";
 import { IntlProvider } from "react-intl";
 
+import { accountUpdateMutation } from "@components/molecules/AccountConfigurationTiles/queries";
 import { useLocalStorage } from "@hooks/useLocalStorage";
 import { DEFAULT_LOCALE } from "@temp/constants";
 
@@ -14,8 +16,6 @@ import {
   loadMessagesJson,
   localeToLanguageCode,
 } from "./utils";
-import { useMutation } from "react-apollo";
-import { accountUpdateMutation } from "@components/molecules/AccountConfigurationTiles/queries";
 
 const LocaleProvider: React.FC = ({ children }) => {
   // 1. Page rendered locale
@@ -55,7 +55,7 @@ const LocaleProvider: React.FC = ({ children }) => {
 
       setUserLocale(locale);
     } catch (error) {
-      console.error("Error on setting the new locale" + error);
+      console.error(`Error on setting the new locale${error}`);
     }
   };
 

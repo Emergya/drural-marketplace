@@ -20,12 +20,12 @@ import {
   languageCodeToLocale,
   localeToLanguageCode,
 } from "@temp/components/Locale";
+import { useUserLanguageQuery } from "@temp/components/Locale/queries";
 import { Locale } from "@temp/components/Locale/types";
 import { commonMessages } from "@temp/intl";
 
 import { accountUpdateMutation } from "./queries";
 import * as S from "./styles";
-import { useUserLanguageQuery } from "@temp/components/Locale/queries";
 
 export const LanguageTile: React.FC = () => {
   const { locale, locales } = useRouter();
