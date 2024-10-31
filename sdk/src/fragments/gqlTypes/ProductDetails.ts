@@ -481,7 +481,7 @@ export interface ProductDetails_category_products_edges_node {
   id: string;
   name: string;
   slug: string;
-  hasNoPrice: boolean;
+  hasNoPrice: boolean | null;
   isBillable: boolean;
   isBookable: boolean;
   seoDescription: string | null;
@@ -750,7 +750,7 @@ export interface ProductDetails_categories_edges_node_products_edges_node {
   id: string;
   name: string;
   slug: string;
-  hasNoPrice: boolean;
+  hasNoPrice: boolean | null;
   isBillable: boolean;
   isBookable: boolean;
   seoDescription: string | null;
@@ -1063,7 +1063,7 @@ export interface ProductDetails {
   id: string;
   name: string;
   slug: string;
-  hasNoPrice: boolean;
+  hasNoPrice: boolean | null;
   isBillable: boolean;
   isBookable: boolean;
   seoDescription: string | null;

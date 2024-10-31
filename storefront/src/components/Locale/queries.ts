@@ -1,6 +1,8 @@
+import gql from "graphql-tag";
+
 import { GetUserLanguage } from "@components/molecules/AccountConfigurationTiles/gqlTypes/GetUserLanguage";
 import { useTypedQuery } from "@graphql";
-import gql from "graphql-tag";
+
 import { ShopDefaultLanguage } from "./gqlTypes/ShopDefaultLanguage";
 
 export const shopDefaultLanguage = gql`

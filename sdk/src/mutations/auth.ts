@@ -19,6 +19,23 @@ export const tokenAuthMutation = gql`
   }
 `;
 
+export const tokenAuthMutationOpenId = gql`
+  ${accountErrorFragment}
+  mutation AuthenticateSocialMediaUser ($openId: String!){
+    authenticateSocialMediaUser(openId: $openId){
+      csrfToken
+      refreshToken
+      token
+      errors: accountErrors {
+        ...AccountError
+      }
+      user {
+        id
+      }
+    }
+  }
+`;
+
 export const tokenVeryficationMutation = gql`
   ${accountErrorFragment}
   mutation VerifyToken($token: String!) {

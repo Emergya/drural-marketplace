@@ -234,6 +234,60 @@ export class AuthAPI extends ErrorListener {
     };
   };
 
+    /**
+   * Tries to authenticate user with given email and openId.
+   * @param email Email used for authentication.
+   * @param openId OpenId used for authentication.
+   * @param autoSignIn Indicates if SDK should try to sign in user with given credentials in future without explicitly calling this method. True by default.
+   */
+    signInOpenId = async (
+      openId: string,
+      autoSignIn: boolean = true
+    ): PromiseRunResponse<DataErrorAuthTypes> => {
+      const { data, dataError } = await this.jobsManager.run("auth", "signInOpenId", {
+        openId
+      });
+  
+      try {
+        if (autoSignIn && !dataError?.error && CREDENTIAL_API_EXISTS) {
+          await navigator.credentials.store(
+            new window.PasswordCredential({
+              id: openId,
+              password: openId,
+            })
+          );
+        }
+      } catch (credentialsError) {
+        // eslint-disable-next-line no-console
+        console.warn(BROWSER_NO_CREDENTIAL_API_MESSAGE, credentialsError);
+      }
+  
+      if (dataError) {
+        return {
+          data,
+          dataError,
+          pending: false,
+        };
+      }
+  
+      const {
+        data: userData,
+        dataError: userDataError,
+      } = await this.jobsManager.run("auth", "provideUser", undefined);
+      if (this.config.loadOnStart.checkout) {
+        await this.jobsManager.run("checkout", "provideCheckout", {
+          channel: this.config.channel,
+          isUserSignedIn: !!data?.user,
+        });
+      }
+  
+      return {
+        data: userData,
+        dataError: userDataError,
+        pending: false,
+      };
+    };
+
   /**
    * Updates user data
    */

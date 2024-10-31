@@ -617,3 +617,90 @@ class SetAccountLocationPreferences(ModelMutation):
         return super(SetAccountLocationPreferences, cls).perform_mutation(
             _root, info, **data
         )
+
+
+class SocialMediaAccountRegisterInput(graphene.InputObjectType):
+    first_name = graphene.String(
+        description="The first name of the user.", required=True
+    )
+    last_name = graphene.String(
+        description="The last name of the user.", required=True
+    )
+    email = graphene.String(description="The email address of the user.", required=True)
+    is_onboard = graphene.Boolean(required=False)
+    info_request = graphene.Boolean(
+        description="Informs whether users need to confirm their consent."
+    )
+    open_id = graphene.String(description="Open ID", required=True)
+    language_code = graphene.Argument(
+        LanguageCodeEnum, required=False, description="User language code."
+    )
+    metadata = graphene.List(
+        graphene.NonNull(MetadataInput),
+        description="User public metadata.",
+        required=False,
+    )
+    channel = graphene.String(
+        description=(
+            "Slug of a channel which will be used to notify users. Optional when "
+            "only one channel exists."
+        )
+    )
+
+class SocialMediaAccountRegister(ModelMutation):
+    class Arguments:
+        input = SocialMediaAccountRegisterInput(
+            description="Fields required to create a user via Google.", required=True
+        )
+
+    requires_confirmation = graphene.Boolean(
+        description="Informs whether users need to confirm their email address."
+    )
+
+    class Meta:
+        description = "Register a new user via Google."
+        exclude = ["password"]
+        model = models.User
+        error_type_class = AccountError
+        error_type_field = "account_errors"
+
+    @classmethod
+    def mutate(cls, root, info, **data):
+        response = super().mutate(root, info, **data)
+        return response
+
+    @classmethod
+    def clean_input(cls, info, instance, data, input_cls=None):
+        data["metadata"] = {
+            item["key"]: item["value"] for item in data.get("metadata") or []
+        }
+
+        # Validate if a user already exists with the OpenID
+        open_id = data.get("open_id")
+        if open_id:
+            existing_user = models.User.objects.filter(open_id=open_id).first()
+            if existing_user:
+                raise ValidationError(
+                    {
+                        "open_id": ValidationError(
+                            "A user with this Open ID already exists.",
+                            code=AccountErrorCode.DUPLICATE.value,
+                        )
+                    }
+                )
+
+        data["language_code"] = data.get("language_code", settings.LANGUAGE_CODE)
+        return super().clean_input(info, instance, data, input_cls=None)
+
+
+    @classmethod
+    @traced_atomic_transaction()
+    def save(cls, info, user, cleaned_input):        
+        user.open_id = user.password = cleaned_input["open_id"]  # Changed here to store the openID and password
+        user.save()
+
+        wishlist = Wishlist(user=user, default=True)
+        wishlist.save()
+        utils.add_user_in_sellers_group(user)
+        account_events.customer_account_created_event(user=user)
+        info.context.plugins.customer_created(customer=user)

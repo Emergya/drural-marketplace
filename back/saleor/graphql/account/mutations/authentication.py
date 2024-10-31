@@ -507,3 +507,72 @@ class ExternalVerify(BaseMutation):
         manager = info.context.plugins
         user, data = manager.external_verify(plugin_id, input_data, request)
         return cls(user=user, is_valid=bool(user), verify_data=data)
+
+class AuthenticateSocialMediaUser(BaseMutation):
+    """Mutation that authenticates a user using Open ID."""
+
+    class Arguments:
+        open_id = graphene.String(required=True, description="Open ID.")
+
+    class Meta:
+        description = "Authenticate a user using Open ID."
+        error_type_class = AccountError
+        error_type_field = "account_errors"
+
+    token = graphene.String(description="JWT token, required to authenticate.")
+    refresh_token = graphene.String(description="JWT refresh token, required to regenerate access token.")
+    csrf_token = graphene.String(description="CSRF token required to regenerate access token.")
+    user = graphene.Field(User, description="A user instance.")
+
+    @classmethod
+    def _retrieve_user_by_open_id(cls, open_id) -> Optional[models.User]:
+        """Retrieve a user using the Open ID."""
+        return models.User.objects.filter(open_id=open_id).first()
+
+    @classmethod
+    def perform_mutation(cls, root, info, **data):
+        open_id = data.get("open_id")
+
+        # Retrieve the user by OpenID
+        user = cls._retrieve_user_by_open_id(open_id)
+
+        if not user:
+            raise ValidationError(
+                {
+                    "open_id": ValidationError(
+                        "No user found with this Open ID.",
+                        code=AccountErrorCode.NOT_FOUND.value,
+                    )
+                }
+            )
+
+        # Check if the user's account is active
+        if not user.is_active:
+            raise ValidationError(
+                {
+                    "open_id": ValidationError(
+                        "Account inactive.",
+                        code=AccountErrorCode.INACTIVE.value,
+                    )
+                }
+            )
+
+        # Authenticate the user and generate tokens
+        access_token = create_access_token(user)
+        csrf_token = _get_new_csrf_token()
+        refresh_token = create_refresh_token(user, {"csrfToken": csrf_token})
+
+        # Update the last login time
+        user.last_login = timezone.now()
+        user.save(update_fields=["last_login"])
+
+        # Log the login event
+        account_events.customer_account_logged_in_event(user=user)
+
+        return cls(
+            errors=[],
+            user=user,
+            token=access_token,
+            refresh_token=refresh_token,
+            csrf_token=csrf_token,
+        )

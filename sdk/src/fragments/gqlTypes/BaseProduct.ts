@@ -35,7 +35,7 @@ export interface BaseProduct {
   id: string;
   name: string;
   slug: string;
-  hasNoPrice: boolean;
+  hasNoPrice: boolean | null;
   isBillable: boolean;
   isBookable: boolean;
   seoDescription: string | null;
